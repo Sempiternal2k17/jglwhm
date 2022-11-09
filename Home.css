@@ -1,0 +1,330 @@
+/*--------------------------------------------*/
+
+.text1{
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.text1 h1{
+    margin: 10px;
+    font-size: 50px;
+}
+
+/*--------------------------------------------*/
+
+.divOne{
+    margin-top: 5px;
+    margin-bottom: 90px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    background-color: #EEF1FF;
+}
+
+/*--------------------------------------------*/
+
+.divOne .subDiv1{
+    flex: 1;
+    padding: 30px;
+    margin: 15px;
+    border: 2px solid #B1B2FF;
+    border-radius: 10px;
+    background: #D2DAFF;
+}
+
+.subDiv1 h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.subDiv1 p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.divOne .subDiv1:hover{
+    background-color: #AAC4FF;
+}
+
+/*--------------------------------------------*/
+
+.divOne .subDiv2{
+    flex: 1;
+    padding: 30px;
+    margin: 15px;
+    border: 2px solid #B1B2FF;
+    border-radius: 10px;
+    background: #D2DAFF;
+}
+
+.subDiv2 h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.subDiv2 p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.divOne .subDiv2:hover{
+    background-color: #AAC4FF;
+}
+
+/*--------------------------------------------*/
+
+.divOne .subDiv3{
+    flex: 1;
+    padding: 30px;
+    margin: 15px;
+    border: 2px solid #B1B2FF;
+    border-radius: 10px;
+    background: #D2DAFF;
+}
+
+.subDiv3 h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.subDiv3 p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.divOne .subDiv3:hover{
+    background-color: #AAC4FF;
+}
+
+/*--------------------------------------------*/
+
+.bgcolor{
+    background-color: #D2DAFF;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: auto;
+}
+
+
+.connects{
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.connects .cText{
+    padding: 60px; 
+}
+
+.cText h1{
+    font-size: 50px;
+}
+.cText p{
+    text-align: justify;
+    font-size: 20px;
+}
+
+.cText button{
+    padding: 15px;
+    background: #EEF1FF;
+    border: 2px solid #B1B2FF;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cText button:hover{
+    background-color: #AAC4FF;
+}
+
+.cImgs img{
+    margin-right: 60px;
+    width: 500px;
+    border-radius: 50%;
+}
+
+.cImgs img:hover{
+    border: 2px solid #B1B2FF;
+    border-radius: 50%;
+}
+
+/*--------------------------------------------*/
+
+.equipping{
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.equipping .eText{
+    padding: 60px; 
+}
+
+.eText h1{
+    font-size: 50px;
+}
+
+.eText p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.eText button{
+    padding: 15px;
+    background-color: #EEF1FF;
+    border: 2px solid #B1B2FF;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.eText button:hover{
+    background-color: #AAC4FF;
+}
+
+.eImgs img{
+    margin-left: 60px;
+    width: 500px;
+    border-radius: 50%;
+}
+
+.eImgs img:hover{
+    border: 2px solid #B1B2FF;
+    border-radius: 50%;
+}
+
+/*--------------------------------------------*/
+
+.media{
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.media .mText{
+    padding: 60px; 
+    font-size: 30px;
+}
+
+.mText p{
+    text-align: justify;
+    font-size: 20px;
+}
+
+.mText button{
+    padding: 15px;
+    background-color:#EEF1FF;
+    border: 2px solid #B1B2FF;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.mText button:hover{
+    background-color: #AAC4FF;
+}
+
+.mImgs img{
+    margin-right: 60px;
+    width: 500px;
+    border-radius: 50%;
+}
+
+.mImgs img:hover{
+    border: 2px solid #B1B2FF;
+    border-radius: 50%;
+}
+
+/*--------------------------------------------*/
+
+.announcement{
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.announcement .aText{
+    padding: 60px; 
+}
+
+.aText h1{
+    font-size: 50px;
+}
+
+.aText p{
+    text-align: justify;
+    font-size: 20px;
+}
+
+.aText button{
+    padding: 15px;
+    background: #EEF1FF;
+    border: 2px solid #B1B2FF;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.aText button:hover{
+    background-color: #AAC4FF;
+}
+
+.aImgs img{
+    margin-left: 60px;
+    width: 500px;
+    border-radius: 50%;
+}
+
+.aImgs img:hover{
+    border: 2px solid #B1B2FF;
+    border-radius: 50%;
+}
+
+/*--------------------------------------------*/
+
+.prayerReq{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(HomeIMGs/prayer.jpg);
+    background-size: 1200px 200px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 10px;
+}
+
+.prayerReq p{
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid white;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.prayerReq p:hover{
+    background-color: #AAC4FF;
+    color: black;
+    border: 2px solid #B1B2FF;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
