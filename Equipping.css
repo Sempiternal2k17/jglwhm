@@ -1,245 +1,6 @@
-* {
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #EEF1FF;
-}
-
-.background{
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(HeadnFooter/EquippingBG.jpg);
-}
-
-.header {
-    padding: 10px;
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-}
-
-.logoo {
-    width: 100px;
-    margin-left: 10px;
-    padding: 10px;
-}
-
-
-.navbar {
-    height: 100%;
-}
-
-.navbar ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar li {
-    list-style: none;
-}
-
-.navbar li a {
-    display: block;
-    text-decoration: none;
-    color: white;
-    padding: 1rem;
-}
-
-.navbar li:hover {
-   border-bottom: 3px solid #B1B2FF;
-}
-
-/*-------------------------------------------------------------------*/
-
-.button {
-    position: absolute;
-    top: .75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-
-.button .noice {
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
-}
-
-/*@media (max-width: 800px) {
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .button {
-        display: flex;
-    }
-
-    .navbar {
-        display: none;
-        width: 100%;
-    }
-
-    .navbar ul {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .navbar ul li {
-        text-align: center;
-    }
-
-    .navbar ul li a {
-        padding: .5rem 1rem;
-    }
-
-    .navbar.active {
-        display: flex;
-    }
-}
-
-/* Churh Name */
-
-.noice{
-    padding: 80px;
-    padding-bottom: 160px;
-    margin: auto;
-    text-align: center;
-}
-
-.noice .jil{
-    font-size: 100px;
-    color: white;
-}
-
-/*Footer*/ /*-------------------------------------------------------------------*/
-
-.flinks {
-    padding: 60px;
-    background-color: #080808;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 60px;
-    border-top-style: solid;
-}
-.flinks .findex{
-    flex-direction: column;
-    line-height: 0.5;
-}
-
-.flinks .findex a{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 35px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-}
-
-.flinks .findex a p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    text-decoration: none;
-    color: #6f828a;
-}
-
-.flinks .fconnects{
-    flex-direction: column;
-    line-height: 0.5;
-}
-
-.flinks .fconnects a{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-}
-
-.flinks .fconnects a p{
-    font-family:  Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    text-decoration: none;
-    color: #6f828a;
-}
-
-.flinks .fmedia{
-    flex-direction: column;
-    line-height: 0.5;
-}
-
-.flinks .fmedia a{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-}
-
-.flinks .fmedia a p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    text-decoration: none;
-    color: #6f828a;
-}
-
-.flinks .fequipping{
-    flex-direction: column;
-    line-height: 0.5;
-}
-
-.flinks .fequipping a{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-}
-
-.flinks .fequipping a p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    text-decoration: none;
-    color: #6f828a;
-}
-
-.flinks .fannounce{
-    flex-direction: column;
-    line-height: 0.5;
-}
-
-.flinks .fannounce a{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-}
-
-.flinks .fpr{
-    flex-direction: column;
-    line-height: 0.5;
-}
-
-.flinks .fpr a{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-}
-
-/*----------------------------------------*/
 
 .upperPos{
+    margin: auto;
     display: flex;
 }
 
@@ -250,6 +11,8 @@ body {
 }
 
 .image1 img{
+    margin-left: 250px;
+    margin-top: 100px;
     position: relative;
     width: 300px;
     transition: transform .2s;
@@ -263,7 +26,7 @@ body {
     position: absolute;
     width: 300px;
     margin-left: -70px;
-    margin-top: 110px;
+    margin-top: 210px;
     transition: transform .2s;
 }
 
@@ -275,7 +38,7 @@ body {
     position: absolute;
     width: 250px;
     margin-left: -270px;
-    margin-top: 150px;
+    margin-top: 250px;
     transition: transform .2s;
 }
 
@@ -286,9 +49,9 @@ body {
 /*----------------------------------------*/
 
 .text{
-    margin-top: 100px;
+    margin-top: 200px;
     margin-left: 160px;
-    margin-right: 40px;
+    margin-right: 350px;
     padding: 10px;
 }
 

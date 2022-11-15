@@ -74,38 +74,6 @@ body {
     border-radius: 10px;
 }
 
-/*@media (max-width: 800px) {
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .button {
-        display: flex;
-    }
-
-    .navbar {
-        display: none;
-        width: 100%;
-    }
-
-    .navbar ul {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .navbar ul li {
-        text-align: center;
-    }
-
-    .navbar ul li a {
-        padding: .5rem 1rem;
-    }
-
-    .navbar.active {
-        display: flex;
-    }
-}
 
 /* Churh Name */
 
@@ -259,4 +227,21 @@ body {
     text-decoration: none;
     color: white;
 }
+
+@media only screen and (max-width:700px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #EEF1FF;
+    }
+
+    .background{
+        background: black;
+    }
+
+    .header{
+        background-color: white;
+    }
+}
+
 

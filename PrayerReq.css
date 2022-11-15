@@ -244,31 +244,54 @@ body {
 
 /*============================================*/
 
-.background{
-    background-color: #d5e2e1;
+.form{
+    margin: 80px 0 80px 0;
 }
 
-.div1{
-    padding: 10px;
-    margin: 60px;
-    display: flex;
-    background-color: #D2DAFF;
+.prayerForm h1{
+    padding: 0 10px 0 10px;
 }
 
-.text{
-    margin: 20px;
-}
-
-.div1 .text img{
-    width: 600px;
-}
-
-.ppp{
-    margin: 20px;
-}
-
-.ppp p{
+.prayerForm p{
+    padding: 0 10px 30px 10px;
     font-size: 20px;
 }
 
+.prayerForm{
+    max-width: 900px;
+    margin: 2rem auto;
+    border: 2px solid #B1B2FF;
+    padding: 2rem;
+}
 
+.prayerForm label{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.prayerForm #fname, #lname,  #email{
+    width: 800px;
+    padding: 10px;
+    border: none;
+    background: none;
+    border-bottom: #B1B2FF solid 2px;
+    margin: 10px;
+}
+
+.prayerForm textarea{
+    padding: 10px;
+    font-size: 20px;
+    width: 800px;
+    margin: 10px;
+    border: none;
+    background: none;
+    border-bottom: #B1B2FF solid 2px;
+}
+
+.prayerForm button{
+    padding: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    cursor: pointer;
+}

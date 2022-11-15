@@ -14,12 +14,10 @@
 /*--------------------------------------------*/
 
 .divOne{
-    margin-top: 5px;
-    margin-bottom: 90px;
     margin-left: 100px;
     margin-right: 100px;
+    padding: 100px;
     display: flex;
-    background-color: #EEF1FF;
 }
 
 /*--------------------------------------------*/
@@ -100,17 +98,17 @@
 /*--------------------------------------------*/
 
 .bgcolor{
-    background-color: #D2DAFF;
-    padding-top: 100px;
+    background-color: #EEF1FF;
+    padding-top: 0px;
     padding-bottom: 100px;
-    margin: auto;
 }
 
 
 .connects{
     margin-left: 60px;
     margin-right: 60px;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
+    padding: 0 220px 0 220px;
     display: flex;
     align-items: center;
 }
@@ -321,6 +319,9 @@ a{
     text-decoration: none;
 }
 
+@media only screen and (max-width:700px) {
+    
+}
 
 
 
