@@ -153,8 +153,8 @@ nav ul li a:hover{
 .connects{
     border-radius: 20px;
     display: flex;
-    margin-left: 18%;
-    margin-right: 18%;
+    margin-left: 15%;
+    margin-right: 15%;
     justify-content: center;
     padding: 30px 20px 30px 20px;
     
@@ -175,10 +175,13 @@ nav ul li a:hover{
 .sundayServices img{
     display: block;
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     height: auto;
     border-radius: 20px;
     transition: transform .2s;
+}
+.sundayServices img:fullscreen{
+max-width: 50px;
 }
 
 .sundayServices img:hover{
@@ -190,11 +193,15 @@ nav ul li a:hover{
 
 /*==========================================*/
 
+.jkids{
+    border-radius: 20px;
+    padding: 5px;
+}
 
 .jkids img{
     display: block;
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     height: auto;
     border-radius: 20px;
     transition: transform .2s;
@@ -219,7 +226,7 @@ nav ul li a:hover{
 .spearhead img{
     display: block;
     width: 100%;
-    max-width: 400px;
+    max-width: 550px;
     height: auto;
     border-radius: 20px;
 }
@@ -237,7 +244,7 @@ nav ul li a:hover{
 .married4layp img{
     display: block;
     width: 100%;
-    max-width: 400px;
+    max-width: 550px;
     height: auto;
     border-radius: 20px;
 }
@@ -259,7 +266,7 @@ nav ul li a:hover{
 .wildfire img{
     display: block;
     width: 100%;
-    max-width: 400px;
+    max-width: 550px;
     height: auto;
     border-radius: 20px;
 }
@@ -802,18 +809,17 @@ textarea{
     }
 
     .churchName h1{
-       font-size: 80px;
+       font-size: 50px;
        color: white;
     }
 
     .churchName h2{
-        font-size: 15px;
+        font-size: 10px;
         color: white;
     }
 
     .webTop{
         background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(HeadnFooter/HomeMobile.jpg);
-        background-size: cover;
     }
 
     .mgp{
@@ -842,18 +848,18 @@ textarea{
     }
 
     .mgp .vision, .purpose, .goal{
-        border: #B1B2FF 1px solid;
+        border: none;
         padding: 8%;
     }
 
     .mgp h1{
         text-align: center;
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .mgp p{
         text-align: center;
-        font-size: 20px;
+        font-size: 12px;
     }
 
     /*===============================================*/
