@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .webTop{
@@ -168,7 +169,6 @@ nav ul li a:hover{
 
 .sundayServices{
     border-radius: 20px;
-    transition: transform .2s;
     padding: 5px;
 }
 
@@ -197,11 +197,12 @@ nav ul li a:hover{
     max-width: 400px;
     height: auto;
     border-radius: 20px;
+    transition: transform .2s;
 }
 
 .jkids img:hover{
-    border: 2px solid #B1B2FF;
-    border-radius: 20px;
+    overflow: hidden;
+    transform: scale(1.1);
 }
 
 /*==========================================*/
@@ -209,8 +210,12 @@ nav ul li a:hover{
 .threePrograms .spearhead{
     margin: 10px;
     border-radius: 20px;
+    transition: transform .2s;
 }
-
+.threePrograms .spearhead:hover{
+    overflow: hidden;
+    transform: scale(1.1);
+}
 .spearhead img{
     display: block;
     width: 100%;
@@ -219,10 +224,7 @@ nav ul li a:hover{
     border-radius: 20px;
 }
 
-.spearhead img:hover{
-    border: 2px solid #B1B2FF;
-    border-radius: 20px;
-}
+
 
 /*==========================================*/
 
@@ -239,11 +241,12 @@ nav ul li a:hover{
     height: auto;
     border-radius: 20px;
 }
-
-
-.married4layp img:hover{
-    border: 2px solid #B1B2FF;
+.married4layp:hover{
+    overflow: hidden;
+    transform: scale(1.1);
 }
+
+
 
 /*==========================================*/
 
@@ -260,11 +263,11 @@ nav ul li a:hover{
     height: auto;
     border-radius: 20px;
 }
-
-.wildfire img:hover{
-    border: 2px solid #B1B2FF;
-    border-radius: 20px;
+.wildfire:hover{
+    overflow: hidden;
+    transform: scale(1.1);
 }
+
 /*======================================*/
 
 .upperPos{
