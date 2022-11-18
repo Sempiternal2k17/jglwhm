@@ -2,3 +2,8 @@ Background Page = #EEF1FF
 Background - color = #D2DAFF
 Hover Background = #AAC4FF
 Border color = #B1B2FF
+H1 Font size = 20px
+P Font size = 10px
+margin-left: 15%;
+margin-right: 15%;
+margin-top: 5%;

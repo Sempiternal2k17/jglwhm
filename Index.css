@@ -1,0 +1,1348 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.webTop{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(HeadnFooter/HomeBG.jpg);
+}
+
+.navbar{
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.links{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+nav ul li a:hover{
+    color: #AAC4FF;
+}
+
+.logoIcon{
+    width: 100px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.menuIcon{
+    width: 35px;
+    cursor: pointer;
+    display: none;
+}
+
+.churchName{
+    padding: 5%;
+    padding-bottom: 10%;
+    color: white;
+}
+
+.churchName h1{
+    text-align: center;
+    font-size: 150px;
+}
+
+.churchName h2{
+    text-align: center;
+    font-size: 25px;
+}
+
+/*==========================================*/
+
+.mgp{
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+}
+
+.mgp .vision, .purpose, .goal {
+    flex: 2 ;
+    padding: 40px 20px 40px 20px;
+    border: 2px solid #B1B2FF;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #D2DAFF   ;
+}
+
+.h1{
+    position: relative;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 50px;    
+}
+
+.mgp p{
+    padding-top: 10px;
+    text-align: center;
+    color: #383836;
+}
+
+.h1::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background: #B1B2FF;
+   
+}
+
+.h1-center::after{
+    transform: scale(0, 1);
+    transition: transform 0.3s;
+}
+
+.h1-center:hover::after{
+    transform: scale(1, 1);
+}
+
+/*==========================================*/
+
+.cText{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.cText h1{
+    padding-bottom: 15px;
+    font-size: 50px;
+    margin: 10px;
+    margin-right: 52%;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #B1B2FF;
+}
+
+.cText p{
+    margin: 10px;
+}
+
+.connects{
+    border-radius: 20px;
+    display: flex;
+    margin-left: 18%;
+    margin-right: 18%;
+    justify-content: center;
+    padding: 30px 20px 30px 20px;
+}
+
+#connects{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(27,24,24,1) 50%, rgba(59,61,68,1) 100%);
+    color: white;
+    padding: 5% 0 5% 0;
+    margin-top: 5%;
+}
+
+.sundayServices{
+    border-radius: 20px;
+    transition: transform .2s;
+    padding: 5px;
+}
+
+.sundayServices img{
+    display: block;
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.sundayServices img:hover{
+    border: 2px solid #B1B2FF;
+    border-radius: 20px;
+}
+
+/*==========================================*/
+
+.jkids{
+    border-radius: 20px;
+    transition: transform .2s;
+    padding: 5px;  
+}
+
+.jkids img{
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.jkids img:hover{
+    border: 2px solid #B1B2FF;
+    border-radius: 20px;
+}
+
+/*==========================================*/
+
+.threePrograms .spearhead{
+    margin: 10px;
+    border-radius: 20px;
+    transition: transform .2s;
+}
+
+.spearhead img{
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.spearhead img:hover{
+    border: 2px solid #B1B2FF;
+    border-radius: 20px;
+}
+
+/*==========================================*/
+
+.threePrograms .married4layp{
+    margin: 10px;
+    border-radius: 20px;
+    transition: transform .2s;
+}
+
+.married4layp img{
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 20px;
+}
+
+
+.married4layp img:hover{
+    border: 2px solid #B1B2FF;
+}
+
+/*==========================================*/
+
+.threePrograms .wildfire{
+    margin: 10px;
+    border-radius: 20px;
+    transition: transform .2s;
+}
+
+.wildfire img{
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.wildfire img:hover{
+    border: 2px solid #B1B2FF;
+    border-radius: 20px;
+}
+/*======================================*/
+
+.upperPos{
+    display: flex;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.images{  
+    margin-top: 10%;
+    display: flex;
+}
+
+.image1 img{
+    position: relative;
+    margin-left: 10%;
+    width: 200px;
+    transition: transform .2s;
+}
+
+.image1 img:hover{
+    transform: scale(1.1);
+}
+
+.image2 img{
+    position: absolute;
+    width: 200px;
+    margin-left: -40px;
+    margin-top: 110px;
+    transition: transform .2s;
+}
+
+.image2 img:hover{
+    transform: scale(1.1);
+}
+
+.image3 img{
+    position: absolute;
+    width: 190px;
+    margin-left: -230px;
+    margin-top: 90px;
+    transition: transform .2s;
+}
+
+.image3 img:hover{
+    transform: scale(1.1);
+}
+
+.text{
+    margin-top: 100px;
+    margin-left: 230px;
+    margin-right: 40px;
+    padding: 10px;
+}
+
+.description h1{
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #B1B2FF;
+    font-size: 50px;
+}
+
+.description p{
+    font-size: 20px;
+    text-align: justify;
+    color: #383836;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.choices .mentoring{
+    flex: 1;
+    border: 2px solid #B1B2FF;
+    background-color: #D2DAFF;
+    margin: 10px;
+    padding: 10px;
+    transition: transform .2s;
+}
+
+.mentoring p{
+    text-align: center;
+}
+
+.mentoring img{
+    display: block;
+    margin-top: -10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90px;
+}
+
+.mentoring:hover{
+    transform: scale(1.1);
+}
+
+/*----------------------------------------*/
+
+.choices .sol{
+    flex: 1;
+    border: 2px solid #B1B2FF;
+    background-color: #D2DAFF;
+    margin: 10px;
+    padding: 10px;
+    transition: transform .2s;
+}
+
+.sol p{
+    text-align: center;
+}
+
+.sol img{
+    display: block;
+    margin-top: -10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90px;
+}
+
+.sol:hover{
+    transform: scale(1.1);
+}
+
+
+
+/*----------------------------------------*/
+
+.choices .lifeclass{
+    border: 2px solid #B1B2FF;
+    background-color: #D2DAFF;
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    transition: transform .2s;
+}
+
+.lifeclass p{
+    text-align: center;
+}
+
+.lifeclass img{
+    display: block;
+    margin-top: -10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90px;
+}
+
+.lifeclass:hover{
+    transform: scale(1.1);
+}
+
+#nice{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*-----------------------------------------------------*/
+
+
+.media{
+    margin-top: 120px;
+    padding-bottom: 5%;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#images{
+    border: 2px solid #B1B2FF;
+    border-radius: 5px;
+    background: none;
+    margin: 10px 0 10px 0;
+    padding: 15px;
+    cursor: pointer;
+}
+
+#images:hover{
+    background: #D2DAFF;
+}
+
+#videos{
+    border: 2px solid #B1B2FF;
+    border-radius: 5px;
+    background: none;
+    margin: 10px 0 10px 0;
+    padding: 15px;  
+    cursor: pointer;
+}
+
+#videos:hover{
+    background: #D2DAFF;
+}
+
+.media .mediaImg img{
+    width: 370px;
+    border-radius: 50%;
+}
+
+.media .mediaText{
+    margin-left: 50px;
+}
+
+.media .mediaText h1{
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #B1B2FF;
+    margin-right: 25%;
+    font-size: 50px;
+}
+
+.media .mediaText p {
+    font-size: 20px;
+    color: #383836;
+}
+
+.media .mediaText #noice{
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+}
+
+/*-----------------------------------------------------*/
+
+.form{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.form h1{
+    font-size: 40px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #B1B2FF;
+    margin-right: 52%;
+}
+
+.form p{
+    font-size: 20px;
+    padding-bottom: 5%;
+    color: #383836;
+}
+
+#sform{
+    font-size: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 10px;
+    border-bottom: none;
+}
+
+form{
+    margin-left: 2%;
+    margin-right: 2%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+label{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+input{
+    width: 95%;
+    padding: 15px 10px 15px 10px;
+    height: 14px;
+    margin-bottom: 10px;
+    border: none;
+    background: none;
+    border-bottom: #B1B2FF 2px solid; 
+    outline: none;
+}
+
+textarea{
+    width: 95%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 7px;
+    height: 100px;
+    border: none;
+    background: none;
+    border-bottom: #B1B2FF 2px solid;
+    outline: none;
+}
+
+.form button{
+    padding: 15px;
+    font-weight: bold;
+    border: #B1B2FF 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form button:hover{
+    background: #D2DAFF;
+}
+/*-----------------------------------------------------*/
+.announce{
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.announcement{
+    display: block;
+    justify-content: right;
+    align-items: center;
+}
+    
+.announcement h1{
+    text-align: right;
+    margin-left: 45%;
+    font-size: 50px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #B1B2FF;
+    
+}
+
+.announcement p{
+    text-align: right;
+    font-size: 20px;
+    padding-bottom: 5%;
+}
+
+.announcement button{
+    margin-left: 400px;
+    padding: 3%;
+    font-weight: bold;
+    border: #B1B2FF 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.announcement button:hover{
+    background: #D2DAFF;
+}
+
+.announceImg img{
+    width: 370px;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+/*-----------------------------------------------------*/
+
+.flinks {
+    padding: 60px;
+    background-color: #080808;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    border-top-style: solid;
+}
+.flinks .findex{
+    flex-direction: column;
+    line-height: 0.5;
+}
+
+.flinks .findex a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.flinks .findex a p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: #6f828a;
+    padding-top: 10px;
+}
+
+.flinks .fconnects{
+    flex-direction: column;
+    line-height: 0.5;
+}
+
+.flinks .fconnects a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.flinks .fconnects a p{
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: #6f828a;
+    padding-top: 15px;
+}
+
+.flinks .fmedia{
+    flex-direction: column;
+    line-height: 0.5;
+}
+
+.flinks .fmedia a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.flinks .fmedia a p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: #6f828a;
+    padding-top: 15px;
+}
+
+.flinks .fequipping{
+    flex-direction: column;
+    line-height: 0.5;
+}
+
+.flinks .fequipping a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.flinks .fequipping a p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: #6f828a;
+    padding-top: 15px;
+}
+
+.flinks .fannounce{
+    flex-direction: column;
+    line-height: 0.5;
+}
+
+.flinks .fannounce a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.flinks .fpr{
+    flex-direction: column;
+    line-height: 0.5;
+}
+
+.flinks .fpr a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+@media only screen and (max-width:700px){
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .logoIcon{
+        width: 45px;
+    }
+
+    .menuIcon{
+        width: 40px;
+        display: block;
+    }
+
+    nav ul{
+        margin-top: 30px;
+        width: 100%;
+        background: black;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a{
+        color: white;
+    }
+
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .churchName{
+        padding: 5%;
+        padding-bottom: 20%;
+    }
+
+    .churchName h1{
+       font-size: 80px;
+       color: white;
+    }
+
+    .churchName h2{
+        font-size: 15px;
+        color: white;
+    }
+
+    .webTop{
+        background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(HeadnFooter/HomeMobile.jpg);
+        background-size: cover;
+    }
+
+    .mgp{
+        padding: 5%;
+        display: inline-block;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .mgp .vision{
+        border-radius: 20px;
+        margin: 5%;
+        flex: 1;
+    }
+
+    .mgp .purpose{
+        border-radius: 20px;
+        margin: 5%;
+        flex: 1;
+    }
+
+    .mgp .goal{
+        border-radius: 20px;
+        margin: 5%;
+        flex: 1;
+    }
+
+    .mgp .vision, .purpose, .goal{
+        background-color: #D2DAFF;
+        border: #B1B2FF 1px solid;
+        padding: 8%;
+    }
+
+    .mgp h1{
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .mgp p{
+        text-align: center;
+        font-size: 20px;
+        color: #383836;
+    }
+
+    /*===============================================*/
+    
+
+    .cText{
+        padding: 5%;
+        margin: 5%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .cText h1{
+        font-size: 40px;
+        padding-bottom: 5%;
+        border-bottom: 2px #B1B2FF solid;
+    }
+
+    .cText p{
+        padding-top: 5%;
+        font-size: 20px;
+    }
+
+     /*===============================================*/
+
+    .connects{
+        display: block;
+        justify-content: center;    
+        border-radius: 10px;
+        padding: 5%;
+        margin: 5%;
+    }
+
+    .twoPrograms{
+        display: block;
+        justify-content: center;
+    }
+
+    .sundayServices{
+        width: 310px;
+        border-radius: 20px;
+        padding: 0;
+        margin-bottom: 5%;
+    }
+    
+    .sundayServices img{
+        display: block;
+        width: 100%;
+    }
+
+    .jkids {
+        width: 310px;
+        border-radius: 20px;
+        padding: 0;
+    }
+
+    .jkids img{
+        display: block;
+        width: 100%;
+    }
+
+
+    .threePrograms{
+        display: block;
+        justify-content: center;
+    }
+
+    .threePrograms .spearhead{
+        margin: 0;
+        margin-top: 2%;
+        width: 310px;
+        border-radius: 20px;
+        padding: 0;
+    }
+    
+    .threePrograms .married4layp{
+        margin: 0;
+        margin-top: 2%;
+        display: block;
+        width: 310px;
+        border-radius: 20px;
+    }
+
+    .threePrograms .wildfire{
+        margin: 0;
+        margin-top: 2%;
+        display: block;
+        width: 310px;
+        border-radius: 20px;
+    }
+
+    /*===============================================*/
+
+    .upperPos{
+        display: block;
+        justify-content: space-evenly;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .images{
+        display: none;
+    }
+
+    /*===============================================*/
+
+    .text{
+        margin-top: -200px;
+        margin: 5%;
+        padding: 5%;
+    }
+
+    .description h1{
+        font-size: 40px;
+        padding-bottom: 5%;
+        border-bottom: 2px #B1B2FF solid;
+    }
+
+    .description p{
+        padding-top: 5%;
+        font-size: 20px;
+    }
+
+    .choices{
+        display: block;
+    }
+
+    .choices .mentoring{
+        padding: 5%;
+        margin: 5%;
+        width: 250px;
+    }
+
+    .mentoring img{
+        display: block;
+        margin-top: -16px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        width: 90px;
+    }
+
+    .choices .sol{
+        padding: 5%;
+        margin: 5%;
+        width: 250px;
+    }
+
+    .sol img{
+        display: block;
+        margin-top: -15px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        width: 90px;
+    }
+
+    .choices .lifeclass{
+        padding: 5%;
+        margin: 5%;
+        width: 250px;
+    }
+
+    .lifeclass img{
+        display: block;
+        margin-top: -16px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        width: 90px;
+    }
+
+    /*===============================================*/
+    .mediaImg{
+        display: none;
+    }
+
+    .media{
+        padding: 5%;
+        margin: 5%;   
+    }
+
+    .media h1{
+        font-size: 40px;
+        padding-bottom: 5%;
+        border-bottom: 2px #B1B2FF solid;
+    }
+
+    .media p{
+        padding-top: 5%;
+        font-size: 20px;
+    }
+
+    .media .mediaText{
+        margin-left: 0;
+        padding: 0px;
+    }
+
+    /*===============================================*/
+
+    .form{
+        display: block;
+        margin: 5%;
+        padding: 5%;
+    }
+
+    .form h1{
+        margin-right: 0;
+        font-size: 40px;
+        padding-bottom: 5%;
+        border-bottom: 2px #B1B2FF solid;
+    }
+
+    .form p{
+        padding-top: 5%;
+        font-size: 20px;
+        padding-bottom: 5%;
+    }
+
+    #sform{
+        font-size: 20px;
+        border-bottom: none;
+        margin-bottom: 10px;
+        margin: 0;
+    }
+
+    form{
+        align-items: center;
+        border-radius: 10px;
+        margin: 0;
+    }
+
+    label{
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    input{
+        width: 100%;
+        padding: 7px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        border: none;
+        background: none;
+        border-bottom: #B1B2FF 2px solid;
+        
+    }
+
+    textarea{
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        padding: 7px;
+        height: 100px;
+        border: none;
+        background: none;
+        border-bottom: #B1B2FF 2px solid;
+    }
+
+    .form button{
+        padding: 3%;
+        font-weight: bold;
+        border: #B1B2FF 2px solid;
+        border-radius: 5px;
+
+    }
+
+     /*===============================================*/
+
+     .announce{
+        margin: 5%;
+        padding: 5%;
+        margin-bottom: 10%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .announcement{
+        justify-content: left;
+        align-items: none;
+    }
+
+    .announceImg{
+        display: none;
+    }
+
+    .announcement h1{
+        text-align: left;
+        font-size: 40px;
+        margin-left: 0;
+        padding-bottom: 5%;
+        margin-bottom: 0;
+        border-bottom: 2px #B1B2FF solid;
+    }
+
+    .announcement p{
+        text-align: left;
+        padding-top: 5%;
+        font-size: 20px;
+        padding-bottom: 5%;
+    }
+
+    .announcement button{
+        padding: 3%;
+        font-weight: bold;
+        margin-left: 0;
+        border: #B1B2FF 2px solid;
+        border-radius: 5px;
+    }
+
+    /*===============================================
+    .announce{
+        margin-top: 5%;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 5%;
+        display: flex;
+        align-items: center;
+        
+    }
+    
+    .announcement{
+        display: block;
+        justify-content: right;
+        align-items: center;
+    }
+        
+    .announcement h1{
+        text-align: right;
+        margin-left: 45%;
+        font-size: 50px;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: 2px solid #B1B2FF;
+        
+    }
+   
+    .announcement p{
+        text-align: right;
+        font-size: 20px;
+        padding-bottom: 5%;
+    }
+    
+    .announcement button{
+        margin-left: 400px;
+        padding: 3%;
+        font-weight: bold;
+        border: #B1B2FF 2px solid;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .announcement button:hover{
+        background: #D2DAFF;
+    }
+    
+    .announceImg img{
+        width: 370px;
+        border-radius: 50%;
+        margin-left: 15px;
+    }
+
+    */
+    
+
+     /*===============================================*/
+
+     .flinks {
+        padding: 20px;
+        background-color: #080808;
+        display: block;
+        justify-content: center;
+        padding-top: 40px;
+        border-top-style: solid;
+        text-align: center;
+    }
+    .flinks .findex{
+        flex-direction: column;
+        line-height: 0.5;
+    }
+    
+    .flinks .findex a{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .flinks .findex a p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        text-decoration: none;
+        color: #6f828a;
+        padding-top: 10px;
+    }
+    
+    .flinks .fconnects{
+        flex-direction: column;
+        line-height: 0.5;
+        padding-top: 15px;
+    }
+    
+    .flinks .fconnects a{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .flinks .fconnects a p{
+        font-family:  Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        text-decoration: none;
+        color: #6f828a;
+        padding-top: 10px;
+        display: none;
+    }
+    
+    .flinks .fmedia{
+        flex-direction: column;
+        line-height: 0.5;
+        padding-top: 15px;
+    }
+    
+    .flinks .fmedia a{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .flinks .fmedia a p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        text-decoration: none;
+        color: #6f828a;
+        padding-top: 10px;
+        display: none;
+    }
+    
+    .flinks .fequipping{
+        flex-direction: column;
+        line-height: 0.5; 
+        padding-top: 15px;
+    }
+    
+    .flinks .fequipping a{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .flinks .fequipping a p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        text-decoration: none;
+        color: #6f828a;
+        padding-top: 10px;
+        display: none;
+    }
+    
+    .flinks .fannounce{
+        flex-direction: column;
+        line-height: 0.5;
+        padding: 15px;
+    }
+    
+    .flinks .fannounce a{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .flinks .fpr{
+        flex-direction: column;
+        line-height: 0.5;
+        padding-bottom: 20px;
+    }
+    
+    .flinks .fpr a{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
+    
+
+}
