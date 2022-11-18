@@ -6,6 +6,7 @@
 
 .webTop{
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(HeadnFooter/HomeBG.jpg);
+    background-size: cover;
 }
 
 .navbar{
@@ -57,7 +58,6 @@ nav ul li a:hover{
 
 .churchName{
     padding: 5%;
-    padding-bottom: 10%;
     color: white;
 }
 
@@ -78,15 +78,19 @@ nav ul li a:hover{
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 5%;
+    padding-bottom: 5%;
 }
 
 .mgp .vision, .purpose, .goal {
     flex: 2 ;
     padding: 40px 20px 40px 20px;
-    border: 2px solid #B1B2FF;
+    border: 2px solid #6668e421;
     margin: 10px;
     border-radius: 10px;
-    background-color: #D2DAFF   ;
+    backdrop-filter: blur(5px);
+    color: white;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(255, 255, 255, 0.24); /* Black w/opacity/see-through */
 }
 
 .h1{
@@ -99,7 +103,7 @@ nav ul li a:hover{
 .mgp p{
     padding-top: 10px;
     text-align: center;
-    color: #383836;
+    color: white;
 }
 
 .h1::after{
@@ -151,6 +155,7 @@ nav ul li a:hover{
     margin-right: 18%;
     justify-content: center;
     padding: 30px 20px 30px 20px;
+    
 }
 
 #connects{
@@ -158,7 +163,6 @@ nav ul li a:hover{
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(27,24,24,1) 50%, rgba(59,61,68,1) 100%);
     color: white;
     padding: 5% 0 5% 0;
-    margin-top: 5%;
 }
 
 .sundayServices{
@@ -170,23 +174,21 @@ nav ul li a:hover{
 .sundayServices img{
     display: block;
     width: 100%;
-    max-width: 380px;
+    max-width: 400px;
     height: auto;
     border-radius: 20px;
+    transition: transform .2s;
 }
 
 .sundayServices img:hover{
-    border: 2px solid #B1B2FF;
-    border-radius: 20px;
+    overflow: hidden;
+    transform: scale(1.1);
+    
+    
 }
 
 /*==========================================*/
 
-.jkids{
-    border-radius: 20px;
-    transition: transform .2s;
-    padding: 5px;  
-}
 
 .jkids img{
     display: block;
@@ -206,7 +208,6 @@ nav ul li a:hover{
 .threePrograms .spearhead{
     margin: 10px;
     border-radius: 20px;
-    transition: transform .2s;
 }
 
 .spearhead img{
@@ -837,7 +838,6 @@ textarea{
     }
 
     .mgp .vision, .purpose, .goal{
-        background-color: #D2DAFF;
         border: #B1B2FF 1px solid;
         padding: 8%;
     }
@@ -850,7 +850,6 @@ textarea{
     .mgp p{
         text-align: center;
         font-size: 20px;
-        color: #383836;
     }
 
     /*===============================================*/
