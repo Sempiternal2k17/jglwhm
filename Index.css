@@ -176,19 +176,16 @@ nav ul li a:hover{
     display: block;
     width: 100%;
     max-width: 500px;
-    height: auto;
     border-radius: 20px;
     transition: transform .2s;
 }
 .sundayServices img:fullscreen{
-max-width: 50px;
+    max-width: 50px;
 }
 
 .sundayServices img:hover{
     overflow: hidden;
     transform: scale(1.1);
-    
-    
 }
 
 /*==========================================*/
@@ -202,7 +199,6 @@ max-width: 50px;
     display: block;
     width: 100%;
     max-width: 500px;
-    height: auto;
     border-radius: 20px;
     transition: transform .2s;
 }
@@ -227,7 +223,6 @@ max-width: 50px;
     display: block;
     width: 100%;
     max-width: 550px;
-    height: auto;
     border-radius: 20px;
 }
 
@@ -245,7 +240,6 @@ max-width: 50px;
     display: block;
     width: 100%;
     max-width: 550px;
-    height: auto;
     border-radius: 20px;
 }
 .married4layp:hover{
@@ -267,7 +261,6 @@ max-width: 50px;
     display: block;
     width: 100%;
     max-width: 550px;
-    height: auto;
     border-radius: 20px;
 }
 .wildfire:hover{
@@ -277,9 +270,15 @@ max-width: 50px;
 
 /*======================================*/
 
+#equipping{
+    padding-top: 150px;
+    padding-bottom: 300px;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(EquippingIMGs/BFAgain.jpg);
+    background-size: cover;
+}
+
 .upperPos{
     display: flex;
-    margin-top: 5%;
     margin-left: 15%;
     margin-right: 15%;
 }
@@ -291,8 +290,8 @@ max-width: 50px;
 
 .image1 img{
     position: relative;
-    margin-left: 10%;
-    width: 200px;
+    width: 100%;
+    width: 400px;
     transition: transform .2s;
 }
 
@@ -302,8 +301,8 @@ max-width: 50px;
 
 .image2 img{
     position: absolute;
-    width: 200px;
-    margin-left: -40px;
+    width: 400px;
+    margin-left: -210px;
     margin-top: 110px;
     transition: transform .2s;
 }
@@ -314,9 +313,9 @@ max-width: 50px;
 
 .image3 img{
     position: absolute;
-    width: 190px;
-    margin-left: -230px;
-    margin-top: 90px;
+    width: 290px;
+    margin-left: -430px;
+    margin-top: 170px;
     transition: transform .2s;
 }
 
@@ -336,12 +335,13 @@ max-width: 50px;
     margin-bottom: 15px;
     border-bottom: 2px solid #B1B2FF;
     font-size: 50px;
+    color: white;
 }
 
 .description p{
     font-size: 20px;
     text-align: justify;
-    color: #383836;
+    color: white;
 }
 
 a{
@@ -511,7 +511,7 @@ a{
 }
 
 /*-----------------------------------------------------*/
-/* aaaaaaaaaa */
+
 .form{
     margin-left: 15%;
     margin-right: 15%;
@@ -533,15 +533,15 @@ a{
 
 #sform{
     font-size: 20px;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-bottom: 10px;
     border-bottom: none;
 }
 
 form{
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
@@ -598,13 +598,11 @@ textarea{
 
 .announcement{
     display: block;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
 }
     
 .announcement h1{
-    text-align: right;
-    margin-left: 45%;
     font-size: 50px;
     padding-bottom: 15px;
     margin-bottom: 15px;
@@ -619,7 +617,6 @@ textarea{
 }
 
 .announcement button{
-    margin-left: 400px;
     padding: 3%;
     font-weight: bold;
     border: #B1B2FF 2px solid;
