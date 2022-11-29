@@ -1,391 +1,437 @@
-* {
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
+*{
     margin: 0;
     padding: 0;
-    background-color: #d5e2e1;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    scroll-behavior: smooth;
 }
 
-.background{
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(AnnounceIMGs/announceIMG.jpg);
+.webTop{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(AnnounceIMGs/JILBanner.jpg);
+    background-size: cover;
+    padding-bottom: 15%;
 }
 
-.header {
-    padding: 10px;
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-}
-
-.logoo {
-    width: 100px;
-    margin-left: 10px;
-    padding: 10px;
-}
-
-
-.navbar {
-    height: 100%;
-}
-
-.navbar ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar li {
-    list-style: none;
-}
-
-.navbar li a {
-    display: block;
-    text-decoration: none;
-    color: white;
-    padding: 1rem;
-}
-
-.navbar li:hover {
-   border-bottom: 3px solid cyan;
-}
-
-/*-------------------------------------------------------------------*/
-
-.button {
-    position: absolute;
-    top: .75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-
-.button .noice {
-    height: 3px;
+.navbar{
     width: 100%;
-    background-color: white;
-    border-radius: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
-/*@media (max-width: 800px) {
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
+.links{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+nav ul li a:hover{
+    color: #AAC4FF;
+    
+}
+
+.logoIcon{
+    width: 100px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.menuIcon{
+    width: 35px;
+    cursor: pointer;
+    display: none;
+}
+
+/*=====================Main Announcements=======================*/
+/* body{
+} */
+.report{
+    margin-left: 18%;
+    margin-right: 18%;
+    justify-content: center;
+}
+
+.report img{
+    display: block;
+    border-radius: 20px;
+    margin-top: -300px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.report .textOne{
+    padding-top: 1%;
+}
+
+.textOne #noice{
+    padding-left: 3px;
+    font-size: 1vw;
+}
+
+.textOne h5{
+    padding-left: 3px;
+    font-size: 1vw;
+}
+
+.textOne h1{
+    font-size: 3vw;
+}
+
+/*=====================Announcements=======================*/
+
+.report1{
+    padding-top: 10%;
+    display: flex;
+    margin-left: 18%;
+    margin-right: 18%;
+}
+
+/*=====================Column 1=======================*/
+
+.report1 .column1{
+    display: inline-block;   
+}
+
+/*=====================News 1=======================*/
+
+.report1 .column1 .news1{
+    padding-bottom: 3%;
+}
+
+.report1 .column1 .news1 h1{
+    font-size: 2vw;
+}
+
+.report1 .column1 .news1 p{
+    font-size: .8vw;
+}
+
+.report1 .column1 .news1 p{
+    font-size: .8vw;
+}
+
+.report1 .column1 .news1 img{
+    width: 100%;
+    max-width: 550px;
+}
+
+/*=====================News 2=======================*/
+
+.report1 .column1 .news2{
+    padding-bottom: 3%;
+}
+
+.report1 .column1 .news2 h1{
+    font-size: 2vw;
+}
+
+.report1 .column1 .news2 p{
+    font-size: .8vw;
+}
+
+.report1 .column1 .news2 p{
+    font-size: .8vw;
+}
+
+.report1 .column1 .news2 img{
+    width: 100%;
+    max-width: 550px;
+}
+
+/*=====================Column 2=======================*/
+
+.report1 .column2{
+    display: inline-block;
+    padding-left: 3%;
+}
+
+/*=====================News 3=======================*/
+
+.report1 .column2 .news3{
+    padding-bottom: 3%;
+}
+
+.report1 .column2 .news3 h1{
+    font-size: 2vw;
+}
+
+.report1 .column2 .news3 p{
+    font-size: .8vw;
+}
+
+.report1 .column2 .news3 p{
+    font-size: .8vw;
+}
+
+.report1 .column2 .news3 img{
+    width: 100%;
+    max-width: 600px;
+}
+
+/*=====================News 4=======================*/
+
+.report1 .column2 .news4{
+    padding-bottom: 3%;
+}
+
+.report1 .column2 .news4 h1{
+    font-size: 2vw;
+}
+
+.report1 .column2 .news4 p{
+    font-size: .8vw;
+}
+
+.report1 .column2 .news4 p{
+    font-size: .8vw;
+}
+
+.report1 .column2 .news4 img{
+    width: 100%;
+    max-width: 600px;
+}
+
+/*=============================================*/
+
+@media only screen and (max-width:1550px){
+    .report{
+        justify-content: center;
+    }
+    
+    .report img{
+        display: block;
+        border-radius: 20px;
+        margin-top: -250px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 1000px;
+    }
+}
+
+/*=============================================*/
+
+@media only screen and (max-width:1300px){
+    .report{
+        justify-content: center;
+    }
+    
+    .report img{
+        display: block;
+        border-radius: 20px;
+        margin-top: -200px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 900px;
+    }
+}
+
+/*=============================================*/
+
+@media only screen and (max-width:1100px){
+    .report{
+        justify-content: center;
+    }
+    
+    .report img{
+        display: block;
+        border-radius: 20px;
+        margin-top: -200px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 750px;
+    }
+}
+
+/*=============================================*/
+
+@media only screen and (max-width:1000px){
+    .report{
+        justify-content: center;
+    }
+    
+    .report img{
+        display: block;
+        border-radius: 20px;
+        margin-top: -200px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 650px;
+    }
+}
+
+/*=============================================*/
+
+@media only screen and (max-width:900px){
+    .report{
+        justify-content: center;
+    }
+    
+    .report img{
+        display: block;
+        border-radius: 20px;
+        margin-top: -150px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 650px;
+    }
+}
+
+/*=============================================*/
+
+@media only screen and (max-width:800px){
+    .report{
+        justify-content: center;
+    }
+    
+    .report img{
+        display: block;
+        border-radius: 20px;
+        margin-top: -150px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 550px;
+    }
+}
+
+/*=============================================*/
+
+@media only screen and (max-width:750px){
+    .report{
+        justify-content: center;
+    }
+    
+    .report img{
+        display: block;
+        border-radius: 20px;
+        margin-top: -130px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 450px;
+    }
+}
+
+/*=============================================*/
+
+@media only screen and (max-width:685px){
+    .report{
+        justify-content: center;
+    }
+    
+    .report img{
+        display: block;
+        border-radius: 20px;
+        margin-top: -110px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 440px;
+    }
+}
+
+/*=============================================*/
+
+@media only screen and (max-width:500px){
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+        scroll-behavior: smooth;
     }
 
-    .button {
-        display: flex;
+    .logoIcon{
+        width: 45px;
     }
 
-    .navbar {
+    .menuIcon{
+        width: 40px;
+        display: block;
+    }
+
+    nav ul{
+        margin-top: 30px;
+        width: 100%;
+        background: black;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
         display: none;
+    }
+
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a{
+        color: white;
+    }
+
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .churchName{
+        padding: 5%;
+        padding-bottom: 20%;
+    }
+
+    .churchName h1{
+       font-size: 50px;
+       color: white;
+    }
+
+    .churchName h2{
+        font-size: 10px;
+        color: white;
+    }
+
+    .webTop{
+        background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(AnnounceIMGs/WebviewBanner.png);
+    }
+
+    .report{
+        justify-content: center;
+    }
+    
+    .report img{
+        display: block;
+        border-radius: 20px;
+        margin-top: -15%;
+        margin-left: auto;
+        margin-right: auto;
         width: 100%;
-    }
-
-    .navbar ul {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .navbar ul li {
-        text-align: center;
-    }
-
-    .navbar ul li a {
-        padding: .5rem 1rem;
-    }
-
-    .navbar.active {
-        display: flex;
+        max-width: 300px;
     }
 }
-
-/* Churh Name */
-
-.noice{
-    padding: 80px;
-    padding-bottom: 160px;
-    margin: auto;
-    text-align: center;
-}
-
-.noice .jil{
-    font-size: 100px;
-    color: white;
-}
-
-/*-------------------------------------------------------------------*/
-
-
-
-
-/*Footer*/ /*-------------------------------------------------------------------*/
-
-.flinks {
-    padding: 60px;
-    background-color: #080808;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 60px;
-    border-top-style: solid;
-}
-.flinks .findex{
-    flex-direction: column;
-    line-height: 0.5;
-}
-
-.flinks .findex a{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 35px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-}
-
-.flinks .findex a p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    text-decoration: none;
-    color: #6f828a;
-}
-
-.flinks .fconnects{
-    flex-direction: column;
-    line-height: 0.5;
-}
-
-.flinks .fconnects a{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-}
-
-.flinks .fconnects a p{
-    font-family:  Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    text-decoration: none;
-    color: #6f828a;
-}
-
-.flinks .fmedia{
-    flex-direction: column;
-    line-height: 0.5;
-}
-
-.flinks .fmedia a{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-}
-
-.flinks .fmedia a p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    text-decoration: none;
-    color: #6f828a;
-}
-
-.flinks .fequipping{
-    flex-direction: column;
-    line-height: 0.5;
-}
-
-.flinks .fequipping a{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-}
-
-.flinks .fequipping a p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    text-decoration: none;
-    color: #6f828a;
-}
-
-.flinks .fannounce{
-    flex-direction: column;
-    line-height: 0.5;
-}
-
-.flinks .fannounce a{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-}
-
-.flinks .fpr{
-    flex-direction: column;
-    line-height: 0.5;
-}
-
-.flinks .fpr a{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-}
-
-/*--------------------------------------------------------------------------*/
-.happening{
-    background-color: #d5e2e1;
-    padding-left: 60px;
-    padding-top: 150px;
-    padding-bottom: 5px;
-}
-
-.happening h1{
-    font-size: 50px;
-}
-
-.rowOne{
-    display: flex;
-    padding-bottom: 20px;
-    padding-left: 60px;
-    padding-right: 60px;
-    background-color: #d5e2e1;
-    align-items: center;
-}
-
-.rowOne .oneHehe{
-    flex: 1;
-    align-items: center;
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 50px;
-    padding-bottom: 30px;
-}
-
-.rowOne .oneHehe img{
-    width: 250px;
-}
-
-.rowOne .oneHehe p{
-    font-size: 15px;
-}
-
-.rowOne #p1{
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.rowOne .twoHehe{
-    flex: 1;
-    align-items: center;
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 50px;
-    padding-bottom: 30px;
-}
-
-.rowOne .twoHehe img{
-    width: 250px;
-}
-
-.rowOne .twoHehe p{
-    font-size: 15px;
-}
-
-.rowOne .threeHehe{
-    flex: 1;
-    align-items: center;
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 50px;
-    padding-bottom: 30px;
-}
-
-.rowOne .threeHehe img{
-    width: 250px;
-}
-
-.rowOne .threeHehe p{
-    font-size: 15px;
-}
-
-.rowOne .threeHehe #p2{
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.rowTwo{
-    display: flex;
-    padding-bottom: 120px;
-    padding-left: 60px;
-    padding-right: 60px;
-    background-color: #d5e2e1;
-    align-items: center;
-}
-
-.rowTwo #p1{
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.rowTwo .oneHoho{
-    flex: 1;
-    align-items: center;
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 50px;
-    padding-bottom: 30px;
-}
-
-.rowTwo .oneHoho img{
-    width: 250px;
-}
-
-.rowTwo .oneHoho p{
-    font-size: 15px;
-}
-
-.rowTwo .twoHoho{
-    flex: 1;
-    align-items: center;
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 50px;
-    padding-bottom: 30px;
-}
-
-.rowTwo .twoHoho img{
-    width: 250px;
-}
-
-.rowTwo .twoHoho p{
-    font-size: 15px;
-}
-
-.rowTwo .threeHoho{
-    flex: 1;
-    align-items: center;
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 50px;
-    padding-bottom: 30px;
-}
-
-.rowTwo .threeHoho img{
-    width: 250px;
-}
-
-.rowTwo .threeHoho p{
-    font-size: 15px;
-}
-

@@ -28,6 +28,7 @@
 nav{
     flex: 1;
     text-align: right;
+
 }
 
 nav ul li{
@@ -44,6 +45,7 @@ nav ul li a{
 
 nav ul li a:hover{
     color: #AAC4FF;
+    
 }
 
 .logoIcon{
@@ -284,13 +286,14 @@ nav ul li a:hover{
 }
 
 .images{  
-    margin-top: 10%;
+    margin-top: 50px;
     display: flex;
+    width: 100%;
+    max-width: 400px;
 }
 
 .image1 img{
     position: relative;
-    width: 100%;
     width: 400px;
     transition: transform .2s;
 }
@@ -352,25 +355,28 @@ a{
 .choices{
     display: flex;
     justify-content: center;
+    align-content: center;
     padding: 10px;
 }
 
 .choices .mentoring{
     flex: 1;
     border: 2px solid #B1B2FF;
-    background-color: #D2DAFF;
+    border-radius: 20px;
     margin: 10px;
-    padding: 10px;
+    padding: 30px;
     transition: transform .2s;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(255, 255, 255, 0.24); /* Black w/opacity/see-through */
 }
 
 .mentoring p{
     text-align: center;
+    color: white;
 }
 
 .mentoring img{
     display: block;
-    margin-top: -10px;
     margin-left: auto;
     margin-right: auto;
     width: 90px;
@@ -385,19 +391,21 @@ a{
 .choices .sol{
     flex: 1;
     border: 2px solid #B1B2FF;
-    background-color: #D2DAFF;
+    border-radius: 20px;
     margin: 10px;
-    padding: 10px;
+    padding: 30px;
     transition: transform .2s;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(255, 255, 255, 0.24); /* Black w/opacity/see-through */
 }
 
 .sol p{
     text-align: center;
+    color: white;
 }
 
 .sol img{
     display: block;
-    margin-top: -10px;
     margin-left: auto;
     margin-right: auto;
     width: 90px;
@@ -413,20 +421,22 @@ a{
 
 .choices .lifeclass{
     border: 2px solid #B1B2FF;
-    background-color: #D2DAFF;
+    border-radius: 20px;
     flex: 1;
     margin: 10px;
-    padding: 10px;
+    padding: 30px;
     transition: transform .2s;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(255, 255, 255, 0.24); /* Black w/opacity/see-through */
 }
 
 .lifeclass p{
+    color: white;
     text-align: center;
 }
 
 .lifeclass img{
     display: block;
-    margin-top: -10px;
     margin-left: auto;
     margin-right: auto;
     width: 90px;
@@ -443,10 +453,14 @@ a{
 }
 
 /*-----------------------------------------------------*/
-
+.starPlatrinum{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(27,24,24,1) 50%, rgba(59,61,68,1) 100%);
+    color: white;
+}
 
 .media{
-    margin-top: 120px;
+    padding-top: 10%;
     padding-bottom: 5%;
     margin-bottom: 50px;
     display: flex;
@@ -463,10 +477,12 @@ a{
     margin: 10px 0 10px 0;
     padding: 15px;
     cursor: pointer;
+    color: white;
+    transition: transform .2s;
 }
 
 #images:hover{
-    background: #D2DAFF;
+    transform: scale(1.1);
 }
 
 #videos{
@@ -476,10 +492,12 @@ a{
     margin: 10px 0 10px 0;
     padding: 15px;  
     cursor: pointer;
+    color: white;
+    transition: transform .2s;
 }
 
 #videos:hover{
-    background: #D2DAFF;
+    transform: scale(1.1);
 }
 
 .media .mediaImg img{
@@ -501,18 +519,22 @@ a{
 
 .media .mediaText p {
     font-size: 20px;
-    color: #383836;
+    color: whitesmoke;
 }
 
 .media .mediaText #noice{
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-style: italic;
     font-weight: bold;
-    color: black;
+    color: whitesmoke;
 }
 
 /*-----------------------------------------------------*/
 
 .form{
+    margin-top: 5%;
+    padding: 5%;
     margin-left: 15%;
     margin-right: 15%;
 }
@@ -528,7 +550,7 @@ a{
 .form p{
     font-size: 20px;
     padding-bottom: 5%;
-    color: #383836;
+    color: whitesmoke;
 }
 
 #sform{
@@ -561,6 +583,7 @@ input{
     background: none;
     border-bottom: #B1B2FF 2px solid; 
     outline: none;
+    color: white;
 }
 
 textarea{
@@ -573,6 +596,7 @@ textarea{
     background: none;
     border-bottom: #B1B2FF 2px solid;
     outline: none;
+    color: white;
 }
 
 .form button{
@@ -581,63 +605,71 @@ textarea{
     border: #B1B2FF 2px solid;
     border-radius: 5px;
     cursor: pointer;
+    background: none;
+    color: white;
+    transition: transform .2s;
 }
 
 .form button:hover{
-    background: #D2DAFF;
+    transform: scale(1.1); 
 }
 /*-----------------------------------------------------*/
-.announce{
-    margin-top: 5%;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-bottom: 5%;
+.announce1{
     display: flex;
+    justify-content: center;
     align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-right: 15%;
+    margin-left: 15%;
 }
 
 .announcement{
-    display: block;
-    justify-content: center;
-    align-items: center;
+   margin-right: 80px;
+   align-items: center;
 }
     
 .announcement h1{
     font-size: 50px;
-    padding-bottom: 15px;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #B1B2FF;
-    
+    text-align: right;
 }
 
 .announcement p{
-    text-align: right;
     font-size: 20px;
-    padding-bottom: 5%;
+    text-align: right;
+}
+
+.announcement .btn{
+    display: flex;
+    justify-content: end;
 }
 
 .announcement button{
-    padding: 3%;
-    font-weight: bold;
-    border: #B1B2FF 2px solid;
+    border: 2px solid #B1B2FF;
     border-radius: 5px;
+    background: none;
+    margin: 10px 0 10px 0;
+    padding: 15px;  
     cursor: pointer;
+    color: white;
+    transition: transform .2s;
 }
 
 .announcement button:hover{
-    background: #D2DAFF;
+    transform: scale(1.1);
 }
 
 .announceImg img{
     width: 370px;
     border-radius: 50%;
-    margin-left: 15px;
 }
 
 /*-----------------------------------------------------*/
 
 .flinks {
     padding: 60px;
+    padding-left: 15%;
+    padding-right: 15%;
     background-color: #080808;
     display: flex;
     justify-content: space-between;
@@ -754,11 +786,26 @@ textarea{
     color: white;
 }
 
+@media only screen and (max-width:1300px){
+    .images{
+        display: none;
+    }
+    
+    .text{
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0px;
+    }
+}
 
 
 
 
-@media only screen and (max-width:700px){
+
+@media only screen and (max-width:500px){
 
     *{
         margin: 0;
@@ -1035,7 +1082,9 @@ textarea{
 
     .media{
         padding: 5%;
-        margin: 5%;   
+        margin: 5%;
+        margin-top: 0;
+        padding-top: 15%;   
     }
 
     .media h1{
@@ -1125,45 +1174,55 @@ textarea{
 
      /*===============================================*/
 
-     .announce{
-        margin: 5%;
-        padding: 5%;
-        margin-bottom: 10%;
+    .announce1{
         display: flex;
+        justify-content: center;
         align-items: center;
+        padding: 5%;
+        margin: 5%;
+        margin-bottom: 0;
     }
     
     .announcement{
-        justify-content: left;
-        align-items: none;
+       margin-right: 0px;
+       align-items: center;
     }
-
-    .announceImg{
-        display: none;
-    }
-
+        
     .announcement h1{
-        text-align: left;
         font-size: 40px;
-        margin-left: 0;
         padding-bottom: 5%;
-        margin-bottom: 0;
         border-bottom: 2px #B1B2FF solid;
-    }
-
-    .announcement p{
         text-align: left;
-        padding-top: 5%;
+    }
+    
+    .announcement p{
         font-size: 20px;
-        padding-bottom: 5%;
+        padding-top: 5%;
+        text-align: left;
     }
 
+    .announcement .btn{
+        display: flex;
+        justify-content: start;
+    }
+    
     .announcement button{
-        padding: 3%;
-        font-weight: bold;
-        margin-left: 0;
-        border: #B1B2FF 2px solid;
+        border: 2px solid #B1B2FF;
         border-radius: 5px;
+        background: none;
+        margin: 10px 0 10px 0;
+        padding: 4%;  
+        cursor: pointer;
+        color: white;
+        transition: transform .2s;
+    }
+    
+    .announcement button:hover{
+        transform: scale(1.1);
+    }
+    
+    .announceImg img{
+        display: none;
     }
 
     /*===============================================
