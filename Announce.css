@@ -68,6 +68,13 @@ nav ul li a:hover{
     margin-left: 18%;
     margin-right: 18%;
     justify-content: center;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+    border-radius: 20px;
+}
+
+.report:hover{
+    box-shadow: 0 15px 15px rgba(0,0,0,0.3);
 }
 
 .report img{
@@ -107,111 +114,258 @@ nav ul li a:hover{
     margin-right: 18%;
 }
 
-/*=====================Column 1=======================*/
+/*=====================News Section=======================*/
 
-.report1 .column1{
-    display: inline-block;   
+.newsSection{
+    margin-top: 5%;
+    margin-left: 18%;
+    margin-right: 18%;
+    margin-bottom: 5%;
 }
 
-/*=====================News 1=======================*/
+/*=====================Row1=======================*/
 
-.report1 .column1 .news1{
-    padding-bottom: 3%;
+.row1{
+    display: flex;
+    justify-content: center;
 }
 
-.report1 .column1 .news1 h1{
+/*=====================News1=======================*/
+
+.news1{
+    margin: 1%;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.news1:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.news1 img{
+    width: 100%;
+    max-width: 350px;
+    padding: 0;
+}
+
+.textArea1{
+    background: rgb(15,145,173);
+    background: linear-gradient(90deg, rgba(15,145,173,1) 63%, rgba(114,210,232,1) 87%, rgba(209,222,223,1) 100%);
+    color: white;
+    padding: 5%;
+    border-bottom: 5px solid #142022;
+}
+
+.textArea1 p{
+    font-size: 0.8vw;
+}
+
+.textArea1 h1{
     font-size: 2vw;
 }
 
-.report1 .column1 .news1 p{
-    font-size: .8vw;
+.textArea1 h5{
+    font-size: 0.6vw;
 }
 
-.report1 .column1 .news1 p{
-    font-size: .8vw;
+/*=====================News2=======================*/
+
+.news2{
+    margin: 1%;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
 }
 
-.report1 .column1 .news1 img{
+.news2:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.news2 img{
     width: 100%;
-    max-width: 550px;
+    max-width: 350px;
 }
 
-/*=====================News 2=======================*/
-
-.report1 .column1 .news2{
-    padding-bottom: 3%;
+.textArea2{
+    background: rgb(67,218,91);
+    background: linear-gradient(90deg, rgba(67,218,91,1) 63%, rgba(181,217,164,1) 87%, rgba(206,224,210,1) 100%);
+    color: white;
+    padding: 5%;
+    border-bottom: 5px solid #142022;
 }
 
-.report1 .column1 .news2 h1{
+.textArea2 p{
+    font-size: 0.8vw;
+}
+
+.textArea2 h1{
     font-size: 2vw;
 }
 
-.report1 .column1 .news2 p{
-    font-size: .8vw;
+.textArea2 h5{
+    font-size: 0.6vw;
 }
 
-.report1 .column1 .news2 p{
-    font-size: .8vw;
+/*=====================News3=======================*/
+
+.news3{
+    margin: 1%;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
 }
 
-.report1 .column1 .news2 img{
+.news3:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.news3 img{
     width: 100%;
-    max-width: 550px;
+    max-width: 350px;
 }
 
-/*=====================Column 2=======================*/
-
-.report1 .column2{
-    display: inline-block;
-    padding-left: 3%;
+.textArea3{
+    background: rgb(15,145,173);
+    background: linear-gradient(90deg, rgba(15,145,173,1) 63%, rgba(114,210,232,1) 87%, rgba(209,222,223,1) 100%);
+    color: white;
+    padding: 5%;
+    border-bottom: 5px solid #142022;
 }
 
-/*=====================News 3=======================*/
-
-.report1 .column2 .news3{
-    padding-bottom: 3%;
+.textArea3 p{
+    font-size: 0.8vw;
 }
 
-.report1 .column2 .news3 h1{
+.textArea3 h1{
     font-size: 2vw;
 }
 
-.report1 .column2 .news3 p{
-    font-size: .8vw;
+.textArea3 h5{
+    font-size: 0.6vw;
 }
 
-.report1 .column2 .news3 p{
-    font-size: .8vw;
+/*=====================Row2=======================*/
+
+.row2{
+    display: flex;
+    justify-content: center;
 }
 
-.report1 .column2 .news3 img{
+/*=====================News4=======================*/
+
+.news4{
+    margin: 1%;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.news4:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.news4 img{
     width: 100%;
-    max-width: 600px;
+    max-width: 350px;
 }
 
-/*=====================News 4=======================*/
-
-.report1 .column2 .news4{
-    padding-bottom: 3%;
+.textArea4{
+    background: rgb(30,30,241);
+    background: linear-gradient(90deg, rgba(30,30,241,1) 22%, rgba(20,32,145,1) 53%, rgba(12,23,77,1) 100%);
+    color: white;
+    padding: 5%;
+    border-bottom: 5px solid #142022;
 }
 
-.report1 .column2 .news4 h1{
+.textArea4 p{
+    font-size: 0.8vw;
+}
+
+.textArea4 h1{
     font-size: 2vw;
 }
 
-.report1 .column2 .news4 p{
-    font-size: .8vw;
+.textArea4 h5{
+    font-size: 0.6vw;
 }
 
-.report1 .column2 .news4 p{
-    font-size: .8vw;
+/*=====================News5=======================*/
+
+.news5{
+    margin: 1%;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
 }
 
-.report1 .column2 .news4 img{
+.news5:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+
+.news5 img{
     width: 100%;
-    max-width: 600px;
+    max-width: 350px;
 }
 
+.textArea5{
+    background: rgb(231,36,225);
+    background: linear-gradient(90deg, rgba(231,36,225,1) 22%, rgba(244,128,228,1) 53%, rgba(242,209,240,1) 100%);
+    color: white;
+    padding: 5%;
+    border-bottom: 5px solid #142022;
+}
+
+.textArea5 p{
+    font-size: 0.8vw;
+}
+
+.textArea5 h1{
+    font-size: 2vw;
+}
+
+.textArea5 h5{
+    font-size: 0.6vw;
+}
+
+/*=====================News6=======================*/
+
+.news6{
+    margin: 1%;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.news6:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.news6 img{
+    width: 100%;
+    max-width: 350px;
+}
+
+.textArea6{
+    background: rgb(15,145,173);
+    background: linear-gradient(90deg, rgba(15,145,173,1) 63%, rgba(114,210,232,1) 87%, rgba(209,222,223,1) 100%);
+    color: white;
+    padding: 5%;
+    border-bottom: 5px solid #142022;
+}
+
+.textArea6 p{
+    font-size: 0.8vw;
+}
+
+.textArea6 h1{
+    font-size: 2vw;
+}
+
+.textArea6 h5{
+    font-size: 0.6vw;
+}
 /*=============================================*/
 
 @media only screen and (max-width:1550px){
