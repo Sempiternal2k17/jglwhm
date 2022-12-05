@@ -67,12 +67,12 @@ nav ul li a:hover{
 
 .churchName h1{
     text-align: center;
-    font-size: 150px;
+    font-size: 12vw;
 }
 
 .churchName h2{
     text-align: center;
-    font-size: 25px;
+    font-size: 1.5vw;
 }
 
 /*==========================================*/
@@ -87,7 +87,7 @@ nav ul li a:hover{
 
 .mgp .vision, .purpose, .goal {
     flex: 2 ;
-    padding: 40px 20px 40px 20px;
+    padding: 40px 40px 40px 40px;
     border: 2px solid #6668e421;
     margin: 10px;
     border-radius: 10px;
@@ -101,12 +101,12 @@ nav ul li a:hover{
     position: relative;
     text-align: center;
     padding-bottom: 10px;
-    font-size: 50px;    
+    font-size: 2.5vw;    
 }
 
 .mgp p{
-    padding-top: 10px;
-    text-align: center;
+    padding-top: .6vw;
+    text-align: justify;
     color: white;
 }
 
@@ -141,7 +141,7 @@ nav ul li a:hover{
 
 .cText h1{
     padding-bottom: 15px;
-    font-size: 50px;
+    font-size: 2.5vw;
     margin: 10px;
     margin-right: 52%;
     margin-bottom: 15px;
@@ -149,6 +149,7 @@ nav ul li a:hover{
 }
 
 .cText p{
+    font-size: 1vw;
     margin: 10px;
 }
 
@@ -163,10 +164,9 @@ nav ul li a:hover{
 }
 
 #connects{
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(27,24,24,1) 50%, rgba(59,61,68,1) 100%);
-    color: white;
     padding: 5% 0 5% 0;
+    background: rgb(250,248,250);
+    background: linear-gradient(90deg, rgba(250,248,250,1) 43%, rgba(171,244,247,1) 80%, rgba(166,229,238,1) 100%);
 }
 
 .sundayServices{
@@ -454,9 +454,8 @@ a{
 
 /*-----------------------------------------------------*/
 .starPlatrinum{
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(27,24,24,1) 50%, rgba(59,61,68,1) 100%);
-    color: white;
+    background: rgb(250,248,250);
+    background: linear-gradient(90deg, rgba(250,248,250,1) 43%, rgba(171,244,247,1) 80%, rgba(166,229,238,1) 100%);
 }
 
 .media{
@@ -477,7 +476,6 @@ a{
     margin: 10px 0 10px 0;
     padding: 15px;
     cursor: pointer;
-    color: white;
     transition: transform .2s;
 }
 
@@ -492,7 +490,6 @@ a{
     margin: 10px 0 10px 0;
     padding: 15px;  
     cursor: pointer;
-    color: white;
     transition: transform .2s;
 }
 
@@ -518,8 +515,7 @@ a{
 }
 
 .media .mediaText p {
-    font-size: 20px;
-    color: whitesmoke;
+    font-size: 0.9vw;
 }
 
 .media .mediaText #noice{
@@ -527,7 +523,6 @@ a{
     padding-bottom: 10px;
     font-style: italic;
     font-weight: bold;
-    color: whitesmoke;
 }
 
 /*-----------------------------------------------------*/
@@ -550,7 +545,6 @@ a{
 .form p{
     font-size: 20px;
     padding-bottom: 5%;
-    color: whitesmoke;
 }
 
 #sform{
@@ -583,7 +577,6 @@ input{
     background: none;
     border-bottom: #B1B2FF 2px solid; 
     outline: none;
-    color: white;
 }
 
 textarea{
@@ -606,7 +599,6 @@ textarea{
     border-radius: 5px;
     cursor: pointer;
     background: none;
-    color: white;
     transition: transform .2s;
 }
 
@@ -651,7 +643,6 @@ textarea{
     margin: 10px 0 10px 0;
     padding: 15px;  
     cursor: pointer;
-    color: white;
     transition: transform .2s;
 }
 
@@ -666,127 +657,111 @@ textarea{
 
 /*-----------------------------------------------------*/
 
-.flinks {
-    padding: 60px;
-    padding-left: 15%;
-    padding-right: 15%;
-    background-color: #080808;
+.flinksBG {
+    background-color: #262525;
+    
+}
+
+.topLinks{
+    margin-left: 15%;
+    margin-right: 15%;
     display: flex;
-    justify-content: space-between;
-    padding-top: 60px;
-    border-top-style: solid;
-}
-.flinks .findex{
-    flex-direction: column;
-    line-height: 0.5;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1%;
+    border-bottom: 2px #b0abab solid;
 }
 
-.flinks .findex a{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 35px;
-    font-weight: bold;
+.flinks{
+    padding: 2%;
+}
+
+.flinks a{
     text-decoration: none;
+    color: white;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.flinks a:hover{
+    color: #B1B2FF;
+}
+
+.flinks ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flinks ul li{
+    list-style: none;
+}
+
+.flinks ul li h1{
+    font-size: 1.8vw;
+}
+
+.flinks ul li h5{
+    font-size: 0.8vw;
+}
+
+.pictures{
+    display: flex;
+    align-items: center;
+}
+
+.pictures a{
+    padding: 2%;
+}
+
+.pictures .fb{
+    width: 100%;
+    max-width: 60px;
+  
+    background:none;
+}
+
+.pictures .fb:hover{
+    filter: grayscale(0%);
+    background:#0000ff;
+}
+
+.pictures .yt{
+    width: 100%;
+    max-width: 80px;
+}
+
+.bottomLinks{
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+}
+
+.location a{
     color: white;
 }
 
-.flinks .findex a p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    text-decoration: none;
-    color: #6f828a;
-    padding-top: 10px;
+.location a:hover{
+    color: #B1B2FF;
 }
 
-.flinks .fconnects{
-    flex-direction: column;
-    line-height: 0.5;
+.location h5{
+    font-size: 0.7vw;
 }
 
-.flinks .fconnects a{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    text-decoration: none;
+.email h5{
+    font-size: 0.7vw;
     color: white;
 }
 
-.flinks .fconnects a p{
-    font-family:  Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    text-decoration: none;
-    color: #6f828a;
-    padding-top: 15px;
-}
 
-.flinks .fmedia{
-    flex-direction: column;
-    line-height: 0.5;
-}
 
-.flinks .fmedia a{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-}
+/*-----------------------------------------------------*/
 
-.flinks .fmedia a p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    text-decoration: none;
-    color: #6f828a;
-    padding-top: 15px;
-}
-
-.flinks .fequipping{
-    flex-direction: column;
-    line-height: 0.5;
-}
-
-.flinks .fequipping a{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-}
-
-.flinks .fequipping a p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    text-decoration: none;
-    color: #6f828a;
-    padding-top: 15px;
-}
-
-.flinks .fannounce{
-    flex-direction: column;
-    line-height: 0.5;
-}
-
-.flinks .fannounce a{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-}
-
-.flinks .fpr{
-    flex-direction: column;
-    line-height: 0.5;
-}
-
-.flinks .fpr a{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-}
-
-@media only screen and (max-width:1300px){
+@media only screen and (max-width:1600px){
     .images{
         display: none;
     }
@@ -800,10 +775,6 @@ textarea{
         padding: 0px;
     }
 }
-
-
-
-
 
 @media only screen and (max-width:500px){
 

@@ -24,7 +24,7 @@ a{
 
 .topbar h1{
     padding-top: 40px;
-    font-size: 45px;
+    font-size: 2.5vw;
     color: white;
 }
 
@@ -50,62 +50,305 @@ a{
 }
 
 .webContent .text h1{
-    font-size: 80px;
+    font-size: 4vw;
     color: white;
 }
 
 .webContent .text h2{
-    font-size: 16px;
+    font-size: 0.9vw;
     color: white;
 }
 
-#webcontent2{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(8,8,20,1) 35%, rgba(101,178,194,1) 100%);
-}
+/* ================================================================ */
 
-.webContent2{
-    justify-content: center;
-    align-items: center;
+.sundayService{
+    margin-top: 5%;
     margin-left: 15%;
     margin-right: 15%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-
-.webContent2 h1{
-    font-size: 40px;
-    color: white;
-}
-
-.webContent2 .archives{
+    margin-bottom: 5%;
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
 
-.archives .row1, .row2, .row3{
-    padding: 10px;
+.sundayService .picture{
+    flex: 1;
+}
+
+.sundayService img{
+    width: 100%;
+    max-width: 550px;
+    border: #B1B2FF 4px solid;
+    border-radius: 10px;
+}
+
+.sundayService .text{
+    flex: 1;
+}
+
+.sundayService h1{
+    font-size: 3vw;
+    padding-bottom: 2%;
+}
+
+.sundayService p{
+    font-size: 1.5vw;
+    text-align: justify;
+}
+
+/* ================================================================ */
+
+.wiss{
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 2%;
+    padding-bottom: 2%;
+    border-bottom: 2px #B1B2FF solid;
+}
+
+.noice h1{
+    font-size: 3vw;
+    padding-bottom: 1%;
+}
+
+.noice p{
+    font-size: 1.5vw;
+    text-align: justify;
+}
+
+/* ================================================================ */
+
+.pastStudies{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.pastStudies h1{
+    font-size: 2vw;
+}
+
+.pastStudies p{
+    font-size: 1vw;
+}
+
+/* ================================================================ */
+
+.archives{
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+}
+
+.lecture1{
+    border-bottom: 5px solid #91d9dd;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    margin: 1%;
+}
+
+.lecture1:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.lecture1 img{
+    max-width: 100%;
+    width: 350px;
+}
+
+.textArea{
+    padding: 5%;
     color: white;
+    background: rgb(14,213,163);
+    background: linear-gradient(90deg, rgba(14,213,163,1) 20%, rgba(68,237,228,1) 72%, rgba(179,224,226,1) 100%);
 }
 
-.archives .row1 video{
-    width: 400px;
+.textArea h2{
+    font-size: 1.5vw;
 }
 
-.archives .row2 video{
-    width: 400px;
+.textArea p{
+    font-size: 0.6;
 }
 
-.archives .row3 video{
-    width: 400px;
+/* ================================================================ */
+
+.lecture2{
+    border-bottom: 5px solid #91d9dd;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    margin: 1%;
 }
 
+.lecture2:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
 
+.lecture2 img{
+    max-width: 100%;
+    width: 350px;
+}
 
+.textArea2{
+    padding: 5%;
+    color: white;
+    background: rgb(14,213,163);
+    background: linear-gradient(90deg, rgba(14,213,163,1) 20%, rgba(68,237,228,1) 72%, rgba(179,224,226,1) 100%);
+}
 
+.textArea2 h2{
+    font-size: 1.5vw;
+}
 
+.textArea2 p{
+    font-size: 0.6;
+}
 
+/* ================================================================ */
 
+.lecture3{
+    border-bottom: 5px solid #91d9dd;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    margin: 1%;
+}
+
+.lecture3:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.lecture3 img{
+    max-width: 100%;
+    width: 350px;
+}
+
+.textArea3{
+    padding: 5%;
+    color: white;
+    background: rgb(14,213,163);
+    background: linear-gradient(90deg, rgba(14,213,163,1) 20%, rgba(68,237,228,1) 72%, rgba(179,224,226,1) 100%);
+}
+
+.textArea3 h2{
+    font-size: 1.5vw;
+}
+
+.textArea3 p{
+    font-size: 0.6;
+}
+
+/* ================================================================ */
+
+.archives2{
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    display: flex;
+}
+
+.lecture4{
+    border-bottom: 5px solid #91d9dd;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    margin: 1%;
+}
+
+.lecture4:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.lecture4 img{
+    max-width: 100%;
+    width: 350px;
+}
+
+.textArea4{
+    padding: 5%;
+    color: white;
+    background: rgb(14,213,163);
+    background: linear-gradient(90deg, rgba(14,213,163,1) 20%, rgba(68,237,228,1) 72%, rgba(179,224,226,1) 100%);
+}
+
+.textArea4 h2{
+    font-size: 1.5vw;
+}
+
+.textArea4 p{
+    font-size: 0.6;
+}
+
+/* ================================================================ */
+
+.lecture5{
+    border-bottom: 5px solid #91d9dd;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    margin: 1%;
+}
+
+.lecture5:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.lecture5 img{
+    max-width: 100%;
+    width: 350px;
+}
+
+.textArea5{
+    padding: 5%;
+    color: white;
+    background: rgb(14,213,163);
+    background: linear-gradient(90deg, rgba(14,213,163,1) 20%, rgba(68,237,228,1) 72%, rgba(179,224,226,1) 100%);
+}
+
+.textArea5 h2{
+    font-size: 1.5vw;
+}
+
+.textArea5 p{
+    font-size: 0.6;
+}
+
+/* ================================================================ */
+
+.lecture6{
+    border-bottom: 5px solid #91d9dd;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    margin: 1%;
+}
+
+.lecture6:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.lecture6 img{
+    max-width: 100%;
+    width: 350px;
+}
+
+.textArea6{
+    padding: 5%;
+    color: white;
+    background: rgb(14,213,163);
+    background: linear-gradient(90deg, rgba(14,213,163,1) 20%, rgba(68,237,228,1) 72%, rgba(179,224,226,1) 100%);
+}
+
+.textArea6 h2{
+    font-size: 1.5vw;
+}
+
+.textArea6 p{
+    font-size: 0.6;
+}
 
 
 @media only screen and (max-width:700px){
