@@ -65,33 +65,37 @@ a{
     margin-top: 5%;
     margin-left: 15%;
     margin-right: 15%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
     align-items: center;
 }
 
 .sundayService .picture{
+    margin-right: 5%;
     flex: 1;
 }
 
 .sundayService img{
     width: 100%;
-    max-width: 550px;
-    border: #B1B2FF 4px solid;
+    max-width: 600px;
     border-radius: 10px;
 }
 
 .sundayService .text{
     flex: 1;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .sundayService h1{
-    font-size: 3vw;
+    font-size: 2.4vw;
     padding-bottom: 2%;
 }
 
 .sundayService p{
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     text-align: justify;
 }
 
@@ -103,20 +107,36 @@ a{
     margin-right: 15%;
     margin-bottom: 2%;
     padding-bottom: 2%;
-    border-bottom: 2px #B1B2FF solid;
+}
+
+
+
+.wissImg img{
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1500px;
+    border-radius: 20px;
 }
 
 .noice h1{
-    font-size: 3vw;
+    font-size: 2.4vw;
     padding-bottom: 1%;
 }
 
 .noice p{
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     text-align: justify;
 }
 
 /* ================================================================ */
+
+#web2{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #f4f4f0;
+}
 
 .pastStudies{
     margin-left: 15%;
@@ -141,49 +161,47 @@ a{
 }
 
 .lecture1{
-    border-bottom: 5px solid #91d9dd;
+    margin: 1%;
+    cursor: pointer;
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
     transition: box-shadow 0.3s ease-in-out;
-    cursor: pointer;
-    margin: 1%;
 }
 
 .lecture1:hover{
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 15px rgba(0,0,0,2);
 }
 
 .lecture1 img{
-    max-width: 100%;
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
 }
 
 .textArea{
-    padding: 5%;
+    background: rgb(209,58,189);
+    background: linear-gradient(90deg, rgba(209,58,189,1) 31%, rgba(238,189,137,1) 100%);
     color: white;
-    background: rgb(14,213,163);
-    background: linear-gradient(90deg, rgba(14,213,163,1) 20%, rgba(68,237,228,1) 72%, rgba(179,224,226,1) 100%);
+    padding: 5%;
 }
 
-.textArea h2{
-    font-size: 1.5vw;
+.textArea h1{
+    font-size: 2vw;
 }
 
-.textArea p{
-    font-size: 0.6;
+.textArea h5{
+    font-size: 0.6vw;
 }
 
 /* ================================================================ */
 
 .lecture2{
-    border-bottom: 5px solid #91d9dd;
+    margin: 1%;
+    cursor: pointer;
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
     transition: box-shadow 0.3s ease-in-out;
-    cursor: pointer;
-    margin: 1%;
 }
 
 .lecture2:hover{
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 15px rgba(0,0,0,2);
 }
 
 .lecture2 img{
@@ -192,32 +210,36 @@ a{
 }
 
 .textArea2{
-    padding: 5%;
+    background: rgb(209,58,189);
+    background: linear-gradient(90deg, rgba(209,58,189,1) 31%, rgba(238,189,137,1) 100%);
     color: white;
-    background: rgb(14,213,163);
-    background: linear-gradient(90deg, rgba(14,213,163,1) 20%, rgba(68,237,228,1) 72%, rgba(179,224,226,1) 100%);
+    padding: 5%;
+    margin: 0;
 }
 
-.textArea2 h2{
-    font-size: 1.5vw;
+.textarea2:hover{
+    border-bottom: 5px gray solid;
 }
 
-.textArea2 p{
-    font-size: 0.6;
+.textArea2 h1{
+    font-size: 2vw;
+}
+
+.textArea2 h5{
+    font-size: 0.6vw;
 }
 
 /* ================================================================ */
 
 .lecture3{
-    border-bottom: 5px solid #91d9dd;
+    margin: 1%;
+    cursor: pointer;
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
     transition: box-shadow 0.3s ease-in-out;
-    cursor: pointer;
-    margin: 1%;
 }
 
 .lecture3:hover{
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 15px rgba(0,0,0,2);
 }
 
 .lecture3 img{
@@ -226,18 +248,18 @@ a{
 }
 
 .textArea3{
-    padding: 5%;
+    background: rgb(209,58,189);
+    background: linear-gradient(90deg, rgba(209,58,189,1) 31%, rgba(238,189,137,1) 100%);
     color: white;
-    background: rgb(14,213,163);
-    background: linear-gradient(90deg, rgba(14,213,163,1) 20%, rgba(68,237,228,1) 72%, rgba(179,224,226,1) 100%);
+    padding: 5%;
 }
 
-.textArea3 h2{
-    font-size: 1.5vw;
+.textArea3 h1{
+    font-size: 2vw;
 }
 
-.textArea3 p{
-    font-size: 0.6;
+.textArea3 h5{
+    font-size: 0.6vw;
 }
 
 /* ================================================================ */
@@ -251,7 +273,6 @@ a{
 }
 
 .lecture4{
-    border-bottom: 5px solid #91d9dd;
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
     transition: box-shadow 0.3s ease-in-out;
     cursor: pointer;
@@ -259,7 +280,7 @@ a{
 }
 
 .lecture4:hover{
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 15px rgba(0,0,0,2);
 }
 
 .lecture4 img{
@@ -270,22 +291,21 @@ a{
 .textArea4{
     padding: 5%;
     color: white;
-    background: rgb(14,213,163);
-    background: linear-gradient(90deg, rgba(14,213,163,1) 20%, rgba(68,237,228,1) 72%, rgba(179,224,226,1) 100%);
+    background: rgb(209,58,189);
+    background: linear-gradient(90deg, rgba(209,58,189,1) 31%, rgba(238,189,137,1) 100%);
 }
 
-.textArea4 h2{
-    font-size: 1.5vw;
+.textArea4 h1{
+    font-size: 2vw;
 }
 
-.textArea4 p{
-    font-size: 0.6;
+.textArea4 h5{
+    font-size: 0.6vw;
 }
 
 /* ================================================================ */
 
 .lecture5{
-    border-bottom: 5px solid #91d9dd;
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
     transition: box-shadow 0.3s ease-in-out;
     cursor: pointer;
@@ -293,7 +313,7 @@ a{
 }
 
 .lecture5:hover{
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 15px rgba(0,0,0,2);
 }
 
 .lecture5 img{
@@ -304,22 +324,21 @@ a{
 .textArea5{
     padding: 5%;
     color: white;
-    background: rgb(14,213,163);
-    background: linear-gradient(90deg, rgba(14,213,163,1) 20%, rgba(68,237,228,1) 72%, rgba(179,224,226,1) 100%);
+    background: rgb(209,58,189);
+    background: linear-gradient(90deg, rgba(209,58,189,1) 31%, rgba(238,189,137,1) 100%);
 }
 
-.textArea5 h2{
-    font-size: 1.5vw;
+.textArea5 h1{
+    font-size: 2vw;
 }
 
-.textArea5 p{
-    font-size: 0.6;
+.textArea5 h5{
+    font-size: 0.6vw;
 }
 
 /* ================================================================ */
 
 .lecture6{
-    border-bottom: 5px solid #91d9dd;
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
     transition: box-shadow 0.3s ease-in-out;
     cursor: pointer;
@@ -327,7 +346,7 @@ a{
 }
 
 .lecture6:hover{
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 15px rgba(0,0,0,2);
 }
 
 .lecture6 img{
@@ -338,17 +357,95 @@ a{
 .textArea6{
     padding: 5%;
     color: white;
-    background: rgb(14,213,163);
-    background: linear-gradient(90deg, rgba(14,213,163,1) 20%, rgba(68,237,228,1) 72%, rgba(179,224,226,1) 100%);
+    background: rgb(209,58,189);
+    background: linear-gradient(90deg, rgba(209,58,189,1) 31%, rgba(238,189,137,1) 100%);
 }
 
-.textArea6 h2{
-    font-size: 1.5vw;
+.textArea6 h1{
+    font-size: 2vw;
 }
 
-.textArea6 p{
-    font-size: 0.6;
+.textArea6 h5{
+    font-size: 0.6vw;
 }
+
+/* ================================================================ */
+
+.form{
+    margin-left: 15%;
+    margin-right: 15%;
+    display: block;
+    justify-content: center;
+}
+
+.form .text{
+    display: block;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
+.text h1{
+    font-size: 2vw;
+}
+
+.text p{
+    font-size: 1vw;
+}
+
+.notif form{
+    width: 100%;
+    justify-content: center;
+    padding: 1%;
+    margin-bottom: 5%;
+}
+
+.notif label{
+    font-size: 1vw;
+    padding-right: 1%;
+}
+
+.notif input{
+    margin-right: 1%;
+    width: 25%;
+    padding: 2px;
+    font-size: 1vw;
+    color: gray;
+    outline: none;
+    border: none;
+    border-bottom: #91d9dd solid 2px;
+    background: none;
+}
+
+.notif button{
+    margin-top: 1%;
+    padding: 1%;
+    border: 2px solid #91d9dd;
+    border-radius: 5px;
+    background: none;
+    font-size: 0.7w;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.notif button:hover{
+    transform: scale(1.1);
+}
+
+.hidden{
+    opacity: 0;
+    transition: all 2s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
 
 
 @media only screen and (max-width:700px){
@@ -406,48 +503,4 @@ a{
         color: white;
     }
 
-    .webContent2{
-        justify-content: center;
-        align-items: center;
-        margin-left: 5%;
-        margin-right: 5%;
-        padding-top: 5%;
-    }
-    
-    .webContent2 h1{
-        font-size: 25px;
-        color: white;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    
-    .webContent2 .archives{
-        display: block;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    .webContent2 .archives h2{
-        padding-top: 4px;
-        padding-left: 3px;
-        font-size: 13px;
-    }
-    
-    .archives .row1, .row2, .row3{
-        padding: 4px;
-        color: white;
-        padding-bottom: 10%;
-    }
-    
-    .archives .row1 video{
-        max-width: 300px;
-    }
-    
-    .archives .row2 video{
-        max-width: 300px;
-    }
-    
-    .archives .row3 video{
-        max-width: 300px;
-    }
 }
