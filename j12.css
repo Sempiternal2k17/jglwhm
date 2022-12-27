@@ -81,9 +81,11 @@ a{
     flex: 1;
     margin: 0.5%;
     border: 4px gray solid;
-    transition: .5s ease-in-out;
     cursor: pointer;
     transition-delay: 400ms;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+    transition: .5s ease-in-out;
 }
 
 .thingsTodo .learn img{
@@ -110,6 +112,7 @@ a{
 
 .thingsTodo .learn:hover{
     border: 4px #6cc6cb solid;
+    box-shadow: 0 5px 15px rgba(0,0,0,1);
 }
 
 /* ======================================================= */
@@ -118,9 +121,11 @@ a{
     flex: 1;
     margin: 0.5%;
     border: 4px gray solid;
-    transition: .5s ease-in-out;
     cursor: pointer;
-    transition-delay: 200ms;
+    transition-delay: 400ms;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+    transition: .5s ease-in-out;
 }
 
 .thingsTodo .play img{
@@ -147,6 +152,7 @@ a{
 
 .thingsTodo .play:hover{
     border: 4px #6cc6cb solid;
+    box-shadow: 0 5px 15px rgba(0,0,0,1);
 }
 
 /* ======================================================= */
@@ -155,9 +161,11 @@ a{
     flex: 1;
     margin: 0.5%;
     border: 4px gray solid;
-    transition: .5s ease-in-out;
     cursor: pointer;
-    transition-delay: 600ms;
+    transition-delay: 400ms;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+    transition: .5s ease-in-out;
 }
 
 .thingsTodo .praise img{
@@ -184,11 +192,13 @@ a{
 
 .thingsTodo .praise:hover{
     border: 4px #6cc6cb solid;
+    box-shadow: 0 5px 15px rgba(0,0,0,1);
 }
 
 /* ======================================================= */
 
 .teachers{
+    margin-top: 5%;
     display: block;
     margin-left: 15%;
     margin-right: 15%;
@@ -198,10 +208,418 @@ a{
     text-align: center;
 }
 
+.meet h1{
+    font-size: 3vw;
+}
+
+.rowOne{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    padding-bottom: 5%;
+}
+
+/* ======================================================= */
+
+.rowOne .itemOne{
+    margin: 2%;
+    transition-delay: 200ms;
+}
+
+.rowOne .itemOne img{
+    width: 100%;
+    max-width: 170px;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.itemOne img:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,2);
+}
+
+.rowOne .itemOnetext{
+    text-align: center;
+    font-size: 1.4vw;
+}
+
+/* ======================================================= */
+
+.rowOne .itemTwo{
+    margin: 2%;
+    transition-delay: 400ms;
+}
+
+
+.rowOne .itemTwo img{
+    width: 100%;
+    max-width: 170px;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.itemTwo img:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,2);
+}
+
+
+.rowOne .itemTwotext{
+    text-align: center;
+    font-size: 1.4vw;
+}
 
 
 /* ======================================================= */
 
+.rowOne .itemThree{
+    margin: 2%;
+    transition-delay: 600ms;
+}
+
+.rowOne .itemThree img{
+    width: 100%;
+    max-width: 170px;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.itemThree img:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,2);
+}
+
+.rowOne .itemThreetext{
+    text-align: center;
+    font-size: 1.4vw;
+}
+
+/* ======================================================= */
+
+.rowOne .itemFour{
+    margin: 2%;
+    transition-delay: 800ms;
+}
+
+.rowOne .itemFour img{
+    width: 100%;
+    max-width: 170px;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.itemFour img:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,2);
+}
+
+.rowOne .itemFourtext{
+    text-align: center;
+    font-size: 1.4vw;
+}
+
+/* ======================================================= */
+
+.rowTwo{
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+    padding-bottom: 5%;
+}
+
+/* ======================================================= */
+
+.rowTwo .itemOne{
+    margin: 2%;
+    transition-delay: 1000ms;
+}
+
+.rowTwo .itemOne img{
+    width: 100%;
+    max-width: 170px;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.itemOne img:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,2);
+}
+
+.rowTwo .itemOnetext{
+    text-align: center;
+    font-size: 1.4vw;
+}
+
+/* ======================================================= */
+
+.rowTwo .itemTwo{
+    margin: 2%;
+    transition-delay: 1200ms;
+}
+
+
+.rowTwo .itemTwo img{
+    width: 100%;
+    max-width: 170px;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.itemTwo img:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,2);
+}
+
+
+.rowTwo .itemTwotext{
+    text-align: center;
+    font-size: 1.4vw;
+}
+
+/* ======================================================= */
+
+.rowTwo .itemThree{
+    margin: 2%;
+    transition-delay: 1400ms;
+}
+
+.rowTwo .itemThree img{
+    width: 100%;
+    max-width: 170px;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.itemThree img:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,2);
+}
+
+.rowTwo .itemThreetext{
+    text-align: center;
+    font-size: 1.4vw
+}
+
+/* ======================================================= */
+
+.shortIntroduction{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.shortIntroduction h1{
+    text-align: center;
+    font-size: 3.5vw;
+}
+
+.shortIntroduction p{
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.studiesSection{
+    display: block;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+
+.oneRow{
+    display: flex;
+    justify-content: center;
+}
+
+/* ======================================================= */
+
+.gnews1{
+    margin: 1%;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.gnews1 img{
+    width: 100%;
+    max-width: 350px;
+}
+
+.gnews1 p{
+    font-size: 1vw;
+    text-align: center;
+}
+
+.gnews1 h1{
+    font-size: 2vw;
+    text-align: center;
+}
+
+.gnews1:hover{
+    text-decoration: underline;
+}
+
+/* ======================================================= */
+
+.gnews2{
+    margin: 1%;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.gnews2 img{
+    width: 100%;
+    max-width: 350px;
+}
+
+.gnews2 p{
+    font-size: 1vw;
+    text-align: center;
+}
+
+.gnews2 h1{
+    font-size: 2vw;
+    text-align: center;
+}
+
+.gnews2:hover{
+    text-decoration: underline;
+}
+
+
+/* ======================================================= */
+
+.gnews3{
+    margin: 1%;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.gnews3 img{
+    width: 100%;
+    max-width: 350px;
+}
+
+.gnews3 p{
+    font-size: 1vw;
+    text-align: center;
+}
+
+.gnews3 h1{
+    font-size: 2vw;
+    text-align: center;
+}
+
+.gnews3:hover{
+    text-decoration: underline;
+}
+
+/* ======================================================= */
+
+.twoRow{
+    display: flex;
+    justify-content: center;
+}
+
+/* ======================================================= */
+
+.gnews4{
+    margin: 1%;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.gnews4 img{
+    width: 100%;
+    max-width: 350px;
+}
+
+.gnews4 p{
+    font-size: 1vw;
+    text-align: center;
+}
+
+.gnews4 h1{
+    font-size: 2vw;
+    text-align: center;
+}
+
+.gnews4:hover{
+    text-decoration: underline;
+}
+
+/* ======================================================= */
+
+.gnews5{
+    margin: 1%;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.gnews5 img{
+    width: 100%;
+    max-width: 350px;
+}
+
+.gnews5 p{
+    font-size: 1vw;
+    text-align: center;
+}
+
+.gnews5 h1{
+    font-size: 2vw;
+    text-align: center;
+}
+
+.gnews5:hover{
+    text-decoration: underline;
+}
+
+
+/* ======================================================= */
+
+.gnews6{
+    margin: 1%;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.gnews6 img{
+    width: 100%;
+    max-width: 350px;
+}
+
+.gnews6 p{
+    font-size: 1vw;
+    text-align: center;
+}
+
+.gnews6 h1{
+    font-size: 2vw;
+    text-align: center;
+}
+
+.gnews6:hover{
+    text-decoration: underline;
+}
+
+/* ======================================================= */
+
+
+/* ======================================================= */
 .hidden{
     opacity: 0;
     transition: all 1.2s ease-in;
