@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.bgweb{
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)), url(J12KidsIMGs/happyKids.jpg);
+    padding-bottom: 100px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.topbar{
+    padding-left: 5%;
+    width: 100%;
+}
+
+.topbar h1{
+    padding-top: 40px;
+    font-size: 2.5vw;
+    color: white;
+}
+
+.webName{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.topbar img{
+    width: 100px;
+    cursor: pointer;
+    margin-top: 2%;
+}
+
+.webName h1{
+    font-size: 7vw;
+    color: white;
+}
+
+.webName h2{
+    font-size: 1.3vw;
+    color: white;
+}

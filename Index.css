@@ -149,7 +149,7 @@ nav ul li a:hover{
 }
 
 .cText p{
-    font-size: 1vw;
+    font-size: 1.5vw;
     margin: 10px;
 }
 
@@ -274,7 +274,7 @@ nav ul li a:hover{
 
 #equipping{
     padding-top: 150px;
-    padding-bottom: 300px;
+    padding-bottom: 150px;
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(EquippingIMGs/BFAgain.jpg);
     background-size: cover;
 }
@@ -483,20 +483,6 @@ a{
     transform: scale(1.1);
 }
 
-#videos{
-    border: 2px solid #B1B2FF;
-    border-radius: 5px;
-    background: none;
-    margin: 10px 0 10px 0;
-    padding: 15px;  
-    cursor: pointer;
-    transition: transform .2s;
-}
-
-#videos:hover{
-    transform: scale(1.1);
-}
-
 .media .mediaImg img{
     width: 370px;
     border-radius: 50%;
@@ -511,11 +497,11 @@ a{
     margin-bottom: 15px;
     border-bottom: 2px solid #B1B2FF;
     margin-right: 25%;
-    font-size: 50px;
+    font-size: 4vw;
 }
 
 .media .mediaText p {
-    font-size: 0.9vw;
+    font-size: 1.3vw;
 }
 
 .media .mediaText #noice{
@@ -760,8 +746,58 @@ textarea{
 
 
 /*-----------------------------------------------------*/
+@media only screen and (max-width:1400px){
+    .upperPos{
+        display: flex;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 
-@media only screen and (max-width:1600px){
+    
+    .images{  
+        margin-top: 50px;
+        display: flex;
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .image1 img{
+        position: relative;
+        width: 320px;
+        transition: transform .2s;
+    }
+    
+    .image1 img:hover{
+        transform: scale(1.1);
+    }
+    
+    .image2 img{
+        position: absolute;
+        width: 320px;
+        margin-left: -210px;
+        margin-top: 110px;
+        transition: transform .2s;
+    }
+    
+    .image2 img:hover{
+        transform: scale(1.1);
+    }
+    
+    .image3 img{
+        position: absolute;
+        width: 250px;
+        margin-left: -390px;
+        margin-top: 170px;
+        transition: transform .2s;
+    }
+    
+    .image3 img:hover{
+        transform: scale(1.1);
+    }
+    
+}
+
+@media only screen and (max-width:1300px){
     .images{
         display: none;
     }
