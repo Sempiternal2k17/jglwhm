@@ -8,7 +8,7 @@
 
 .bgweb{
     background-size: cover;
-    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)), url(J12KidsIMGs/happyKids.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.90)), url(SpearheadIMGs/spearheadBanner.jpg);
     padding-bottom: 100px;
 }
 
@@ -49,3 +49,291 @@ a{
     font-size: 1.3vw;
     color: white;
 }
+
+/* ================================================ */
+
+.spearheadInfo{
+    display: flex;
+    margin-top: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10%;
+    align-items: center;
+}
+
+.spearheadInfo .introInfo{
+    flex: 1;
+    align-items: center;
+    transition-delay: 200ms;
+}
+
+.introInfo h1{
+    font-size: 3.4vw;
+    margin-bottom: 2%;
+}
+
+.introInfo p{
+    font-size: 1.4vw;
+}
+
+.spearheadInfo .introImg{
+    flex: 1;
+    margin-left: 5%;
+    transition-delay: 200ms;
+}
+
+#info2{
+    margin-top: 2%;
+    font-size: 1.4vw;
+}
+
+.introImg img{
+    width: 100%;
+    max-width: 450px;
+    border-radius: 55%;
+}
+
+
+/* ================================================ */
+
+.webContent{
+    display: block;
+    padding-bottom: 5%;
+}
+
+.webContent .intro{
+    text-align: center;
+    font-size: 2vw;
+    margin-bottom: 2%;
+}
+
+.spearheadActivities{
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+/* ================================================ */
+
+.spearheadActivities .testimony{
+    flex: 1;
+    margin: 0.5vw;
+    transition-delay: 100ms;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.75);
+    transition: box-shadow 0.3s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.testimony img{
+    width: 100%;
+    max-width: 350px;
+}
+
+.testimonyInfo{
+    text-align: center;
+    padding: 2%;
+}
+
+.testimony:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,3);
+}
+
+/* ================================================ */
+
+.spearheadActivities .lifea{
+    flex: 1;
+    margin: 0.5vw;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.75);
+    transition: box-shadow 0.3s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    transition-delay: 300ms;
+}
+
+.lifea img{
+    width: 100%;
+    max-width: 350px;
+}
+
+.lifeaInfo{
+    text-align: center;
+    padding: 2%;
+}
+
+.lifea:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,3);
+}
+
+/* ================================================ */
+
+.spearheadActivities .fellow{
+    flex: 1;
+    margin: 0.5vw;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.75);
+    transition: box-shadow 0.3s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    transition-delay: 500ms;
+}
+
+.fellow img{
+    width: 100%;
+    max-width: 350px;
+}
+
+.fellowInfo{
+    text-align: center;
+    padding: 2%;
+}
+
+.fellow:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,3);
+}
+
+/* ================================================ */
+
+.announce1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.announcement{
+   margin-right: 80px;
+   align-items: center;
+}
+    
+.announcement h1{
+    font-size: 3.5vw;
+    text-align: right;
+}
+
+.announcement p{
+    font-size: 2vw;
+    text-align: right;
+}
+
+.announcement .btn{
+    display: flex;
+    justify-content: end;
+}
+
+.announcement button{
+    border: 2px solid #B1B2FF;
+    border-radius: 5px;
+    background: none;
+    margin: 10px 0 10px 0;
+    padding: 15px;  
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.announcement button:hover{
+    transform: scale(1.1);
+}
+
+.announceImg img{
+    width: 370px;
+    border-radius: 50%;
+}
+
+/* ================================================ */
+
+.bottomLinks{
+    display: flex;
+    justify-content: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: black;
+    color: white;
+}
+
+.demnSon{
+    margin-right: 2%;
+}
+
+.demnSon h1{
+    font-size: 3.5vw;
+}
+
+.demnSon p{
+    font-size: 1.3vw;
+}
+
+
+/* ================================================ */
+
+.bottomForm{
+    width: 60%;
+    margin-left: 5%;
+}
+
+.bottomForm h1{
+    font-size: 2.5vw;
+}
+
+.bottomForm p{
+    font-size: 1.3vw;
+    margin-bottom: 5%;
+}
+
+form{
+    border: 1px white solid;
+    padding: 7%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+
+label{
+    padding-top: 2%;
+}
+
+input{
+    width: 100%;
+    background: none;
+    outline: none;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border: none;
+    border-bottom: white 1px solid;
+    margin-bottom: 2%;
+    font-size: 1.3vw;
+    color: white;
+}
+
+/* ================================================ */
+
+
+.hidden{
+    opacity: 0;
+    transition: all .5s ease-in;
+    filter: blur(5px);
+    transform: translateY(100%);
+}
+
+.hidden1{
+    opacity: 0;
+    transition: all .8s ease-in;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+
+.show1{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
