@@ -703,6 +703,21 @@ a{
     color: white;
 }
 
+.bottomForm form button{
+    border: 2px solid white;
+    border-radius: 5px;
+    background: none;
+    margin: 2px 0 2px 0;
+    padding: 15px;  
+    color: white;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.bottomForm form button:hover{
+    transform: scale(1.1);
+}
+
 /*-----------------------------------------------------*/
 @media only screen and (max-width:1400px){
     .upperPos{
