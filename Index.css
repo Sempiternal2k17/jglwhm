@@ -149,7 +149,7 @@ nav ul li a:hover{
 }
 
 .cText p{
-    font-size: 1vw;
+    font-size: 1.5vw;
     margin: 10px;
 }
 
@@ -180,9 +180,6 @@ nav ul li a:hover{
     max-width: 500px;
     border-radius: 20px;
     transition: transform .2s;
-}
-.sundayServices img:fullscreen{
-    max-width: 50px;
 }
 
 .sundayServices img:hover{
@@ -274,7 +271,7 @@ nav ul li a:hover{
 
 #equipping{
     padding-top: 150px;
-    padding-bottom: 300px;
+    padding-bottom: 150px;
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(EquippingIMGs/BFAgain.jpg);
     background-size: cover;
 }
@@ -483,20 +480,6 @@ a{
     transform: scale(1.1);
 }
 
-#videos{
-    border: 2px solid #B1B2FF;
-    border-radius: 5px;
-    background: none;
-    margin: 10px 0 10px 0;
-    padding: 15px;  
-    cursor: pointer;
-    transition: transform .2s;
-}
-
-#videos:hover{
-    transform: scale(1.1);
-}
-
 .media .mediaImg img{
     width: 370px;
     border-radius: 50%;
@@ -511,11 +494,11 @@ a{
     margin-bottom: 15px;
     border-bottom: 2px solid #B1B2FF;
     margin-right: 25%;
-    font-size: 50px;
+    font-size: 4vw;
 }
 
 .media .mediaText p {
-    font-size: 0.9vw;
+    font-size: 1.3vw;
 }
 
 .media .mediaText #noice{
@@ -549,26 +532,26 @@ a{
 
 #sform{
     font-size: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 10px;
     border-bottom: none;
 }
 
-form{
-    margin-left: 10%;
-    margin-right: 10%;
+.form form{
+    margin-left: 5%;
+    margin-right: 5%;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
 }
 
-label{
+.form label{
     font-weight: bold;
     font-size: 15px;
 }
 
-input{
+.form input{
     width: 95%;
     padding: 15px 10px 15px 10px;
     height: 14px;
@@ -579,7 +562,7 @@ input{
     outline: none;
 }
 
-textarea{
+.form textarea{
     width: 95%;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -589,7 +572,6 @@ textarea{
     background: none;
     border-bottom: #B1B2FF 2px solid;
     outline: none;
-    color: white;
 }
 
 .form button{
@@ -657,111 +639,123 @@ textarea{
 
 /*-----------------------------------------------------*/
 
-.flinksBG {
-    background-color: #262525;
+.bottomLinks{
+    display: flex;
+    justify-content: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: black;
+    color: white;
+}
+
+.demnSon{
+    margin-right: 2%;
+}
+
+.demnSon h1{
+    font-size: 3.5vw;
+}
+
+.demnSon p{
+    font-size: 1.3vw;
+}
+
+
+/* ================================================ */
+
+.bottomForm{
+    width: 60%;
+    margin-left: 5%;
+}
+
+.bottomForm h1{
+    font-size: 2.5vw;
+}
+
+.bottomForm p{
+    font-size: 1.3vw;
+    margin-bottom: 5%;
+}
+
+.bottomForm form{
+    border: 1px white solid;
+    padding: 7%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+
+.bottomForm form label{
+    padding-top: 2%;
+}
+
+.bottomForm form input{
+    width: 100%;
+    background: none;
+    outline: none;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border: none;
+    border-bottom: white 1px solid;
+    margin-bottom: 2%;
+    font-size: 1.3vw;
+    color: white;
+}
+
+/*-----------------------------------------------------*/
+@media only screen and (max-width:1400px){
+    .upperPos{
+        display: flex;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    
+    .images{  
+        margin-top: 50px;
+        display: flex;
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .image1 img{
+        position: relative;
+        width: 320px;
+        transition: transform .2s;
+    }
+    
+    .image1 img:hover{
+        transform: scale(1.1);
+    }
+    
+    .image2 img{
+        position: absolute;
+        width: 320px;
+        margin-left: -210px;
+        margin-top: 110px;
+        transition: transform .2s;
+    }
+    
+    .image2 img:hover{
+        transform: scale(1.1);
+    }
+    
+    .image3 img{
+        position: absolute;
+        width: 250px;
+        margin-left: -390px;
+        margin-top: 170px;
+        transition: transform .2s;
+    }
+    
+    .image3 img:hover{
+        transform: scale(1.1);
+    }
     
 }
 
-.topLinks{
-    margin-left: 15%;
-    margin-right: 15%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1%;
-    border-bottom: 2px #b0abab solid;
-}
-
-.flinks{
-    padding: 2%;
-}
-
-.flinks a{
-    text-decoration: none;
-    color: white;
-    padding-left: 4%;
-    padding-right: 4%;
-}
-
-.flinks a:hover{
-    color: #B1B2FF;
-}
-
-.flinks ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.flinks ul li{
-    list-style: none;
-}
-
-.flinks ul li h1{
-    font-size: 1.8vw;
-}
-
-.flinks ul li h5{
-    font-size: 0.8vw;
-}
-
-.pictures{
-    display: flex;
-    align-items: center;
-}
-
-.pictures a{
-    padding: 2%;
-}
-
-.pictures .fb{
-    width: 100%;
-    max-width: 60px;
-  
-    background:none;
-}
-
-.pictures .fb:hover{
-    filter: grayscale(0%);
-    background:#0000ff;
-}
-
-.pictures .yt{
-    width: 100%;
-    max-width: 80px;
-}
-
-.bottomLinks{
-    margin-left: 15%;
-    margin-right: 15%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 2%;
-}
-
-.location a{
-    color: white;
-}
-
-.location a:hover{
-    color: #B1B2FF;
-}
-
-.location h5{
-    font-size: 0.7vw;
-}
-
-.email h5{
-    font-size: 0.7vw;
-    color: white;
-}
-
-
-
-/*-----------------------------------------------------*/
-
-@media only screen and (max-width:1600px){
+@media only screen and (max-width:1300px){
     .images{
         display: none;
     }
@@ -785,11 +779,11 @@ textarea{
     }
 
     .logoIcon{
-        width: 45px;
+        width: 70px;
     }
 
     .menuIcon{
-        width: 40px;
+        width: 60px;
         display: block;
     }
 
@@ -820,16 +814,16 @@ textarea{
 
     .churchName{
         padding: 5%;
-        padding-bottom: 20%;
+        padding-bottom: 5%;
     }
 
     .churchName h1{
-       font-size: 50px;
+       font-size: 80px;
        color: white;
     }
 
     .churchName h2{
-        font-size: 10px;
+        font-size: 15px;
         color: white;
     }
 
@@ -874,7 +868,7 @@ textarea{
 
     .mgp p{
         text-align: center;
-        font-size: 12px;
+        font-size: 15px;
     }
 
     /*===============================================*/
@@ -883,6 +877,7 @@ textarea{
     .cText{
         padding: 5%;
         margin: 5%;
+        padding-bottom: 1%;
         margin-left: 0%;
         margin-right: 0%;
     }
@@ -902,10 +897,12 @@ textarea{
 
     .connects{
         display: block;
-        justify-content: center;    
+        justify-content: center;   
         border-radius: 10px;
-        padding: 5%;
-        margin: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     .twoPrograms{
@@ -914,10 +911,10 @@ textarea{
     }
 
     .sundayServices{
-        width: 310px;
+        width: 330px;
         border-radius: 20px;
         padding: 0;
-        margin-bottom: 5%;
+        margin: auto;
     }
     
     .sundayServices img{
@@ -926,9 +923,11 @@ textarea{
     }
 
     .jkids {
-        width: 310px;
+        width: 330px;
         border-radius: 20px;
         padding: 0;
+        margin: auto;
+        margin-top: 2%;
     }
 
     .jkids img{
@@ -943,30 +942,37 @@ textarea{
     }
 
     .threePrograms .spearhead{
-        margin: 0;
+        display: block;
+        width: 330px;
+        border-radius: 5px;
+        margin: auto;
         margin-top: 2%;
-        width: 310px;
-        border-radius: 20px;
-        padding: 0;
     }
     
     .threePrograms .married4layp{
-        margin: 0;
-        margin-top: 2%;
         display: block;
-        width: 310px;
-        border-radius: 20px;
+        width: 330px;
+        border-radius: 5px;
+        margin: auto;
+        margin-top: 2%;
     }
 
     .threePrograms .wildfire{
-        margin: 0;
-        margin-top: 2%;
         display: block;
-        width: 310px;
-        border-radius: 20px;
+        width: 330px;
+        border-radius: 5px;
+        margin: auto;
+        margin-top: 2%;
     }
 
     /*===============================================*/
+
+    #equipping{
+        padding-top: 90px;
+        padding-bottom: 90px;
+        background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(EquippingIMGs/BFAgain.jpg);
+        background-size: cover;
+    }
 
     .upperPos{
         display: block;
@@ -981,7 +987,7 @@ textarea{
     /*===============================================*/
 
     .text{
-        margin-top: -200px;
+        margin-top: 0px;
         margin: 5%;
         padding: 5%;
     }
@@ -1003,13 +1009,14 @@ textarea{
 
     .choices .mentoring{
         padding: 5%;
+        padding-top: 5%;
         margin: 5%;
         width: 250px;
     }
 
     .mentoring img{
         display: block;
-        margin-top: -16px;
+        margin-top: 0%;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 20px;
@@ -1024,7 +1031,7 @@ textarea{
 
     .sol img{
         display: block;
-        margin-top: -15px;
+        margin-top: 0%;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 20px;
@@ -1039,7 +1046,7 @@ textarea{
 
     .lifeclass img{
         display: block;
-        margin-top: -16px;
+        margin-top: 0%;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 20px;
@@ -1047,31 +1054,59 @@ textarea{
     }
 
     /*===============================================*/
-    .mediaImg{
+    .starPlatrinum{
+        background: rgb(250,248,250);
+        background: linear-gradient(90deg, rgba(250,248,250,1) 43%, rgba(171,244,247,1) 80%, rgba(166,229,238,1) 100%);
+    }
+    
+    .media{
+        padding-top: 20%;
+        padding-bottom: 1%;
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    #images{
+        border: 2px solid #B1B2FF;
+        border-radius: 5px;
+        background: none;
+        margin: 10px 0 10px 0;
+        padding: 15px;
+        cursor: pointer;
+        transition: transform .2s;
+    }
+    
+    .media .mediaImg img{
         display: none;
     }
-
-    .media{
-        padding: 5%;
-        margin: 5%;
-        margin-top: 0;
-        padding-top: 15%;   
+    
+    .media .mediaText{
+        margin-left: 0px;
     }
-
-    .media h1{
+    
+    .media .mediaText h1{
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: 2px solid #B1B2FF;
+        margin-right: 25%;
         font-size: 40px;
-        padding-bottom: 5%;
-        border-bottom: 2px #B1B2FF solid;
     }
-
-    .media p{
-        padding-top: 5%;
+    
+    .media .mediaText p {
         font-size: 20px;
     }
-
-    .media .mediaText{
-        margin-left: 0;
-        padding: 0px;
+    
+    .media .mediaText #noice{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-style: italic;
+        font-weight: bold;
     }
 
     /*===============================================*/
@@ -1102,10 +1137,12 @@ textarea{
         margin: 0;
     }
 
-    form{
+    .form form{
+        margin-left: 5%;
+        margin-right: 5%;
+        justify-content: center;
         align-items: center;
         border-radius: 10px;
-        margin: 0;
     }
 
     label{
@@ -1121,7 +1158,6 @@ textarea{
         border: none;
         background: none;
         border-bottom: #B1B2FF 2px solid;
-        
     }
 
     textarea{
@@ -1136,15 +1172,16 @@ textarea{
     }
 
     .form button{
-        padding: 3%;
-        font-weight: bold;
-        border: #B1B2FF 2px solid;
+        border: 2px solid #B1B2FF;
         border-radius: 5px;
-
+        background: none;
+        margin: 10px 0 10px 0;
+        padding: 15px;
+        cursor: pointer;
+        transition: transform .2s;
     }
 
-     /*===============================================*/
-
+    
     .announce1{
         display: flex;
         justify-content: center;
@@ -1184,7 +1221,6 @@ textarea{
         margin: 10px 0 10px 0;
         padding: 4%;  
         cursor: pointer;
-        color: white;
         transition: transform .2s;
     }
     
@@ -1195,190 +1231,5 @@ textarea{
     .announceImg img{
         display: none;
     }
-
-    /*===============================================
-    .announce{
-        margin-top: 5%;
-        margin-left: 15%;
-        margin-right: 15%;
-        margin-bottom: 5%;
-        display: flex;
-        align-items: center;
-        
-    }
-    
-    .announcement{
-        display: block;
-        justify-content: right;
-        align-items: center;
-    }
-        
-    .announcement h1{
-        text-align: right;
-        margin-left: 45%;
-        font-size: 50px;
-        padding-bottom: 15px;
-        margin-bottom: 15px;
-        border-bottom: 2px solid #B1B2FF;
-        
-    }
-   
-    .announcement p{
-        text-align: right;
-        font-size: 20px;
-        padding-bottom: 5%;
-    }
-    
-    .announcement button{
-        margin-left: 400px;
-        padding: 3%;
-        font-weight: bold;
-        border: #B1B2FF 2px solid;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    
-    .announcement button:hover{
-        background: #D2DAFF;
-    }
-    
-    .announceImg img{
-        width: 370px;
-        border-radius: 50%;
-        margin-left: 15px;
-    }
-
-    */
-    
-
-     /*===============================================*/
-
-     .flinks {
-        padding: 20px;
-        background-color: #080808;
-        display: block;
-        justify-content: center;
-        padding-top: 40px;
-        border-top-style: solid;
-        text-align: center;
-    }
-    .flinks .findex{
-        flex-direction: column;
-        line-height: 0.5;
-    }
-    
-    .flinks .findex a{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 30px;
-        font-weight: bold;
-        text-decoration: none;
-        color: white;
-    }
-    
-    .flinks .findex a p{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 10px;
-        text-decoration: none;
-        color: #6f828a;
-        padding-top: 10px;
-    }
-    
-    .flinks .fconnects{
-        flex-direction: column;
-        line-height: 0.5;
-        padding-top: 15px;
-    }
-    
-    .flinks .fconnects a{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 15px;
-        font-weight: bold;
-        text-decoration: none;
-        color: white;
-    }
-    
-    .flinks .fconnects a p{
-        font-family:  Arial, Helvetica, sans-serif;
-        font-size: 10px;
-        text-decoration: none;
-        color: #6f828a;
-        padding-top: 10px;
-        display: none;
-    }
-    
-    .flinks .fmedia{
-        flex-direction: column;
-        line-height: 0.5;
-        padding-top: 15px;
-    }
-    
-    .flinks .fmedia a{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 15px;
-        font-weight: bold;
-        text-decoration: none;
-        color: white;
-    }
-    
-    .flinks .fmedia a p{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 10px;
-        text-decoration: none;
-        color: #6f828a;
-        padding-top: 10px;
-        display: none;
-    }
-    
-    .flinks .fequipping{
-        flex-direction: column;
-        line-height: 0.5; 
-        padding-top: 15px;
-    }
-    
-    .flinks .fequipping a{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 15px;
-        font-weight: bold;
-        text-decoration: none;
-        color: white;
-    }
-    
-    .flinks .fequipping a p{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 10px;
-        text-decoration: none;
-        color: #6f828a;
-        padding-top: 10px;
-        display: none;
-    }
-    
-    .flinks .fannounce{
-        flex-direction: column;
-        line-height: 0.5;
-        padding: 15px;
-    }
-    
-    .flinks .fannounce a{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 15px;
-        font-weight: bold;
-        text-decoration: none;
-        color: white;
-    }
-    
-    .flinks .fpr{
-        flex-direction: column;
-        line-height: 0.5;
-        padding-bottom: 20px;
-    }
-    
-    .flinks .fpr a{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 15px;
-        font-weight: bold;
-        text-decoration: none;
-        color: white;
-    }
-    
 
 }
