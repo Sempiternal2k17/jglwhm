@@ -692,6 +692,11 @@ a{
     font-size: 3.5vw;
 }
 
+.demnSon h1:hover{
+    color: #B1B2FF;
+    cursor: pointer;
+}
+
 .demnSon p{
     font-size: 1.3vw;
 }
