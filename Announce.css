@@ -84,7 +84,6 @@ nav ul li a:hover{
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    max-width: 1200px;
 }
 
 .report .textOne{
@@ -145,7 +144,6 @@ nav ul li a:hover{
 
 .news1 img{
     width: 100%;
-    max-width: 350px;
     padding: 0;
 }
 
@@ -184,7 +182,6 @@ nav ul li a:hover{
 
 .news2 img{
     width: 100%;
-    max-width: 350px;
 }
 
 .textArea2{
@@ -222,7 +219,6 @@ nav ul li a:hover{
 
 .news3 img{
     width: 100%;
-    max-width: 350px;
 }
 
 .textArea3{
@@ -267,7 +263,6 @@ nav ul li a:hover{
 
 .news4 img{
     width: 100%;
-    max-width: 350px;
 }
 
 .textArea4{
@@ -306,7 +301,6 @@ nav ul li a:hover{
 
 .news5 img{
     width: 100%;
-    max-width: 350px;
 }
 
 .textArea5{
@@ -344,7 +338,6 @@ nav ul li a:hover{
 
 .news6 img{
     width: 100%;
-    max-width: 350px;
 }
 
 .textArea6{
@@ -365,6 +358,104 @@ nav ul li a:hover{
 
 .textArea6 h5{
     font-size: 0.6vw;
+}
+
+.bottomLinks{
+    display: flex;
+    justify-content: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #6f7755;
+    color: white;
+}
+
+.demnSon{
+    margin-right: 2%;
+}
+
+.demnSon h1{
+    font-size: 3.5vw;
+}
+
+.demnSon h1:hover{
+    color: #B1B2FF;
+}
+
+.demnSon a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3vw;
+}
+
+.demnSon a:hover{
+    color: #B1B2FF;
+    cursor: pointer;
+}
+
+.demnSon p{
+    font-size: 1.3vw;
+}
+
+.demnSon p:hover{
+    color: #B1B2FF;
+}
+
+
+/* ================================================ */
+
+.bottomForm{
+    width: 60%;
+    margin-left: 5%;
+}
+
+.bottomForm h1{
+    font-size: 2.5vw;
+}
+
+.bottomForm p{
+    font-size: 1.3vw;
+    margin-bottom: 5%;
+}
+
+.bottomForm form{
+    border: 1px white solid;
+    padding: 7%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+
+.bottomForm form label{
+    padding-top: 2%;
+}
+
+.bottomForm form input{
+    width: 100%;
+    background: none;
+    outline: none;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border: none;
+    border-bottom: white 1px solid;
+    margin-bottom: 2%;
+    font-size: 1.3vw;
+    color: white;
+}
+
+.bottomForm form button{
+    border: 2px solid white;
+    border-radius: 5px;
+    background: none;
+    margin: 2px 0 2px 0;
+    padding: 15px;  
+    color: white;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.bottomForm form button:hover{
+    transform: scale(1.1);
 }
 /*=============================================*/
 

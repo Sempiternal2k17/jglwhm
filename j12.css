@@ -90,7 +90,6 @@ a{
 
 .thingsTodo .learn img{
     width: 100%;
-    max-width: 410px;
 }
 
 .learn .learnInfo{
@@ -130,7 +129,6 @@ a{
 
 .thingsTodo .play img{
     width: 100%;
-    max-width: 420px;
 }
 
 .play .playInfo{
@@ -170,7 +168,6 @@ a{
 
 .thingsTodo .praise img{
     width: 100%;
-    max-width: 410px;
 }
 
 .praise .praiseInfo{
@@ -228,7 +225,6 @@ a{
 
 .rowOne .itemOne img{
     width: 100%;
-    max-width: 170px;
     border-radius: 50%;
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
     transition: box-shadow 0.3s ease-in-out;
@@ -255,7 +251,6 @@ a{
 
 .rowOne .itemTwo img{
     width: 100%;
-    max-width: 170px;
     border-radius: 50%;
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
     transition: box-shadow 0.3s ease-in-out;
@@ -283,7 +278,6 @@ a{
 
 .rowOne .itemThree img{
     width: 100%;
-    max-width: 170px;
     border-radius: 50%;
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
     transition: box-shadow 0.3s ease-in-out;
@@ -309,7 +303,6 @@ a{
 
 .rowOne .itemFour img{
     width: 100%;
-    max-width: 170px;
     border-radius: 50%;
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
     transition: box-shadow 0.3s ease-in-out;
@@ -344,7 +337,6 @@ a{
 
 .rowTwo .itemOne img{
     width: 100%;
-    max-width: 170px;
     border-radius: 50%;
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
     transition: box-shadow 0.3s ease-in-out;
@@ -371,7 +363,6 @@ a{
 
 .rowTwo .itemTwo img{
     width: 100%;
-    max-width: 170px;
     border-radius: 50%;
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
     transition: box-shadow 0.3s ease-in-out;
@@ -398,7 +389,6 @@ a{
 
 .rowTwo .itemThree img{
     width: 100%;
-    max-width: 170px;
     border-radius: 50%;
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
     transition: box-shadow 0.3s ease-in-out;
@@ -411,6 +401,31 @@ a{
 }
 
 .rowTwo .itemThreetext{
+    text-align: center;
+    font-size: 1.4vw
+}
+
+/* ======================================================= */
+
+.rowTwo .itemFour{
+    margin: 2%;
+    transition-delay: 1400ms;
+}
+
+.rowTwo .itemFour img{
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.itemThree img:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,2);
+}
+
+.rowTwo .itemFourtext{
     text-align: center;
     font-size: 1.4vw
 }
@@ -455,7 +470,6 @@ a{
 
 .gnews1 img{
     width: 100%;
-    max-width: 350px;
 }
 
 .gnews1 p{
@@ -482,7 +496,6 @@ a{
 
 .gnews2 img{
     width: 100%;
-    max-width: 350px;
 }
 
 .gnews2 p{
@@ -510,7 +523,6 @@ a{
 
 .gnews3 img{
     width: 100%;
-    max-width: 350px;
 }
 
 .gnews3 p{
@@ -544,7 +556,6 @@ a{
 
 .gnews4 img{
     width: 100%;
-    max-width: 350px;
 }
 
 .gnews4 p{
@@ -571,7 +582,6 @@ a{
 
 .gnews5 img{
     width: 100%;
-    max-width: 350px;
 }
 
 .gnews5 p{
@@ -599,7 +609,6 @@ a{
 
 .gnews6 img{
     width: 100%;
-    max-width: 350px;
 }
 
 .gnews6 p{
@@ -663,7 +672,7 @@ a{
 }
 
 .announceImg img{
-    width: 370px;
+    width: 100%;
     border-radius: 50%;
 }
 

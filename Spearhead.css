@@ -89,7 +89,6 @@ a{
 
 .introImg img{
     width: 100%;
-    max-width: 450px;
     border-radius: 55%;
 }
 
@@ -127,7 +126,6 @@ a{
 
 .testimony img{
     width: 100%;
-    max-width: 350px;
 }
 
 .testimonyInfo{
@@ -153,7 +151,6 @@ a{
 
 .lifea img{
     width: 100%;
-    max-width: 350px;
 }
 
 .lifeaInfo{
@@ -179,7 +176,6 @@ a{
 
 .fellow img{
     width: 100%;
-    max-width: 350px;
 }
 
 .fellowInfo{
@@ -238,7 +234,7 @@ a{
 }
 
 .announceImg img{
-    width: 370px;
+    width: 100%;
     border-radius: 50%;
 }
 
@@ -251,7 +247,7 @@ a{
     padding-right: 15%;
     padding-top: 5%;
     padding-bottom: 5%;
-    background-color: black;
+    background-color: gray;
     color: white;
 }
 
@@ -306,6 +302,21 @@ input{
     margin-bottom: 2%;
     font-size: 1.3vw;
     color: white;
+}
+
+.bottomForm form button{
+    border: 2px solid white;
+    border-radius: 5px;
+    background: none;
+    margin: 2px 0 2px 0;
+    padding: 15px;  
+    color: white;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.bottomForm form button:hover{
+    transform: scale(1.1);
 }
 
 /* ================================================ */
