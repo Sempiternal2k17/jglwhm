@@ -453,6 +453,8 @@ a{
     display: block;
     justify-content: center;
     padding-bottom: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .oneRow{
