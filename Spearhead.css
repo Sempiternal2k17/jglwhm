@@ -253,14 +253,34 @@ a{
 
 .demnSon{
     margin-right: 2%;
+    text-align: center;
 }
 
 .demnSon h1{
     font-size: 3.5vw;
 }
 
+.demnSon h1:hover{
+    color: #B1B2FF;
+}
+
+.demnSon a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3vw;
+}
+
+.demnSon a:hover{
+    color: #B1B2FF;
+    cursor: pointer;
+}
+
 .demnSon p{
     font-size: 1.3vw;
+}
+
+.demnSon p:hover{
+    color: #B1B2FF;
 }
 
 
