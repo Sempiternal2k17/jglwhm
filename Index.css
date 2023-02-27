@@ -17,14 +17,24 @@
     padding-left: 5%;
     padding-right: 5%;
     box-sizing: border-box;
+<<<<<<< HEAD
     background-color: #23252e;
     position: fixed;
+=======
+    background-color: gray;
+    position: fixed;
+    backdrop-filter: blur(5px);
+    background-color: rgb(4, 24, 21); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.5); /* Black w/opacity/see-through */
+>>>>>>> dca2361d10f86fd2942c45bccc98515532f46bfc
 }
 
 .links{
     width: 100%;
     display: flex;
     align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 nav{
@@ -39,9 +49,13 @@ nav ul li{
 }
 
 nav ul li a{
-    text-decoration: none;
+    text-decoration: none;  
     color: white;
+<<<<<<< HEAD
     font-size: 1.2vw;
+=======
+    font-size: 0.9vw;
+>>>>>>> dca2361d10f86fd2942c45bccc98515532f46bfc
 }
 
 nav ul li a:hover{
@@ -49,9 +63,14 @@ nav ul li a:hover{
 }
 
 .logoIcon{
+<<<<<<< HEAD
     width: 7%;
+=======
+    width: 80%;
+    max-width: 100px;
+>>>>>>> dca2361d10f86fd2942c45bccc98515532f46bfc
     cursor: pointer;
-    margin: 30px 0;
+    margin:  0;
 }
 
 .menuIcon{
@@ -62,18 +81,22 @@ nav ul li a:hover{
 
 .churchName{
     padding: 5%;
+<<<<<<< HEAD
     padding-top: 20%;
+=======
+    padding-top: 15%;
+>>>>>>> dca2361d10f86fd2942c45bccc98515532f46bfc
     color: white;
 }
 
 .churchName h1{
     text-align: center;
-    font-size: 12vw;
+    font-size: 9.5vw;
 }
 
 .churchName h2{
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 5.5vw;
 }
 
 /*==========================================*/
@@ -86,21 +109,40 @@ nav ul li a:hover{
     padding-bottom: 5%;
 }
 
+<<<<<<< HEAD
 .mgp .vision, .purpose, .goal{
     flex: 2;
     border: 2px solid white;
     border-radius: 4%;
     margin: 1%;
     padding: 2%;
+=======
+.mgp .vision, .purpose, .goal {
+    flex: 2 ;
+    padding: 40px 40px 40px 40px;
+    border: 2px solid #6668e421;
+    margin: 10px;
+    border-radius: 10px;
+>>>>>>> dca2361d10f86fd2942c45bccc98515532f46bfc
     color: white;
     text-align: center;
     font-size: 1.5vw;
 }
 
+<<<<<<< HEAD
 .yas{
     text-align: center;
     font-size: 2.4vw;
 }
+=======
+.mgp p{
+    padding-top: .6vw;
+    text-align: justify;
+    color: white;
+}
+
+
+>>>>>>> dca2361d10f86fd2942c45bccc98515532f46bfc
 
 /*==========================================*/
 
@@ -257,6 +299,10 @@ nav ul li a:hover{
 }
 
 .text{
+<<<<<<< HEAD
+=======
+    
+>>>>>>> dca2361d10f86fd2942c45bccc98515532f46bfc
     padding: 10px;
 }
 
@@ -632,71 +678,6 @@ a{
 }
 
 /*-----------------------------------------------------*/
-@media only screen and (max-width:1400px){
-    .upperPos{
-        display: flex;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    
-    .images{  
-        margin-top: 50px;
-        display: flex;
-        width: 100%;
-        max-width: 400px;
-    }
-    
-    .image1 img{
-        position: relative;
-        width: 320px;
-        transition: transform .2s;
-    }
-    
-    .image1 img:hover{
-        transform: scale(1.1);
-    }
-    
-    .image2 img{
-        position: absolute;
-        width: 320px;
-        margin-left: -210px;
-        margin-top: 110px;
-        transition: transform .2s;
-    }
-    
-    .image2 img:hover{
-        transform: scale(1.1);
-    }
-    
-    .image3 img{
-        position: absolute;
-        width: 250px;
-        margin-left: -390px;
-        margin-top: 170px;
-        transition: transform .2s;
-    }
-    
-    .image3 img:hover{
-        transform: scale(1.1);
-    }
-    
-}
-
-@media only screen and (max-width:1300px){
-    .images{
-        display: none;
-    }
-    
-    .text{
-        justify-content: center;
-        align-items: center;
-        margin-top: 100px;
-        margin-left: 0px;
-        margin-right: 0px;
-        padding: 0px;
-    }
-}
 
 @media only screen and (max-width:500px){
 
@@ -710,13 +691,17 @@ a{
         width: 70px;
     }
 
+    .links{
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+
     .menuIcon{
         width: 60px;
         display: block;
     }
 
     nav ul{
-        margin-top: 30px;
         width: 100%;
         background: black;
         position: absolute;
@@ -733,6 +718,7 @@ a{
 
     nav ul li a{
         color: white;
+        font-size: 2.5vw;
     }
 
     #menuList{
@@ -742,16 +728,17 @@ a{
 
     .churchName{
         padding: 5%;
+        padding-top: 30%;
         padding-bottom: 5%;
     }
 
     .churchName h1{
-       font-size: 80px;
+       font-size: 60px;
        color: white;
     }
 
     .churchName h2{
-        font-size: 15px;
+        font-size: 20px;
         color: white;
     }
 
