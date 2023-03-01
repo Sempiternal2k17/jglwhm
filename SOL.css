@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.bgweb{
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0, 0, 0, 0.7)), url(SOLIMGs/topbg.jpg);
+    padding-bottom: 5%;
+    background-attachment: fixed;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.topbar{
+    padding-left: 5%;
+    width: 100%;
+}
+
+.topbar h1{
+    padding-top: 40px;
+    font-size: 2.5vw;
+    color: white;
+}
+
+.webName{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.webName p{
+    font-size: 1.5vw;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: whitesmoke;
+}
+
+.topbar img{
+    width: 100px;
+    cursor: pointer;
+    margin-top: 2%;
+}
+
+.webName h1{
+    font-size: 10vw;
+    color: white;
+}
+
+.noice{
+    font-size: 1.3vw;
+    color: black;
+    background-color: yellow;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    margin-left: 45%;
+    margin-right: 45%;
+}
+
+/* ========================================================= */
+
+.container1{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    margin-top: 3%;
+}
+
+.container1 img{
+    width: 60%;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.containerText{
+    display: flex;
+    justify-content: left;
+    flex: 1;
+    margin-top: 1%;
+    margin-left: 20%;
+}
