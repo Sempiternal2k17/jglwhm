@@ -8,7 +8,7 @@
 
 .bgweb{
     background-size: cover;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0, 0, 0, 0.7)), url(SOLIMGs/topbg.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0, 0, 0, 0.7)), url(LifeClassIMGs/topBG.jpg);
     padding-bottom: 5%;
     background-attachment: fixed;
 }
@@ -64,8 +64,7 @@ a{
     margin-right: 45%;
 }
 
-/* ========================================================= */
-
+/* ===================================================== */
 .containerText{
     display: block;
     justify-content: center;
@@ -79,8 +78,8 @@ a{
     margin-top: 1%;
     text-align: center;
     font-size: 3vw;
-    color: chocolate;
-    font-family: 'Courier New', Courier, monospace;
+    color: cadetblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .containerText p{
@@ -107,8 +106,8 @@ a{
 .containerText2 h1{
     text-align: center;
     font-size: 3vw;
-    color: rgb(131, 225, 231);
-    font-family: 'Courier New', Courier, monospace;
+    color: rgb(16, 30, 31);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .containerText2 p{
@@ -148,7 +147,7 @@ a{
     margin-top: 1%;
     font-size: 1.8vw;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace  ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .containerForm button{
@@ -162,7 +161,7 @@ a{
     padding-bottom: 1%;
     background: none;
     font-size: 1.2vw;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border: 1px solid;
     transition: 0.5s;
 }
@@ -173,100 +172,3 @@ a{
     cursor: pointer;
 }
 
-/* =============================================================== */
-
-.announce1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    margin-right: 15%;
-    margin-left: 15%;
-}
-
-.announcement{
-   margin-right: 80px;
-   align-items: center;
-}
-    
-.announcement h1{
-    font-size: 3.5vw;
-    text-align: right;
-}
-
-.announcement p{
-    font-size: 2vw;
-    text-align: right;
-}
-
-.announcement .btn{
-    display: flex;
-    justify-content: end;
-}
-
-.announcement button{
-    border: 2px solid #B1B2FF;
-    border-radius: 5px;
-    background: none;
-    margin: 10px 0 10px 0;
-    padding: 15px;  
-    cursor: pointer;
-    transition: transform .2s;
-}
-
-.announcement button:hover{
-    transform: scale(1.1);
-}
-
-.announceImg img{
-    width: 100%;
-    border-radius: 50%;
-}
-
-.bgbackground{
-    background-color:  #5d7288;
-}
-
-.bottomLinks{
-    display: flex;
-    justify-content: center;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    background-color: #2c3e50;
-    color: white;
-}
-
-.demnSon{
-    margin-right: 2%;
-    text-align: center;
-}
-
-.demnSon h1{
-    font-size: 3.5vw;
-}
-
-.demnSon a{
-    text-decoration: none;
-    color: white;
-}
-
-.demnSon a:hover{
-    color: #B1B2FF;
-}
-
-.demnSon h1:hover{
-    color: #B1B2FF;
-    cursor: pointer;
-}
-
-.demnSon p:hover{
-    color: #B1B2FF;
-    cursor: pointer;
-}
-
-.demnSon p{
-    font-size: 1.3vw;
-}
