@@ -46,17 +46,15 @@ nav ul li{
 nav ul li a{
     text-decoration: none;  
     color: white;
-    font-size: 0.9vw;
+    font-size: 1.2vw;
 }
 
 nav ul li a:hover{
     color: #AAC4FF;
-    
 }
 
 .logoIcon{
-    width: 80%;
-    max-width: 100px;
+    width: 60%;
     cursor: pointer;
     margin:  0;
 }
@@ -69,7 +67,7 @@ nav ul li a:hover{
 
 .churchName{
     padding: 5%;
-    padding-top: 15%;
+    padding-top: 20%;
     color: white;
 }
 
@@ -87,37 +85,27 @@ nav ul li a:hover{
 
 .mgp{
     display: flex;
+    justify-content: center;
     margin-left: 15%;
     margin-right: 15%;
-    margin-top: 5%;
     padding-bottom: 5%;
 }
 
-.mgp .vision, .purpose, .goal {
-    flex: 2 ;
-    padding: 40px 40px 40px 40px;
-    border: 2px solid #6668e421;
-    margin: 10px;
-    border-radius: 10px;
+.mgp .vision, .purpose, .goal{
+    flex: 2;
+    border: 2px solid white;
+    border-radius: 4%;
+    margin: 1%;
+    padding: 2%;
     color: white;
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(255, 255, 255, 0.24); /* Black w/opacity/see-through */
-}
-
-.h1{
-    position: relative;
     text-align: center;
-    padding-bottom: 10px;
-    font-size: 2.5vw;    
+    font-size: 1.5vw;
 }
 
-.mgp p{
-    padding-top: .6vw;
-    text-align: justify;
-    color: white;
+.yas{
+    text-align: center;
+    font-size: 2.4vw;
 }
-
-
 
 /*==========================================*/
 
@@ -250,6 +238,7 @@ nav ul li a:hover{
     width: 100%;
     max-width: 550px;
     border-radius: 20px;
+
 }
 .wildfire:hover{
     overflow: hidden;
@@ -273,7 +262,6 @@ nav ul li a:hover{
 }
 
 .text{
-    
     padding: 10px;
 }
 

@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.bgweb{
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0, 0, 0, 0.7)), url(MentoringIMGs/mentor.jpg);
+    padding-bottom: 5%;
+    background-attachment: fixed;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.topbar{
+    padding-left: 5%;
+    width: 100%;
+}
+
+.topbar h1{
+    padding-top: 40px;
+    font-size: 2.5vw;
+    color: white;
+}
+
+.webName{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.webName p{
+    font-size: 1.5vw;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: whitesmoke;
+}
+
+.topbar img{
+    width: 100px;
+    cursor: pointer;
+    margin-top: 2%;
+}
+
+.webName h1{
+    font-size: 10vw;
+    color: white;
+}
+
+.webName h2{
+    font-size: 1.3vw;
+    color: white;
+}
+
+.container1{
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+}
+
+.container1 .subContainer1{
+    flex: 1;
+    margin-right: 2%;
+}
+
+.subContainer1 img{
+    width: 100%;
+    max-width: 500px;
+    border: 2px gray black;
+    border-radius: 50%;
+}
+
+.subContainer2{
+    flex: 1;
+    margin-left: 2;
+}
+
+.subContainer2 h1{
+    font-size: 4vw;
+}
+
+.subContainer2 p{
+    font-size: 1.5vw;
+}
+
+.container2{
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+}
+
+#bgcolor{
+    background-color: rgb(117, 116, 116);
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+#verse{
+    font-size: 1.5vw;
+}
+
+.container2 .subContainer3{
+    flex: 1;
+    margin-right: 2%;
+}
+
+.subContainer3 h1{
+    font-size: 4vw;
+    text-align: right;
+}
+
+.subContainer3 p{
+    font-size: 1.5vw;
+    text-align: right;
+}
+
+.container2 .subContainer4{
+    flex: 1;
+    margin-left: 2%;
+}
+
+.subContainer4 img{
+    width: 100%;
+    max-width: 500px;
+    border: 2px gray black;
+    border-radius: 50%;
+}
+
+.subscribe{
+    display: block;
+    text-align: center;
+    background-image: linear-gradient(rgba(59, 58, 58, 0.4),rgba(59, 58, 58, 0.4)), url(MentoringIMGs/bgcolor.png);
+    background-attachment: fixed;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: white;
+}
+
+.subscribe h1{
+    font-size: 4vw;
+}
+
+.subscribe p{
+    font-size: 1.5vw;
+}
+
+.subscribe button{
+    border: 2px solid #B1B2FF;
+    border-radius: 5px;
+    background: none;
+    margin: 10px 0 10px 0;
+    padding-top: 0.9%;
+    padding-bottom: 0.9%;
+    padding-left: 2%;
+    padding-right: 2%;
+    cursor: pointer;
+    transition: transform .2s;
+    color: white;
+    font-size: 1.5vw;
+}
+
+.subscribe button:hover{
+    transform: scale(1.1);
+}
+
+.announce1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.announcement{
+   margin-right: 80px;
+   align-items: center;
+}
+    
+.announcement h1{
+    font-size: 3.5vw;
+    text-align: right;
+}
+
+.announcement p{
+    font-size: 2vw;
+    text-align: right;
+}
+
+.announcement .btn{
+    display: flex;
+    justify-content: end;
+}
+
+.announcement button{
+    border: 2px solid #B1B2FF;
+    border-radius: 5px;
+    background: none;
+    margin: 10px 0 10px 0;
+    padding: 15px;  
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.announcement button:hover{
+    transform: scale(1.1);
+}
+
+.announceImg img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.bgbackground{
+    background-color:  #5d7288;
+}
+
+.bottomLinks{
+    display: flex;
+    justify-content: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #2c3e50;
+    color: white;
+}
+
+.demnSon{
+    margin-right: 2%;
+    text-align: center;
+}
+
+.demnSon h1{
+    font-size: 3.5vw;
+}
+
+.demnSon a{
+    text-decoration: none;
+    color: white;
+}
+
+.demnSon a:hover{
+    color: #B1B2FF;
+}
+
+.demnSon h1:hover{
+    color: #B1B2FF;
+    cursor: pointer;
+}
+
+.demnSon p:hover{
+    color: #B1B2FF;
+    cursor: pointer;
+}
+
+.demnSon p{
+    font-size: 1.3vw;
+}
