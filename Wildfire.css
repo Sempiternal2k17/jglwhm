@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.bgweb{
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(WildfireIMGs/wildfireBG.jpg);
+    background-attachment: fixed;
+    padding-bottom: 100px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.topbar{
+    padding-left: 5%;
+    width: 100%;
+}
+
+.topbar h1{
+    padding-top: 40px;
+    font-size: 2.5vw;
+    color: white;
+}
+
+.webName{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.topbar img{
+    width: 100px;
+    cursor: pointer;
+    margin-top: 2%;
+}
+
+#noice{
+    font-size: 1.3vw;
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    margin-left: 45%;
+    margin-right: 45%;
+}
+
+.webName h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 9vw;
+    color: yellow;
+}
+
+.webName h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4vw;
+    color: yellow;
+}
+
+/* ====================================================== */
+
+.container{
+    display: block;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+}
+
+.container h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 5vw;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.container h1:hover{
+    color: rgb(236, 236, 23);
+}
+
+.container .containerText{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.containerText p{
+    font-size: 1.8vw;
+    text-align: justify;
+}
+
+#noice2{
+    font-size: 1.6vw;
+    margin-top: 2%;
+    font-style: italic;
+}
+
+/* ====================================================== */
+
+.container2{
+    display: block;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+#noice3{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3vw;
+}
+
+.rows{
+    display: flex;
+    margin-top: 2%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(WildfireIMGs/wildfireMBG.jpg);
+    background-attachment: fixed;
+    color: white;
+}
+
+.rows .box1{
+    display: flex;
+    background: none;
+    justify-content: center;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    width: 25%;
+    font-size: 1.4vw;
+    color: yellow;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.rows .box1:hover{
+    background-color: yellow;
+    color: black;
+}
+
+.rows .box2{
+    display: flex;
+    background: none;
+    justify-content: center;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    width: 25%;
+    font-size: 1.4vw;
+    color: yellow;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.rows .box2:hover{
+    background-color: yellow;
+    color: black;
+}
+
+.rows .box3{
+    display: flex;
+    background: none;
+    justify-content: center;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    width: 25%;
+    font-size: 1.4vw;
+    color: yellow;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.rows .box3:hover{
+    background-color: yellow;
+    color: black;
+}
+
+.rows .box4{
+    display: flex;
+    background: none;
+    justify-content: center;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    width: 25%;
+    font-size: 1.4vw;
+    color: yellow;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.rows .box4:hover{
+    background-color: yellow;
+    color: black;
+}
+
+
+.announce1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.announcement{
+   margin-right: 80px;
+   align-items: center;
+}
+    
+.announcement h1{
+    font-size: 3.5vw;
+    text-align: right;
+}
+
+.announcement p{
+    font-size: 2vw;
+    text-align: right;
+}
+
+.announcement .btn{
+    display: flex;
+    justify-content: end;
+}
+
+.announcement button{
+    border: 2px solid #B1B2FF;
+    border-radius: 5px;
+    background: none;
+    margin: 10px 0 10px 0;
+    padding: 15px;  
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.announcement button:hover{
+    transform: scale(1.1);
+}
+
+.announceImg img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+
