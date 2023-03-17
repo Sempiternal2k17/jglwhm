@@ -149,6 +149,10 @@
 
 /* ==================================================== */
 
+.word1{
+    display: none;
+}
+
 .sermons{
     margin-top: 3%;
     margin-left: 10%;
@@ -161,7 +165,7 @@
     padding-bottom:56.25%;
     position:relative;
     height:0;
-    width: 75%;
+    width: 80%;
     flex: 2;
     margin-right: 2%;
 }
@@ -185,25 +189,69 @@
 }
 
 .scroll{
+    display: block;
     justify-content: center;
-    height: 500px;
+    margin-left: 5%;
+    height: 100%;
+    max-height: 450px;
     overflow: scroll;
 }
 
-.scroll img{
-    display: block;
+.img1{
+    margin: auto;
     margin-top: 5%;
     width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(SundaySchooltings/Archive.jpg);
+    background-size: cover;
+    background-position: center;
+    color: transparent;
     border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-}
+    flex: 1;
+  }
+  
+  .innerimg1{
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: 0.5s;
+    cursor: pointer;
+    flex: 1;
+    border-radius: 10px;
+  }
+
+  
+  .innerimg1 h2{
+    font-family: 'Amatic SC';
+    font-size: 3vw;
+    text-align: center;
+  }
+  
+  .innerimg1 p{
+    font-size: 1.2vw;
+    text-align: center;
+  }
+  
+  .innerimg1:hover{
+    background-color: #FBEAEB;
+    color: #2F3C7E;
+  }
 
 .pastLive h1{
     text-align: left;
     font-family: 'Amatic SC';
     font-size: 4.3vw;
 }
+
+.word{
+    display: none;
+}
+
+.bruh{
+    display: none;
+}
+
+
 
 /* ==================================================== */
 
@@ -339,13 +387,81 @@
         font-style: italic;
     }
 
+    .words1{
+        font-family: 'Amatic SC';
+        display: block;
+        font-size: 8vw;
+    }
+
     .sermons{
         margin-left: 5%;
         margin-right: 5%;
+        margin-bottom: 5%;
     }
     
     .sermons h1{
+        display: none;
         font-family: 'Amatic SC';
-        font-size: 4.3vw;
+        font-size: 8vw;
     }
+
+    .live{
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+        width: 100%;
+        flex: 2;
+        margin-right: 2%;
+    }
+    
+    .live h1{
+        font-family: 'Amatic SC';
+        font-size: 6vw;
+    }
+    
+    .live iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+        border-radius: 10px;
+    }
+
+    .scroll{
+        display: none;
+    }
+
+    .pastLive{
+        display: none;
+    }
+
+    .word{
+        display: block;
+    }
+
+    .bruh{
+        max-height: 90px;
+        display: flex;
+        overflow-x: auto;
+        margin-left: 5%;
+        margin-right: 7%;
+        margin-top: 10%;
+    }
+
+    .bruh .noice{
+        min-width: 110px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        background-color: #ddd;
+        margin-right: 1%;
+    }
+
+    .bruh::-webkit-scrollbar{
+        width: 0;
+    }
+
+
 }
