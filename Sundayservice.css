@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed:ital,wght@0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+::selection{
+  background: rgb(0,123,255,0.3);
+}
+.content{
+  max-width: 1550px;
+  margin: auto;
+  padding: 0 30px;
+}
+.navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 25px 0;
+  transition: all 0.3s ease;
+}
+.navbar.sticky{
+  color: #FBEAEB;
+  background: #2F3C7E;
+  padding: 10px 0;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+.navbar .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo img{
+  width: 70%;
+}
+.navbar .menu-list{
+  display: inline-flex;
+}
+.menu-list li{
+  list-style: none;
+}
+.menu-list li a{
+  color: #fff;
+  font-size: 1.3vw;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.menu-list li a:hover{
+  color: yellow;
+  z-index: 2;
+}
+
+.icon{
+  cursor: pointer;
+  display: none;
+}
+.icon img{
+  width: 100%;
+  max-width: 50px;
+}
+.menu-list .cancel-btn{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  z-index: 2;
+}
+
+/* ==================================================== */
+
+.banner{
+    width: 100%;
+    background-image: linear-gradient(rgba(47,60,126, 0.7),rgba(47,60,126, 0.7)), url(SundaySchooltings/BG.jpg);
+    background-size: cover;
+    color: white;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+#noice{
+    font-family: 'Audiowide';
+    text-align: center;
+    font-size: 1.3vw;
+    background-color: #FBEAEB;
+    color: #2F3C7E;
+    margin-left: 45%;
+    margin-right: 45%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.banner h1{
+    font-family: 'Amatic SC';
+    font-size: 13vw;
+    text-align: center;
+}
+
+.container{
+    display: block;
+    margin-top: 3%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 3%;
+}
+
+.container h1{
+    font-family: 'Amatic SC';
+    font-size: 4.3vw;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container p{
+    font-size: 1.7vw;
+    text-align: justify;
+}
+
+.containerImg img{
+    display: block;
+    margin: auto;
+    width: 80%;
+    border-radius: 1%;
+}
+
+.containerImg h3{
+    font-family: 'Amatic SC';
+    margin-bottom: 1%;
+    text-align: center;
+    font-size: 3vw;
+}
+
+/* ==================================================== */
+
+.sermons{
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+}
+
+.live{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    width: 75%;
+    flex: 2;
+    margin-right: 2%;
+}
+
+.live h1{
+    font-family: 'Amatic SC';
+    font-size: 4.3vw;
+}
+
+.live iframe{
+    left:0;
+    top:15%;
+    height:100%;
+    width:100%;
+    position:absolute;
+    border-radius: 10px;
+}
+
+.pastLive{
+    flex: 1;
+}
+
+.scroll{
+    justify-content: center;
+    height: 500px;
+    overflow: scroll;
+}
+
+.scroll img{
+    display: block;
+    margin-top: 5%;
+    width: 80%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pastLive h1{
+    text-align: left;
+    font-family: 'Amatic SC';
+    font-size: 4.3vw;
+}
+
+/* ==================================================== */
+
+@media (max-width: 1230px) {
+  .content{
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1100px) {
+  .content{
+    padding: 0 40px;
+  }
+}
+@media (max-width: 900px) {
+  .content{
+    padding: 0 30px;
+  }
+}
+@media (max-width: 868px) {
+  body.disabled{
+    overflow: hidden;
+  }
+  .icon{
+    display: block;
+  }
+  .icon.hide{
+    display: none;
+    z-index: 2;
+  }
+  .navbar .menu-list{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    background: #222;
+    transition: all 0.3s ease;
+  }
+  .navbar.show .menu-list{
+    left: 0%;
+  }
+  .navbar .menu-list li{
+    margin-top: 45px;
+  }
+  .navbar .menu-list li a{
+    font-size: 23px;
+    margin-left: -100%;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .navbar.show .menu-list li a{
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+    .navbar .logo img{
+      width: 40%;
+    }
+  
+    .icon img{
+      width: 100%;
+      max-width: 40px;
+    }
+
+    .banner{
+        width: 100%;
+        background-image: linear-gradient(rgba(47,60,126, 0.7),rgba(47,60,126, 0.7)), url(SundaySchooltings/BG.jpg);
+        background-size: cover;
+        color: white;
+        padding-top: 20%;
+        padding-bottom: 10%;
+    }
+    
+    #noice{
+        font-family: 'Audiowide';
+        text-align: center;
+        font-size: 3vw;
+        background-color: #FBEAEB;
+        color: #2F3C7E;
+        margin-left: 38%;
+        margin-right: 38%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    
+    .banner h1{
+        font-family: 'Amatic SC';
+        font-size: 18vw;
+        text-align: center;
+    }
+    
+    .container{
+        display: block;
+        margin-top: 3%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 3%;
+    }
+    
+    .container h1{
+        margin-top: 10%;
+        font-family: 'Amatic SC';
+        font-size: 8vw;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .container p{
+        margin-top: 3%;
+        font-size: 4vw;
+        text-align: justify;
+    }
+
+    .containerImg{
+        margin-top: 10%;
+    }
+
+    .containerImg img{
+        display: block;
+        margin: auto;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .containerImg h3{
+        margin-top: 1%;
+        text-align: center;
+        font-size: 3vw;
+        font-style: italic;
+    }
+
+    .sermons{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .sermons h1{
+        font-family: 'Amatic SC';
+        font-size: 4.3vw;
+    }
+}
