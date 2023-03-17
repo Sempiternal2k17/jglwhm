@@ -1,1198 +1,1227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed:ital,wght@0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
 *{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto Condensed', sans-serif;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  scroll-behavior: smooth;
 }
 
-.webTop{
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(HeadnFooter/HomeBG.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
 }
-
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+::selection{
+  background: rgb(0,123,255,0.3);
+}
+.content{
+  max-width: 1550px;
+  margin: auto;
+  padding: 0 30px;
+}
 .navbar{
-    width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
-    box-sizing: border-box;
-    background-color: gray;
-    position: fixed;
-    backdrop-filter: blur(5px);
-    background-color: rgb(4, 24, 21); /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.5); /* Black w/opacity/see-through */
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 25px 0;
+  transition: all 0.3s ease;
 }
-
-.links{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding-top: 1%;
-    padding-bottom: 1%;
+.navbar.sticky{
+  background: #1b1b1b;
+  padding: 10px 0;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
 }
-
-nav{
-    flex: 1;
-    text-align: right;
+.navbar .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    margin-right: 20px;
+.navbar .logo img{
+  width: 70%;
 }
-
-nav ul li a{
-    text-decoration: none;  
-    color: white;
-    font-size: 1.2vw;
+.navbar .menu-list{
+  display: inline-flex;
 }
-
-nav ul li a:hover{
-    color: #AAC4FF;
+.menu-list li{
+  list-style: none;
 }
-
-.logoIcon{
-    width: 60%;
-    cursor: pointer;
-    margin:  0;
+.menu-list li a{
+  color: #fff;
+  font-size: 1.3vw;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
-
-.menuIcon{
-    width: 35px;
-    cursor: pointer;
+.menu-list li a:hover{
+  color: yellow;
+  z-index: 2;
+}
+.banner{
+  background: url("banner.jpg") no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.about{
+  padding: 30px 0;
+}
+.about .title{
+  font-size: 38px;
+  font-weight: 700;
+}
+.about p{
+  padding-top: 20px;
+  text-align: justify;
+}
+.icon{
+  cursor: pointer;
+  display: none;
+}
+.icon img{
+  width: 100%;
+  max-width: 50px;
+}
+.menu-list .cancel-btn{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  z-index: 2;
+}
+@media (max-width: 1230px) {
+  .content{
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1100px) {
+  .content{
+    padding: 0 40px;
+  }
+}
+@media (max-width: 900px) {
+  .content{
+    padding: 0 30px;
+  }
+}
+@media (max-width: 868px) {
+  body.disabled{
+    overflow: hidden;
+  }
+  .icon{
+    display: block;
+  }
+  .icon.hide{
     display: none;
-}
-
-.churchName{
-    padding: 5%;
-    padding-top: 20%;
-    color: white;
-}
-
-.churchName h1{
+    z-index: 2;
+  }
+  .navbar .menu-list{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 40px 0;
     text-align: center;
-    font-size: 9.5vw;
-}
-
-.churchName h2{
-    text-align: center;
-    font-size: 5.5vw;
-}
-
-/*==========================================*/
-
-.mgp{
-    display: flex;
-    justify-content: center;
-    margin-left: 15%;
-    margin-right: 15%;
-    padding-bottom: 5%;
-}
-
-.mgp .vision, .purpose, .goal{
-    flex: 2;
-    border: 2px solid white;
-    border-radius: 4%;
-    margin: 1%;
-    padding: 2%;
-    color: white;
-    text-align: center;
-    font-size: 1.5vw;
-}
-
-.yas{
-    text-align: center;
-    font-size: 2.4vw;
-}
-
-/*==========================================*/
-
-.cText{
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
-.cText h1{
-    padding-bottom: 15px;
-    font-size: 2.5vw;
-    margin: 10px;
-    margin-right: 52%;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #B1B2FF;
-}
-
-.cText p{
-    font-size: 1.5vw;
-    margin: 10px;
-}
-
-.connects{
-    border-radius: 20px;
-    display: flex;
-    margin-left: 15%;
-    margin-right: 15%;
-    justify-content: center;
-    padding: 30px 20px 30px 20px;
-    
-}
-
-#connects{
-    padding: 5% 0 5% 0;
-    background: rgb(250,248,250);
-    background: linear-gradient(90deg, rgba(250,248,250,1) 43%, rgba(171,244,247,1) 80%, rgba(166,229,238,1) 100%);
-}
-
-.sundayServices{
-    border-radius: 20px;
-    padding: 5px;
-}
-
-.sundayServices img{
-    display: block;
-    width: 100%;
-    max-width: 500px;
-    border-radius: 20px;
-    transition: transform .2s;
-}
-
-.sundayServices img:hover{
-    overflow: hidden;
-    transform: scale(1.1);
-}
-
-/*==========================================*/
-
-.jkids{
-    border-radius: 20px;
-    padding: 5px;
-}
-
-.jkids img{
-    display: block;
-    width: 100%;
-    max-width: 500px;
-    border-radius: 20px;
-    transition: transform .2s;
-}
-
-.jkids img:hover{
-    overflow: hidden;
-    transform: scale(1.1);
-}
-
-/*==========================================*/
-
-.threePrograms .spearhead{
-    margin: 10px;
-    border-radius: 20px;
-    transition: transform .2s;
-}
-.threePrograms .spearhead:hover{
-    overflow: hidden;
-    transform: scale(1.1);
-}
-.spearhead img{
-    display: block;
-    width: 100%;
-    max-width: 550px;
-    border-radius: 20px;
+    background: #222;
+    transition: all 0.3s ease;
+  }
+  .navbar.show .menu-list{
+    left: 0%;
+  }
+  .navbar .menu-list li{
+    margin-top: 45px;
+  }
+  .navbar .menu-list li a{
+    font-size: 23px;
+    margin-left: -100%;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .navbar.show .menu-list li a{
+    margin-left: 0px;
+  }
 }
 
 
 
-/*==========================================*/
 
-.threePrograms .married4layp{
-    margin: 10px;
-    border-radius: 20px;
-    transition: transform .2s;
+/* Slideshow container */
+.slide{
+  box-sizing: border-box;
+}
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: none;
+  padding: none;
 }
 
-.married4layp img{
-    display: block;
-    width: 100%;
-    max-width: 550px;
-    border-radius: 20px;
-}
-.married4layp:hover{
-    overflow: hidden;
-    transform: scale(1.1);
+/* Hide the images by default */
+.mySlides {
+  display: none;
 }
 
-
-
-/*==========================================*/
-
-.threePrograms .wildfire{
-    margin: 10px;
-    border-radius: 20px;
-    transition: transform .2s;
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-.wildfire img{
-    display: block;
-    width: 100%;
-    max-width: 550px;
-    border-radius: 20px;
-
-}
-.wildfire:hover{
-    overflow: hidden;
-    transform: scale(1.1);
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-/*======================================*/
-
-#equipping{
-    padding-top: 150px;
-    padding-bottom: 150px;
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(EquippingIMGs/BFAgain.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
 }
 
-.upperPos{
-    display: flex;
-    margin-left: 15%;
-    margin-right: 15%;
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  background-color: #717171;
+  position: absolute;
+  bottom: 5%;
+  font-size: 4vw;
+  width: 100%;
+  text-align: center;
 }
 
-.text{
-    padding: 10px;
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
 
-.description h1{
-    padding-bottom: 15px;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #B1B2FF;
-    font-size: 50px;
-    color: white;
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 1.5vh;
+  width: 0.7vw;
+  margin: 0 2px;
+  background-color: #662020;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
-.description p{
-    font-size: 20px;
-    text-align: justify;
-    color: white;
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.container{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 5%;
+}
+
+.container em{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.container h1{
+  font-family: 'AudioWide';
+  margin-top: 5%;
+  font-size: 3vw;
+  text-align: center;
+}
+
+.container p{
+  margin-top: 7%;
+  font-size: 1.9vw;
+}
+
+#word{
+  margin-top: 3%;
+  font-size: 1.9vw;
+}
+
+/* ================================================ */
+
+.desc{
+  display: block;
+  justify-content: center;
+  background-color: #eceaea;
 }
 
 a{
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: white;
 }
 
-.choices{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding: 10px;
+.desc h1{
+  font-family: 'AudioWide';
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-size: 4vw;
 }
 
-.choices .mentoring{
-    flex: 1;
-    border: 2px solid #B1B2FF;
-    border-radius: 20px;
-    margin: 10px;
-    padding: 30px;
-    transition: transform .2s;
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(255, 255, 255, 0.24); /* Black w/opacity/see-through */
+.desc p{
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: 1.9vw; 
+  padding-bottom: 3%;
 }
 
-.mentoring p{
-    text-align: center;
-    color: white;
+.aboutUs{
+  display: flex;
+  color: white;
+  margin-bottom: 5%;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(HeadnFooter/background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.mentoring img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90px;
+.vision{
+  width: 33.3%;
+  padding: 5%;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
-.mentoring:hover{
-    transform: scale(1.1);
+.vision h1{
+  font-family: 'AudioWide';
+  text-align: center;
+  margin-bottom: 10%;
+  font-size: 3vw;
 }
 
-/*----------------------------------------*/
-
-.choices .sol{
-    flex: 1;
-    border: 2px solid #B1B2FF;
-    border-radius: 20px;
-    margin: 10px;
-    padding: 30px;
-    transition: transform .2s;
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(255, 255, 255, 0.24); /* Black w/opacity/see-through */
+.vision p{
+  font-size: 1.7vw;
+  text-align: center;
 }
 
-.sol p{
-    text-align: center;
-    color: white;
+.vision:hover{
+  background-color: white;
+  color: black;
 }
 
-.sol img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90px;
+/* ================================================ */
+
+.pastorContainer{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 4%;
 }
 
-.sol:hover{
-    transform: scale(1.1);
+.pastorContainer h1{
+  font-family: 'AudioWide';
+  font-size: 3vw;
+  text-align: center;
+}
+
+.pastors{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.pastors img{
+  width: 50%;
+  border-radius: 50%;
+}
+
+.pText{
+  margin-left: 3%;
+}
+
+.pText h1{
+  font-family: 'AudioWide';
+  font-size: 2.5vw;
+}
+
+.pText p{
+  font-size: 1.5vw;
+}
+
+/* ================================================ */
+
+.cSection{
+  display: block;
+  color: white;
+}
+
+.row1{
+  display: flex;
+}
+
+.sunday{
+  width: 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(HeadnFooter/sundayschool.png);
+  background-size: cover;
+  color: white;
+  flex: 1;
+}
+
+.sundayDesc{
+  padding-top: 15%;
+  padding-bottom: 15%;
+  padding-left: 5%;
+  padding-right: 5%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.sundayDesc h1{
+  font-family: 'AudioWide';
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+.sundayDesc h2{
+  font-family: 'AudioWide';
+  font-size: 1.5vw;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.sundayDesc p{
+  font-size: 1.4vw;
+  text-align: center;
+  margin-bottom: 5%
+}
+
+.sundayDesc:hover{
+  background-color: #FBEAEB;
+  color: #2F3C7E;
+}
+
+.wildfire{
+  width: 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(HeadnFooter/Wildfire.jpg);
+  background-size: cover;
+  color: white;
+  flex: 1;
+}
+
+.wildfireDesc{
+  padding-top: 15%;
+  padding-bottom: 15%;
+  padding-left: 5%;
+  padding-right: 5%;
+  transition: 0.5s;
+  cursor: pointer;
+  flex: 1;
+}
+
+.wildfireDesc h1{
+  font-family: 'AudioWide';
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+.wildfireDesc h2{
+  font-family: 'AudioWide';
+  font-size: 1.5vw;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.wildfireDesc p{
+  font-size: 1.4vw;
+  text-align: center;
+  margin-bottom: 5%
+}
+
+.wildfireDesc:hover{
+  background-color: black;
+  color: yellow;
+}
+
+/* ================================================ */
+
+.row2{
+  display: flex;
+}
+
+.j12{
+  align-items: center;
+  width: 33%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(HeadnFooter/kids.jpg);
+  background-size: cover;
+  color: white;
+  flex: 1;
+}
+
+.j12Desc{
+  padding-top: 15%;
+  padding-bottom: 15%;
+  padding-left: 5%;
+  padding-right: 5%;
+  transition: 0.5s;
+  cursor: pointer;
+  flex: 1;
+  height: 100%;
+}
+
+.j12Desc h1{
+  font-family: 'AudioWide';
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+.j12Desc h2{
+  font-family: 'AudioWide';
+  font-size: 1.5vw;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.j12Desc p{
+  font-size: 1.4vw;
+  text-align: center;
+  margin-bottom: 5%
+}
+
+.j12Desc:hover{
+  background-color: #00FFFF;
+  color: #FF69B4;
 }
 
 
-
-/*----------------------------------------*/
-
-.choices .lifeclass{
-    border: 2px solid #B1B2FF;
-    border-radius: 20px;
-    flex: 1;
-    margin: 10px;
-    padding: 30px;
-    transition: transform .2s;
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(255, 255, 255, 0.24); /* Black w/opacity/see-through */
+.spearhead{
+  width: 34%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(HeadnFooter/Spearheadmobile.png);
+  background-size: cover;
+  color: white;
+  flex: 1;
 }
 
-.lifeclass p{
-    color: white;
-    text-align: center;
+.spearheadDesc{
+  padding-top: 15%;
+  padding-bottom: 12%;
+  padding-left: 5%;
+  padding-right: 5%;
+  transition: 0.5s;
+  cursor: pointer;
+  flex: 1;
+  height: 100%;
 }
 
-.lifeclass img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90px;
+.spearheadDesc h1{
+  font-family: 'AudioWide';
+  font-size: 2.5vw;
+  text-align: center;
 }
 
-.lifeclass:hover{
-    transform: scale(1.1);
+.spearheadDesc h2{
+  font-family: 'AudioWide';
+  font-size: 1.5vw;
+  text-align: center;
+  margin-bottom: 5%;
 }
 
-#nice{
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
+.spearheadDesc p{
+  font-size: 1.4vw;
+  text-align: center;
+  margin-bottom: 5%
 }
 
-/*-----------------------------------------------------*/
-.starPlatrinum{
-    background: rgb(250,248,250);
-    background: linear-gradient(90deg, rgba(250,248,250,1) 43%, rgba(171,244,247,1) 80%, rgba(166,229,238,1) 100%);
+.spearheadDesc:hover{
+  background-color: #FFE77AFF;
+  color: #2C5F2DFF;
 }
 
-.media{
-    padding-top: 10%;
-    padding-bottom: 5%;
-    margin-bottom: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 15%;
-    margin-right: 15%;
+.married{
+  width: 33%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(HeadnFooter/married.jpg);
+  background-size: cover;
+  color: white;
+  flex: 1;
 }
 
-#images{
-    border: 2px solid #B1B2FF;
-    border-radius: 5px;
-    background: none;
-    margin: 10px 0 10px 0;
-    padding: 15px;
-    cursor: pointer;
-    transition: transform .2s;
+.marriedDesc{
+  padding-top: 15%;
+  padding-bottom: 15%;
+  padding-left: 5%;
+  padding-right: 5%;
+  transition: 0.5s;
+  cursor: pointer;
+  flex: 1;
+  height: 100%;
 }
 
-#images:hover{
-    transform: scale(1.1);
+.marriedDesc h1{
+  font-family: 'AudioWide';
+  font-size: 2.5vw;
+  text-align: center;
 }
 
-.media .mediaImg img{
-    width: 100%;
-    border-radius: 50%;
+.marriedDesc h2{
+  font-family: 'AudioWide';
+  font-size: 1.5vw;
+  text-align: center;
+  margin-bottom: 5%;
 }
 
-.media .mediaText{
-    margin-left: 50px;
+.marriedDesc p{
+  font-size: 1.4vw;
+  text-align: center;
+  margin-bottom: 5%
 }
 
-.media .mediaText h1{
-    padding-bottom: 15px;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #B1B2FF;
-    margin-right: 25%;
-    font-size: 4vw;
+.marriedDesc:hover{
+  background-color: #F7C5CC;
+  color: #CC313D;
 }
 
-.media .mediaText p {
-    font-size: 1.3vw;
+/* ================================================ */
+
+.equip{
+  display: flex;
 }
 
-.media .mediaText #noice{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-style: italic;
-    font-weight: bold;
+.mentoring{
+  align-items: center;
+  width: 33%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(HeadnFooter/mentoring.png);
+  background-size: cover;
+  color: white;
+  flex: 1;
 }
 
-/*-----------------------------------------------------*/
-
-.form{
-    margin-top: 5%;
-    padding: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
+.mentoringDesc{
+  padding-top: 20%;
+  padding-bottom: 15%;
+  padding-left: 5%;
+  padding-right: 5%;
+  transition: 0.5s;
+  cursor: pointer;
+  height: 100%;
 }
 
-.form h1{
-    font-size: 40px;
-    padding-bottom: 15px;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #B1B2FF;
-    margin-right: 52%;
+.mentoringDesc h1{
+  font-family: 'AudioWide';
+  font-size: 2.5vw;
+  text-align: center;
 }
 
-.form p{
-    font-size: 20px;
-    padding-bottom: 2%;
+.mentoringDesc p{
+  font-size: 1.4vw;
+  text-align: center;
 }
 
-#sform{
-    font-size: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
-    border-bottom: none;
+.mentoringDesc:hover{
+  background-color: #FFA3FD;
+  color: #191825;
 }
 
-.form button{
-    padding: 15px;
-    font-weight: bold;
-    border: #B1B2FF 2px solid;
-    border-radius: 5px;
-    cursor: pointer;
-    background: none;
-    transition: transform .2s;
+
+.solclass{
+  width: 34%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(HeadnFooter/solclassPortrait.png);
+  background-size: cover;
+  color: white;
+  flex: 1;
 }
 
-.form button:hover{
-    transform: scale(1.1); 
+.solDesc{
+  padding-top: 15%;
+  padding-bottom: 12%;
+  padding-left: 5%;
+  padding-right: 5%;
+  transition: 0.5s;
+  cursor: pointer;
+  flex: 1;
+  height: 100%;
 }
-/*-----------------------------------------------------*/
-.announce1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    margin-right: 15%;
-    margin-left: 15%;
+
+.solDesc h1{
+  font-family: 'AudioWide';
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+.solDesc p{
+  font-size: 1.4vw;
+  text-align: center;
+  margin-bottom: 5%
+}
+
+.solDesc:hover{
+  background-color: #FBFFB1;
+  color: #FFACAC;
+}
+
+.lifeclass{
+  width: 33%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(HeadnFooter/married.jpg);
+  background-size: cover;
+  color: white;
+  flex: 1;
+  
+}
+
+.lifeclassDesc{
+  padding-top: 15%;
+  padding-bottom: 15%;
+  padding-left: 5%;
+  padding-right: 5%;
+  transition: 0.5s;
+  cursor: pointer;
+  flex: 1;
+  height: 100%;
+}
+
+.lifeclassDesc h1{
+  font-family: 'AudioWide';
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+.lifeclassDesc p{
+  font-size: 1.4vw;
+  text-align: center;
+  margin-bottom: 5%
+}
+
+.lifeclassDesc:hover{
+  background-color: #F7C5CC;
+  color: #CC313D;
+}
+
+/* ================================================ */
+
+.photos{
+  margin-top: 4%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.mediaImg img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+.mediaDesc{
+  margin-left: 3%;
+}
+
+.mediaDesc h1{
+  font-family: 'AudioWide';
+  font-size: 2.5vw;
+}
+
+.mediaDesc p{
+  font-size: 1.5vw;
+}
+
+.mediaDesc .button {
+  border-radius: 4px;
+  background-color: #e23c52;
+  border: none;
+  color: #bdfff6;
+  text-align: center;
+  font-size: 1.3vw;
+  padding: 2%;
+  width: 25%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 3%;
+}
+
+.button h1{
+  font-size: 1.3vw;
+}
+
+.mediaDesc .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.mediaDesc .button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  width: 18%;
+}
+
+.mediaDesc .button:hover span {
+  padding-right: 13%;
+}
+
+.mediaDesc .button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* ================================================ */
+
+.pandA{
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+  justify-content: center;
+}
+
+.prayerReq{
+  text-align: center;
+}
+
+.prayerReq h1{
+  font-family: 'AudioWide';
+  font-size: 2.5vw;
+}
+
+.prayerReq p{
+  font-size: 1.7vw;
+}
+
+.pandA .button {
+  border-radius: 4px;
+  background-color: #e23c52;
+  border: none;
+  color: #bdfff6;
+  text-align: center;
+  font-size: 1.3vw;
+  padding: 2%;
+  width: 40%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 3%;
+}
+
+.pandA .button h1{
+  font-size: 1.3vw;
+}
+
+.pandA .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.pandA .button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  width: 18%;
+}
+
+.pandA .button:hover span {
+  padding-right: 13%;
+}
+
+.pandA .button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 .announcement{
-   margin-right: 80px;
-   align-items: center;
+  text-align: center;
 }
-    
+
 .announcement h1{
-    font-size: 3.5vw;
-    text-align: right;
+  font-family: 'AudioWide';
+  font-size: 2.5vw;
 }
 
 .announcement p{
-    font-size: 2vw;
-    text-align: right;
+  font-size: 1.7vw;
 }
 
-.announcement .btn{
-    display: flex;
-    justify-content: end;
-}
 
-.announcement button{
-    border: 2px solid #B1B2FF;
-    border-radius: 5px;
-    background: none;
-    margin: 10px 0 10px 0;
-    padding: 15px;  
-    cursor: pointer;
-    transition: transform .2s;
-}
 
-.announcement button:hover{
-    transform: scale(1.1);
-}
 
-.announceImg img{
-    width: 100%;
-    border-radius: 50%;
-}
-
-/*-----------------------------------------------------*/
-
-.bottomLinks{
-    display: flex;
-    justify-content: center;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    background-color: black;
-    color: white;
-    text-align: center;
-}
-
-.demnSon{
-    margin-right: 2%;
-}
-
-.demnSon h1{
-    font-size: 3.5vw;
-}
-
-.demnSon h1:hover{
-    color: #B1B2FF;
-}
-
-.demnSon a{
-    text-decoration: none;
-    color: white;
-    font-size: 1.3vw;
-}
-
-.demnSon a:hover{
-    color: #B1B2FF;
-    cursor: pointer;
-}
-
-.demnSon p{
-    font-size: 1.3vw;
-}
-
-.demnSon p:hover{
-    color: #B1B2FF;
-}
 
 
 /* ================================================ */
 
-.bottomForm{
-    width: 60%;
-    margin-left: 5%;
-}
+@media (max-width: 500px) {
+  .navbar .logo img{
+    width: 40%;
+  }
 
-.bottomForm h1{
-    font-size: 2.5vw;
-}
-
-.bottomForm p{
-    font-size: 1.3vw;
-    margin-bottom: 5%;
-}
-
-.bottomForm form{
-    border: 1px white solid;
-    padding: 7%;
-    padding-top: 8%;
-    padding-bottom: 8%;
-}
-
-.bottomForm form label{
-    padding-top: 2%;
-}
-
-.bottomForm form input{
+  .icon img{
     width: 100%;
-    background: none;
-    outline: none;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    border: none;
-    border-bottom: white 1px solid;
-    margin-bottom: 2%;
-    font-size: 1.3vw;
-    color: white;
-}
+    max-width: 40px;
+  }
 
-.bottomForm form button{
-    border: 2px solid white;
-    border-radius: 5px;
-    background: none;
-    margin: 2px 0 2px 0;
-    padding: 15px;  
+  .container{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+  }
+
+  .container h1{
+    font-family: 'AudioWide';
+    margin-top: 5%;
+    font-size: 5.5vw;
+    text-align: center;
+  }
+
+  .container p{
+    margin-top: 7%;
+    font-size: 3.5vw;
+    text-align: justify;
+  }
+
+  #word{
+    margin-top: 3%;
+    font-size: 3.5vw;
+  }
+
+/* ================================================ */
+
+  .aboutUs{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(HeadnFooter/mobileBackground.jpg);
+    background-size: cover;
+    display: block;
     color: white;
+    margin-bottom: 5%;
+    background-attachment: scroll;
+  }
+  
+  .vision{
+    width: 100%;
+    padding: 5%;
+    transition: 0.5s;
     cursor: pointer;
-    transition: transform .2s;
-}
+  }
+  
+  .vision h1{
+    font-family: 'AudioWide';
+    text-align: center;
+    margin-bottom: 2%;
+    font-size: 5.5vw;
+  }
+  
+  .vision p{
+    font-size: 3.5vw;
+    text-align: center;
+  }
+  
+  .vision:hover{
+    background-color: white;
+    color: black;
+  }
+
+  /* ================================================ */
+
+  .pastorContainer{
+    margin-top: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 4%;
+  }
+  
+  .pastorContainer h1{
+    font-family: 'AudioWide';
+    font-size: 5.5vw;
+    text-align: center;
+  }
+  
+  .pastors{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    display: block;
+    align-items: center;
+  }
+  
+  .pastors img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-radius: 50%;
+  }
+  
+  .pText{
+    margin-top: 4%;
+    margin-left: 0;
+    margin-bottom: 20%;
+  }
+  
+  .pText h1{
+    font-family: 'AudioWide';
+    font-size: 4vw;
+    text-align: center;
+  }
+  
+  .pText p{
+    font-size: 2.5vw;
+    text-align: center;
+  }
+
+/* ================================================ */
+
+  .row1{
+    display: block;
+  }
+
+  .sunday{
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.3)), url(HeadnFooter/sundayMobile.png);
+    background-size: cover;
+    color: white;
+    margin-bottom: 0;
+    flex: 1;
+  }
+  
+  .sundayDesc{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .sundayDesc h1{
+    font-family: 'AudioWide';
+    font-size: 5vw;
+    text-align: center;
+  }
+  
+  .sundayDesc h2{
+    font-family: 'AudioWide';
+    font-size: 3.2vw;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  
+  .sundayDesc p{
+    font-size: 3vw;
+    text-align: center;
+    margin-bottom: 5%
+  }
+  
+  .sundayDesc:hover{
+    background-color: #FBEAEB;
+    color: #2F3C7E;
+  }
+  
+  .wildfire{
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.3)), url(HeadnFooter/wildfireMobile.png);
+    background-size: cover;
+    color: white;
+    margin-bottom: 5%;
+    flex: 1;
+  }
+  
+  .wildfireDesc{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .wildfireDesc h1{
+    font-family: 'AudioWide';
+    font-size: 5vw;
+    text-align: center;
+  }
+  
+  .wildfireDesc h2{
+    font-family: 'AudioWide';
+    font-size: 3.2vw;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  
+  .wildfireDesc p{
+    font-size: 3vw;
+    text-align: center;
+    margin-bottom: 5%
+  }
+  
+  .wildfireDesc:hover{
+    background-color: yellow;
+    color: black;
+  }
+
+  .row2{
+    display: block;
+  }
+  
+  .j12{
+    align-items: center;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(HeadnFooter/kids.jpg);
+    background-size: cover;
+    color: white;
+    flex: 1;
+  }
+  
+  .j12Desc{
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: 0.5s;
+    cursor: pointer;
+    flex: 1;
+    height: 0;
+  }
+  
+  .j12Desc h1{
+    font-family: 'AudioWide';
+    font-size: 2.5vw;
+    text-align: center;
+  }
+  
+  .j12Desc h2{
+    font-family: 'AudioWide';
+    font-size: 1.5vw;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  
+  .j12Desc p{
+    font-size: 1.4vw;
+    text-align: center;
+    margin-bottom: 5%
+  }
+  
+  .j12Desc:hover{
+    background-color: #00FFFF;
+    color: #FF69B4;
+  }
+  
+  
+  .spearhead{
+    width: 34%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(HeadnFooter/Spearheadmobile.png);
+    background-size: cover;
+    color: white;
+    flex: 1;
+  }
+  
+  .spearheadDesc{
+    padding-top: 15%;
+    padding-bottom: 12%;
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: 0.5s;
+    cursor: pointer;
+    flex: 1;
+    height: 100%;
+  }
+  
+  .spearheadDesc h1{
+    font-family: 'AudioWide';
+    font-size: 2.5vw;
+    text-align: center;
+  }
+  
+  .spearheadDesc h2{
+    font-family: 'AudioWide';
+    font-size: 1.5vw;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  
+  .spearheadDesc p{
+    font-size: 1.4vw;
+    text-align: center;
+    margin-bottom: 5%
+  }
+  
+  .spearheadDesc:hover{
+    background-color: #FFE77AFF;
+    color: #2C5F2DFF;
+  }
+  
+  .married{
+    width: 33%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(HeadnFooter/married.jpg);
+    background-size: cover;
+    color: white;
+    flex: 1;
+  }
+  
+  .marriedDesc{
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: 0.5s;
+    cursor: pointer;
+    flex: 1;
+    height: 100%;
+  }
+  
+  .marriedDesc h1{
+    font-family: 'AudioWide';
+    font-size: 2.5vw;
+    text-align: center;
+  }
+  
+  .marriedDesc h2{
+    font-family: 'AudioWide';
+    font-size: 1.5vw;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  
+  .marriedDesc p{
+    font-size: 1.4vw;
+    text-align: center;
+    margin-bottom: 5%
+  }
+  
+  .marriedDesc:hover{
+    background-color: #F7C5CC;
+    color: #CC313D;
+  }
+  
 
-.bottomForm form button:hover{
-    transform: scale(1.1);
-}
-
-/*-----------------------------------------------------*/
-
-@media only screen and (max-width:500px){
-
-    *{
-        margin: 0;
-        padding: 0;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .logoIcon{
-        width: 70px;
-    }
-
-    .links{
-        padding-top: 4%;
-        padding-bottom: 4%;
-    }
-
-    .menuIcon{
-        width: 60px;
-        display: block;
-    }
-
-    nav ul{
-        width: 100%;
-        background: black;
-        position: absolute;
-        top: 75px;
-        right: 0;
-        z-index: 2;
-    }
-
-    nav ul li{
-        display: block;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    nav ul li a{
-        color: white;
-        font-size: 2.5vw;
-    }
-
-    #menuList{
-        overflow: hidden;
-        transition: 0.5s;
-    }
-
-    .churchName{
-        padding: 5%;
-        padding-top: 30%;
-        padding-bottom: 5%;
-    }
-
-    .churchName h1{
-       font-size: 60px;
-       color: white;
-    }
-
-    .churchName h2{
-        font-size: 20px;
-        color: white;
-    }
-
-    .webTop{
-        background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(HeadnFooter/HomeMobile.jpg);
-    }
-
-    .mgp{
-        padding: 5%;
-        display: inline-block;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .mgp .vision{
-        border-radius: 20px;
-        margin: 5%;
-        flex: 1;
-    }
-
-    .mgp .purpose{
-        border-radius: 20px;
-        margin: 5%;
-        flex: 1;
-    }
-
-    .mgp .goal{
-        border-radius: 20px;
-        margin: 5%;
-        flex: 1;
-    }
-
-    .mgp .vision, .purpose, .goal{
-        border: none;
-        padding: 8%;
-    }
-
-    .mgp h1{
-        text-align: center;
-        font-size: 30px;
-    }
-
-    .mgp p{
-        text-align: center;
-        font-size: 15px;
-    }
-
-    /*===============================================*/
-    
-
-    .cText{
-        padding: 5%;
-        margin: 5%;
-        padding-bottom: 1%;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-    .cText h1{
-        font-size: 40px;
-        padding-bottom: 5%;
-        border-bottom: 2px #B1B2FF solid;
-    }
-
-    .cText p{
-        padding-top: 5%;
-        font-size: 20px;
-    }
-
-     /*===============================================*/
-
-    .connects{
-        display: block;
-        justify-content: center;   
-        border-radius: 10px;
-        padding-left: 5%;
-        padding-right: 5%;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    .twoPrograms{
-        display: block;
-        justify-content: center;
-    }
-
-    .sundayServices{
-        width: 330px;
-        border-radius: 20px;
-        padding: 0;
-        margin: auto;
-    }
-    
-    .sundayServices img{
-        display: block;
-        width: 100%;
-    }
-
-    .jkids {
-        width: 330px;
-        border-radius: 20px;
-        padding: 0;
-        margin: auto;
-        margin-top: 2%;
-    }
-
-    .jkids img{
-        display: block;
-        width: 100%;
-    }
-
-
-    .threePrograms{
-        display: block;
-        justify-content: center;
-    }
-
-    .threePrograms .spearhead{
-        display: block;
-        width: 330px;
-        border-radius: 5px;
-        margin: auto;
-        margin-top: 2%;
-    }
-    
-    .threePrograms .married4layp{
-        display: block;
-        width: 330px;
-        border-radius: 5px;
-        margin: auto;
-        margin-top: 2%;
-    }
-
-    .threePrograms .wildfire{
-        display: block;
-        width: 330px;
-        border-radius: 5px;
-        margin: auto;
-        margin-top: 2%;
-    }
-
-    /*===============================================*/
-
-    #equipping{
-        padding-top: 90px;
-        padding-bottom: 90px;
-        background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(EquippingIMGs/BFAgain.jpg);
-        background-size: cover;
-    }
-
-    .upperPos{
-        display: block;
-        justify-content: space-evenly;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .images{
-        display: none;
-    }
-
-    /*===============================================*/
-
-    .text{
-        margin-top: 0px;
-        margin: 5%;
-        padding: 5%;
-    }
-
-    .description h1{
-        font-size: 40px;
-        padding-bottom: 5%;
-        border-bottom: 2px #B1B2FF solid;
-    }
-
-    .description p{
-        padding-top: 5%;
-        font-size: 20px;
-    }
-
-    .choices{
-        display: block;
-    }
-
-    .choices .mentoring{
-        padding: 5%;
-        padding-top: 5%;
-        margin: 5%;
-        width: 250px;
-    }
-
-    .mentoring img{
-        display: block;
-        margin-top: 0%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 20px;
-        width: 90px;
-    }
-
-    .choices .sol{
-        padding: 5%;
-        margin: 5%;
-        width: 250px;
-    }
-
-    .sol img{
-        display: block;
-        margin-top: 0%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 20px;
-        width: 90px;
-    }
-
-    .choices .lifeclass{
-        padding: 5%;
-        margin: 5%;
-        width: 250px;
-    }
-
-    .lifeclass img{
-        display: block;
-        margin-top: 0%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 20px;
-        width: 90px;
-    }
-
-    /*===============================================*/
-    .starPlatrinum{
-        background: rgb(250,248,250);
-        background: linear-gradient(90deg, rgba(250,248,250,1) 43%, rgba(171,244,247,1) 80%, rgba(166,229,238,1) 100%);
-    }
-    
-    .media{
-        padding-top: 20%;
-        padding-bottom: 1%;
-        margin-bottom: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: 5%;
-        margin-right: 5%;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    
-    #images{
-        border: 2px solid #B1B2FF;
-        border-radius: 5px;
-        background: none;
-        margin: 10px 0 10px 0;
-        padding: 15px;
-        cursor: pointer;
-        transition: transform .2s;
-    }
-    
-    .media .mediaImg img{
-        display: none;
-    }
-    
-    .media .mediaText{
-        margin-left: 0px;
-    }
-    
-    .media .mediaText h1{
-        padding-bottom: 15px;
-        margin-bottom: 15px;
-        border-bottom: 2px solid #B1B2FF;
-        margin-right: 25%;
-        font-size: 40px;
-    }
-    
-    .media .mediaText p {
-        font-size: 20px;
-    }
-    
-    .media .mediaText #noice{
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-style: italic;
-        font-weight: bold;
-    }
-
-    /*===============================================*/
-
-    .form{
-        display: block;
-        margin: 5%;
-        padding: 5%;
-    }
-
-    .form h1{
-        margin-right: 0;
-        font-size: 40px;
-        padding-bottom: 5%;
-        border-bottom: 2px #B1B2FF solid;
-    }
-
-    .form p{
-        padding-top: 5%;
-        font-size: 20px;
-        padding-bottom: 5%;
-    }
-
-    #sform{
-        font-size: 20px;
-        border-bottom: none;
-        margin-bottom: 10px;
-        margin: 0;
-    }
-
-    .form form{
-        margin-left: 5%;
-        margin-right: 5%;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px;
-    }
-
-    label{
-        font-weight: bold;
-        font-size: 15px;
-    }
-
-    input{
-        width: 100%;
-        padding: 7px;
-        margin-top: 5%;
-        margin-bottom: 5%;
-        border: none;
-        background: none;
-        border-bottom: #B1B2FF 2px solid;
-    }
-
-    textarea{
-        width: 100%;
-        margin-top: 5%;
-        margin-bottom: 5%;
-        padding: 7px;
-        height: 100px;
-        border: none;
-        background: none;
-        border-bottom: #B1B2FF 2px solid;
-    }
-
-    .form button{
-        border: 2px solid #B1B2FF;
-        border-radius: 5px;
-        background: none;
-        margin: 10px 0 10px 0;
-        padding: 15px;
-        cursor: pointer;
-        transition: transform .2s;
-    }
-
-    
-    .announce1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 5%;
-        margin: 5%;
-        margin-bottom: 0;
-    }
-    
-    .announcement{
-       margin-right: 0px;
-       align-items: center;
-    }
-        
-    .announcement h1{
-        font-size: 40px;
-        padding-bottom: 5%;
-        border-bottom: 2px #B1B2FF solid;
-        text-align: left;
-    }
-    
-    .announcement p{
-        font-size: 20px;
-        padding-top: 5%;
-        text-align: left;
-    }
-
-    .announcement .btn{
-        display: flex;
-        justify-content: start;
-    }
-    
-    .announcement button{
-        border: 2px solid #B1B2FF;
-        border-radius: 5px;
-        background: none;
-        margin: 10px 0 10px 0;
-        padding: 4%;  
-        cursor: pointer;
-        transition: transform .2s;
-    }
-    
-    .announcement button:hover{
-        transform: scale(1.1);
-    }
-    
-    .announceImg img{
-        display: none;
-    }
-
-    /* ================================================ */
-
-    .bottomLinks{
-        display: flex;
-        justify-content: center;
-        padding-left: 15%;
-        padding-right: 15%;
-        padding-top: 5%;
-        padding-bottom: 5%;
-        background-color: black;
-        color: white;
-    }
-    
-    .demnSon{
-        margin-right: 2%;
-    }
-    
-    .demnSon h1{
-        font-size: 3.5vw;
-    }
-    
-    .demnSon h1:hover{
-        color: #B1B2FF;
-    }
-    
-    .demnSon p{
-        font-size: 1.3vw;
-    }
-    
-    .demnSon p:hover{
-        color: #B1B2FF;
-    }
-    
-    
-    /* ================================================ */
-    
-    .bottomForm{
-        width: 60%;
-        margin-left: 5%;
-    }
-    
-    .bottomForm h1{
-        font-size: 2.5vw;
-    }
-    
-    .bottomForm p{
-        font-size: 1.3vw;
-        margin-bottom: 5%;
-    }
-    
-    .bottomForm form{
-        border: 1px white solid;
-        padding: 7%;
-        padding-top: 8%;
-        padding-bottom: 8%;
-    }
-    
-    .bottomForm form label{
-        padding-top: 2%;
-    }
-    
-    .bottomForm form input{
-        width: 100%;
-        background: none;
-        outline: none;
-        padding-top: 2%;
-        padding-bottom: 2%;
-        border: none;
-        border-bottom: white 1px solid;
-        margin-bottom: 2%;
-        font-size: 1.3vw;
-        color: white;
-    }
-    
-    .bottomForm form button{
-        border: 2px solid white;
-        border-radius: 5px;
-        background: none;
-        margin: 2px 0 2px 0;
-        padding: 15px;  
-        color: white;
-        cursor: pointer;
-        transition: transform .2s;
-    }
-    
-    .bottomForm form button:hover{
-        transform: scale(1.1);
-    }
 
 }
