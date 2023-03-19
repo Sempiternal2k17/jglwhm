@@ -13,8 +13,13 @@
 }
 
 a{
-    text-decoration: none;
-    color: transparent;
+  text-decoration: none;
+  color: transparent;
+}
+
+a img{
+  width: 100%;
+  max-width: 100px;
 }
 
 /* custom scroll bar */
@@ -501,6 +506,12 @@ a{
     .navbar .logo img{
       width: 40%;
     }
+
+    
+    a img{
+      width: 100%;
+      max-width: 50px;
+    }
   
     .icon img{
       width: 100%;
@@ -701,4 +712,76 @@ a{
         background-color: #2F3C7E;
     }
 
+    .subs{
+      display: flex;
+      margin-left: 10%;
+      margin-right: 10%;
+      align-items: center;
+      margin-top: 5%;
+      margin-bottom: 3%;
+      justify-content: center;
+      
+  }
+  
+  .subs img{
+    width: 50%;
+    border-radius: 50%;
+  }
+  
+  .sText{
+    margin-left: 4%;
+  }
+  
+  .sText h1{
+    font-family: 'Amatic SC';
+    font-size: 3.5vw;
+  }
+  
+  .sText p{
+    font-size: 1.9vw;
+  }
+  
+  .sText button{
+    border-radius: 4px;
+    background-color: #2F3C7E;
+    border: none;
+    color: #FBEAEB;
+    text-align: center;
+    font-size: 1.3vw;
+    padding: 2%;
+    width: 40%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 3%;
+  }
+  
+  .sText button h1{
+    font-size: 2vw;
+  }
+  
+  .sText button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .sText button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 5px;
+    right: -20px;
+    transition: 0.5s;
+    width: 30%;
+  }
+  
+  .sText button:hover span {
+    padding-right: 13%;
+  }
+  
+  .sText button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 }
