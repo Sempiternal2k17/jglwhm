@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed:ital,wght@0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.banner{
+    background-color: #2F3C7E;
+    padding-bottom: 5%;
+    color: #FBEAEB;
+}
+
+.banner h1{
+    text-align: center;
+    font-size: 10vw;
+    font-family: 'Amatic SC';
+    
+}
+
+.home img{
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 3%;
+    cursor: pointer;
+}
+
+form{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.formContent{
+    display: block;
+    justify-content: center;
+}
+
+.formContent label{
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 3vw;
+    font-family: 'Amatic SC';
+    font-weight: bold;
+}
+
+.formContent input{
+    display: block;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    font-size: 1.9vw;
+    padding: 1%;
+}
+
+@media (max-width: 500px) {
+    .banner{
+        background-color: #2F3C7E;
+        padding-bottom: 10%;
+        color: #FBEAEB;
+    }
+    
+    .banner h1{
+        padding-top: 15%;
+        padding-bottom: 15%;
+        text-align: center;
+        font-size: 14vw;
+        font-family: 'Amatic SC';
+        
+    }
+
+    .home img{
+        margin-top: 2%;
+        margin-left: 2%;
+        width: 5%;
+        cursor: pointer;
+    }
+
+    form{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        margin-top: 25%;
+        margin-bottom: 5%;
+    }
+    
+    .formContent{
+        display: block;
+        justify-content: center;
+    }
+    
+    .formContent label{
+        display: block;
+        margin: auto;
+        text-align: center;
+        font-size: 7vw;
+        font-family: 'Amatic SC';
+        font-weight: bold;
+    }
+    
+    .formContent input{
+        display: block;
+        margin: auto;
+        width: 70%;
+        text-align: center;
+        font-size: 4vw;
+        padding: 1%;
+    }
+}
