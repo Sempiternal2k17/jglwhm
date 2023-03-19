@@ -97,8 +97,9 @@ a{
   
 .banner{
       width: 100%;
-      background-image: linear-gradient(rgba(44,95,45, 0.8),rgba(44,95,45, 0.8)), url(J12KidsIMGs/happyKids.jpg);
+      background-image: linear-gradient(rgba(44,95,45, 0.9),rgba(44,95,45, 0.9)), url(SpearheadIMGs/spearheadBanner.jpg);
       background-size: cover;
+      background-position: center;
       color: white;
       padding-top: 10%;
       padding-bottom: 5%;
@@ -122,319 +123,132 @@ a{
     text-align: center;
 }
 
-.spearheadInfo{
-    display: flex;
-    margin-top: 15%;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-bottom: 10%;
-    align-items: center;
-}
-
-.spearheadInfo .introInfo{
-    flex: 1;
-    align-items: center;
-    transition-delay: 200ms;
-}
-
-.introInfo h1{
-    font-size: 3.4vw;
-    margin-bottom: 2%;
-}
-
-.introInfo p{
-    font-size: 1.4vw;
-}
-
-.spearheadInfo .introImg{
-    flex: 1;
-    margin-left: 5%;
-    transition-delay: 200ms;
-}
-
-#info2{
-    margin-top: 2%;
-    font-size: 1.4vw;
-}
-
-.introImg img{
-    width: 100%;
-    border-radius: 55%;
-}
-
-
 /* ================================================ */
 
-.webContent{
-    display: block;
-    padding-bottom: 5%;
-}
-
-.webContent .intro{
-    text-align: center;
-    font-size: 2vw;
-    margin-bottom: 2%;
-}
-
-.spearheadActivities{
-    display: flex;
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
-/* ================================================ */
-
-.spearheadActivities .testimony{
-    flex: 1;
-    margin: 0.5vw;
-    transition-delay: 100ms;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.75);
-    transition: box-shadow 0.3s ease-in-out;
-    transition: .5s ease-in-out;
-    cursor: pointer;
-}
-
-.testimony img{
-    width: 100%;
-}
-
-.testimonyInfo{
-    text-align: center;
-    padding: 2%;
-}
-
-.testimony:hover{
-    box-shadow: 0 5px 15px rgba(0,0,0,3);
-}
-
-/* ================================================ */
-
-.spearheadActivities .lifea{
-    flex: 1;
-    margin: 0.5vw;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.75);
-    transition: box-shadow 0.3s ease-in-out;
-    transition: .5s ease-in-out;
-    cursor: pointer;
-    transition-delay: 300ms;
-}
-
-.lifea img{
-    width: 100%;
-}
-
-.lifeaInfo{
-    text-align: center;
-    padding: 2%;
-}
-
-.lifea:hover{
-    box-shadow: 0 5px 15px rgba(0,0,0,3);
-}
-
-/* ================================================ */
-
-.spearheadActivities .fellow{
-    flex: 1;
-    margin: 0.5vw;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.75);
-    transition: box-shadow 0.3s ease-in-out;
-    transition: .5s ease-in-out;
-    cursor: pointer;
-    transition-delay: 500ms;
-}
-
-.fellow img{
-    width: 100%;
-}
-
-.fellowInfo{
-    text-align: center;
-    padding: 2%;
-}
-
-.fellow:hover{
-    box-shadow: 0 5px 15px rgba(0,0,0,3);
-}
-
-/* ================================================ */
-
-.announce1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    margin-right: 15%;
-    margin-left: 15%;
-}
-
-.announcement{
-   margin-right: 80px;
-   align-items: center;
-}
-    
-.announcement h1{
-    font-size: 3.5vw;
-    text-align: right;
-}
-
-.announcement p{
-    font-size: 2vw;
-    text-align: right;
-}
-
-.announcement .btn{
-    display: flex;
-    justify-content: end;
-}
-
-.announcement button{
-    border: 2px solid #B1B2FF;
-    border-radius: 5px;
-    background: none;
-    margin: 10px 0 10px 0;
-    padding: 15px;  
-    cursor: pointer;
-    transition: transform .2s;
-}
-
-.announcement button:hover{
-    transform: scale(1.1);
-}
-
-.announceImg img{
-    width: 100%;
-    border-radius: 50%;
-}
-
-/* ================================================ */
-
-.bottomLinks{
-    display: flex;
-    justify-content: center;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    background-color: gray;
-    color: white;
-}
-
-.demnSon{
-    margin-right: 2%;
-    text-align: center;
-}
-
-.demnSon h1{
-    font-size: 3.5vw;
-}
-
-.demnSon h1:hover{
-    color: #B1B2FF;
-}
-
-.demnSon a{
-    text-decoration: none;
-    color: white;
-    font-size: 1.3vw;
-}
-
-.demnSon a:hover{
-    color: #B1B2FF;
-    cursor: pointer;
-}
-
-.demnSon p{
-    font-size: 1.3vw;
-}
-
-.demnSon p:hover{
-    color: #B1B2FF;
-}
-
-
-/* ================================================ */
-
-.bottomForm{
-    width: 60%;
-    margin-left: 5%;
-}
-
-.bottomForm h1{
-    font-size: 2.5vw;
-}
-
-.bottomForm p{
-    font-size: 1.3vw;
+.container{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
     margin-bottom: 5%;
 }
 
-form{
-    border: 1px white solid;
-    padding: 7%;
-    padding-top: 8%;
-    padding-bottom: 8%;
+.container h1{
+    font-family: 'Source Code Pro';
+    text-align: center;
+    font-size: 4vw;
 }
 
-label{
-    padding-top: 2%;
-}
-
-input{
-    width: 100%;
-    background: none;
-    outline: none;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    border: none;
-    border-bottom: white 1px solid;
-    margin-bottom: 2%;
-    font-size: 1.3vw;
-    color: white;
-}
-
-.bottomForm form button{
-    border: 2px solid white;
-    border-radius: 5px;
-    background: none;
-    margin: 2px 0 2px 0;
-    padding: 15px;  
-    color: white;
-    cursor: pointer;
-    transition: transform .2s;
-}
-
-.bottomForm form button:hover{
-    transform: scale(1.1);
+.container p{
+    font-size: 2vw;
+    text-align: justify;
+    margin-top: 3%;
 }
 
 /* ================================================ */
 
-
-.hidden{
-    opacity: 0;
-    transition: all .5s ease-in;
-    filter: blur(5px);
-    transform: translateY(100%);
+.container1{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
 }
 
-.hidden1{
-    opacity: 0;
-    transition: all .8s ease-in;
-    filter: blur(5px);
-    transform: translateX(-100%);
+.container1 .mvg{
+    width: 33%;
+    height: 100%;
+
 }
 
-.show1{
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-}
 
-.show{
-    opacity: 1;
-    filter: blur(0);
-    transform: translateY(0);
-}
+/* ================================================ */
+
+@media (max-width: 1230px) {
+    .content{
+      padding: 0 60px;
+    }
+  }
+  @media (max-width: 1100px) {
+    .content{
+      padding: 0 40px;
+    }
+  }
+  @media (max-width: 900px) {
+    .content{
+      padding: 0 30px;
+    }
+  }
+  @media (max-width: 868px) {
+    body.disabled{
+      overflow: hidden;
+    }
+    .icon{
+      display: block;
+    }
+    .icon.hide{
+      display: none;
+      z-index: 2;
+    }
+    .navbar .menu-list{
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      max-width: 400px;
+      left: -100%;
+      top: 0px;
+      display: block;
+      padding: 40px 0;
+      text-align: center;
+      background: #222;
+      transition: all 0.3s ease;
+    }
+    .navbar.show .menu-list{
+      left: 0%;
+    }
+    .navbar .menu-list li{
+      margin-top: 45px;
+    }
+    .navbar .menu-list li a{
+      font-size: 23px;
+      margin-left: -100%;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .navbar.show .menu-list li a{
+      margin-left: 0px;
+    }
+  }
+  
+  /* ==================================================== */
+  
+  @media (max-width: 500px) {
+      .navbar .logo img{
+        width: 40%;
+      }
+    
+      .icon img{
+        width: 100%;
+        max-width: 40px;
+      }
+
+      .banner{
+        width: 100%;
+        color: white;
+        padding-top: 20%;
+        padding-bottom: 10%;
+    }
+
+    #noice{
+        text-align: center;
+        font-size: 3vw;
+        background-color: #00FFFF;
+        color: #FF69B4;
+        margin-left: 38%;
+        margin-right: 38%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    
+    .banner h1{
+        font-size: 15vw;
+        text-align: center;
+    }
 
