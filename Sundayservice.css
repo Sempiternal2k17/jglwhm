@@ -1,557 +1,787 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto Condensed', sans-serif;
-    scroll-behavior: smooth;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed:ital,wght@0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 
-.bgweb{
-    background-size: cover;
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(SundaySchooltings/BG.jpg);
-    padding-bottom: 100px;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  scroll-behavior: smooth;
 }
 
 a{
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: transparent;
 }
 
+a img{
+  width: 100%;
+  max-width: 100px;
+}
 
-.topbar{
-    padding-left: 5%;
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #2F3C7E;
+}
+::-webkit-scrollbar-thumb {
+    background: #FBEAEB;
+}
+::selection{
+  background: rgb(0,123,255,0.3);
+}
+.content{
+  max-width: 1550px;
+  margin: auto;
+  padding: 0 30px;
+}
+.navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 25px 0;
+  transition: all 0.3s ease;
+}
+.navbar.sticky{
+  color: #FBEAEB;
+  background: #2F3C7E;
+  padding: 10px 0;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+.navbar .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo img{
+  width: 70%;
+}
+.navbar .menu-list{
+  display: inline-flex;
+}
+.menu-list li{
+  list-style: none;
+}
+.menu-list li a{
+  color: #fff;
+  font-size: 1.3vw;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.menu-list li a:hover{
+  color: yellow;
+  z-index: 2;
+}
+
+.icon{
+  cursor: pointer;
+  display: none;
+}
+.icon img{
+  width: 100%;
+  max-width: 50px;
+}
+.menu-list .cancel-btn{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  z-index: 2;
+}
+
+/* ==================================================== */
+
+.banner{
     width: 100%;
-}
-
-.topbar h1{
-    padding-top: 40px;
-    font-size: 2.5vw;
-    color: white;
-}
-
-.topbar img{
-    width: 100px;
-    cursor: pointer;
-    margin-top: 2%;
-}
-
-/* ================================================================ */
-
-.videoSection{
-    display: block;
-    margin-top: 5%;
-}
-
-.videoSection h1{
-    text-align: center;
-    margin-top: 2%;
-    color: white;
-    font-size: 4vw;
-}
-
-.videoSection p{
-    text-align: center;
-    color: white;
-    font-size: 1.8vw;
-}
-
-.videoSection video{
-    display: block;
-    margin: 0 auto;
-    width: 75%;
-}
-
-/* ================================================================ */
-
-.sundayserviceIntro{
-    display: block;
+    background-image: linear-gradient(rgba(47,60,126, 0.7),rgba(47,60,126, 0.7)), url(SundaySchooltings/BG.jpg);
     background-size: cover;
-    background-image: url(SundaySchooltings/bgbackground.jpg);
-    padding-bottom: 100px;
-}
-
-.introText h2{
-    text-align: center;
-    padding-top: 3%;
-    font-size: 2.5vw;
-}
-
-.introText h1{
-    text-align: center;
-    font-size: 8vw;
-}
-
-.monthsText h2{
-    text-align: center;
-    padding-top: 3%;
-    font-size: 2.5vw;
-}
-
-.monthsText h1{
-    text-align: center;
-    font-size: 4vw;
-    padding-bottom: 3%;
-}
-
-.monthsText img{
-    width: 100%;
-    max-width: 1200px;
-    display: block;
-    margin: auto;
-}
-
-/* ================================================================ */
-
-#web2{
+    color: white;
     padding-top: 10%;
     padding-bottom: 5%;
-    background-color: #f4f4f0;
 }
 
-.pastStudies{
-    margin-top: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
+#noice{
+    font-family: 'Audiowide';
+    text-align: center;
+    font-size: 1.3vw;
+    background-color: #FBEAEB;
+    color: #2F3C7E;
+    margin-left: 45%;
+    margin-right: 45%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
 }
 
-.pastStudies h1{
+.banner h1{
+    font-family: 'Amatic SC';
+    font-size: 13vw;
+    text-align: center;
+}
+
+.container{
+    display: block;
+    margin-top: 3%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 3%;
+}
+
+#shim{
+    margin-top: 3%;
+}
+
+.container h1{
+    font-family: 'Amatic SC';
+    font-size: 4.3vw;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container p{
+    font-size: 1.7vw;
+    text-align: justify;
+}
+
+.containerImg img{
+    display: block;
+    margin: auto;
+    width: 80%;
+    border-radius: 1%;
+}
+
+.containerImg h3{
+    font-family: 'Amatic SC';
+    margin-bottom: 1%;
+    text-align: center;
     font-size: 3vw;
 }
 
-.pastStudies p{
-    font-size: 1.5vw;
-}
-
-/* ================================================================ */
-
-.archives{
+.containerImg h1{
     margin-top: 2%;
-    margin-left: 5%;
-    margin-right: 5%;
-    display: flex;
+    font-family: 'Amatic SC';
+    font-size: 7vw;
+    text-align: center;
+    margin-bottom: 2%;
 }
 
-.lecture1{
-    margin: 1%;
-    cursor: pointer;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-    transition: box-shadow 0.3s ease-in-out;
-}
+/* ==================================================== */
 
-.lecture1:hover{
-    box-shadow: 0 5px 15px rgba(0,0,0,2);
-}
-
-.lecture1 img{
-    width: 100%;
-}
-
-.textArea{
-    background: rgb(209,58,189);
-    background: linear-gradient(90deg, rgba(209,58,189,1) 31%, rgba(238,189,137,1) 100%);
-    color: white;
-    padding: 5%;
-}
-
-.textArea h1{
-    font-size: 2vw;
-}
-
-.textArea h5{
-    font-size: 1vw;
-}
-
-/* ================================================================ */
-
-.lecture2{
-    margin: 1%;
-    cursor: pointer;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-    transition: box-shadow 0.3s ease-in-out;
-}
-
-.lecture2:hover{
-    box-shadow: 0 5px 15px rgba(0,0,0,2);
-}
-
-.lecture2 img{
-    width: 100%;
-}
-
-.textArea2{
-    background: rgb(209,58,189);
-    background: linear-gradient(90deg, rgba(209,58,189,1) 31%, rgba(238,189,137,1) 100%);
-    color: white;
-    padding: 5%;
-    margin: 0;
-}
-
-.textarea2:hover{
-    border-bottom: 5px gray solid;
-}
-
-.textArea2 h1{
-    font-size: 2vw;
-}
-
-.textArea2 h5{
-    font-size: 1vw;
-}
-
-/* ================================================================ */
-
-.lecture3{
-    margin: 1%;
-    cursor: pointer;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-    transition: box-shadow 0.3s ease-in-out;
-}
-
-.lecture3:hover{
-    box-shadow: 0 5px 15px rgba(0,0,0,2);
-}
-
-.lecture3 img{
-    width: 100%;
-}
-
-.textArea3{
-    background: rgb(209,58,189);
-    background: linear-gradient(90deg, rgba(209,58,189,1) 31%, rgba(238,189,137,1) 100%);
-    color: white;
-    padding: 5%;
-}
-
-.textArea3 h1{
-    font-size: 2vw;
-}
-
-.textArea3 h5{
-    font-size: 1vw;
-}
-
-/* ================================================================ */
-
-.archives2{
-    margin-top: 1%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;
-    display: flex;
-}
-
-.lecture4{
-    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-    transition: box-shadow 0.3s ease-in-out;
-    cursor: pointer;
-    margin: 1%;
-}
-
-.lecture4:hover{
-    box-shadow: 0 5px 15px rgba(0,0,0,2);
-}
-
-.lecture4 img{
-    width: 100%;
-}
-
-.textArea4{
-    padding: 5%;
-    color: white;
-    background: rgb(209,58,189);
-    background: linear-gradient(90deg, rgba(209,58,189,1) 31%, rgba(238,189,137,1) 100%);
-}
-
-.textArea4 h1{
-    font-size: 2vw;
-}
-
-.textArea4 h5{
-    font-size: 1vw;
-}
-
-/* ================================================================ */
-
-.lecture5{
-    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-    transition: box-shadow 0.3s ease-in-out;
-    cursor: pointer;
-    margin: 1%;
-}
-
-.lecture5:hover{
-    box-shadow: 0 5px 15px rgba(0,0,0,2);
-}
-
-.lecture5 img{
-    width: 100%;
-}
-
-.textArea5{
-    padding: 5%;
-    color: white;
-    background: rgb(209,58,189);
-    background: linear-gradient(90deg, rgba(209,58,189,1) 31%, rgba(238,189,137,1) 100%);
-}
-
-.textArea5 h1{
-    font-size: 2vw;
-}
-
-.textArea5 h5{
-    font-size: 1vw;
-}
-
-/* ================================================================ */
-
-.lecture6{
-    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-    transition: box-shadow 0.3s ease-in-out;
-    cursor: pointer;
-    margin: 1%;
-}
-
-.lecture6:hover{
-    box-shadow: 0 5px 15px rgba(0,0,0,2);
-}
-
-.lecture6 img{
-    width: 100%;
-}
-
-.textArea6{
-    padding: 5%;
-    color: white;
-    background: rgb(209,58,189);
-    background: linear-gradient(90deg, rgba(209,58,189,1) 31%, rgba(238,189,137,1) 100%);
-}
-
-.textArea6 h1{
-    font-size: 2vw;
-}
-
-.textArea6 h5{
-    font-size: 1vw;
-}
-
-/* ================================================================ */
-
-.announce1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#sermons{
+    background-color: #2F3C7E;
+    color: #FBEAEB  ;
     padding-top: 5%;
-    padding-bottom: 5%;
-    margin-right: 15%;
-    margin-left: 15%;
+}
+
+.words1{
+    display: none;
+}
+
+.sermons{
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+}
+
+.live{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    width: 80%;
+    flex: 2;
+    margin-right: 2%;
+}
+
+.live h1{
+    font-family: 'Amatic SC';
+    font-size: 4.3vw;
+}
+
+.live iframe{
+    left:0;
+    top:15%;
+    height:100%;
+    width:100%;
+    position:absolute;
+    border-radius: 10px;
+}
+
+.pastLive{
+    flex: 1;
+}
+
+.scroll{
+    display: block;
+    justify-content: center;
+    margin-left: 5%;
+    height: 100%;
+    max-height: 450px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.scroll::-webkit-scrollbar-track{
+    
+}
+
+
+.img1{
+    margin: auto;
+    margin-top: 5%;
+    width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(SundaySchooltings/Archive.jpg);
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    border-radius: 10px;
+    flex: 1;
+  }
+  
+  .innerimg1{
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: 0.5s;
+    cursor: pointer;
+    flex: 1;
+    border-radius: 10px;
+  }
+
+  
+  .innerimg1 h2{
+    font-family: 'Amatic SC';
+    font-size: 3vw;
+    text-align: center;
+  }
+  
+  .innerimg1 p{
+    font-size: 1.2vw;
+    text-align: center;
+  }
+  
+  .innerimg1:hover{
+    background-color: #FBEAEB;
+    color: #2F3C7E;
+  }
+
+.pastLive h1{
+    text-align: left;
+    font-family: 'Amatic SC';
+    font-size: 4.3vw;
+}
+
+.words{
+    display: none;
+}
+
+.bruh{
+    display: none;
+}
+
+/* ==================================================== */
+
+.subs{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    justify-content: center;
+    
+}
+
+.subs img{
+  width: 50%;
+  border-radius: 50%;
+}
+
+.sText{
+  margin-left: 4%;
+}
+
+.sText h1{
+  font-family: 'Amatic SC';
+  font-size: 3.5vw;
+}
+
+.sText p{
+  font-size: 1.9vw;
+}
+
+.sText button{
+  border-radius: 4px;
+  background-color: #2F3C7E;
+  border: none;
+  color: #FBEAEB;
+  text-align: center;
+  font-size: 1.3vw;
+  padding: 2%;
+  width: 40%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 3%;
+}
+
+.sText button h1{
+  font-size: 2vw;
+}
+
+.sText button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.sText button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 5px;
+  right: -20px;
+  transition: 0.5s;
+  width: 30%;
+}
+
+.sText button:hover span {
+  padding-right: 13%;
+}
+
+.sText button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* ==================================================== */
+
+.pandA{
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  justify-content: center;
+}
+
+.prayerReq{
+  text-align: center;
+}
+
+.prayerReq h1{
+  font-family: 'Amatic SC';
+  font-size: 3.5vw;
+}
+
+.prayerReq p{
+  font-size: 1.7vw;
+}
+
+.pandA .button {
+  border-radius: 4px;
+  background-color: #2F3C7E;
+  border: none;
+  color: #FBEAEB;
+  text-align: center;
+  font-size: 1.3vw;
+  padding: 2%;
+  width: 40%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 3%;
+}
+
+.pandA .button h1{
+  font-size: 2vw;
+}
+
+.pandA .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.pandA .button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 5px;
+  right: -20px;
+  transition: 0.5s;
+  width: 30%;
+}
+
+.pandA .button:hover span {
+  padding-right: 13%;
+}
+
+.pandA .button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 .announcement{
-   margin-right: 80px;
-   align-items: center;
+  text-align: center;
 }
-    
+
 .announcement h1{
-    font-size: 3.5vw;
-    text-align: right;
+  font-family: 'Amatic SC';
+  font-size: 3.5vw;
 }
 
 .announcement p{
-    font-size: 2vw;
-    text-align: right;
+  font-size: 1.7vw;
 }
 
-.announcement .btn{
-    display: flex;
-    justify-content: end;
-}
 
-.announcement button{
-    border: 2px solid #B1B2FF;
-    border-radius: 5px;
-    background: none;
-    margin: 10px 0 10px 0;
-    padding: 15px;  
-    cursor: pointer;
-    transition: transform .2s;
-}
 
-.announcement button:hover{
-    transform: scale(1.1);
-}
+/* ==================================================== */
 
-.announceImg img{
+@media (max-width: 1230px) {
+  .content{
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1100px) {
+  .content{
+    padding: 0 40px;
+  }
+}
+@media (max-width: 900px) {
+  .content{
+    padding: 0 30px;
+  }
+}
+@media (max-width: 868px) {
+  body.disabled{
+    overflow: hidden;
+  }
+  .icon{
+    display: block;
+  }
+  .icon.hide{
+    display: none;
+    z-index: 2;
+  }
+  .navbar .menu-list{
+    position: fixed;
+    height: 100vh;
     width: 100%;
-    border-radius: 50%;
-}
-
-/* ================================================================ */
-
-.bottomLinks{
-    display: flex;
-    justify-content: center;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    background-color: #243b55;
-    color: white;
-    margin-bottom: 0;
-}
-
-.demnSon{
-    margin-right: 2%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 40px 0;
     text-align: center;
+    background: #222;
+    transition: all 0.3s ease;
+  }
+  .navbar.show .menu-list{
+    left: 0%;
+  }
+  .navbar .menu-list li{
+    margin-top: 45px;
+  }
+  .navbar .menu-list li a{
+    font-size: 23px;
+    margin-left: -100%;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .navbar.show .menu-list li a{
+    margin-left: 0px;
+  }
 }
 
-.demnSon h1{
-    font-size: 3.5vw;
-}
+/* ==================================================== */
 
-.demnSon a{
-    text-decoration: none;
-    color: white;
-}
-
-.demnSon a:hover{
-    color: #B1B2FF;
-}
-
-.demnSon h1:hover{
-    color: #B1B2FF;
-}
-
-.demnSon p{
-    font-size: 1.3vw;
-}
-
-.demnSon p:hover{
-    color: #B1B2FF;
-}
-
-/* ================================================ */
-
-.bottomForm{
-    width: 60%;
-    margin-left: 5%;
-}
-
-.bottomForm h1{
-    font-size: 2.5vw;
-}
-
-.bottomForm p{
-    font-size: 1.3vw;
-    margin-bottom: 5%;
-}
-
-.bottomForm form{
-    border: 1px white solid;
-    padding: 7%;
-    padding-top: 8%;
-    padding-bottom: 8%;
-}
-
-.bottomForm form label{
-    padding-top: 2%;
-}
-
-.bottomForm form input{
-    width: 100%;
-    background: none;
-    outline: none;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    border: none;
-    border-bottom: white 1px solid;
-    margin-bottom: 2%;
-    font-size: 1.3vw;
-    color: white;
-}
-
-.bottomForm form button{
-    border: 2px solid white;
-    border-radius: 5px;
-    background: none;
-    margin: 2px 0 2px 0;
-    padding: 15px;  
-    color: white;
-    cursor: pointer;
-    transition: transform .2s;
-}
-
-.bottomForm form button:hover{
-    transform: scale(1.1);
-}
-
-/* ================================================ */
-
-.hidden{
-    opacity: 0;
-    transition: all 0.5s;
-    filter: blur(5px);
-    transform: translateX(-100%);
-}
-
-.show{
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-}
-
-@media only screen and (max-width:700px){
-    *{
-        margin: 0;
-        padding: 0;
-        font-family: 'Poppins', sans-serif;
-        font-family: 'Roboto Condensed', sans-serif;
-        scroll-behavior: smooth;
+@media (max-width: 500px) {
+    .navbar .logo img{
+      width: 40%;
     }
 
-    .topbar{
-        padding-left: 0;
+    
+    a img{
+      width: 100%;
+      max-width: 50px;
+    }
+  
+    .icon img{
+      width: 100%;
+      max-width: 40px;
+    }
+
+    .banner{
         width: 100%;
-    }
-
-    .topbar h1{
-        padding-top: 20px;
-        padding-left: 20px;
-        font-size: 25px;
+        background-image: linear-gradient(rgba(47,60,126, 0.7),rgba(47,60,126, 0.7)), url(SundaySchooltings/BG.jpg);
+        background-size: cover;
         color: white;
+        padding-top: 20%;
+        padding-bottom: 10%;
     }
-
-    .webContent{
-        display: block; 
-        justify-content: center;
-        margin-top: 5%;
-        align-items: center;
+    
+    #noice{
+        font-family: 'Audiowide';
+        text-align: center;
+        font-size: 3vw;
+        background-color: #FBEAEB;
+        color: #2F3C7E;
+        margin-left: 38%;
+        margin-right: 38%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    
+    .banner h1{
+        font-family: 'Amatic SC';
+        font-size: 18vw;
+        text-align: center;
+    }
+    
+    .container{
+        display: block;
+        margin-top: 3%;
         margin-left: 5%;
         margin-right: 5%;
+        margin-bottom: 3%;
+    }
+    
+    .container h1{
+        margin-top: 10%;
+        font-family: 'Amatic SC';
+        font-size: 8vw;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .container p{
+        margin-top: 3%;
+        font-size: 4vw;
+        text-align: justify;
     }
 
-    .webContent .video {
-        max-width: 100%;
-        height: 150px;
-        border: 0px;
-        border-radius: 5px;
+    .containerImg{
+        margin-top: 10%;
+    }
+
+    .containerImg img{
+        display: block;
+        margin: auto;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .containerImg h3{
+        margin-top: 1%;
+        text-align: center;
+        font-size: 5vw;
+        font-style: italic;
+    }
+
+    .containerImg h1{
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 10%;
+        font-family: 'Amatic SC';
+        font-size: 10vw;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+
+    /* ==================================================== */
+
+    #sermons{
+        background-color: #2F3C7E;
+        color: #FBEAEB  ;
+        padding-top: 5%;
         padding-bottom: 10%;
     }
 
-
-    .webContent .text{
-        padding-top: 20px;
-        padding-left: 0;
+    .words{
+        margin-left: 5%;
+        display: block;
     }
 
-    .webContent .text h1{
-        align-items: center;
-        font-size: 20px;
-        color: white;
+    .words h1{
+        font-family: 'Amatic SC';
+        font-size: 8vw;
     }
 
-    .webContent .text h2{
-        font-size: 10px;
-        color: white;
+    .words1{
+        margin-top: 5%;
+        margin-left: 5%;
+        display: block;
     }
 
+    .words1 h1{
+        font-family: 'Amatic SC';
+        font-size: 8vw;
+    }
+
+    .sermons{
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+    }
+    
+    .sermons h1{
+        display: none;
+        font-family: 'Amatic SC';
+        font-size: 8vw;
+    }
+
+    .live{
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+        width: 100%;
+        flex: 2;
+        margin-right: 2%;
+    }
+    
+    .live h1{
+        font-family: 'Amatic SC';
+        font-size: 6vw;
+    }
+    
+    .live iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+        border-radius: 10px;
+    }
+
+    .scroll{
+        display: none;
+    }
+
+    .pastLive{
+        display: none;
+    }
+
+    .word{
+        display: block;
+    }
+
+    .bruh{
+        max-height: 90px;
+        display: flex;
+        overflow-x: auto;
+        margin-left: 5%;
+        margin-right: 7%;
+        margin-top: 2%;
+        
+    }
+
+    .bruh a{
+      margin-right: 1%;
+    }
+
+    .bruh .noice{
+        min-width: 110px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        background-color: #FBEAEB;
+        margin-right: 1%;
+        border-radius: 10px;
+        color: #2F3C7E;
+    }
+
+    .bruh .noice h1{
+        font-family:'Amatic SC';
+        font-size: 3.9vw;
+    }
+
+    .bruh .noice p{
+        text-align: center;
+    }
+
+    .bruh::-webkit-scrollbar{
+        width: 0;
+        background-color: #2F3C7E;
+    }
+
+    .subs{
+      display: flex;
+      margin-left: 10%;
+      margin-right: 10%;
+      align-items: center;
+      margin-top: 5%;
+      margin-bottom: 3%;
+      justify-content: center;
+      
+  }
+  
+  .subs img{
+    width: 50%;
+    border-radius: 50%;
+  }
+  
+  .sText{
+    margin-left: 4%;
+  }
+  
+  .sText h1{
+    font-family: 'Amatic SC';
+    font-size: 3.5vw;
+  }
+  
+  .sText p{
+    font-size: 1.9vw;
+  }
+  
+  .sText button{
+    border-radius: 4px;
+    background-color: #2F3C7E;
+    border: none;
+    color: #FBEAEB;
+    text-align: center;
+    font-size: 1.3vw;
+    padding: 2%;
+    width: 40%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 3%;
+  }
+  
+  .sText button h1{
+    font-size: 2vw;
+  }
+  
+  .sText button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .sText button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 5px;
+    right: -20px;
+    transition: 0.5s;
+    width: 30%;
+  }
+  
+  .sText button:hover span {
+    padding-right: 13%;
+  }
+  
+  .sText button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 }
