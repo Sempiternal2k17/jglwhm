@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed:ital,wght@0,400;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 *{
   margin: 0;
@@ -681,7 +682,6 @@ a{
   background-position: center;
   color: white;
   flex: 1;
-  
 }
 
 .lifeclassDesc{
@@ -788,25 +788,116 @@ a{
 /* ================================================ */
 
 .pandA{
-  display: flex;
+  display: block;
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 5%;
   justify-content: center;
+  align-items: center;
+}
+
+.brrr{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+.brrr a{
+  color: white;
+  padding: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-radius: 10px;
+  font-family: 'AudioWide';
+  font-size: 1.4vw;
+  background-color: black;
 }
 
 .prayerReq{
-  text-align: center;
+  text-align: left;
+  padding-bottom: 5%;
+}
+
+.prayerReq span{
+  text-align: right;
 }
 
 .prayerReq h1{
   font-family: 'AudioWide';
-  font-size: 2.5vw;
+  font-size: 3vw;
 }
 
 .prayerReq p{
-  font-size: 1.7vw;
+  font-size: 2vw;
+  text-align: justify;
 }
+
+.scroll{
+  margin-left: 2%;
+  margin-right: 2%;
+  border: 1px black solid;
+  padding: 4%;
+  border-radius: 10px;
+  height: 500px;
+  margin-bottom: 5%;
+  overflow: scroll;
+  overflow-x: hidden;
+  background-color: #ECF9FF;
+}
+
+.scroll::-webkit-scrollbar{
+  display: block;
+  width: 50%;
+}
+
+.scroll::-webkit-scrollbar-track{
+  background-color: white;
+  border-radius: 50%;
+}
+
+.scroll::-webkit-scrollbar-thumb{
+  background-color: black;
+  border-radius: 10px;
+}
+
+.request{
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 4%;
+  background-color: #F7F7F7;
+}
+
+.heading{
+  background-color: #F5F5F5;
+  padding-left: 3%;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  color: black;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.heading h1{
+  font-size: 2vw;
+  font-family: 'Encode Sans SC';
+}
+
+.body{
+  color: black;
+  padding-left: 3%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right: 3%;
+  background-color: FFE7CC;
+}
+
+.body p{
+  font-size: 1.7vw;
+  text-align: justify;
+  padding-bottom: 1%;
+}
+
 
 .pandA .button {
   border-radius: 4px;
