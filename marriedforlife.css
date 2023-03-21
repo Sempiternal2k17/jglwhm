@@ -606,7 +606,6 @@ a{
     }
     
     .column .blog{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(WildfireIMGs/wildfire.jpg);
         background-position: center;
         background-size: cover;
         border-radius: 10px;
@@ -653,7 +652,6 @@ a{
     }
     
     .column2 .blog{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(WildfireIMGs/willfire.jpg);
         background-position: center;
         background-size: cover;
         border-radius: 10px;
@@ -697,7 +695,6 @@ a{
     }
     
     .column2 .blog2{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(WildfireIMGs/firefire.jpg);
         background-position: center;
         background-size: cover;
         border-radius: 10px;
@@ -741,7 +738,6 @@ a{
     }
     
     .column2 .blog3{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(WildfireIMGs/fireball.jpg);
         background-position: center;
         background-size: cover;
         border-radius: 10px;
