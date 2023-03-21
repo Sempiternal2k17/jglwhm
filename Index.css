@@ -409,6 +409,8 @@ a{
   color: #2F3C7E;
 }
 
+/* ================================================ */
+
 .wildfire{
   width: 50%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(HeadnFooter/Wildfire.jpg);
@@ -501,6 +503,7 @@ a{
   color: #FF69B4;
 }
 
+/* ================================================ */
 
 .spearhead{
   width: 34%;
@@ -553,6 +556,8 @@ a{
   flex: 1;
 }
 
+/* ================================================ */
+
 .marriedDesc{
   padding-top: 15%;
   padding-bottom: 15%;
@@ -597,7 +602,7 @@ a{
 .mentoring{
   align-items: center;
   width: 33%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(HeadnFooter/mentoring.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(HeadnFooter/mentoring.png);
   background-size: cover;
   color: white;
   flex: 1;
@@ -629,10 +634,11 @@ a{
   color: #191825;
 }
 
+/* ================================================ */
 
 .solclass{
   width: 34%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(HeadnFooter/solclassPortrait.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(HeadnFooter/solclassPortrait.png);
   background-size: cover;
   color: white;
   flex: 1;
@@ -666,10 +672,13 @@ a{
   color: #FFACAC;
 }
 
+/* ================================================ */
+
 .lifeclass{
   width: 33%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(HeadnFooter/married.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(HeadnFooter/lifeclasslandscae.jpg);
   background-size: cover;
+  background-position: center;
   color: white;
   flex: 1;
   
@@ -984,14 +993,44 @@ a{
 
 /* ================================================ */
 
+.desc{
+  display: block;
+  justify-content: center;
+  background-color: #eceaea;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.desc h1{
+  font-family: 'AudioWide';
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-size: 7vw;
+}
+
+.desc p{
+  margin-left: 8%;
+  margin-right: 8%;
+  font-size: 4vw; 
+  padding-bottom: 3%;
+  text-align: justify;
+}
+
   .row1{
     display: block;
   }
 
   .sunday{
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.3)), url(HeadnFooter/sundayMobile.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(HeadnFooter/sundayMobile.png);
     background-size: cover;
+    background-position: center;
     color: white;
     margin-bottom: 0;
     flex: 1;
@@ -1008,19 +1047,19 @@ a{
   
   .sundayDesc h1{
     font-family: 'AudioWide';
-    font-size: 5vw;
+    font-size: 6vw;
     text-align: center;
   }
   
   .sundayDesc h2{
     font-family: 'AudioWide';
-    font-size: 3.2vw;
+    font-size: 4vw;
     text-align: center;
     margin-bottom: 5%;
   }
   
   .sundayDesc p{
-    font-size: 3vw;
+    font-size: 4vw;
     text-align: center;
     margin-bottom: 5%
   }
@@ -1030,10 +1069,13 @@ a{
     color: #2F3C7E;
   }
   
+  /* ================================================ */
+
   .wildfire{
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.3)), url(HeadnFooter/wildfireMobile.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(HeadnFooter/wildfireMobile.png);
     background-size: cover;
+    background-position: center;
     color: white;
     margin-bottom: 5%;
     flex: 1;
@@ -1050,19 +1092,19 @@ a{
   
   .wildfireDesc h1{
     font-family: 'AudioWide';
-    font-size: 5vw;
+    font-size: 6vw;
     text-align: center;
   }
   
   .wildfireDesc h2{
     font-family: 'AudioWide';
-    font-size: 3.2vw;
+    font-size: 4vw;
     text-align: center;
     margin-bottom: 5%;
   }
   
   .wildfireDesc p{
-    font-size: 3vw;
+    font-size: 4vw;
     text-align: center;
     margin-bottom: 5%
   }
@@ -1072,15 +1114,19 @@ a{
     color: black;
   }
 
+  /* ================================================ */
+
   .row2{
     display: block;
+    margin-top: -5%;
   }
   
   .j12{
     align-items: center;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(HeadnFooter/kids.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(HeadnFooter/kids.jpg);
     background-size: cover;
+    background-position: center;
     color: white;
     flex: 1;
   }
@@ -1093,24 +1139,24 @@ a{
     transition: 0.5s;
     cursor: pointer;
     flex: 1;
-    height: 0;
+    height: 100%;
   }
   
   .j12Desc h1{
     font-family: 'AudioWide';
-    font-size: 2.5vw;
+    font-size: 6vw;
     text-align: center;
   }
   
   .j12Desc h2{
     font-family: 'AudioWide';
-    font-size: 1.5vw;
+    font-size: 4vw;
     text-align: center;
     margin-bottom: 5%;
   }
   
   .j12Desc p{
-    font-size: 1.4vw;
+    font-size: 4vw;
     text-align: center;
     margin-bottom: 5%
   }
@@ -1120,18 +1166,20 @@ a{
     color: #FF69B4;
   }
   
-  
+  /* ================================================ */
+
   .spearhead{
-    width: 34%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(HeadnFooter/Spearheadmobile.png);
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(HeadnFooter/Spearheadmobile.png);
     background-size: cover;
+    background-position: center;
     color: white;
     flex: 1;
   }
   
   .spearheadDesc{
     padding-top: 15%;
-    padding-bottom: 12%;
+    padding-bottom: 15%;
     padding-left: 5%;
     padding-right: 5%;
     transition: 0.5s;
@@ -1140,21 +1188,21 @@ a{
     height: 100%;
   }
   
-  .spearheadDesc h1{
+  .spearhead h1{
     font-family: 'AudioWide';
-    font-size: 2.5vw;
+    font-size: 6vw;
     text-align: center;
   }
   
-  .spearheadDesc h2{
+  .spearhead h2{
     font-family: 'AudioWide';
-    font-size: 1.5vw;
+    font-size: 4vw;
     text-align: center;
     margin-bottom: 5%;
   }
   
-  .spearheadDesc p{
-    font-size: 1.4vw;
+  .spearhead p{
+    font-size: 4vw;
     text-align: center;
     margin-bottom: 5%
   }
@@ -1164,10 +1212,13 @@ a{
     color: #2C5F2DFF;
   }
   
+  /* ================================================ */
+
   .married{
-    width: 33%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(HeadnFooter/married.jpg);
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(HeadnFooter/married.jpg);
     background-size: cover;
+    background-position: center;
     color: white;
     flex: 1;
   }
@@ -1185,19 +1236,19 @@ a{
   
   .marriedDesc h1{
     font-family: 'AudioWide';
-    font-size: 2.5vw;
+    font-size: 6vw;
     text-align: center;
   }
   
   .marriedDesc h2{
     font-family: 'AudioWide';
-    font-size: 1.5vw;
+    font-size: 4vw;
     text-align: center;
     margin-bottom: 5%;
   }
   
   .marriedDesc p{
-    font-size: 1.4vw;
+    font-size: 4vw;
     text-align: center;
     margin-bottom: 5%
   }
@@ -1207,6 +1258,288 @@ a{
     color: #CC313D;
   }
   
+  /* ================================================ */
 
+  .equip{
+    display: block;
+  }
+  
+  .mentoring{
+    align-items: center;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(HeadnFooter/mentoringlandscape.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    flex: 1;
+  }
+  
+  .mentoringDesc{
+    padding-top: 20%;
+    padding-bottom: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: 0.5s;
+    cursor: pointer;
+    height: 100%;
+  }
+  
+  .mentoringDesc h1{
+    font-family: 'AudioWide';
+    font-size: 6vw;
+    text-align: center;
+  }
+  
+  .mentoringDesc p{
+    font-size: 4vw;
+    text-align: center;
+  }
+  
+  .mentoringDesc:hover{
+    background-color: #FFA3FD;
+    color: #191825;
+  }
+  
+  /* ================================================ */
+
+  .solclass{
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(HeadnFooter/solclassPortrait.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    flex: 1;
+  }
+  
+  .solDesc{
+    padding-top: 15%;
+    padding-bottom: 12%;
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: 0.5s;
+    cursor: pointer;
+    flex: 1;
+    height: 100%;
+  }
+  
+  .solDesc h1{
+    font-family: 'AudioWide';
+    font-size: 6vw;
+    text-align: center;
+  }
+  
+  .solDesc p{
+    font-size: 4vw;
+    text-align: center;
+  }
+  
+  .solDesc:hover{
+    background-color: #FBFFB1;
+    color: #FFACAC;
+  }
+
+  /* ================================================ */
+  
+  .lifeclass{
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(HeadnFooter/Lifeclass.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    flex: 1;
+    
+  }
+  
+  .lifeclassDesc{
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: 0.5s;
+    cursor: pointer;
+    flex: 1;
+    height: 100%;
+  }
+  
+  .lifeclassDesc h1{
+    font-family: 'AudioWide';
+    font-size: 6vw;
+    text-align: center;
+  }
+  
+  .lifeclassDesc p{
+    font-size: 4vw;
+    text-align: center;
+    margin-bottom: 5%
+  }
+  
+  .lifeclassDesc:hover{
+    background-color: #F7C5CC;
+    color: #CC313D;
+  }
+
+    /* ================================================ */
+
+  .photos{
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    display: block;
+    align-items: center;
+  }
+  
+  .mediaImg img{
+    display: block;
+    margin: auto;
+    width: 80%;
+    border-radius: 50%;
+  }
+  
+  .mediaDesc{
+    margin-top: 5%;
+    margin-left: 0%;
+  }
+  
+  .mediaDesc h1{
+    font-family: 'AudioWide';
+    font-size: 6vw;
+    text-align: center;
+  }
+  
+  .mediaDesc p{
+    font-size: 4vw;
+    text-align: center;
+  }
+  
+  .mediaDesc .button {
+    display: block;
+    border-radius: 4px;
+    background-color: #e23c52;
+    border: none;
+    color: #bdfff6;
+    text-align: center;
+    padding: 2%;
+    width: 50%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 3%;
+    font-size: 4vw
+  }
+  
+  .button h1{
+    font-size: 4vw;
+  }
+  
+  .mediaDesc .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .mediaDesc .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    right: -20px;
+    transition: 0.5s;
+    width: 20px;
+  }
+  
+  .mediaDesc .button:hover span {
+    padding-right: 15%;
+  }
+  
+  .mediaDesc .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+   /* ================================================ */
+
+  .pandA{
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    justify-content: center;
+  }
+  
+  .prayerReq{
+    text-align: center;
+  }
+  
+  .prayerReq h1{
+    font-family: 'AudioWide';
+    font-size: 6vw;
+  }
+  
+  .prayerReq p{
+    font-size: 5vw;
+  }
+  
+  .pandA .button {
+    border-radius: 4px;
+    background-color: #e23c52;
+    border: none;
+    color: #bdfff6;
+    text-align: center;
+    font-size: 1.3vw;
+    padding: 2%;
+    width: 60%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 3%;
+    font-size: 4vw
+  }
+  
+  .pandA .button h1{
+    font-size: 4vw;
+  }
+  
+  .pandA .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .pandA .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    width: 18%;
+  }
+  
+  .pandA .button:hover span {
+    padding-right: 13%;
+  }
+  
+  .pandA .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  /* ================================================ */
+  
+  .announcement{
+    margin-top: 5%;
+    text-align: center;
+  }
+  
+  .announcement h1{
+    font-family: 'AudioWide';
+    font-size: 6vw;;
+  }
+  
+  .announcement p{
+    font-size: 4vw;
+  }
 
 }
