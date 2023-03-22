@@ -262,7 +262,6 @@
 .desc{
   display: block;
   justify-content: center;
-  background-color: #eceaea;
 }
 
 a{
@@ -273,7 +272,7 @@ a{
 .desc h1{
   font-family: 'AudioWide';
   text-align: center;
-  padding-top: 3%;
+  padding-top: 15%;
   padding-bottom: 3%;
   font-size: 4vw;
 }
@@ -719,6 +718,7 @@ a{
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 5%;
+  padding-top: 10%;
   display: flex;
   align-items: center;
 }
@@ -792,6 +792,7 @@ a{
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 5%;
+  padding-top: 10%;
   justify-content: center;
   align-items: center;
 }

@@ -14,6 +14,14 @@ body{
     background-size: cover;
 }
 
+.breh{
+    display: block;
+    justify-content: start;
+}
+.breh img{
+    width: 3%;
+}
+
 .container{
     width: 100%;
     max-width: 650px;
@@ -112,14 +120,14 @@ body{
     padding: 10px;
     border:none;
     border-radius: 3px;
-    color: rgb(209, 209, 209);
-    background: rgba(0, 121, 121, 0.7);
+    color: rgb(0, 225, 225);
+    background: rgba(71, 66, 78, 0.7);
     color: rgb(0, 255, 255);
 }
 
 .form-submit-btn input:hover{
-    background: rgba(0, 225, 225, 0.7);
-    color: rgb(255, 255, 255);
+    background: rgba(141, 130, 155, 0.7);
+    color: rgb(0, 225, 225);
 }
 
 @media(max-width: 600px){
