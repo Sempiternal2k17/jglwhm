@@ -1,78 +1,159 @@
 *{
-    margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto Condensed', sans-serif;
-    scroll-behavior: smooth;
-    overflow-y: hidden;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-.intro{
-    margin-top: 2%;
-}
-
-.intro h1{
-    text-align: center;
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    background-size: cover;
 }
 
 .container{
-    display: flex;
-    border: 1px solid black;
-    justify-content: center;
-    align-content: center;
-    margin-top: 1%;
-    margin-bottom: 8%;
-    margin-left: 5%;
-    margin-right: 5%;
-    
-}
-
-.form{
-    width: 50%;
-    margin: auto;
-    justify-content: center;
-}
-
-
-.form .noice{
-    width: 80%;
-    margin: auto;
-}
-
-label{
-    display: block;
-    text-align: center;
-    font-size: 1.2vw;
-}
-
-input{
-    width: 80%;
-    display: block;
-    margin: auto;
-    font-size: 1.2vw;
-    text-align: center;
-    padding: 0.5%;
-    border: none;
-    outline: none;
-    border-bottom: gray 1px solid;
-}
-
-textarea{
-    width: 80%;
-    display: block;
-    margin: auto;
-    font-size: 1.2vw;
-    padding: 0.5%;
-    border: none;
-    outline: none;
-    border-bottom: gray 1px solid;
-    resize: none;
-}
-
-.img{
-    width: 50%;
-}
-
-.img img{
     width: 100%;
+    max-width: 650px;
+    background: black;
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white;
 }
+
+.form-title{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px white;
+}
+
+.main-user-info{
+    display: block;
+}
+
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.user-input-box label{
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.user-input-box input{
+    height: 40px;
+    width: 100%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+
+.bruh label{
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.bruh textarea{
+    width: 100%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 10px 10px;
+}
+
+.gender-title{
+    color:white;
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+}
+
+.gender-category{
+    margin: 15px 0;
+    color: white;
+}
+
+.gender-category label{
+    padding: 0 20px 0 5px;
+}
+
+.gender-category label,
+.gender-category input,
+.form-submit-btn input{
+    cursor: pointer;
+}
+
+.form-submit-btn{
+    margin-top: 40px;
+}
+
+.form-submit-btn input{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border:none;
+    border-radius: 3px;
+    color: rgb(209, 209, 209);
+    background: rgba(0, 121, 121, 0.7);
+    color: rgb(0, 255, 255);
+}
+
+.form-submit-btn input:hover{
+    background: rgba(0, 225, 225, 0.7);
+    color: rgb(255, 255, 255);
+}
+
+@media(max-width: 600px){
+    .container{
+        min-width: 280px;
+    }
+
+    .user-input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .user-input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+
+    .gender-category{
+        display: flex;
+        width: 100%;
+    }
+
+    .main-user-info{
+        max-height: 380px;
+        overflow: auto;
+    }
+
+    .main-user-info::-webkit-scrollbar{
+        width: 0;
+    }
+
+    .bruh textarea{
+        width: 100%;
+        padding-top: 2%;
+    }
+}
+
+

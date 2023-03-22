@@ -1,38 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="PrayerRequest.css">
-    <title>Prayer Request</title>
-</head>
-<body>
-    
-    <div class="intro">
-        <h1>Prayer Request Form</h1>
-    </div>
-    
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Prayer Request Form</title>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0"/>
+    <link rel="stylesheet" href="PrayerRequest.css" >
+  </head>
+  <body>
     <div class="container">
-        <div class="form">
-            <form class="noice">  
-                    <label>Name (Optional)</label><br>
-                    <input type="text"><br>
-                    <label>Age</label><br>
-                    <input type="text"><br>
-                    <label>Email Address</label><br>
-                    <input type="text"><br>
-                    <label>Prayer Request</label><br>
-                    <textarea rows="4"></textarea>
-                    <input type="radio">
-                    <label>Noice</label><br>
-
-            </form>
+      <h1 class="form-title">Prayer Request Form</h1>
+      <form action="#">
+        <div class="main-user-info">
+          <div class="user-input-box">
+            <label for="fullName">Name</label>
+            <input type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Enter Full Name"/>
+          </div>
+          <div class="user-input-box">
+            <label for="email">Email</label>
+            <input type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter Email"/>
+          </div>
+        
+          
+          <div class="bruh">
+            <label>Prayer Request</label><br>
+            <textarea rows="5" placeholder="Write Something..."></textarea>
+          </div>
         </div>
-        <div class="img">
-            <img src="PrayerRIMGs/pray.jpg" alt="">
+        <div class="gender-details-box">
+          <div class="gender-category">
+            <input type="radio" name="gender" id="male">
+            <label for="male">Do you want to post this on the website?</label>
+          </div>
         </div>
+        <div class="form-submit-btn">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
     </div>
-    
-</body>
+  </body>
 </html>
