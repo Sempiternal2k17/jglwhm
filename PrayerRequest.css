@@ -4,122 +4,75 @@
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
     scroll-behavior: smooth;
+    overflow-y: hidden;
 }
 
-.bgweb{
-    background-size: cover;
-    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.90)), url(PrayerRIMGs/prayerImg.jpg);
-    padding-bottom: 100px;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-}
-
-.topbar{
-    padding-left: 5%;
-    width: 100%;
-}
-
-.topbar h1{
-    padding-top: 40px;
-    font-size: 2.5vw;
-}
-
-.webName{
-    padding-top: 5%;
-    padding-bottom: 5%;
-    text-align: center;
-}
-
-.topbar img{
-    width: 100px;
-    cursor: pointer;
+.intro{
     margin-top: 2%;
 }
 
-.webName h1{
-    font-size: 7vw;
-    color: white;
+.intro h1{
+    text-align: center;
 }
 
-/* ============================================ */
+.container{
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-content: center;
+    margin-top: 1%;
+    margin-bottom: 8%;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
 
 .form{
-    margin-top: 5%;
-    padding: 5%;
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
-.form h1{
-    font-size: 40px;
-    padding-bottom: 15px;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #B1B2FF;
-    margin-right: 52%;
-}
-
-.form p{
-    font-size: 20px;
-    padding-bottom: 5%;
-}
-
-#sform{
-    font-size: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 10px;
-    border-bottom: none;
-}
-
-.form form{
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 50%;
+    margin: auto;
     justify-content: center;
-    align-items: center;
-    border-radius: 10px;
 }
 
-.form label{
-    font-weight: bold;
-    font-size: 15px;
+
+.form .noice{
+    width: 80%;
+    margin: auto;
 }
 
-.form input{
-    width: 95%;
-    padding: 15px 10px 15px 10px;
-    height: 14px;
-    margin-bottom: 10px;
+label{
+    display: block;
+    text-align: center;
+    font-size: 1.2vw;
+}
+
+input{
+    width: 80%;
+    display: block;
+    margin: auto;
+    font-size: 1.2vw;
+    text-align: center;
+    padding: 0.5%;
     border: none;
-    background: none;
-    border-bottom: #B1B2FF 2px solid; 
     outline: none;
+    border-bottom: gray 1px solid;
 }
 
-.form textarea{
-    width: 95%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 7px;
-    height: 100px;
+textarea{
+    width: 80%;
+    display: block;
+    margin: auto;
+    font-size: 1.2vw;
+    padding: 0.5%;
     border: none;
-    background: none;
-    border-bottom: #B1B2FF 2px solid;
     outline: none;
+    border-bottom: gray 1px solid;
+    resize: none;
 }
 
-.form button{
-    padding: 15px;
-    font-weight: bold;
-    border: #B1B2FF 2px solid;
-    border-radius: 5px;
-    cursor: pointer;
-    background: none;
-    transition: transform .2s;
+.img{
+    width: 50%;
 }
 
-.form button:hover{
-    transform: scale(1.1); 
+.img img{
+    width: 100%;
 }
