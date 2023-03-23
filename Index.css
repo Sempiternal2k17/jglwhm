@@ -272,7 +272,7 @@ a{
 .desc h1{
   font-family: 'AudioWide';
   text-align: center;
-  padding-top: 15%;
+  padding-top: 8%;
   padding-bottom: 3%;
   font-size: 4vw;
 }
@@ -281,7 +281,7 @@ a{
   margin-left: 15%;
   margin-right: 15%;
   font-size: 1.9vw; 
-  padding-bottom: 3%;
+  padding-bottom: 5%;
 }
 
 .aboutUs{
@@ -714,10 +714,8 @@ a{
 /* ================================================ */
 
 .photos{
-  margin-top: 4%;
   margin-left: 10%;
   margin-right: 10%;
-  margin-bottom: 5%;
   padding-top: 10%;
   display: flex;
   align-items: center;
@@ -845,6 +843,12 @@ a{
   overflow: scroll;
   overflow-x: hidden;
   background-color: #ECF9FF;
+}
+
+@media (max-width: 1920px){
+  .scroll{
+    height: 720px;
+  }
 }
 
 .scroll::-webkit-scrollbar{
