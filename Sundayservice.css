@@ -226,10 +226,29 @@ a img{
     overflow-x: hidden;
 }
 
-.scroll::-webkit-scrollbar-track{
-    
+@media (max-width: 1920px){
+    .scroll{
+      max-height: 575px;
+    }
 }
 
+@media (max-width: 1480px){
+  .scroll{
+    max-height: 450px;
+  }
+}
+
+@media (max-width: 1350px){
+  .scroll{
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 1210px){
+  .scroll{
+    max-height: 370px;
+  }
+}
 
 .img1{
     margin: auto;
