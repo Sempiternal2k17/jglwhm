@@ -1,683 +1,1575 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto Condensed', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,900&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
-.webTop{
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(AnnounceIMGs/JILBanner.jpg);
-    background-size: cover;
-    padding-bottom: 15%;
+body{
+    font-family: 'Poppins';
 }
 
-.navbar{
-    width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
-    box-sizing: border-box;
-    overflow: hidden;
+.app {
+	display: flex;
+	min-height: 100vh;
 }
 
-.links{
-    width: 100%;
-    display: flex;
-    align-items: center;
+.menu-toggle {
+	display: none;
+	position: fixed;
+	top: 2rem;
+	right: 2rem;
+	width: 60px;
+	height: 60px;
+	border-radius: 99px;
+	background-color: #2e3047;
+	cursor: pointer;
 }
 
-nav{
-    flex: 1;
-    text-align: right;
-
+.hamburger {
+	position: relative;
+	top: calc(50% - 2px);
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 32px;
 }
 
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    margin-right: 20px;
+.hamburger > span,
+.hamburger > span::before,
+.hamburger > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 99px;
+  background-color: #FFF;
+  transition-duration: .25s;
 }
 
-nav ul li a{
+.hamburger > span::before {
+  content: '';
+  top: -8px;
+}
+.hamburger > span::after {
+  content: '';
+  top: 8px;
+}
+.menu-toggle.is-active .hamburger > span {
+  transform: rotate(45deg);
+}
+.menu-toggle.is-active .hamburger > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+.menu-toggle.is-active .hamburger > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.sidebar a{
     text-decoration: none;
-    color: white;
-    font-size: 15px;
 }
 
-nav ul li a:hover{
-    color: #AAC4FF;
-    
+.sidebar {
+	flex: 1 1 0;
+	max-width: 300px;
+    height: 100vh;
+	padding: 2rem 1rem;
+	background-color: #2e3047;
+    position: fixed;
 }
 
-.logoIcon{
-    width: 100px;
-    cursor: pointer;
-    margin: 30px 0;
-}
-
-.menuIcon{
-    width: 35px;
-    cursor: pointer;
-    display: none;
-}
-
-/*=====================Main Announcements=======================*/
-/* body{
-} */
-.report{
-    margin-left: 18%;
-    margin-right: 18%;
-    justify-content: center;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-    transition: box-shadow 0.3s ease-in-out;
-    border-radius: 20px;
-}
-
-.report:hover{
-    box-shadow: 0 15px 15px rgba(0,0,0,0.3);
-}
-
-.report img{
-    display: block;
-    border-radius: 20px;
-    margin-top: -300px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-}
-
-.report .textOne{
-    padding-top: 1%;
-}
-
-.textOne #noice{
-    padding-left: 3px;
-    font-size: 1vw;
-}
-
-.textOne h5{
-    padding-left: 3px;
-    font-size: 1vw;
-}
-
-.textOne h1{
-    font-size: 3vw;
-}
-
-/*=====================Announcements=======================*/
-
-.report1{
-    padding-top: 10%;
-    display: flex;
-    margin-left: 18%;
-    margin-right: 18%;
-}
-
-/*=====================News Section=======================*/
-
-.newsSection{
-    margin-top: 5%;
-    margin-left: 18%;
-    margin-right: 18%;
-    margin-bottom: 5%;
-}
-
-/*=====================Row1=======================*/
-
-.row1{
-    display: flex;
-    justify-content: center;
-}
-
-/*=====================News1=======================*/
-
-.news1{
-    margin: 1%;
-    cursor: pointer;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-    transition: box-shadow 0.3s ease-in-out;
-}
-
-.news1:hover{
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-.news1 img{
-    width: 100%;
-    padding: 0;
-}
-
-.textArea1{
-    background: rgb(15,145,173);
-    background: linear-gradient(90deg, rgba(15,145,173,1) 63%, rgba(114,210,232,1) 87%, rgba(209,222,223,1) 100%);
-    color: white;
-    padding: 5%;
-    border-bottom: 5px solid #142022;
-}
-
-.textArea1 p{
-    font-size: 0.8vw;
-}
-
-.textArea1 h1{
-    font-size: 2vw;
-}
-
-.textArea1 h5{
-    font-size: 0.6vw;
-}
-
-/*=====================News2=======================*/
-
-.news2{
-    margin: 1%;
-    cursor: pointer;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-    transition: box-shadow 0.3s ease-in-out;
-}
-
-.news2:hover{
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-.news2 img{
-    width: 100%;
-}
-
-.textArea2{
-    background: rgb(67,218,91);
-    background: linear-gradient(90deg, rgba(67,218,91,1) 63%, rgba(181,217,164,1) 87%, rgba(206,224,210,1) 100%);
-    color: white;
-    padding: 5%;
-    border-bottom: 5px solid #142022;
-}
-
-.textArea2 p{
-    font-size: 0.8vw;
-}
-
-.textArea2 h1{
-    font-size: 2vw;
-}
-
-.textArea2 h5{
-    font-size: 0.6vw;
-}
-
-/*=====================News3=======================*/
-
-.news3{
-    margin: 1%;
-    cursor: pointer;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-    transition: box-shadow 0.3s ease-in-out;
-}
-
-.news3:hover{
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-.news3 img{
-    width: 100%;
-}
-
-.textArea3{
-    background: rgb(15,145,173);
-    background: linear-gradient(90deg, rgba(15,145,173,1) 63%, rgba(114,210,232,1) 87%, rgba(209,222,223,1) 100%);
-    color: white;
-    padding: 5%;
-    border-bottom: 5px solid #142022;
-}
-
-.textArea3 p{
-    font-size: 0.8vw;
-}
-
-.textArea3 h1{
-    font-size: 2vw;
-}
-
-.textArea3 h5{
-    font-size: 0.6vw;
-}
-
-/*=====================Row2=======================*/
-
-.row2{
-    display: flex;
-    justify-content: center;
-}
-
-/*=====================News4=======================*/
-
-.news4{
-    margin: 1%;
-    cursor: pointer;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-    transition: box-shadow 0.3s ease-in-out;
-}
-
-.news4:hover{
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-.news4 img{
-    width: 100%;
-}
-
-.textArea4{
-    background: rgb(30,30,241);
-    background: linear-gradient(90deg, rgba(30,30,241,1) 22%, rgba(20,32,145,1) 53%, rgba(12,23,77,1) 100%);
-    color: white;
-    padding: 5%;
-    border-bottom: 5px solid #142022;
-}
-
-.textArea4 p{
-    font-size: 0.8vw;
-}
-
-.textArea4 h1{
-    font-size: 2vw;
-}
-
-.textArea4 h5{
-    font-size: 0.6vw;
-}
-
-/*=====================News5=======================*/
-
-.news5{
-    margin: 1%;
-    cursor: pointer;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-    transition: box-shadow 0.3s ease-in-out;
-}
-
-.news5:hover{
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-
-.news5 img{
-    width: 100%;
-}
-
-.textArea5{
-    background: rgb(231,36,225);
-    background: linear-gradient(90deg, rgba(231,36,225,1) 22%, rgba(244,128,228,1) 53%, rgba(242,209,240,1) 100%);
-    color: white;
-    padding: 5%;
-    border-bottom: 5px solid #142022;
-}
-
-.textArea5 p{
-    font-size: 0.8vw;
-}
-
-.textArea5 h1{
-    font-size: 2vw;
-}
-
-.textArea5 h5{
-    font-size: 0.6vw;
-}
-
-/*=====================News6=======================*/
-
-.news6{
-    margin: 1%;
-    cursor: pointer;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-    transition: box-shadow 0.3s ease-in-out;
-}
-
-.news6:hover{
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-.news6 img{
-    width: 100%;
-}
-
-.textArea6{
-    background: rgb(15,145,173);
-    background: linear-gradient(90deg, rgba(15,145,173,1) 63%, rgba(114,210,232,1) 87%, rgba(209,222,223,1) 100%);
-    color: white;
-    padding: 5%;
-    border-bottom: 5px solid #142022;
-}
-
-.textArea6 p{
-    font-size: 0.8vw;
-}
-
-.textArea6 h1{
-    font-size: 2vw;
-}
-
-.textArea6 h5{
-    font-size: 0.6vw;
-}
-
-.bottomLinks{
-    display: flex;
-    justify-content: center;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    background-color: #6f7755;
-    color: white;
-}
-
-.demnSon{
-    margin-right: 2%;
+.sidebar h3 {
+	color: white;
+	font-size: 3vw;
+	text-transform: uppercase;
+	margin-bottom: 0.5em;
     text-align: center;
 }
 
-.demnSon h1{
-    font-size: 3.5vw;
+.sidebar .menu {
+	margin: 0 -1rem;
 }
 
-.demnSon h1:hover{
-    color: #B1B2FF;
+.sidebar .menu .menu-item {
+	display: block;
+	padding: 1em;
+	color: #FFF;
+	text-decoration: none;
+	transition: 0.2s linear;
 }
 
-.demnSon a{
+.sidebar .menu .menu-item:hover,
+.sidebar .menu .menu-item.is-active {
+	color: #3bba9c;
+	border-right: 5px solid #3bba9c;
+}
+
+.sidebar .menu .menu-item:hover {
+	border-right: 5px solid #3bba9c;
+}
+
+/* ============================================ */
+
+.content {
+	flex: 1 1 0;
+	padding: 2rem;
+    margin-left: 16%;
+}
+
+.announce h1 {
+	color: #3C3F58;
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.blog a{
     text-decoration: none;
-    color: white;
-    font-size: 1.3vw;
+    color: black;
 }
 
-.demnSon a:hover{
-    color: #B1B2FF;
-    cursor: pointer;
-}
-
-.demnSon p{
-    font-size: 1.3vw;
-}
-
-.demnSon p:hover{
-    color: #B1B2FF;
-}
-
-
-/* ================================================ */
-
-.bottomForm{
-    width: 60%;
-    margin-left: 5%;
-}
-
-.bottomForm h1{
-    font-size: 2.5vw;
-}
-
-.bottomForm p{
-    font-size: 1.3vw;
-    margin-bottom: 5%;
-}
-
-.bottomForm form{
-    border: 1px white solid;
-    padding: 7%;
-    padding-top: 8%;
-    padding-bottom: 8%;
-}
-
-.bottomForm form label{
-    padding-top: 2%;
-}
-
-.bottomForm form input{
-    width: 100%;
-    background: none;
-    outline: none;
+.blog{
+    display: block;
+    margin: auto;
+    width: 90%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(SundaySchooltings/pressingAhead.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
     padding-top: 2%;
     padding-bottom: 2%;
-    border: none;
-    border-bottom: white 1px solid;
-    margin-bottom: 2%;
-    font-size: 1.3vw;
-    color: white;
-}
-
-.bottomForm form button{
-    border: 2px solid white;
-    border-radius: 5px;
-    background: none;
-    margin: 2px 0 2px 0;
-    padding: 15px;  
-    color: white;
-    cursor: pointer;
     transition: transform .2s;
 }
 
-.bottomForm form button:hover{
-    transform: scale(1.1);
+.blog .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
 }
-/*=============================================*/
 
-@media only screen and (max-width:1550px){
-    .report{
-        justify-content: center;
-    }
+.blog .blogInfo:hover{
+    border: 1px solid #f7c5cc;
+}   
+
+.blog  .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 5vw;
+}
+
+.blog  .blogInfo p{
+    font-size: 2vw;
+}
+
+/* ============================================ */
+
+.column2{
+    display: flex;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    justify-content: space-evenly;
+}
+
+.column2 .blog{
+    display: block;
+    margin-right: 2%;
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.9)), url(AnnounceIMGs/noicelandscape.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: transform .2s;
+}
+
+.column2 .blog .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.column2 .blog .blogInfo:hover{
+    border: 1px solid #f7c5cc;
+}   
+
+.column2 .blog  .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 2vw;
+}
+
+.column2 .blog  .blogInfo p{
+    font-size: 1.3vw;
+}
+
+.column2 .blog2{
+    display: block;
+    margin: auto;
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.9)), url(AnnounceIMGs/GROUND.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: transform .2s;
+}
+
+.column2 .blog2 .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.column2 .blog2 .blogInfo:hover{
+    border: 1px solid #f7c5cc;
+}   
+
+.column2 .blog2  .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 2vw;
+}
+
+.column2 .blog2  .blogInfo p{
+    font-size: 1.3vw;
+}
+
+/* ================================================= */
+
+.column2{
+    display: flex;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    justify-content: space-evenly;
+}
+
+.column2 .blog3{
+    display: block;
+    margin-right: 2%;
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.9)), url(AnnounceIMGs/noicelandscape.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: transform .2s;
+}
+
+.column2 .blog3 .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.column2 .blog3 .blogInfo:hover{
+    border: 1px solid #f7c5cc;
+}   
+
+.column2 .blog3  .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 2vw;
+}
+
+.column2 .blog3  .blogInfo p{
+    font-size: 1.3vw;
+}
+
+.column2 .blog4{
+    display: block;
+    margin: auto;
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.9)), url(AnnounceIMGs/GROUND.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: transform .2s;
+}
+
+.column2 .blog4 .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.column2 .blog4 .blogInfo:hover{
+    border: 1px solid #f7c5cc;
+}   
+
+.column2 .blog4  .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 2vw;
+}
+
+.column2 .blog4  .blogInfo p{
+    font-size: 1.3vw;
+}
+
+/* ================================================= */
+
+.sundayService{
+    display: block;
+}
+
+.sundayService h1{
+    color: #3C3F58;
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.sundayNews .blog{
+    display: block;
+    margin: auto;
+    width: 90%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(AnnounceIMGs/Sunday\ School\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: transform .2s;
+}
+
+.sundayNews .blog .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.sundayNews .blog .blogInfo:hover{
+    border: 1px solid #f7c5cc;
+}   
+
+.sundayNews .blog  .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 5vw;
+    color: transparent;
+}
+
+.sundayNews .blog  .blogInfo p{
+    font-size: 2vw;
+    color: transparent;
+}
+
+.column3{
+    display: flex;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    justify-content: space-evenly;
+}
+
+.column3 .blog1{
+    display: block;
+    margin-right: 2%;
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.9)), url(AnnounceIMGs/MPgoodnews.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: transform .2s;
+}
+
+.column3 .blog1 .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.column3 .blog1 .blogInfo:hover{
+    border: 1px solid #f7c5cc;
+}   
+
+.column3 .blog1  .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 2vw;
+}
+
+.column3 .blog1  .blogInfo p{
+    font-size: 1.3vw;
+}
+
+.column3 .blog2{
+    display: block;
+    margin: auto;
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.7)), url(AnnounceIMGs/MPgoodnews1.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: transform .2s;
+}
+
+.column3 .blog2 .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.column3 .blog2 .blogInfo:hover{
+    border: 1px solid #f7c5cc;
+}   
+
+.column3 .blog2  .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 2vw;
+}
+
+.column3 .blog2  .blogInfo p{
+    font-size: 1.3vw;
+}
+
+.column3 .blog3{
+    display: block;
+    margin-right: 2%;
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.7)), url(AnnounceIMGs/MPgoodnews2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: transform .2s;
+}
+
+.column3 .blog3 .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.column3 .blog3 .blogInfo:hover{
+    border: 1px solid #f7c5cc;
+}   
+
+.column3 .blog3 .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 2vw;
+}
+
+.column3 .blog3  .blogInfo p{
+    font-size: 1.3vw;
+}
+
+.column3 .blog4{
+    display: block;
+    margin: auto;
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.7)), url(AnnounceIMGs/MPgoodnews5.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: transform .2s;
+}
+
+.column3 .blog4 .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.column3 .blog4 .blogInfo:hover{
+    border: 1px solid #f7c5cc;
+}   
+
+.column3 .blog4 .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 2vw;
+}
+
+.column3 .blog4  .blogInfo p{
+    font-size: 1.3vw;
+}
+
+/* ====================================================== */
+
+.sundayService{
+    display: block;
+}
+
+.sundayService h1{
+    color: #3C3F58;
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+.wildfire .blog{
+    display: block;
+    margin: auto;
+    width: 90%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(AnnounceIMGs/Wildfire.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: transform .2s;
+}
+
+.wildfire .blog .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.wildfire .blog .blogInfo:hover{
+    border: 1px solid #f7c5cc;
+}   
+
+.wildfire .blog  .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 5vw;
+    color: transparent;
+}
+
+.wildfire .blog  .blogInfo p{
+    font-size: 2vw;
+    color: transparent;
+}
+
+.column4{
+    display: flex;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    justify-content: space-evenly;
+}
+
+.column4 .blog1{
+    display: block;
+    margin-right: 2%;
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.7)), url(AnnounceIMGs/breaking.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: transform .2s;
+}
+
+.column4 .blog1 .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.column4 .blog1 .blogInfo:hover{
+    border: 1px solid #f7c5cc;
+}   
+
+.column4 .blog1  .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 2vw;
+}
+
+.column4 .blog1  .blogInfo p{
+    font-size: 1.3vw;
+}
+
+.column4 .blog2{
+    display: block;
+    margin: auto;
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.7)), url(AnnounceIMGs/puzzle.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: transform .2s;
+}
+
+.column4 .blog2 .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.column4 .blog2 .blogInfo:hover{
+    border: 1px solid #f7c5cc;
+}   
+
+.column4 .blog2  .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 2vw;
+}
+
+.column4 .blog2  .blogInfo p{
+    font-size: 1.3vw;
+}
+
+.column4 .blog3{
+    display: block;
+    margin-right: 2%;
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.7)), url(AnnounceIMGs/fullblast.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: transform .2s;
+}
+
+.column4 .blog3 .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.column4 .blog3 .blogInfo:hover{
+    border: 1px solid #f7c5cc;
+}   
+
+.column4 .blog3 .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 2vw;
+}
+
+.column4 .blog3  .blogInfo p{
+    font-size: 1.3vw;
+}
+
+.column4 .blog4{
+    display: block;
+    margin: auto;
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.8)), url(AnnounceIMGs/facetoface.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: transform .2s;
+}
+
+.column4 .blog4 .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.column4 .blog4 .blogInfo:hover{
+    border: 1px solid #f7c5cc;
+}   
+
+.column4 .blog4 .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 2vw;
+}
+
+.column4 .blog4  .blogInfo p{
+    font-size: 1.3vw;
+}
+
+/* ==================================================== */
+
+.sundayService{
+    display: block;
+}
+
+.sundayService h1{
+    color: #3C3F58;
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+.j12kids .blog{
+    display: block;
+    margin: auto;
+    width: 90%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(AnnounceIMGs/kids.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: transform .2s;
+}
+
+.j12kids  .blog .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.j12kids  .blog .blogInfo:hover{
+    border: 1px solid #f7c5cc;
+}   
+
+.j12kids  .blog  .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 5vw;
+    color: transparent;
+}
+
+.j12kids  .blog  .blogInfo p{
+    font-size: 2vw;
+    color: transparent;
+}
+
+.column5{
+    display: flex;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    justify-content: space-evenly;
+}
+
+.column5 .blog1{
+    display: block;
+    margin-right: 2%;
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.7)), url(AnnounceIMGs/kids1.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: transform .2s;
+}
+
+.column5 .blog1 .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.column5 .blog1 .blogInfo:hover{
+    border: 1px solid #f7c5cc;
+}   
+
+.column5 .blog1  .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 2vw;
+}
+
+.column5 .blog1  .blogInfo p{
+    font-size: 1.3vw;
+}
+
+.column5 .blog2{
+    display: block;
+    margin: auto;
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.7)), url(AnnounceIMGs/J12Kids1.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: transform .2s;
+}
+
+.column5 .blog2 .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.column5 .blog2 .blogInfo:hover{
+    border: 1px solid #f7c5cc;
+}   
+
+.column5 .blog2  .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 2vw;
+}
+
+.column5 .blog2  .blogInfo p{
+    font-size: 1.3vw;
+}
+
+.column5 .blog3{
+    display: block;
+    margin-right: 2%;
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.7)), url(AnnounceIMGs/fullblast.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: transform .2s;
+}
+
+.column5 .blog3 .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.column5 .blog3 .blogInfo:hover{
+    border: 1px solid #f7c5cc;
+}   
+
+.column5 .blog3 .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 2vw;
+}
+
+.column5 .blog3  .blogInfo p{
+    font-size: 1.3vw;
+}
+
+.column5 .blog4{
+    display: block;
+    margin: auto;
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.8)), url(AnnounceIMGs/facetoface.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: transform .2s;
+}
+
+.column5 .blog4 .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.column5 .blog4 .blogInfo:hover{
+    border: 1px solid #f7c5cc;
+}   
+
+.column5 .blog4 .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 2vw;
+}
+
+.column5 .blog4  .blogInfo p{
+    font-size: 1.3vw;
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+	.sidebar {
+		max-width: 200px;
+	}
+}
+
+@media (max-width: 768px) {
+	.menu-toggle {
+		display: block;
+	}
+	.content {
+        padding: 1rem;
+		padding-top: 5rem;
+        margin-left: 0%;
+        
+	}
     
-    .report img{
+	.sidebar {
+		position: fixed;
+		top: 0;
+		left: -300px;
+		height: 100vh;
+		width: 100%;
+		max-width: 300px;
+		transition: 0.2s linear;
+	}
+
+	.sidebar.is-active {
+		left: 0;
+	}
+
+    .blog{
         display: block;
-        border-radius: 20px;
-        margin-top: -250px;
-        margin-left: auto;
-        margin-right: auto;
         width: 100%;
-        max-width: 1000px;
-    }
-}
-
-/*=============================================*/
-
-@media only screen and (max-width:1300px){
-    .report{
-        justify-content: center;
-    }
-    
-    .report img{
-        display: block;
-        border-radius: 20px;
-        margin-top: -200px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        max-width: 900px;
-    }
-}
-
-/*=============================================*/
-
-@media only screen and (max-width:1100px){
-    .report{
-        justify-content: center;
-    }
-    
-    .report img{
-        display: block;
-        border-radius: 20px;
-        margin-top: -200px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        max-width: 750px;
-    }
-}
-
-/*=============================================*/
-
-@media only screen and (max-width:1000px){
-    .report{
-        justify-content: center;
-    }
-    
-    .report img{
-        display: block;
-        border-radius: 20px;
-        margin-top: -200px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        max-width: 650px;
-    }
-}
-
-/*=============================================*/
-
-@media only screen and (max-width:900px){
-    .report{
-        justify-content: center;
-    }
-    
-    .report img{
-        display: block;
-        border-radius: 20px;
-        margin-top: -150px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        max-width: 650px;
-    }
-}
-
-/*=============================================*/
-
-@media only screen and (max-width:800px){
-    .report{
-        justify-content: center;
-    }
-    
-    .report img{
-        display: block;
-        border-radius: 20px;
-        margin-top: -150px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        max-width: 550px;
-    }
-}
-
-/*=============================================*/
-
-@media only screen and (max-width:750px){
-    .report{
-        justify-content: center;
-    }
-    
-    .report img{
-        display: block;
-        border-radius: 20px;
-        margin-top: -130px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        max-width: 450px;
-    }
-}
-
-/*=============================================*/
-
-@media only screen and (max-width:685px){
-    .report{
-        justify-content: center;
-    }
-    
-    .report img{
-        display: block;
-        border-radius: 20px;
-        margin-top: -110px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        max-width: 440px;
-    }
-}
-
-/*=============================================*/
-
-@media only screen and (max-width:500px){
-    *{
-        margin: 0;
-        padding: 0;
-        font-family: 'Poppins', sans-serif;
-        font-family: 'Roboto Condensed', sans-serif;
-        scroll-behavior: smooth;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(SundaySchooltings/pressingAhead.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        transition: transform .2s;
     }
 
-    .logoIcon{
-        width: 45px;
-    }
-
-    .menuIcon{
-        width: 40px;
-        display: block;
-    }
-
-    nav ul{
-        margin-top: 30px;
-        width: 100%;
-        background: black;
-        position: absolute;
-        top: 75px;
-        right: 0;
-        z-index: 2;
-        display: none;
-    }
-
-    nav ul li{
-        display: block;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    nav ul li a{
+    .blog .blogInfo{
         color: white;
-    }
-
-    #menuList{
-        overflow: hidden;
+        text-align: left;
+        padding-top: 24%;
+        padding-bottom: 7%;
+        text-indent: 5%;
+        margin-left: 3%;
+        margin-right: 3%;
+        border-radius: 10px;
         transition: 0.5s;
-    }
-
-    .churchName{
-        padding: 5%;
-        padding-bottom: 20%;
-    }
-
-    .churchName h1{
-       font-size: 50px;
-       color: white;
-    }
-
-    .churchName h2{
-        font-size: 10px;
-        color: white;
-    }
-
-    .webTop{
-        background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(AnnounceIMGs/WebviewBanner.png);
-    }
-
-    .report{
-        justify-content: center;
+        cursor: pointer;
     }
     
-    .report img{
-        display: block;
-        border-radius: 20px;
-        margin-top: -15%;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        max-width: 300px;
+    .blog .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .blog  .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 8vw;
     }
+    
+    .blog  .blogInfo p{
+        font-size: 4vw;
+    }
+
+    .column2{
+        display: flex;
+        margin-top: 2%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2%;
+        justify-content: space-evenly;
+    }
+    
+    .column2 .blog{
+        display: block;
+        margin-right: 2%;
+        width: 50%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.9)), url(AnnounceIMGs/noicelandscape.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        transition: transform .2s;
+    }
+    
+    .column2 .blog .blogInfo{
+        color: white;
+        text-align: left;
+        padding-top: 30%;
+        padding-bottom: 7%;
+        text-indent: 5%;
+        margin-left: 3%;
+        margin-right: 3%;
+        border-radius: 10px;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    
+    .column2 .blog .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .column2 .blog  .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 2vw;
+    }
+    
+    .column2 .blog  .blogInfo p{
+        font-size: 1.3vw;
+    }
+    
+    .column2 .blog2{
+        display: block;
+        margin: auto;
+        width: 50%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.9)), url(AnnounceIMGs/GROUND.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        transition: transform .2s;
+    }
+    
+    .column2 .blog2 .blogInfo{
+        color: white;
+        text-align: left;
+        padding-top: 30%;
+        padding-bottom: 7%;
+        text-indent: 5%;
+        margin-left: 3%;
+        margin-right: 3%;
+        border-radius: 10px;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    
+    .column2 .blog2 .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .column2 .blog2  .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 2vw;
+    }
+    
+    .column2 .blog2  .blogInfo p{
+        font-size: 1.3vw;
+    }
+    
+    /* ================================================= */
+    
+    .column2{
+        display: block;
+        margin-top: 2%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 2%;
+        justify-content: none;
+    }
+
+    .column2 .blog{
+        display: block;
+        margin-right: 2%;
+        width: 100%;
+    }
+    
+    .column2 .blog .blogInfo{
+        padding-top: 20%;
+    }
+    
+    .column2 .blog .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .column2 .blog .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 5vw;
+    }
+    
+    .column2 .blog  .blogInfo p{
+        font-size: 3vw;
+    }
+    
+    .column2 .blog2{
+        display: block;
+        margin: auto;
+        margin-top: 2%;
+        width: 100%;
+    }
+    
+    .column2 .blog2 .blogInfo{
+        padding-top: 20%;
+    }
+    
+    .column2 .blog2 .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .column2 .blog2  .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 5vw;
+    }
+    
+    .column2 .blog2  .blogInfo p{
+        font-size: 3vw;
+    }
+    
+    .column2 .blog3{
+        display: block;
+        margin-right: 0%;
+        margin-top: 2%;
+        width: 100%;
+    }
+    
+    .column2 .blog3 .blogInfo{
+        padding-top: 20%;
+    }
+    
+    .column2 .blog3 .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .column2 .blog3  .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 5vw;
+    }
+    
+    .column2 .blog3  .blogInfo p{
+        font-size: 3vw;
+    }
+    
+    .column2 .blog4{
+        display: block;
+        margin: auto;
+        margin-top: 2%;
+        width: 100%;
+    }
+    
+    .column2 .blog4 .blogInfo{
+        padding-top: 20%;
+    }
+    
+    .column2 .blog4 .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .column2 .blog4  .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 5vw;
+    }
+    
+    .column2 .blog4  .blogInfo p{
+        font-size: 3vw;
+    }
+
+     /* ================================================= */
+
+     .sundayNews .blog{
+        display: block;
+        margin: auto;
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(AnnounceIMGs/Sunday\ School\ \(1\).jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        transition: transform .2s;
+    }
+    
+    .sundayNews .blog1 .blogInfo{
+        color: white;
+        text-align: left;
+        padding-top: 30%;
+        padding-bottom: 7%;
+        text-indent: 5%;
+        margin-left: 3%;
+        margin-right: 3%;
+        border-radius: 10px;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    
+    .sundayNews .blog .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .sundayNews .blog  .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 5vw;
+        color: transparent;
+    }
+    
+    .sundayNews .blog  .blogInfo p{
+        font-size: 2vw;
+        color: transparent;
+    }
+
+     .column3{
+        display: block;
+        margin-top: 2%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 2%;
+        justify-content: none;
+    }
+
+    .column3 .blog1{
+        display: block;
+        margin-right: 2%;
+        width: 100%;
+    }
+    
+    .column3 .blog1 .blogInfo{
+        padding-top: 20%;
+    }
+    
+    .column3 .blog1 .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .column3 .blog1 .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 5vw;
+    }
+    
+    .column3 .blog1  .blogInfo p{
+        font-size: 3vw;
+    }
+    
+    .column3 .blog2{
+        display: block;
+        margin: auto;
+        margin-top: 2%;
+        width: 100%;
+    }
+    
+    .column3 .blog2 .blogInfo{
+        padding-top: 20%;
+    }
+    
+    .column3 .blog2 .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .column3 .blog2  .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 5vw;
+    }
+    
+    .column3 .blog2  .blogInfo p{
+        font-size: 3vw;
+    }
+    
+    .column3 .blog3{
+        display: block;
+        margin-right: 0%;
+        margin-top: 2%;
+        width: 100%;
+    }
+    
+    .column3 .blog3 .blogInfo{
+        padding-top: 20%;
+    }
+    
+    .column3 .blog3 .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .column3 .blog3  .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 5vw;
+    }
+    
+    .column3 .blog3  .blogInfo p{
+        font-size: 3vw;
+    }
+    
+    .column3 .blog4{
+        display: block;
+        margin: auto;
+        margin-top: 2%;
+        width: 100%;
+    }
+    
+    .column3 .blog4 .blogInfo{
+        padding-top: 20%;
+    }
+    
+    .column3 .blog4 .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .column3 .blog4  .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 5vw;
+    }
+    
+    .column3 .blog4  .blogInfo p{
+        font-size: 3vw;
+    }
+
+       /* ================================================= */
+
+    .wildfire .blog{
+        display: block;
+        margin: auto;
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(AnnounceIMGs/Wildfire.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        transition: transform .2s;
+    }
+    
+    .wildfire .blog .blogInfo{
+        color: white;
+        text-align: left;
+        padding-top: 30%;
+        padding-bottom: 7%;
+        text-indent: 5%;
+        margin-left: 3%;
+        margin-right: 3%;
+        border-radius: 10px;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    
+    .wildfire .blog .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .wildfire .blog  .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 5vw;
+        color: transparent;
+    }
+    
+    .wildfire .blog  .blogInfo p{
+        font-size: 2vw;
+        color: transparent;
+    }
+
+    .column4{
+        display: block;
+        margin-top: 2%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 2%;
+        justify-content: none;
+    }
+
+    .column4 .blog1{
+        display: block;
+        margin-right: 2%;
+        width: 100%;
+    }
+    
+    .column4 .blog1 .blogInfo{
+        padding-top: 20%;
+    }
+    
+    .column4 .blog1 .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .column4 .blog1 .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 5vw;
+    }
+    
+    .column4 .blog1  .blogInfo p{
+        font-size: 3vw;
+    }
+    
+    .column4 .blog2{
+        display: block;
+        margin: auto;
+        margin-top: 2%;
+        width: 100%;
+    }
+    
+    .column4 .blog2 .blogInfo{
+        padding-top: 20%;
+    }
+    
+    .column4 .blog2 .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .column4 .blog2  .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 5vw;
+    }
+    
+    .column4 .blog2  .blogInfo p{
+        font-size: 3vw;
+    }
+    
+    .column4 .blog3{
+        display: block;
+        margin-right: 0%;
+        margin-top: 2%;
+        width: 100%;
+    }
+    
+    .column4 .blog3 .blogInfo{
+        padding-top: 20%;
+    }
+    
+    .column4 .blog3 .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .column4 .blog3  .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 5vw;
+    }
+    
+    .column4 .blog3  .blogInfo p{
+        font-size: 3vw;
+    }
+    
+    .column4 .blog4{
+        display: block;
+        margin: auto;
+        margin-top: 2%;
+        width: 100%;
+    }
+    
+    .column4 .blog4 .blogInfo{
+        padding-top: 20%;
+    }
+    
+    .column4 .blog4 .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .column4 .blog4  .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 5vw;
+    }
+    
+    .column4 .blog4  .blogInfo p{
+        font-size: 3vw;
+    }
+    
+    
+
+    
+    
 }
