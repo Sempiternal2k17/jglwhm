@@ -32,6 +32,36 @@ body{
     box-shadow: inset -2px 2px 2px white;
 }
 
+@media (max-width:1920px){
+    .container{
+        width: 100%;
+        max-width: 1000px;
+        height: 700px;
+        background: black;
+        padding: 28px;
+        margin: 0 28px;
+        border-radius: 10px;
+        box-shadow: inset -2px 2px 2px white;
+        padding-top: 5%;
+    }
+    .user-input-box label{
+        width: 100%;
+        color: white;
+        font-size: 20px;
+        font-weight: 400;
+        margin: 5px 0;
+    }
+
+    .bruh label{
+        width: 100%;
+        color: white;
+        font-size: 20px;
+        font-weight: 400;
+             
+    }
+    
+}
+
 .form-title{
     font-size: 26px;
     font-weight: 600;
@@ -84,6 +114,7 @@ body{
     outline: none;
     border: 1px solid grey;
     padding: 10px 10px;
+    resize: none;
 }
 
 .gender-title{
