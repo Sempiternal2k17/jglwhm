@@ -100,6 +100,7 @@ body{
 	color: #FFF;
 	text-decoration: none;
 	transition: 0.2s linear;
+    text-align: center;
 }
 
 .sidebar .menu .menu-item:hover,
@@ -118,6 +119,7 @@ body{
 	flex: 1 1 0;
 	padding: 2rem;
     margin-left: 16%;
+    padding-bottom: 5%;
 }
 
 .announce h1 {
@@ -930,11 +932,74 @@ body{
     font-size: 1.3vw;
 }
 
-.column5 .blog3{
+/* ================================================ */
+
+.sundayService{
+    display: block;
+}
+
+.sundayService h1{
+    color: #3C3F58;
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+.spear .blog{
+    display: block;
+    margin: auto;
+    width: 90%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(AnnounceIMGs/spearhead.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: transform .2s;
+}
+
+.spear .blog .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.spear .blog .blogInfo:hover{
+    border: 1px solid #f7c5cc;
+}   
+
+.spear .blog  .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 5vw;
+    color: transparent;
+}
+
+.spear .blog  .blogInfo p{
+    font-size: 2vw;
+    color: transparent;
+}
+
+.column6{
+    display: flex;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    justify-content: space-evenly;
+}
+
+.column6 .blog1{
     display: block;
     margin-right: 2%;
     width: 50%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.7)), url(AnnounceIMGs/fullblast.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.7)), url(AnnounceIMGs/remember.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -943,7 +1008,7 @@ body{
     transition: transform .2s;
 }
 
-.column5 .blog3 .blogInfo{
+.column6 .blog1 .blogInfo{
     color: white;
     text-align: left;
     padding-top: 30%;
@@ -956,24 +1021,24 @@ body{
     cursor: pointer;
 }
 
-.column5 .blog3 .blogInfo:hover{
-    border: 1px solid #f7c5cc;
+.column6 .blog1 .blogInfo:hover{
+    border: 1px solid #2C5F2D;
 }   
 
-.column5 .blog3 .blogInfo h1{
+.column6 .blog1  .blogInfo h1{
     font-family: 'Sono';
     font-size: 2vw;
 }
 
-.column5 .blog3  .blogInfo p{
+.column6 .blog1  .blogInfo p{
     font-size: 1.3vw;
 }
 
-.column5 .blog4{
+.column6 .blog2{
     display: block;
     margin: auto;
     width: 50%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.8)), url(AnnounceIMGs/facetoface.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.7)), url(AnnounceIMGs/coffe.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -982,7 +1047,7 @@ body{
     transition: transform .2s;
 }
 
-.column5 .blog4 .blogInfo{
+.column6 .blog2 .blogInfo{
     color: white;
     text-align: left;
     padding-top: 30%;
@@ -995,22 +1060,662 @@ body{
     cursor: pointer;
 }
 
-.column5 .blog4 .blogInfo:hover{
-    border: 1px solid #f7c5cc;
+.column6 .blog2 .blogInfo:hover{
+    border: 1px solid #2C5F2D;
 }   
 
-.column5 .blog4 .blogInfo h1{
+.column6 .blog2  .blogInfo h1{
     font-family: 'Sono';
     font-size: 2vw;
 }
 
-.column5 .blog4  .blogInfo p{
+.column6 .blog2  .blogInfo p{
     font-size: 1.3vw;
 }
 
+.column6 .blog3{
+    display: block;
+    margin-right: 2%;
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.7)), url(AnnounceIMGs/pizza.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: transform .2s;
+}
 
+.column6 .blog3 .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
 
+.column6 .blog3 .blogInfo:hover{
+    border: 1px solid #2C5F2D;
+}   
 
+.column6 .blog3 .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 2vw;
+}
+
+.column6 .blog3  .blogInfo p{
+    font-size: 1.3vw;
+}
+
+.column6 .blog4{
+    display: block;
+    margin: auto;
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.8)), url(AnnounceIMGs/buti.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: transform .2s;
+}
+
+.column6 .blog4 .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.column6 .blog4 .blogInfo:hover{
+    border: 1px solid #2C5F2D;
+}   
+
+.column6 .blog4 .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 2vw;
+}
+
+.column6 .blog4  .blogInfo p{
+    font-size: 1.3vw;
+}
+
+/* ================================================ */
+
+.sundayService{
+    display: block;
+}
+
+.sundayService h1{
+    color: #3C3F58;
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+.m4life .blog{
+    display: block;
+    margin: auto;
+    width: 90%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(AnnounceIMGs/married.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: transform .2s;
+}
+
+.m4life   .blog .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.m4life   .blog .blogInfo:hover{
+    border: 1px solid #f7c5cc;
+}   
+
+.m4life   .blog  .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 5vw;
+    color: transparent;
+}
+
+.m4life   .blog  .blogInfo p{
+    font-size: 2vw;
+    color: transparent;
+}
+
+.column7{
+    display: flex;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    justify-content: space-evenly;
+}
+
+.column7 .blog1{
+    display: block;
+    margin-right: 2%;
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.7)), url(AnnounceIMGs/mass.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: transform .2s;
+}
+
+.column7 .blog1 .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.column7 .blog1 .blogInfo:hover{
+    border: 1px solid #f7c5cc;
+}   
+
+.column7 .blog1  .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 2vw;
+}
+
+.column7 .blog1  .blogInfo p{
+    font-size: 1.3vw;
+}
+
+.column7 .blog2{
+    display: block;
+    margin: auto;
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.7)), url(AnnounceIMGs/just\ the\ two\ of\ us.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: transform .2s;
+}
+
+.column7 .blog2 .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.column7 .blog2 .blogInfo:hover{
+    border: 1px solid #f7c5cc;
+}   
+
+.column7 .blog2  .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 2vw;
+}
+
+.column7 .blog2  .blogInfo p{
+    font-size: 1.3vw;
+}
+
+/* ================================================ */
+
+.sundayService{
+    display: block;
+}
+
+.sundayService h1{
+    color: #3C3F58;
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+.mentor .blog{
+    display: block;
+    margin: auto;
+    width: 90%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(AnnounceIMGs/Mentor.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: transform .2s;
+}
+
+.mentor .blog .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.mentor .blog .blogInfo:hover{
+    border: 1px solid #f7c5cc;
+}   
+
+.mentor .blog  .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 5vw;
+    color: transparent;
+}
+
+.mentor .blog  .blogInfo p{
+    font-size: 2vw;
+    color: transparent;
+}
+
+.column8{
+    display: flex;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    justify-content: space-evenly;
+}
+
+.column8 .blog1{
+    display: block;
+    margin-right: 2%;
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.9)), url(AnnounceIMGs/mentor1.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: transform .2s;
+}
+
+.column8 .blog1 .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.column8 .blog1 .blogInfo:hover{
+    border: 1px solid #f7c5cc;
+}   
+
+.column8 .blog1  .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 2vw;
+}
+
+.column8 .blog1  .blogInfo p{
+    font-size: 1.3vw;
+}
+
+.column8 .blog2{
+    display: block;
+    margin: auto;
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.9)), url(AnnounceIMGs/mentor2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: transform .2s;
+}
+
+.column8 .blog2 .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.column8 .blog2 .blogInfo:hover{
+    border: 1px solid #f7c5cc;
+}   
+
+.column8 .blog2  .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 2vw;
+}
+
+.column8 .blog2  .blogInfo p{
+    font-size: 1.3vw;
+}
+
+/* ========================================= */
+
+.sundayService{
+    display: block;
+}
+
+.sundayService h1{
+    color: #3C3F58;
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+.life .blog{
+    display: block;
+    margin: auto;
+    width: 90%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(AnnounceIMGs/lifeclass.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: transform .2s;
+}
+
+.life .blog .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.life .blog .blogInfo:hover{
+    border: 1px solid #f7c5cc;
+}   
+
+.life .blog  .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 5vw;
+    color: transparent;
+}
+
+.life .blog  .blogInfo p{
+    font-size: 2vw;
+    color: transparent;
+}
+
+.column9{
+    display: flex;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    justify-content: space-evenly;
+}
+
+.column9 .blog1{
+    display: block;
+    margin-right: 2%;
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.9)), url(AnnounceIMGs/lifeclass2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: transform .2s;
+}
+
+.column9 .blog1 .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.column9 .blog1 .blogInfo:hover{
+    border: 1px solid #f7c5cc;
+}   
+
+.column9 .blog1  .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 2vw;
+}
+
+.column9 .blog1  .blogInfo p{
+    font-size: 1.3vw;
+}
+
+.column9 .blog2{
+    display: block;
+    margin: auto;
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.9)), url(AnnounceIMGs/lifeclass1.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: transform .2s;
+}
+
+.column9 .blog2 .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.column9 .blog2 .blogInfo:hover{
+    border: 1px solid #f7c5cc;
+}   
+
+.column9 .blog2  .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 2vw;
+}
+
+.column9 .blog2  .blogInfo p{
+    font-size: 1.3vw;
+}
+
+/* ========================================= */
+
+.sundayService{
+    display: block;
+}
+
+.sundayService h1{
+    color: #3C3F58;
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+.sol .blog{
+    display: block;
+    margin: auto;
+    width: 90%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(AnnounceIMGs/Solclass.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: transform .2s;
+}
+
+.sol .blog .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.sol .blog .blogInfo:hover{
+    border: 1px solid #f7c5cc;
+}   
+
+.sol .blog  .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 5vw;
+    color: transparent;
+}
+
+.sol .blog  .blogInfo p{
+    font-size: 2vw;
+    color: transparent;
+}
+
+.column10{
+    display: flex;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    justify-content: space-evenly;
+}
+
+.column10 .blog1{
+    display: block;
+    margin-right: 2%;
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.9)), url(AnnounceIMGs/sol3.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: transform .2s;
+}
+
+.column10 .blog1 .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.column10 .blog1 .blogInfo:hover{
+    border: 1px solid #f7c5cc;
+}   
+
+.column10 .blog1  .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 2vw;
+}
+
+.column10 .blog1  .blogInfo p{
+    font-size: 1.3vw;
+}
+
+.column10 .blog2{
+    display: block;
+    margin: auto;
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.9)), url(AnnounceIMGs/solclass1.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: transform .2s;
+}
+
+.column10 .blog2 .blogInfo{
+    color: white;
+    text-align: left;
+    padding-top: 30%;
+    padding-bottom: 7%;
+    text-indent: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.column10 .blog2 .blogInfo:hover{
+    border: 1px solid #f7c5cc;
+}   
+
+.column10 .blog2  .blogInfo h1{
+    font-family: 'Sono';
+    font-size: 2vw;
+}
+
+.column10 .blog2  .blogInfo p{
+    font-size: 1.3vw;
+}
+
+/* ========================================= */
 
 @media (max-width: 1024px) {
 	.sidebar {
@@ -1026,8 +1731,19 @@ body{
         padding: 1rem;
 		padding-top: 5rem;
         margin-left: 0%;
-        
+        padding-bottom: 2rem;
 	}
+
+    .sidebar .menu .menu-item {
+        display: block;
+        padding: 1em;
+        color: #FFF;
+        text-decoration: none;
+        transition: 0.2s linear;
+        text-align: center;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
     
 	.sidebar {
 		position: fixed;
@@ -1038,6 +1754,10 @@ body{
 		max-width: 300px;
 		transition: 0.2s linear;
 	}
+
+    .sidebar h3{
+        font-size: 8vw;
+    }
 
 	.sidebar.is-active {
 		left: 0;
@@ -1427,26 +2147,10 @@ body{
         display: block;
         margin: auto;
         width: 100%;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(AnnounceIMGs/Wildfire.jpg);
-        background-position: center;
-        background-size: cover;
-        border-radius: 10px;
-        padding-top: 2%;
-        padding-bottom: 2%;
-        transition: transform .2s;
     }
     
     .wildfire .blog .blogInfo{
-        color: white;
-        text-align: left;
         padding-top: 30%;
-        padding-bottom: 7%;
-        text-indent: 5%;
-        margin-left: 3%;
-        margin-right: 3%;
-        border-radius: 10px;
-        transition: 0.5s;
-        cursor: pointer;
     }
     
     .wildfire .blog .blogInfo:hover{
@@ -1567,9 +2271,552 @@ body{
     .column4 .blog4  .blogInfo p{
         font-size: 3vw;
     }
+
+    /* ================================================= */
+
+    .j12kids .blog{
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
     
+    .j12kids .blog .blogInfo{
+        padding-top: 30%;
+    }
     
+    .j12kids .blog .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .j12kids .blog  .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 5vw;
+        color: transparent;
+    }
+    
+    .j12kids.blog  .blogInfo p{
+        font-size: 2vw;
+        color: transparent;
+    }
+
+    .column5{
+        display: block;
+        margin-top: 2%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 2%;
+        justify-content: none;
+    }
+
+    .column5 .blog1{
+        display: block;
+        margin-right: 2%;
+        width: 100%;
+    }
+    
+    .column5 .blog1 .blogInfo{
+        padding-top: 20%;
+    }
+    
+    .column5 .blog1 .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .column5 .blog1 .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 5vw;
+    }
+    
+    .column5 .blog1  .blogInfo p{
+        font-size: 3vw;
+    }
+    
+    .column5 .blog2{
+        display: block;
+        margin: auto;
+        margin-top: 2%;
+        width: 100%;
+    }
+    
+    .column5 .blog2 .blogInfo{
+        padding-top: 20%;
+    }
+    
+    .column5 .blog2 .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .column5 .blog2  .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 5vw;
+    }
+    
+    .column5 .blog2  .blogInfo p{
+        font-size: 3vw;
+    }
 
     
+    /* ================================================= */
+
+    .spear .blog{
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+    
+    .spear .blog .blogInfo{
+        padding-top: 30%;
+    }
+    
+    .spear .blog .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+
+    .spear .blog  .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 5vw;
+        color: transparent;
+    }
+    
+    .spear .blog  .blogInfo p{
+        font-size: 2vw;
+        color: transparent;
+    }
+
+    .column6{
+        display: block;
+        margin-top: 2%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 2%;
+        justify-content: none;
+    }
+
+    .column6 .blog1{
+        display: block;
+        margin-right: 2%;
+        width: 100%;
+    }
+    
+    .column6 .blog1 .blogInfo{
+        padding-top: 20%;
+    }
+    
+    .column6 .blog1 .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .column6 .blog1 .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 5vw;
+    }
+    
+    .column6 .blog1  .blogInfo p{
+        font-size: 3vw;
+    }
+    
+    .column6 .blog2{
+        display: block;
+        margin: auto;
+        margin-top: 2%;
+        width: 100%;
+    }
+    
+    .column6 .blog2 .blogInfo{
+        padding-top: 20%;
+    }
+    
+    .column6 .blog2 .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .column6 .blog2  .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 5vw;
+    }
+    
+    .column6 .blog2  .blogInfo p{
+        font-size: 3vw;
+    }
+    
+    .column6 .blog3{
+        display: block;
+        margin-right: 0%;
+        margin-top: 2%;
+        width: 100%;
+    }
+    
+    .column6 .blog3 .blogInfo{
+        padding-top: 20%;
+    }
+    
+    .column6 .blog3 .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .column6 .blog3  .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 5vw;
+    }
+    
+    .column6 .blog3  .blogInfo p{
+        font-size: 3vw;
+    }
+    
+    .column6 .blog4{
+        display: block;
+        margin: auto;
+        margin-top: 2%;
+        width: 100%;
+    }
+    
+    .column6 .blog4 .blogInfo{
+        padding-top: 20%;
+    }
+    
+    .column6 .blog4 .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .column6 .blog4  .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 5vw;
+    }
+    
+    .column6 .blog4  .blogInfo p{
+        font-size: 3vw;
+    }
+
+      /* ================================================= */
+
+    .m4life .blog{
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+    
+    .m4life .blog .blogInfo{
+        padding-top: 30%;
+    }
+    
+    .m4life .blog .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .m4life .blog  .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 5vw;
+        color: transparent;
+    }
+    
+    .m4life .blog  .blogInfo p{
+        font-size: 2vw;
+        color: transparent;
+    }
+
+    .column7{
+        display: block;
+        margin-top: 2%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 2%;
+        justify-content: none;
+    }
+
+    .column7 .blog1{
+        display: block;
+        margin-right: 2%;
+        width: 100%;
+    }
+    
+    .column7 .blog1 .blogInfo{
+        padding-top: 20%;
+    }
+    
+    .column7 .blog1 .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .column7 .blog1 .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 5vw;
+    }
+    
+    .column7 .blog1  .blogInfo p{
+        font-size: 3vw;
+    }
+    
+    .column7 .blog2{
+        display: block;
+        margin: auto;
+        margin-top: 2%;
+        width: 100%;
+    }
+    
+    .column7 .blog2 .blogInfo{
+        padding-top: 20%;
+    }
+    
+    .column7 .blog2 .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .column7 .blog2  .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 5vw;
+    }
+    
+    .column7 .blog2  .blogInfo p{
+        font-size: 3vw;
+    }
+
+    /* ================================================= */
+
+    .mentor .blog{
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+    
+    .mentor .blog .blogInfo{
+        padding-top: 30%;
+    }
+    
+    .mentor .blog .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .mentor .blog  .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 5vw;
+        color: transparent;
+    }
+    
+    .mentor .blog  .blogInfo p{
+        font-size: 2vw;
+        color: transparent;
+    }
+
+    .column8{
+        display: block;
+        margin-top: 2%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 2%;
+        justify-content: none;
+    }
+
+    .column8 .blog1{
+        display: block;
+        margin-right: 2%;
+        width: 100%;
+    }
+    
+    .column8 .blog1 .blogInfo{
+        padding-top: 20%;
+    }
+    
+    .column8 .blog1 .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .column8 .blog1 .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 5vw;
+    }
+    
+    .column8 .blog1  .blogInfo p{
+        font-size: 3vw;
+    }
+    
+    .column8 .blog2{
+        display: block;
+        margin: auto;
+        margin-top: 2%;
+        width: 100%;
+    }
+    
+    .column8 .blog2 .blogInfo{
+        padding-top: 20%;
+    }
+    
+    .column8 .blog2 .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .column8 .blog2  .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 5vw;
+    }
+    
+    .column8 .blog2  .blogInfo p{
+        font-size: 3vw;
+    }
+
+    /* ================================================= */
+
+    .life .blog{
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+    
+    .life .blog .blogInfo{
+        padding-top: 30%;
+    }
+    
+    .life .blog .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .life .blog  .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 5vw;
+        color: transparent;
+    }
+    
+    .life .blog  .blogInfo p{
+        font-size: 2vw;
+        color: transparent;
+    }
+
+    .column9{
+        display: block;
+        margin-top: 2%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 2%;
+        justify-content: none;
+    }
+
+    .column9 .blog1{
+        display: block;
+        margin-right: 2%;
+        width: 100%;
+    }
+    
+    .column9 .blog1 .blogInfo{
+        padding-top: 20%;
+    }
+    
+    .column9 .blog1 .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .column9 .blog1 .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 5vw;
+    }
+    
+    .column9 .blog1  .blogInfo p{
+        font-size: 3vw;
+    }
+    
+    .column9 .blog2{
+        display: block;
+        margin: auto;
+        margin-top: 2%;
+        width: 100%;
+    }
+    
+    .column9 .blog2 .blogInfo{
+        padding-top: 20%;
+    }
+    
+    .column9 .blog2 .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .column9 .blog2  .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 5vw;
+    }
+    
+    .column9 .blog2  .blogInfo p{
+        font-size: 3vw;
+    }
+
+    /* ================================================= */
+
+    .sol .blog{
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+    
+    .sol .blog .blogInfo{
+        padding-top: 30%;
+    }
+    
+    .sol .blog .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .sol .blog  .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 5vw;
+        color: transparent;
+    }
+    
+    .sol .blog  .blogInfo p{
+        font-size: 2vw;
+        color: transparent;
+    }
+
+    .column10{
+        display: block;
+        margin-top: 2%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 2%;
+        justify-content: none;
+    }
+
+    .column10 .blog1{
+        display: block;
+        margin-right: 2%;
+        width: 100%;
+    }
+    
+    .column10 .blog1 .blogInfo{
+        padding-top: 20%;
+    }
+    
+    .column10 .blog1 .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .column10 .blog1 .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 5vw;
+    }
+    
+    .column10 .blog1  .blogInfo p{
+        font-size: 3vw;
+    }
+    
+    .column10 .blog2{
+        display: block;
+        margin: auto;
+        margin-top: 2%;
+        width: 100%;
+    }
+    
+    .column10 .blog2 .blogInfo{
+        padding-top: 20%;
+    }
+    
+    .column10 .blog2 .blogInfo:hover{
+        border: 1px solid #f7c5cc;
+    }   
+    
+    .column10 .blog2  .blogInfo h1{
+        font-family: 'Sono';
+        font-size: 5vw;
+    }
+    
+    .column10 .blog2  .blogInfo p{
+        font-size: 3vw;
+    }
     
 }
