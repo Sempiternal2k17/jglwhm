@@ -19,7 +19,7 @@
 
 .header{
     padding-top: 2%;
-    padding-bottom: 4%;
+    padding-bottom: 5%;
     background-image: linear-gradient(rgba(204, 49, 61, 0.7),rgba(204, 49, 61, 0.7)), url(Gallery/Misc.\ Shezz/tulips.jpg);
     background-size: cover;
     background-position: center;
@@ -27,24 +27,66 @@
 
 .header2{
     padding-top: 2%;
-    padding-bottom: 4%;
-    background-image: linear-gradient(rgba(204, 49, 61, 0.7),rgba(204, 49, 61, 0.7)), url(Gallery/Encounter\ Retreat/);
+    padding-bottom: 5%;
+    background-image: linear-gradient( rgba(47, 60, 126, 0.5) ,rgba(47, 60, 126, 0.5)), url(Gallery/Encounter\ Retreat/er1.jpg);
     background-size: cover;
     background-position: center;
 }
 
-.header2 h1{
-    font-size: 4vw;
+.header3{
+    padding-top: 2%;
+    padding-bottom: 5%;
+    background-image: linear-gradient( rgba(43, 174, 102, 0.7) ,rgba(43, 174, 102, 0.7)), url(Gallery/Youth\ Leadership\ Camp/yc1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.header4{
+    padding-top: 2%;
+    padding-bottom: 5%;
+    background-image: linear-gradient( rgb(226, 209, 249, 0.8) ,rgba(226, 209, 249, 0.8)), url(Gallery/Life\ Class\ Retreat/lc1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.header4 h1{
+    font-size: 3vw;
     font-family: 'Source Code Pro';
     text-align: center;
-    color: #FBEAEB;
+    color:  #E2D1F9;
+    margin-right: 30%;
+    margin-left: 30%;
+    background-color: #317773;
+}
+
+.header3 h1{
+    font-size: 3vw;
+    font-family: 'Source Code Pro';
+    text-align: center;
+    color: #2BAE66;
+    margin-right: 30%;
+    margin-left: 30%;
+    background-color: #FCF6F5;
+}
+
+.header2 h1{
+    font-size: 3vw;
+    font-family: 'Source Code Pro';
+    text-align: center;
+    color: #2F3C7E;
+    margin-right: 33%;
+    margin-left: 33%;
+    background-color: #FBEAEB;
 }
 
 .header h1{
-    font-size: 4vw;
+    font-size: 3vw;
     font-family: 'Source Code Pro';
     text-align: center;
-    color: #FBEAEB;
+    color: #990011;
+    margin-right: 30%;
+    margin-left: 30%;
+    background-color: #FCF6F5;
 }
 
 .home img{  
@@ -70,3 +112,56 @@
     box-shadow: 0 5px 15px rgba(0,0,0,3);
 }
 
+@media (max-width: 500px) {
+    .header{
+        padding-top: 2%;
+        padding-bottom: 12%;
+    }
+
+    .header2{
+        padding-top: 2%;
+        padding-bottom: 12%;
+    }
+
+    .header3{
+        padding-top: 2%;
+        padding-bottom: 12%;
+    }
+
+    .header4{
+        padding-top: 2%;
+        padding-bottom: 12%;
+    }
+
+    .header4 h1{
+        font-size: 6vw;
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+
+    .header3 h1{
+        font-size: 6vw;
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+
+    .header2 h1{
+        font-size: 6vw;
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+
+    .header h1{
+        font-size: 6vw;
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+
+    .home img{  
+        margin-left: 2%;
+        margin-bottom: 6%;
+        width: 5%;
+        cursor: pointer;    
+    }
+
+}
