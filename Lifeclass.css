@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed:ital,wght@0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -7,61 +11,46 @@
 }
 
 .bgweb{
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 172, 172, 0.7),rgba(255, 172, 172, 0.7)), url(LifeClassIMGs/topBG.jpg);
     background-size: cover;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0, 0, 0, 0.7)), url(LifeClassIMGs/topBG.jpg);
+    color: white;
+    background-position: center;
     padding-bottom: 5%;
-    background-attachment: fixed;
 }
 
 a{
     text-decoration: none;
-    color: black;
 }
 
-.topbar{
-    padding-left: 5%;
-    width: 100%;
-}
-
-.topbar h1{
-    padding-top: 40px;
-    font-size: 2.5vw;
-    color: white;
-}
-
-.webName{
-    padding-top: 5%;
-    padding-bottom: 5%;
-    text-align: center;
-}
-
-.webName p{
-    font-size: 1.5vw;
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
-    color: whitesmoke;
-}
-
-.topbar img{
-    width: 100px;
-    cursor: pointer;
+.imageHolder img{
+    width: 7%;
     margin-top: 2%;
+    margin-left: 2%;
 }
 
-.webName h1{
-    font-size: 10vw;
-    color: white;
-}
-
-.noice{
-    font-size: 1.3vw;
-    color: black;
-    background-color: yellow;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
+.plateName h2{
+    margin-top: 1%;
+    text-align: center;
+    color: #ffacac;
+    background-color: #FBFFB1;
     margin-left: 45%;
     margin-right: 45%;
+    font-size: 2vw;
+}
+
+.intro h1{
+    text-align: center;
+    font-family: 'P';
+    font-size: 13vw;
+}
+
+.intro p{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5vw;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 /* ===================================================== */
@@ -71,14 +60,14 @@ a{
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 10%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 
 .containerText h1{
     margin-top: 1%;
     text-align: center;
     font-size: 3vw;
-    color: cadetblue;
+    color: #ffacac;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -106,7 +95,7 @@ a{
 .containerText2 h1{
     text-align: center;
     font-size: 3vw;
-    color: rgb(16, 30, 31);
+    color: #ffacac;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -167,8 +156,354 @@ a{
 }
 
 .containerForm button:hover{
-    color: cornsilk;
-    background-color: black;
+    color: #FBFFB1;
+    background-color: #ffacac;
     cursor: pointer;
+}
+
+  /* ================================================ */
+
+    
+
+  /* ================================================ */
+
+  @media (max-width: 500px) {
+    .bgweb{
+        width: 100%;
+        background-image: linear-gradient(rgba(255, 172, 172, 0.7),rgba(255, 172, 172, 0.7)), url(LifeClassIMGs/topBG.jpg);
+        background-size: cover;
+        color: white;
+        background-position: center;
+        padding-bottom: 5%;
+    }
+    
+    .imageHolder img{
+        width: 15%;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+    
+    .plateName h2{
+        margin-top: 1%;
+        text-align: center;
+        color: #ffacac;
+        background-color: #FBFFB1;
+        margin-left: 35%;
+        margin-right: 35%;
+        font-size: 6vw;
+    }
+    
+    .intro h1{
+        text-align: center;
+        font-family: 'Amatic SC';
+        font-size: 25vw;
+    }
+    
+    .intro p{
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 4vw;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .containerText{
+        display: block;
+        justify-content: center;
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-top: 10%;
+        margin-bottom: 2%;
+    }
+    
+    .containerText h1{
+        margin-top: 1%;
+        text-align: center;
+        font-size: 7vw;
+        color: #ffacac;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    .containerText p{
+        margin-top: 1%;
+        font-size: 4vw;
+        text-indent: 5%;
+        text-align: justify;
+    }
+    
+    /* =============================================================== */
+    
+    .containerText2{
+        display: block;
+        justify-content: center;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    
+    .containerText2 h1{
+        text-align: center;
+        font-size: 7vw;
+        color: #ffacac;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    .containerText2 p{
+        margin-top: 1%;
+        font-size: 4vw;
+        text-indent: 5%;
+        text-align: justify;
+    }
+    
+    .containerText2 ol{
+        margin-top: 3%;
+    }
+    
+    .containerText2 ol li{
+        font-size: 5vw;
+    }
+    
+    #bottomText{
+        margin-top: 1%;
+        font-size: 4vw;
+        text-indent: 0;
+        text-align: justify;
+        font-style: italic;
+    }
+    
+    /* =============================================================== */
+    
+    .containerForm{
+        display: block;
+        justify-content: center;
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-bottom: 3%;
+    }
+    
+    .containerForm p{
+        margin-top: 1%;
+        font-size: 4vw;
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    .containerForm button{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1%;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        background: none;
+        font-size: 4vw;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        border: 1px solid;
+        transition: 0.5s;
+    }
+    
+    .containerForm button:hover{
+        color: #FBFFB1;
+        background-color: #ffacac;
+        cursor: pointer;
+    }
+  }
+
+  /* ================================================ */
+
+  .bottomLinks{
+    display: none;
+  }
+  
+  /* ================================================ */
+
+
+  .bottomLinks{
+    display: flex;
+    margin-top: 5%;
+    background-color: #ffacac;
+    color: white;
+    border-bottom: 5px #FBFFB1  solid;
+  }
+  
+  .firstGrid{
+    text-align: center;
+    border-right: white 1px solid;
+    padding: 2%;
+    width: 20%;
+  }
+  
+  .firstGrid img{
+    width: 70%;
+  }
+  
+  .firstGrid h1{
+    margin-top: 5%;
+    text-align: center;
+  }
+  
+  .firstGrid a{
+    margin-top: 7%;
+    color: white;
+    font-size: 3.5vw;
+    font-family: 'Source Code Pro';
+  }
+  
+  .firstGrid p{
+    margin-top: 10%;
+    font-size: 1vw;
+    text-align: left;
+    color: white;
+    font-family: 'Source Code Pro';
+  }
+  
+  /* =================================================== */
+  
+  
+  .secondGrid{
+    width: 20%;
+    display: inline-block;
+    margin-left: 3%;
+    margin-top: 4%;
+  }
+  
+  .secondGrid p{
+    font-family: 'Source Code Pro';
+    font-size: 1.2vw;
+  }
+  
+  .botli{
+    margin-top: 40%;
+  }
+  
+  .botli p{
+    margin-bottom: 2%;
+  }
+  
+  .botli a{
+    font-family: 'Source Code Pro';
+    font-size: 1.2vw;
+    color: white;
+  }
+  
+  .botli a:hover{
+    color: white;
+    transition: 0.5s;
+  }
+  
+  /* =================================================== */
+  
+  .thirdGrid{
+    width: 20%;
+    display: inline-block;
+    margin-top: 4%;
+  }
+  
+  .thirdGrid p{
+    font-family: 'Source Code Pro';
+    font-size: 1.2vw;
+  }
+  
+  .botli{
+    margin-top: 40%;
+  }
+  
+  .botli p{
+    margin-bottom: 2%;
+  }
+  
+  .botli a{
+    font-family: 'Source Code Pro';
+    font-size: 1.2vw;
+    color: white;
+  }
+  
+  .botli a:hover{
+    color: #FBFFB1;
+    transition: 0.5s;
+  }
+  
+  .mobileLinks{
+    display: none;
+  }
+
+  @media (max-width: 500px) {
+    .bottomLinks{
+        display: none;
+      }
+      
+      /* ================================================ */
+    
+      .mobileLinks{
+        margin: 0;
+        display: block;
+        background-color: #ffacac;
+        color: white;
+        border-bottom: 5px #FBFFB1  solid;
+        overflow-y: hidden;
+      }
+    
+      .mobileLinks .firstGrid{
+        text-align: left;
+        border-right: white 0px solid;
+        width: 80%;
+        padding: 2%;
+        padding-left: 10%;
+        padding-right: 10%;
+        border-bottom: white 1px solid;
+        padding-top: 10%;
+        padding-bottom: 10%;
+      }
+      
+      .mobileLinks .firstGrid img{
+        width: 25%;
+        margin-top: 2%;
+      }
+      
+      .mobileLinks .firstGrid h1{
+        margin-top: 2%;
+        text-align: left;
+
+      }
+      
+      .mobileLinks .firstGrid a{
+        margin-top: 1%;
+        font-size: 7vw;
+        color: white;
+        font-family: 'Source Code Pro';
+      }
+      
+      .mobileLinks .firstGrid p{
+        font-size: 3vw;
+        color: white;
+        font-family: 'Source Code Pro';
+      }
+    
+      .secondLane{
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 5%;
+        width: 100%;
+        color: white;
+        margin-top: 5%;
+      }
+      
+      .noice{
+        margin-bottom: 5%;
+        font-size: 4vw;
+        font-family: 'Source Code Pro';
+      }
+    
+      .links{
+        margin-top: 5%;
+        font-size: 4vw;
+      }
+    
+      .links a{
+        color: #FBFFB1;
+        font-family: 'Source Code Pro';
+      }
+    
 }
 
