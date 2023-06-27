@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 *{
   margin: 0;
@@ -795,14 +797,13 @@ a{
     /* ======================================================= */
 
     .subs{
-        display: block;
-        margin-left: 5%;
-        margin-right: 5%;
-        align-items: center;
-        margin-top: 5%;
-        margin-bottom: 3%;
-        justify-content: center;
-        
+      display: block;
+      margin-left: 5%;
+      margin-right: 5%;
+      align-items: center;
+      margin-top: 5%;
+      margin-bottom: 3%;
+      justify-content: center;
     }
     
     .subs img{
@@ -872,3 +873,195 @@ a{
       right: 0;
     }
 } 
+
+  
+  /* ================================================ */
+
+
+  .bottomLinks{
+    display: flex;
+    margin-top: 5%;
+    background-color: #FF69B4;
+    color: white;
+    border-bottom: 5px cyan  solid;
+  }
+  
+  .firstGrid{
+    text-align: center;
+    border-right: white 1px solid;
+    padding: 2%;
+    width: 20%;
+  }
+  
+  .firstGrid img{
+    width: 70%;
+  }
+  
+  .firstGrid h1{
+    margin-top: 5%;
+    text-align: center;
+  }
+  
+  .firstGrid a{
+    margin-top: 7%;
+    color: white;
+    font-size: 3.5vw;
+    font-family: 'Source Code Pro';
+  }
+  
+  .firstGrid p{
+    margin-top: 10%;
+    font-size: 1vw;
+    text-align: left;
+    color: white;
+    font-family: 'Source Code Pro';
+  }
+  
+  /* =================================================== */
+  
+  
+  .secondGrid{
+    width: 20%;
+    display: inline-block;
+    margin-left: 3%;
+    margin-top: 4%;
+  }
+  
+  .secondGrid p{
+    font-family: 'Source Code Pro';
+    font-size: 1.2vw;
+  }
+  
+  .botli{
+    margin-top: 40%;
+  }
+  
+  .botli p{
+    margin-bottom: 2%;
+  }
+  
+  .botli a{
+    font-family: 'Source Code Pro';
+    font-size: 1.2vw;
+    color: white;
+  }
+  
+  .botli a:hover{
+    color: white;
+    transition: 0.5s;
+  }
+  
+  /* =================================================== */
+  
+  .thirdGrid{
+    width: 20%;
+    display: inline-block;
+    margin-top: 4%;
+  }
+  
+  .thirdGrid p{
+    font-family: 'Source Code Pro';
+    font-size: 1.2vw;
+  }
+  
+  .botli{
+    margin-top: 40%;
+  }
+  
+  .botli p{
+    margin-bottom: 2%;
+  }
+  
+  .botli a{
+    font-family: 'Source Code Pro';
+    font-size: 1.2vw;
+    color: white;
+  }
+  
+  .botli a:hover{
+    color: cyan;
+    transition: 0.5s;
+  }
+  
+  .mobileLinks{
+    display: none;
+  }
+
+  @media (max-width: 500px) {
+    .bottomLinks{
+      display: none;
+    }
+    
+    /* ================================================ */
+  
+    .mobileLinks{
+      display: block;
+      margin-top: 5%;
+      background-color: #FF69B4;
+      color: white;
+      border-bottom: 5px cyan  solid;
+    }
+  
+    .mobileLinks .firstGrid{
+      text-align: left;
+      border-right: white 0px solid;
+      padding: 2%;
+      padding-left: 10%;
+      padding-right: 10%;
+      width: 100%;
+      border-bottom: white 1px solid;
+      padding-top: 10%;
+      padding-bottom: 10%;
+    }
+    
+    .mobileLinks .firstGrid img{
+      width: 30%;
+      margin-top: 2%;
+    }
+    
+    .mobileLinks .firstGrid h1{
+      margin-top: 2%;
+      text-align: left;
+    }
+    
+    .mobileLinks .firstGrid a{
+      margin-top: 1%;
+      font-size: 7vw;
+      color: white;
+      font-family: 'Source Code Pro';
+    }
+    
+    .mobileLinks .firstGrid p{
+      font-size: 3vw;
+      color: cyan;
+      font-family: 'Source Code Pro';
+    }
+  
+    .secondLane{
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-bottom: 5%;
+      width: 100%;
+      color: white;
+      margin-top: 5%;
+    }
+    
+    .noice{
+      margin-bottom: 5%;
+      font-size: 4vw;
+      font-family: 'Source Code Pro';
+    }
+  
+    .links{
+      margin-top: 5%;
+      font-size: 4vw;
+    }
+  
+    .links a{
+      color: white;
+      font-family: 'Source Code Pro';
+      color: cyan;
+    }
+
+}
+
