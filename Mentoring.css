@@ -72,7 +72,6 @@ a{
 
 .subContainer1 img{
     width: 100%;
-    max-width: 500px;
     border: 2px gray black;
     border-radius: 50%;
 }
@@ -131,7 +130,6 @@ a{
 
 .subContainer4 img{
     width: 100%;
-    max-width: 500px;
     border: 2px gray black;
     border-radius: 50%;
 }

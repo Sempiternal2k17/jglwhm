@@ -74,7 +74,7 @@ a{
     transition: all 0.3s ease;
 }
 .menu-list li a:hover{
-    color: #00FFFF;
+    color: #ffe77a;
     z-index: 2;
 }
   
