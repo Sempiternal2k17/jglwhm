@@ -64,7 +64,7 @@
   transition: all 0.3s ease;
 }
 .menu-list li a:hover{
-  color: yellow;
+  color: #e23c52;
   z-index: 2;
 }
 
