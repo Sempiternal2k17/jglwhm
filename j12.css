@@ -797,14 +797,13 @@ a{
     /* ======================================================= */
 
     .subs{
-        display: block;
-        margin-left: 5%;
-        margin-right: 5%;
-        align-items: center;
-        margin-top: 5%;
-        margin-bottom: 3%;
-        justify-content: center;
-        
+      display: block;
+      margin-left: 5%;
+      margin-right: 5%;
+      align-items: center;
+      margin-top: 5%;
+      margin-bottom: 3%;
+      justify-content: center;
     }
     
     .subs img{
@@ -875,12 +874,6 @@ a{
     }
 } 
 
-   
-  /* ================================================ */
-
- .bottomLinks{
-    display: none;
-  }
   
   /* ================================================ */
 
@@ -1040,7 +1033,7 @@ a{
     
     .mobileLinks .firstGrid p{
       font-size: 3vw;
-      color: white;
+      color: cyan;
       font-family: 'Source Code Pro';
     }
   
@@ -1056,6 +1049,7 @@ a{
     .noice{
       margin-bottom: 5%;
       font-size: 4vw;
+      font-family: 'Source Code Pro';
     }
   
     .links{
@@ -1064,7 +1058,9 @@ a{
     }
   
     .links a{
-      color: white
+      color: white;
+      font-family: 'Source Code Pro';
+      color: cyan;
     }
 
 }
