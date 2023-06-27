@@ -34,9 +34,10 @@ a{
     text-align: center;
     color: #ffacac;
     background-color: #FBFFB1;
-    margin-left: 45%;
-    margin-right: 45%;
+    margin-left: 43%;
+    margin-right: 43%;
     font-size: 2vw;
+    font-family: 'Pathway Extreme';
 }
 
 .intro h1{
@@ -186,11 +187,9 @@ a{
     .plateName h2{
         margin-top: 1%;
         text-align: center;
-        color: #ffacac;
-        background-color: #FBFFB1;
         margin-left: 35%;
         margin-right: 35%;
-        font-size: 6vw;
+        font-size: 4vw;
     }
     
     .intro h1{
