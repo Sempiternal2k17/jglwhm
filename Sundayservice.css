@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed:ital,wght@0,400;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 *{
@@ -75,7 +76,7 @@ a img{
   transition: all 0.3s ease;
 }
 .menu-list li a:hover{
-  color: yellow;
+  color: #FBEAEB;
   z-index: 2;
 }
 
@@ -731,51 +732,54 @@ a img{
         background-color: #2F3C7E;
     }
 
-    .subs{
-      display: flex;
-      margin-left: 10%;
-      margin-right: 10%;
+  .subs{
+      display: block;
+      margin-left: 5%;
+      margin-right: 5%;
       align-items: center;
       margin-top: 5%;
       margin-bottom: 3%;
       justify-content: center;
-      
   }
   
   .subs img{
-    width: 50%;
-    border-radius: 50%;
+      width:90%;
+      border-radius: 50%;
+      display: block;
+      margin: auto;
   }
   
   .sText{
-    margin-left: 4%;
+    margin-left: 0%;
   }
   
   .sText h1{
     font-family: 'Amatic SC';
-    font-size: 3.5vw;
+    font-size: 10vw;
+    text-align: center;
   }
   
   .sText p{
-    font-size: 1.9vw;
+    font-size: 4vw;
+    text-align: center;
   }
   
   .sText button{
     border-radius: 4px;
-    background-color: #2F3C7E;
     border: none;
-    color: #FBEAEB;
     text-align: center;
-    font-size: 1.3vw;
+    font-size: 5vw;
     padding: 2%;
     width: 40%;
     transition: all 0.5s;
     cursor: pointer;
-    margin-top: 3%;
+    display: block;
+    margin: auto;
+    margin-top: 3%;    
   }
   
   .sText button h1{
-    font-size: 2vw;
+    font-size: 5vw;
   }
   
   .sText button span {
@@ -789,12 +793,11 @@ a img{
     content: '\00bb';
     position: absolute;
     opacity: 0;
-    top: 5px;
+    top: 0px;
     right: -20px;
     transition: 0.5s;
     width: 30%;
   }
-  
   .sText button:hover span {
     padding-right: 13%;
   }
@@ -803,4 +806,278 @@ a img{
     opacity: 1;
     right: 0;
   }
+
+  /* ============================================== */
+
+  .pandA{
+    display: block;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    justify-content: center;
+  }
+  
+  .prayerReq{
+    text-align: center;
+  }
+  
+  .prayerReq h1{
+    font-family: 'Amatic SC';
+    font-size: 10vw;
+  }
+  
+  .prayerReq p{
+    font-size: 4vw;
+  }
+  
+  .pandA .button {
+    border-radius: 4px;
+    background-color: #2F3C7E;
+    border: none;
+    color: #FBEAEB;
+    text-align: center;
+    font-size: 4vw;
+    padding: 2%;
+    width: 40%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 3%;
+  }
+  
+  .pandA .button h1{
+    font-size: 4vw;
+  }
+  
+  .pandA .button span {
+    cursor: pointer;
+    display: hidden;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .pandA .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    right: -10px;
+    transition: 0.5s;
+    width: 30%;
+    display: hidden;
+  }
+  
+  .pandA .button:hover span {
+    padding-right: 13%;
+    display: hidden;
+  }
+  
+  .pandA .button:hover span:after {
+    opacity: 1;
+    right: 0;
+    display: hidden;
+  }
+  
+  .announcement{
+    margin-top: 5%;
+    text-align: center;
+  }
+  
+  .announcement h1{
+    font-family: 'Amatic SC';
+    font-size: 10vw;
+  }
+  
+  .announcement p{
+    font-size: 4vw;
+  }
+  
+
+}
+
+
+.bottomLinks{
+  display: flex;
+  margin-top: 5%;
+  background-color: #2F3C7E;
+  color: white;
+  border-bottom: 5px #FBEAEB  solid;
+}
+
+.firstGrid{
+  text-align: center;
+  border-right: white 1px solid;
+  padding: 2%;
+  width: 20%;
+}
+
+.firstGrid img{
+  width: 50%;
+}
+
+.firstGrid h1{
+  margin-top: 5%;
+  text-align: center;
+}
+
+.firstGrid a{
+  margin-top: 7%;
+  color: white;
+  font-size: 3.5vw;
+  font-family: 'Source Code Pro';
+}
+
+.firstGrid p{
+  margin-top: 10%;
+  font-size: 1vw;
+  text-align: left;
+  color: white;
+  font-family: 'Source Code Pro';
+}
+
+/* =================================================== */
+
+
+.secondGrid{
+  width: 20%;
+  display: inline-block;
+  margin-left: 3%;
+  margin-top: 4%;
+}
+
+.secondGrid p{
+  font-family: 'Source Code Pro';
+  font-size: 1.2vw;
+}
+
+.botli{
+  margin-top: 40%;
+}
+
+.botli p{
+  margin-bottom: 2%;
+}
+
+.botli a{
+  font-family: 'Source Code Pro';
+  font-size: 1.2vw;
+  color: white;
+}
+
+.botli a:hover{
+  color: white;
+  transition: 0.5s;
+}
+
+/* =================================================== */
+
+.thirdGrid{
+  width: 20%;
+  display: inline-block;
+  margin-top: 4%;
+}
+
+.thirdGrid p{
+  font-family: 'Source Code Pro';
+  font-size: 1.2vw;
+}
+
+.botli{
+  margin-top: 40%;
+}
+
+.botli p{
+  margin-bottom: 2%;
+}
+
+.botli a{
+  font-family: 'Source Code Pro';
+  font-size: 1.2vw;
+  color: white;
+}
+
+.botli a:hover{
+  color: #FBEAEB;
+  transition: 0.5s;
+}
+
+.mobileLinks{
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .bottomLinks{
+    display: none;
+  }
+  
+  /* ================================================ */
+
+  .mobileLinks{
+    display: block;
+    margin-top: 5%;
+    background-color: #2F3C7E;
+    color: white;
+    border-bottom: 5px #FBEAEB  solid;
+  }
+
+  .mobileLinks .firstGrid{
+    text-align: left;
+    border-right: white 0px solid;
+    padding: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+    border-bottom: white 1px solid;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  
+  .mobileLinks .firstGrid img{
+    width: 30%;
+    margin-top: 2%;
+  }
+  
+  .mobileLinks .firstGrid h1{
+    margin-top: 2%;
+    text-align: left;
+  }
+  
+  .mobileLinks .firstGrid a{
+    margin-top: 1%;
+    font-size: 7vw;
+    color: white;
+    font-family: 'Source Code Pro';
+  }
+  
+  .mobileLinks .firstGrid p{
+    font-size: 3vw;
+    color: #FBEAEB;
+    font-family: 'Source Code Pro';
+  }
+
+  .secondLane{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    width: 100%;
+    color: white;
+    margin-top: 5%;
+  }
+  
+  .noice{
+    margin-bottom: 5%;
+    font-size: 4vw;
+    font-family: 'Source Code Pro';
+  }
+
+  .links{
+    margin-top: 5%;
+    font-size: 4vw;
+  }
+
+  .links a{
+    font-family: 'Source Code Pro';
+    color: #FBEAEB
+  }
+
 }

@@ -971,7 +971,7 @@ a{
   margin-top: 5%;
   background-color: black;
   color: white;
-  border-bottom: 5px yellow solid;
+  border-bottom: 5px grey solid;
 }
 
 .firstGrid{
@@ -982,7 +982,7 @@ a{
 }
 
 .firstGrid img{
-  width: 70%;
+  width: 50%;
 }
 
 .firstGrid h1{
@@ -1892,6 +1892,7 @@ a{
   .noice{
     margin-bottom: 5%;
     font-size: 4vw;
+    font-family: 'Source Code Pro';
   }
 
   .links{
@@ -1900,7 +1901,8 @@ a{
   }
 
   .links a{
-    color: grey
+    color: grey;
+    font-family: 'Source Code Pro';
   }
 
 }
