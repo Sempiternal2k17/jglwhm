@@ -281,6 +281,12 @@ a{
     width: 80%;
 }
 
+.column h1{
+    margin-bottom: 1%;
+    font-family: 'Russo One';
+    font-size: 1.4vw;
+}
+
 .column .blog{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(WildfireIMGs/wildfire.jpg);
     background-position: center;
@@ -323,7 +329,35 @@ a{
 }
 
 .column2{
-    width: 40%;
+    width: 50%;
+}
+
+.column2 h1{
+  margin-bottom: 2%;
+  font-family: 'Russo One';
+  font-size: 1.4vw;
+}
+
+
+.column2 .scroll{
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+@media (max-width: 500px){
+  .column h1{
+    font-family: 'Russo One';
+    font-size: 3vw;
+  }
+  .column2 h1{
+    margin-bottom: 2%;
+    font-family: 'Russo One';
+    font-size: 3vw;
+  }
+  .column2 .scroll{
+    max-height:  none;
+    overflow-y: none;
+  } 
 }
 
 .column2 .blog{
@@ -349,15 +383,13 @@ a{
     border-radius: 10px;
     transition: 0.5s;
     cursor: pointer;
+    
 }
 
 .column2 .blog .blogInfo:hover{
     border: 1px solid yellow;
 }
 
-.column2 .blog:hover{
-    transform: scale(1.1);
-}
 
 .column2 .blog  .blogInfo h1{
     font-family: 'Russo One';
@@ -397,10 +429,6 @@ a{
     border: 1px solid yellow;
 }
 
-.column2 .blog2:hover{
-    transform: scale(1.1);
-}
-
 .column2 .blog2 .blogInfo h1{
     font-family: 'Russo One';
     font-size: 2vw;
@@ -437,10 +465,6 @@ a{
 
 .column2 .blog3 .blogInfo:hover{
     border: 1px solid yellow;
-}
-
-.column2 .blog3:hover{
-    transform: scale(1.1);
 }
 
 .column2 .blog3 .blogInfo h1{
