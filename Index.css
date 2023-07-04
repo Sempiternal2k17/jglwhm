@@ -289,7 +289,7 @@ a{
   display: flex;
   color: white;
   margin-bottom: 5%;
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(HeadnFooter/background.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(HeadnFooter/background.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -298,7 +298,6 @@ a{
   width: 33.3%;
   padding: 5%;
   transition: 0.5s;
-  cursor: pointer;
 }
 
 .vision h1{
@@ -309,7 +308,7 @@ a{
 }
 
 .vision p{
-  font-size: 1.7vw;
+  font-size: 1.9vw;
   text-align: center;
 }
 
@@ -384,6 +383,7 @@ a{
   padding-right: 5%;
   transition: 0.5s;
   cursor: pointer;
+  height: 100%;
 }
 
 .sundayDesc h1{
@@ -400,7 +400,7 @@ a{
 }
 
 .sundayDesc p{
-  font-size: 1.4vw;
+  font-size: 1.8vw;
   text-align: center;
   margin-bottom: 5%
 }
@@ -408,6 +408,10 @@ a{
 .sundayDesc:hover{
   background-color: #FBEAEB;
   color: #2F3C7E;
+}
+
+@media screen {
+  
 }
 
 /* ================================================ */
@@ -428,6 +432,7 @@ a{
   transition: 0.5s;
   cursor: pointer;
   flex: 1;
+  height: 100%;
 }
 
 .wildfireDesc h1{
@@ -444,7 +449,7 @@ a{
 }
 
 .wildfireDesc p{
-  font-size: 1.4vw;
+  font-size: 1.8vw;
   text-align: center;
   margin-bottom: 5%
 }
@@ -494,7 +499,7 @@ a{
 }
 
 .j12Desc p{
-  font-size: 1.4vw;
+  font-size: 1.8vw;
   text-align: center;
   margin-bottom: 5%
 }
@@ -507,9 +512,10 @@ a{
 /* ================================================ */
 
 .spearhead{
-  width: 34%;
+  width: 33%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(HeadnFooter/Spearheadmobile.png);
   background-size: cover;
+  background-position: center;
   color: white;
   flex: 1;
 }
@@ -523,6 +529,7 @@ a{
   cursor: pointer;
   flex: 1;
   height: 100%;
+  width: 100%;
 }
 
 .spearheadDesc h1{
@@ -539,7 +546,7 @@ a{
 }
 
 .spearheadDesc p{
-  font-size: 1.4vw;
+  font-size: 1.8vw;
   text-align: center;
   margin-bottom: 5%
 }
@@ -549,15 +556,16 @@ a{
   color: #2C5F2DFF;
 }
 
+/* ================================================ */
+
 .married{
   width: 33%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(HeadnFooter/married.jpg);
   background-size: cover;
+  background-position: center;
   color: white;
   flex: 1;
 }
-
-/* ================================================ */
 
 .marriedDesc{
   padding-top: 15%;
@@ -584,7 +592,7 @@ a{
 }
 
 .marriedDesc p{
-  font-size: 1.4vw;
+  font-size: 1.8vw;
   text-align: center;
   margin-bottom: 5%
 }
@@ -605,6 +613,7 @@ a{
   width: 33%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(HeadnFooter/mentoring.png);
   background-size: cover;
+  background-position: center;
   color: white;
   flex: 1;
 }
@@ -626,7 +635,7 @@ a{
 }
 
 .mentoringDesc p{
-  font-size: 1.4vw;
+  font-size: 1.9vw;
   text-align: center;
 }
 
@@ -638,9 +647,10 @@ a{
 /* ================================================ */
 
 .solclass{
-  width: 34%;
+  width: 33%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(HeadnFooter/solclassPortrait.png);
   background-size: cover;
+  background-position: center;
   color: white;
   flex: 1;
 }
@@ -663,7 +673,7 @@ a{
 }
 
 .solDesc p{
-  font-size: 1.4vw;
+  font-size: 1.9vw;
   text-align: center;
   margin-bottom: 5%
 }
@@ -702,7 +712,7 @@ a{
 }
 
 .lifeclassDesc p{
-  font-size: 1.4vw;
+  font-size: 1.9vw;
   text-align: center;
   margin-bottom: 5%
 }
@@ -770,7 +780,7 @@ a{
   position: absolute;
   opacity: 0;
   top: 0;
-  right: -20px;
+  right: -5px;
   transition: 0.5s;
   width: 18%;
 }
@@ -913,7 +923,7 @@ a{
   text-align: center;
   font-size: 1.3vw;
   padding: 2%;
-  width: 40%;
+  width: 20%;
   transition: all 0.5s;
   cursor: pointer;
   margin-top: 3%;
@@ -935,9 +945,9 @@ a{
   position: absolute;
   opacity: 0;
   top: 0;
-  right: -20px;
+  right: 10px;
   transition: 0.5s;
-  width: 18%;
+  width: 10%;
 }
 
 .pandA .button:hover span {
