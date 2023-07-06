@@ -148,6 +148,11 @@ body{
     transition: transform .2s;
 }
 
+.blog h1{
+    font-size: 5vw;
+    color: white;
+}
+
 .blog .blogInfo{
     color: white;
     text-align: left;

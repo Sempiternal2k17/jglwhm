@@ -272,6 +272,8 @@ a img{
     cursor: pointer;
     flex: 1;
     border-radius: 10px;
+    background-color: #FBEAEB;
+    color: #2F3C7E;
   }
 
   
@@ -287,8 +289,8 @@ a img{
   }
   
   .innerimg1:hover{
-    background-color: #FBEAEB;
-    color: #2F3C7E;
+    color: transparent;
+    background-color: transparent;
   }
 
 .pastLive h1{
