@@ -21,7 +21,7 @@ const body = document.querySelector("body");
 
     // ==================================SlideShow JS===================================
 
-    var timeOut = 6000;
+    var timeOut = 0;
     var slideIndex = 0;
     var autoOn = true;
     
@@ -38,7 +38,7 @@ const body = document.querySelector("body");
     
     function prevSlide() {
     
-        timeOut = 6000;
+        timeOut = 4000;
     
         var slides = document.getElementsByClassName("mySlides");
         var dots = document.getElementsByClassName("dot");
@@ -61,7 +61,7 @@ const body = document.querySelector("body");
     
     function showSlides() {
     
-        timeOut = 6000;
+        timeOut = 2000;
     
         var slides = document.getElementsByClassName("mySlides");
         var dots = document.getElementsByClassName("dot");
