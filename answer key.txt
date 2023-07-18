@@ -1,0 +1,54 @@
+TRUE (1)
+FALSE (2)
+FALSE (3)
+TRUE (4)
+FALSE (5)
+TRUE (6)
+FALSE (7)
+FALSE (8)
+FALSE (9)
+FALSE (10)
+FALSE (11)
+FALSE (12)
+TRUE (13)
+TRUE (14)
+TRUE (15)
+FALSE (16)
+TRUE (17)
+FALSE (18)
+TRUE (19)
+FALSE (20)
+TRUE (21)
+TRUE (22)
+TRUE (23)
+FALSE (24)
+TRUE (25)
+FALSE (26)
+FALSE (27)
+TRUE (28)
+TRUE (29)
+TRUE (30)
+TRUE (31)
+TRUE (32)
+FALSE (33)
+TRUE (34)
+
+A Christmas Carol 
+In Memoriam 
+The Lamb 
+The Tyger
+Auld Lang Syne
+Charge of the Light Brigade
+Ode on a Grecian Urn
+The Road Not Taken
+The Highwayman
+The Highwayman
+Mother to Son
+
+
+52 YEARS OLD
+25 YEARS
+WILLIAM SHAKESPEARE
+ANNE HATHAWAY
+THE YEAR 1585 AND 1592
+APRIL 23RD
