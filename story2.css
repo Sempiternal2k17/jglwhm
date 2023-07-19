@@ -24,6 +24,7 @@ a{
     background-size: cover;
     color: white;
     padding-bottom: 5%;
+    padding-top: 5%;
 }
 
 .banner h1{
@@ -91,6 +92,7 @@ a{
         background-size: cover;
         color: white;
         padding-bottom: 5%;
+        padding-top: 20%;
     }
     
     .banner h1{
@@ -190,7 +192,7 @@ a{
     margin-top: 10%;
     font-size: 1vw;
     text-align: left;
-    color: white;
+    color: cyan;
     font-family: 'Source Code Pro';
   }
   

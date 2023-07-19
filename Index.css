@@ -733,8 +733,8 @@ a{
 }
 
 .lifeclassDesc:hover{
-  background-color: #FBFFB1;
-  color: #FFACAC;
+  background-color: black;
+  color: orange;
 }
 
 /* ================================================ */
@@ -1602,8 +1602,8 @@ a{
   }
   
   .lifeclassDesc:hover{
-    background-color: #FFACAC;
-    color: #FBFFB1;
+    background-color: black;
+    color: orange;
   }
 
     /* ================================================ */

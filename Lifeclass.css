@@ -8,15 +8,17 @@
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .bgweb{
     width: 100%;
-    background-image: linear-gradient(rgba(255, 172, 172, 0.7),rgba(255, 172, 172, 0.7)), url(LifeClassIMGs/topBG.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(LifeClassIMGs/topBG.jpg);
     background-size: cover;
     color: white;
     background-position: center;
     padding-bottom: 5%;
+    padding-top: 10%;
 }
 
 a{
@@ -30,10 +32,9 @@ a{
 }
 
 .plateName h2{
-    margin-top: 1%;
     text-align: center;
-    color: #ffacac;
-    background-color: #FBFFB1;
+    color: black;
+    background-color: orange;
     margin-left: 43%;
     margin-right: 43%;
     font-size: 2vw;
@@ -68,7 +69,7 @@ a{
     margin-top: 1%;
     text-align: center;
     font-size: 3vw;
-    color: #ffacac;
+    color: orange;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -96,7 +97,7 @@ a{
 .containerText2 h1{
     text-align: center;
     font-size: 3vw;
-    color: #ffacac;
+    color: orange;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -171,7 +172,7 @@ a{
   @media (max-width: 500px) {
     .bgweb{
         width: 100%;
-        background-image: linear-gradient(rgba(255, 172, 172, 0.7),rgba(255, 172, 172, 0.7)), url(LifeClassIMGs/topBG.jpg);
+        
         background-size: cover;
         color: white;
         background-position: center;
@@ -219,7 +220,7 @@ a{
         margin-top: 1%;
         text-align: center;
         font-size: 7vw;
-        color: #ffacac;
+  
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
     
@@ -242,7 +243,7 @@ a{
     .containerText2 h1{
         text-align: center;
         font-size: 7vw;
-        color: #ffacac;
+   
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
     
@@ -321,9 +322,9 @@ a{
   .bottomLinks{
     display: flex;
     margin-top: 5%;
-    background-color: #ffacac;
+    background-color: black;
     color: white;
-    border-bottom: 5px #FBFFB1  solid;
+    border-bottom: 5px orange  solid;
   }
   
   .firstGrid{
@@ -353,7 +354,7 @@ a{
     margin-top: 10%;
     font-size: 1vw;
     text-align: left;
-    color: white;
+    color: orange;
     font-family: 'Source Code Pro';
   }
   
@@ -419,7 +420,7 @@ a{
   }
   
   .botli a:hover{
-    color: #FBFFB1;
+    color: orange;
     transition: 0.5s;
   }
   
@@ -437,9 +438,9 @@ a{
       .mobileLinks{
         margin: 0;
         display: block;
-        background-color: #ffacac;
+        background-color: black;
         color: white;
-        border-bottom: 5px #FBFFB1  solid;
+        border-bottom: 5px orange solid;
         overflow-y: hidden;
       }
     
@@ -475,7 +476,7 @@ a{
       
       .mobileLinks .firstGrid p{
         font-size: 3vw;
-        color: white;
+        color: orange;
         font-family: 'Source Code Pro';
       }
     
@@ -500,7 +501,7 @@ a{
       }
     
       .links a{
-        color: #FBFFB1;
+        color: orange;
         font-family: 'Source Code Pro';
       }
     

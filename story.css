@@ -23,6 +23,7 @@ a{
     background-size: cover;
     color: white;
     padding-bottom: 5%;
+    padding-top: 5%;
 }
 
 .banner h1{
@@ -87,10 +88,10 @@ a{
 @media (max-width: 500px) {
     .banner{
         width: 100%;
-        background-image: linear-gradient(rgba(255,105,180, 0.9),rgba(255,105,180, 0.9)), url(J12KidsIMGs/kidsandjesus.jpg);
         background-size: cover;
         color: white;
         padding-bottom: 5%;
+        padding-top: 20%;
     }
     
     .banner h1{
@@ -192,7 +193,7 @@ a{
     margin-top: 10%;
     font-size: 1vw;
     text-align: left;
-    color: white;
+    color: cyan;
     font-family: 'Source Code Pro';
   }
   

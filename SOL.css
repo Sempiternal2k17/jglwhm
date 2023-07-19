@@ -18,6 +18,7 @@
     color: white;
     background-position: center;
     padding-bottom: 5%;
+    padding-top: 10%;
 }
 
 a{
@@ -31,7 +32,6 @@ a{
 }
 
 .plateName h2{
-    margin-top: 1%;
     text-align: center;
     color: #1868AE;
     background-color: #C6D7EB;
@@ -170,6 +170,7 @@ a{
         background-size: cover;
         background-position: center;
         padding-bottom: 10%;
+        padding-top: 20%;
     }
     
     .imageHolder img{

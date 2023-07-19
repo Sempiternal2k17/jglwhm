@@ -25,16 +25,27 @@ a{
     background-position: center;
     color: white;
     padding-bottom: 5%;
+    padding-top: 5%;
 }
 
-.banner h1{
+.banner1{
+    width: 100%;
+    background-image: linear-gradient(rgba(255,105,180, 0.9),rgba(255,105,180, 0.9)), url(J12KidsIMGs/jesusfeeds5000.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.banner, .banner1 h1{
     text-align: center;
     font-size: 6vw;
     font-family: 'Andika';
     
 }
 
-.banner p{
+.banner ,.banner1 p{
     text-align: center;
     font-size: 2vw;
     font-family: 'Andika';
@@ -88,10 +99,11 @@ a{
 
 @media (max-width: 500px) {
     .banner{
-        width: 100%;
-        background-size: cover;
-        color: white;
-        padding-bottom: 5%;
+      width: 100%;
+      background-size: cover;
+      color: white;
+      padding-bottom: 5%;
+      padding-top: 20%;
     }
     
     .banner h1{
@@ -191,7 +203,7 @@ a{
     margin-top: 10%;
     font-size: 1vw;
     text-align: left;
-    color: white;
+    color: cyan;
     font-family: 'Source Code Pro';
   }
   
