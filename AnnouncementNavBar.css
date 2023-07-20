@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+
 ::-webkit-scrollbar {
     width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: #2C5F2DFF;
+    background: #030E4F;
 }
 ::-webkit-scrollbar-thumb {
-    background: #FFE77AFF;
+    background: #F49F1C;
 }
 ::selection{
     background: rgb(0,123,255,0.3);
@@ -23,8 +28,7 @@
     transition: all 0.3s ease;
 }
 .navbar.sticky{
-    color: #FFE77AFF;
-    background: #2C5F2DFF;
+    background: #030E4F;
     padding: 10px 0;
     box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
 }
@@ -51,9 +55,10 @@
     margin-left: 25px;
     text-decoration: none;
     transition: all 0.3s ease;
+    font-family: 'Roboto Condensed';
 }
 .menu-list li a:hover{
-    color: #ffe77a;
+    color: #F49F1C;
     z-index: 2;
 }
   
