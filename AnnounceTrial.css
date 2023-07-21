@@ -9,11 +9,15 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 .announce{
     width: 100%;
-    background: rgba(0, 0, 0, 0.7)url(AnnounceIMGs/bgwebsite.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(AnnounceIMGs/bgwebsite.jpg);
     padding-top: 10%;
-    padding-bottom: 10%;
+    padding-bottom: 20%;
     background-position: center;
     background-size: cover;
 }
@@ -21,14 +25,14 @@
 .news1{
     display: block;
     margin: auto;
-    width: 70%;
+    width: 80%;
     margin-bottom: 5%;
 }
 
 .news1 img{
     display: block;
     width: 100%;
-    margin-top: -15%;
+    margin-top: -20%;
     transition: 0.5s;
 }
 
@@ -38,19 +42,23 @@
     -moz-box-shadow: 1px 7px 26px 0px rgba(0,0,0,0.54);
 }
 
-#plateName{
-    margin-top: 2%;
-    font-size: 0.7vw;
-    color: white;
-    width: 9%;
-    padding: 0.5%;
-    background-color: #2F3C7E;
-    font-family: 'Source Code Pro';
-}
-
 .textBox{
     margin: auto;
     width: 98%;
+}
+
+.news1 .plateNameGeneral{
+    margin-top: 2%;
+    color: white;
+    margin-right: 94.5%;
+    padding: 0.5%;
+    background-color: black;
+    font-family: 'Source Code Pro';
+}
+
+.news1 .plateNameGeneral h2{
+    font-size: 0.8vw;
+    font-family: 'Source Code Pro';
 }
 
 .textBox h1{
@@ -66,6 +74,132 @@
     font-size: 1.3vw;
     font-family: 'Roboto Condensed';
 }
+
+.bottomNews{
+    display: flex;
+    padding: 4%;
+}
+
+.news2{
+    width: 50%;
+    height: 100%;
+    margin-right: 4%;
+    flex: 1;
+}
+
+.news2 img{
+    display: block;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.news2 img:hover{
+    box-shadow: 1px 7px 26px 0px rgba(0,0,0,0.54);
+    -webkit-box-shadow: 1px 7px 26px 0px rgba(0,0,0,0.54);
+    -moz-box-shadow: 1px 7px 26px 0px rgba(0,0,0,0.54);
+}
+
+.news2 .textBox{
+    margin: auto;
+    width: 98%;
+}
+
+.news2 .textBox h1{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 2vw;
+    font-family: 'Source Code Pro';
+}
+
+.news2 .textBox p{
+    color: #585757;
+    text-align: justify;
+    font-size: 1.3vw;
+    font-family: 'Roboto Condensed';
+}
+
+.news3{
+    width: 50%;
+    flex: 1;
+}
+
+.news3 img{
+    display: block;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.news3 img:hover{
+    box-shadow: 1px 7px 26px 0px rgba(0,0,0,0.54);
+    -webkit-box-shadow: 1px 7px 26px 0px rgba(0,0,0,0.54);
+    -moz-box-shadow: 1px 7px 26px 0px rgba(0,0,0,0.54);
+}
+
+.news3 .textBox{
+    margin: auto;
+    width: 98%;
+}
+
+.news3 .textBox h1{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 2vw;
+    font-family: 'Source Code Pro';
+}
+
+.news3 .textBox p{
+    color: #585757;
+    text-align: justify;
+    font-size: 1.3vw;
+    font-family: 'Roboto Condensed';
+}
+
+.plateName{
+    margin-top: 3%;
+}
+
+.wildfire{
+    background-color: yellow;
+    padding: 1%;
+    font-size: 0.8vw;
+    font-family: 'Source Code Pro';
+    margin: 0.5%;
+}
+
+.spearhead{
+    background-color: #2C5F2DFF;
+    color: #FFE77AFF;
+    padding: 1%;
+    font-size: 0.8vw;
+    font-family: 'Source Code Pro';
+    margin: 0.5%;
+}
+
+.general{
+    background-color: black;
+    color: white;
+    padding: 1%;
+    font-size: 0.8vw;
+    font-family: 'Source Code Pro';
+    margin: 0.5%;
+}
+
+.sundayService{
+    background-color: #2F3C7E;
+    color: #FBEAEB;
+    padding: 1%;
+    font-size: 0.8vw;
+    font-family: 'Source Code Pro';
+    margin: 0.5%;
+}
+
+#link{
+  font-family: 'Roboto Condensed';
+  color: black;
+  text-decoration: underline;
+}
+
+
 
 
 @media (max-width: 500px){
@@ -88,3 +222,189 @@
         width: 85%;
     }
 }
+
+.bottomLinks{
+    display: flex;
+    margin-top: 5%;
+    background-color: #030E4F;
+    color: white;
+    border-bottom: 5px #F49F1C  solid;
+  }
+  
+  .firstGrid{
+    text-align: center;
+    border-right: white 1px solid;
+    padding: 2%;
+    width: 20%;
+  }
+  
+  .firstGrid img{
+    width: 50%;
+  }
+  
+  .firstGrid h1{
+    margin-top: 5%;
+    text-align: center;
+  }
+  
+  .firstGrid a{
+    margin-top: 7%;
+    color: white;
+    font-size: 3.5vw;
+    font-family: 'Source Code Pro';
+  }
+  
+  .firstGrid p{
+    margin-top: 10%;
+    font-size: 1vw;
+    text-align: left;
+    color: #F49F1C;
+    font-family: 'Source Code Pro';
+  }
+  
+  /* =================================================== */
+  
+  
+  .secondGrid{
+    width: 20%;
+    display: inline-block;
+    margin-left: 3%;
+    margin-top: 4%;
+  }
+  
+  .secondGrid p{
+    font-family: 'Source Code Pro';
+    font-size: 1.2vw;
+  }
+  
+  .botli{
+    margin-top: 40%;
+  }
+  
+  .botli p{
+    margin-bottom: 2%;
+  }
+  
+  .botli a{
+    font-family: 'Source Code Pro';
+    font-size: 1.2vw;
+    color: white;
+  }
+  
+  .botli a:hover{
+    color: white;
+    transition: 0.5s;
+  }
+  
+  /* =================================================== */
+  
+  .thirdGrid{
+    width: 20%;
+    display: inline-block;
+    margin-top: 4%;
+  }
+  
+  .thirdGrid p{
+    font-family: 'Source Code Pro';
+    font-size: 1.2vw;
+  }
+  
+  .botli{
+    margin-top: 40%;
+  }
+  
+  .botli p{
+    margin-bottom: 2%;
+  }
+  
+  .botli a{
+    font-family: 'Source Code Pro';
+    font-size: 1.2vw;
+    color: white;
+  }
+  
+  .botli a:hover{
+    color: #F49F1C;
+    transition: 0.5s;
+  }
+  
+  .mobileLinks{
+    display: none;
+  }
+  
+  @media (max-width: 500px) {
+    .bottomLinks{
+      display: none;
+    }
+    
+    /* ================================================ */
+  
+    .mobileLinks{
+      display: block;
+      margin-top: 5%;
+      background-color: #030E4F;
+      color: white;
+      border-bottom: 5px #F49F1C  solid;
+    }
+  
+    .mobileLinks .firstGrid{
+      text-align: left;
+      border-right: white 0px solid;
+      padding: 2%;
+      padding-left: 10%;
+      padding-right: 10%;
+      width: 100%;
+      border-bottom: white 1px solid;
+      padding-top: 10%;
+      padding-bottom: 10%;
+    }
+    
+    .mobileLinks .firstGrid img{
+      width: 30%;
+      margin-top: 2%;
+    }
+    
+    .mobileLinks .firstGrid h1{
+      margin-top: 2%;
+      text-align: left;
+    }
+    
+    .mobileLinks .firstGrid a{
+      margin-top: 1%;
+      font-size: 7vw;
+      color: white;
+      font-family: 'Source Code Pro';
+    }
+    
+    .mobileLinks .firstGrid p{
+      font-size: 3vw;
+      color: #FBEAEB;
+      font-family: 'Source Code Pro';
+    }
+  
+    .secondLane{
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-bottom: 5%;
+      width: 100%;
+      color: white;
+      margin-top: 5%;
+    }
+    
+    .noice{
+      margin-bottom: 5%;
+      font-size: 4vw;
+      font-family: 'Source Code Pro';
+    }
+  
+    .links{
+      margin-top: 5%;
+      font-size: 4vw;
+    }
+  
+    .links a{
+      font-family: 'Source Code Pro';
+      color: #FBEAEB;
+    }
+  
+  }

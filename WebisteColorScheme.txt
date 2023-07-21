@@ -1,9 +1,29 @@
-Background Page = #EEF1FF
-Background - color = #D2DAFF
-Hover Background = #AAC4FF
-Border color = #B1B2FF
-H1 Font size = 20px
-P Font size = 10px
-margin-left: 15%;
-margin-right: 15%;
-margin-top: 5%;
+Sunday Service    background-color: #FBEAEB;
+                  color: #2F3C7E;
+
+Wildfire          background-color: black;
+                  color: yellow;
+
+J12 Kids          background-color: #00FFFF;
+                  color: #FF69B4;
+
+Spearhead         background-color: #FFE77AFF;
+                  color: #2C5F2DFF;
+
+Married4Life      background-color: #f7c5cc;
+                  color: #cc313d;
+
+Mentoring         background-color: #FFA3FD;
+                  color: #191825;
+
+SOL Class         background-color: #1868AE;
+                  color: #C6D7EB;
+
+LifeClass         background-color: black;
+                  color: orange;
+
+Sunday Services: 9 am @ Colegio de Amore, and via FB livestream
+J12 Kids:9 am @ Colegio de Amore
+Wildfire Service: Every Friday, 6:00 pm
+Spearhead Service: 2nd and last Fridays, 7:00 pm
+Married for Life: for announcement
