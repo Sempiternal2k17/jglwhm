@@ -193,6 +193,15 @@ a{
     margin: 0.5%;
 }
 
+.j12Kids{
+    background-color: #00FFFF;
+    color: #FF69B4;
+    padding: 1%;
+    font-size: 0.8vw;
+    font-family: 'Source Code Pro';
+    margin: 0.5%;
+}
+
 #link{
   font-family: 'Roboto Condensed';
   color: black;
