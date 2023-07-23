@@ -82,9 +82,7 @@ a{
 
 .news2{
     width: 50%;
-    height: 100%;
     margin-right: 4%;
-    flex: 1;
 }
 
 .news2 img{
@@ -120,7 +118,6 @@ a{
 
 .news3{
     width: 50%;
-    flex: 1;
 }
 
 .news3 img{
@@ -194,12 +191,48 @@ a{
 }
 
 .j12Kids{
-    background-color: #00FFFF;
-    color: #FF69B4;
+    background-color: #FF69B4;
+    color: #00FFFF;
     padding: 1%;
     font-size: 0.8vw;
     font-family: 'Source Code Pro';
     margin: 0.5%;
+}
+
+.married{
+    background-color: #f7c5cc;
+    color: #cc313d;
+    padding: 1%;
+    font-size: 0.8vw;
+    font-family: 'Source Code Pro';
+    margin: 0.5%;
+}
+
+.mentoring{
+  background-color: #191825;
+  color: #FFA3FD;
+  padding: 1%;
+  font-size: 0.8vw;
+  font-family: 'Source Code Pro';
+  margin: 0.5%;
+}
+
+.sol{
+  background-color: #1868AE;
+  color: #C6D7EB;
+  padding: 1%;
+  font-size: 0.8vw;
+  font-family: 'Source Code Pro';
+  margin: 0.5%;
+}
+
+.lifeclass{
+  background-color: #3EB489;
+  color: white;
+  padding: 1%;
+  font-size: 0.8vw;
+  font-family: 'Source Code Pro';
+  margin: 0.5%;
 }
 
 #link{
@@ -222,14 +255,187 @@ a{
     }
 
     .news1{
+      width: 100%;
         margin-top: -20%;
+        padding: 4%;
     }
     
     .news1 img{
         display: block;
         margin: auto;
-        width: 85%;
+        width: 100%;
     }
+  
+    .textBox{
+      margin: auto;
+      width: 98%;
+    }
+  
+    .textBox h1{
+      margin-top: 1%;
+      margin-bottom: 1%;
+      font-size: 6vw;
+      font-family: 'Source Code Pro';
+    }
+  
+    .textBox p{
+      color: #585757;
+      text-align: justify;
+      font-size: 4vw;
+      font-family: 'Roboto Condensed';
+    }
+  
+  .bottomNews{
+      display: block;
+      padding: 4%;
+  }
+  
+  .news2{
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 5%;
+  }
+  
+  .news2 img{
+      display: block;
+      width: 100%;
+      transition: 0.5s;
+  }
+  
+  .news2 img:hover{
+      box-shadow: 1px 7px 26px 0px rgba(0,0,0,0.54);
+      -webkit-box-shadow: 1px 7px 26px 0px rgba(0,0,0,0.54);
+      -moz-box-shadow: 1px 7px 26px 0px rgba(0,0,0,0.54);
+  }
+  
+  .news2 .textBox{
+      margin: auto;
+      width: 98%;
+  }
+  
+  .news2 .textBox h1{
+      margin-top: 1%;
+      margin-bottom: 1%;
+      font-size: 6vw;
+      font-family: 'Source Code Pro';
+  }
+  
+  .news2 .textBox p{
+      color: #585757;
+      text-align: justify;
+      font-size: 4vw;
+      font-family: 'Roboto Condensed';
+  }
+  
+  .news3{
+      width: 100%;
+      margin-bottom: 5%;
+  }
+  
+  .news3 img{
+      display: block;
+      width: 100%;
+      transition: 0.5s;
+  }
+  
+  .news3 img:hover{
+      box-shadow: 1px 7px 26px 0px rgba(0,0,0,0.54);
+      -webkit-box-shadow: 1px 7px 26px 0px rgba(0,0,0,0.54);
+      -moz-box-shadow: 1px 7px 26px 0px rgba(0,0,0,0.54);
+  }
+  
+  .news3 .textBox{
+      margin: auto;
+      width: 98%;
+  }
+  
+  .news3 .textBox h1{
+      margin-top: 1%;
+      margin-bottom: 1%;
+      font-size: 6vw;
+      font-family: 'Source Code Pro';
+  }
+  
+  .news3 .textBox p{
+      color: #585757;
+      text-align: justify;
+      font-size: 4vw;
+      font-family: 'Roboto Condensed';
+  }
+  
+  .plateName{
+      margin-top: 3%;
+  }
+  
+  .wildfire{
+      padding: 1%;
+      font-size: 3vw;
+      font-family: 'Source Code Pro';
+      margin: 0.5%;
+  }
+  
+  .spearhead{
+      padding: 1%;
+      font-size: 3vw;
+      font-family: 'Source Code Pro';
+      margin: 0.5%;
+  }
+  
+  .general{
+    padding: 1%;
+    font-size: 3vw;
+    font-family: 'Source Code Pro';
+    margin: 0.5%;
+  }
+  
+  .sundayService{
+    padding: 1%;
+    font-size: 3vw;
+    font-family: 'Source Code Pro';
+    margin: 0.5%;
+  }
+  
+  .j12Kids{
+    padding: 1%;
+    font-size: 3vw;
+    font-family: 'Source Code Pro';
+    margin: 0.5%;
+  }
+  
+  .married{
+    padding: 1%;
+    font-size: 3vw;
+    font-family: 'Source Code Pro';
+    margin: 0.5%;
+  }
+  
+  .mentoring{
+    padding: 1%;
+      font-size: 3vw;
+      font-family: 'Source Code Pro';
+      margin: 0.5%;
+  }
+  
+  .sol{
+    padding: 1%;
+    font-size: 3vw;
+    font-family: 'Source Code Pro';
+    margin: 0.5%;
+  }
+  
+  .lifeclass{
+    padding: 1%;
+    font-size: 3vw;
+    font-family: 'Source Code Pro';
+    margin: 0.5%;
+  }
+  
+  #link{
+    font-family: 'Roboto Condensed';
+    color: black;
+    text-decoration: underline;
+  }
+  
 }
 
 .bottomLinks{
@@ -387,7 +593,7 @@ a{
     
     .mobileLinks .firstGrid p{
       font-size: 3vw;
-      color: #FBEAEB;
+      color: #F49F1C;
       font-family: 'Source Code Pro';
     }
   
@@ -413,7 +619,7 @@ a{
   
     .links a{
       font-family: 'Source Code Pro';
-      color: #FBEAEB;
+      color: #F49F1C;
     }
   
   }

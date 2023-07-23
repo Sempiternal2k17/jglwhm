@@ -733,8 +733,8 @@ a{
 }
 
 .lifeclassDesc:hover{
-  background-color: black;
-  color: orange;
+  background-color: #3EB489;
+  color: white;
 }
 
 /* ================================================ */
@@ -1256,7 +1256,6 @@ a{
 
   .sunday{
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(HeadnFooter/sundayMobile.png);
     background-size: cover;
     background-position: center;
     color: white;
@@ -1292,16 +1291,10 @@ a{
     margin-bottom: 5%
   }
   
-  .sundayDesc:hover{
-    background-color: #FBEAEB;
-    color: #2F3C7E;
-  }
-  
   /* ================================================ */
 
   .wildfire{
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(HeadnFooter/wildfireMobile.png);
     background-size: cover;
     background-position: center;
     color: white;
@@ -1336,11 +1329,6 @@ a{
     text-align: center;
     margin-bottom: 5%
   }
-  
-  .wildfireDesc:hover{
-    background-color: yellow;
-    color: black;
-  }
 
   /* ================================================ */
 
@@ -1352,7 +1340,6 @@ a{
   .j12{
     align-items: center;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(HeadnFooter/kids.jpg);
     background-size: cover;
     background-position: center;
     color: white;
@@ -1389,16 +1376,11 @@ a{
     margin-bottom: 5%
   }
   
-  .j12Desc:hover{
-    background-color: #00FFFF;
-    color: #FF69B4;
-  }
   
   /* ================================================ */
 
   .spearhead{
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(HeadnFooter/Spearheadmobile.png);
     background-size: cover;
     background-position: center;
     color: white;
@@ -1435,16 +1417,10 @@ a{
     margin-bottom: 5%
   }
   
-  .spearheadDesc:hover{
-    background-color: #FFE77AFF;
-    color: #2C5F2DFF;
-  }
-  
   /* ================================================ */
 
   .married{
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(HeadnFooter/married.jpg);
     background-size: cover;
     background-position: center;
     color: white;
@@ -1481,11 +1457,6 @@ a{
     margin-bottom: 5%
   }
   
-  .marriedDesc:hover{
-    background-color: #F7C5CC;
-    color: #CC313D;
-  }
-  
   /* ================================================ */
 
   .equip{
@@ -1495,7 +1466,6 @@ a{
   .mentoring{
     align-items: center;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(HeadnFooter/mentoringlandscape.png);
     background-size: cover;
     background-position: center;
     color: white;
@@ -1523,17 +1493,11 @@ a{
     text-align: center;
   }
   
-  .mentoringDesc:hover{
-    background-color: #FFA3FD;
-    color: #191825;
-  }
   
   /* ================================================ */
 
   .solclass{
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(HeadnFooter/solclassPortrait.png);
-    background-size: cover;
     background-position: center;
     color: white;
     flex: 1;
@@ -1561,16 +1525,11 @@ a{
     text-align: center;
   }
   
-  .solDesc:hover{
-    background-color: #1868AE;
-    color: #C6D7EB;
-  }
 
   /* ================================================ */
   
   .lifeclass{
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(HeadnFooter/Lifeclass.jpg);
     background-size: cover;
     background-position: center;
     color: white;
@@ -1599,11 +1558,6 @@ a{
     font-size: 4vw;
     text-align: center;
     margin-bottom: 5%
-  }
-  
-  .lifeclassDesc:hover{
-    background-color: black;
-    color: orange;
   }
 
     /* ================================================ */

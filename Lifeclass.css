@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -13,7 +16,7 @@
 
 .bgweb{
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(LifeClassIMGs/topBG.jpg);
+    background-image: linear-gradient(rgba(62, 180, 137,0.8),rgba(62, 180, 137,0.8)), url(LifeClassIMGs/topBG.jpg);
     background-size: cover;
     color: white;
     background-position: center;
@@ -33,8 +36,8 @@ a{
 
 .plateName h2{
     text-align: center;
-    color: black;
-    background-color: orange;
+    color: #3EB489;
+    background-color: white;
     margin-left: 43%;
     margin-right: 43%;
     font-size: 2vw;
@@ -45,6 +48,7 @@ a{
     text-align: center;
     font-family: 'P';
     font-size: 13vw;
+    font-family: 'Lato';
 }
 
 .intro p{
@@ -69,7 +73,7 @@ a{
     margin-top: 1%;
     text-align: center;
     font-size: 3vw;
-    color: orange;
+    color: #3EB489;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -97,7 +101,7 @@ a{
 .containerText2 h1{
     text-align: center;
     font-size: 3vw;
-    color: orange;
+    color: #3EB489;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -158,8 +162,8 @@ a{
 }
 
 .containerForm button:hover{
-    color: #FBFFB1;
-    background-color: #ffacac;
+    color: white;
+    background-color: #3EB489;
     cursor: pointer;
 }
 
@@ -304,8 +308,6 @@ a{
     }
     
     .containerForm button:hover{
-        color: #FBFFB1;
-        background-color: #ffacac;
         cursor: pointer;
     }
   }
@@ -322,9 +324,9 @@ a{
   .bottomLinks{
     display: flex;
     margin-top: 5%;
-    background-color: black;
+    background-color: #3EB489;
     color: white;
-    border-bottom: 5px orange  solid;
+    border-bottom: 5px white  solid;
   }
   
   .firstGrid{
@@ -354,7 +356,7 @@ a{
     margin-top: 10%;
     font-size: 1vw;
     text-align: left;
-    color: orange;
+    color: black;
     font-family: 'Source Code Pro';
   }
   
@@ -388,7 +390,7 @@ a{
   }
   
   .botli a:hover{
-    color: white;
+    color: black;
     transition: 0.5s;
   }
   
@@ -420,7 +422,7 @@ a{
   }
   
   .botli a:hover{
-    color: orange;
+    color: black;
     transition: 0.5s;
   }
   
@@ -438,9 +440,9 @@ a{
       .mobileLinks{
         margin: 0;
         display: block;
-        background-color: black;
+        background-color: #3EB489;
         color: white;
-        border-bottom: 5px orange solid;
+        border-bottom: 5px white solid;
         overflow-y: hidden;
       }
     
@@ -476,7 +478,7 @@ a{
       
       .mobileLinks .firstGrid p{
         font-size: 3vw;
-        color: orange;
+        color: black;
         font-family: 'Source Code Pro';
       }
     
@@ -501,7 +503,7 @@ a{
       }
     
       .links a{
-        color: orange;
+        color: black;
         font-family: 'Source Code Pro';
       }
     

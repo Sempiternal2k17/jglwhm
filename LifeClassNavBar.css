@@ -3,10 +3,10 @@
     width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: black;
+    background: #3EB489;
 }
 ::-webkit-scrollbar-thumb {
-    background: orange;
+    background: white;
 }
 ::selection{
     background: rgb(0,123,255,0.3);
@@ -25,7 +25,7 @@
 }
 .navbar.sticky{
     color: #C6D7EB;
-    background: black;
+    background: #3EB489;
     padding: 10px 0;
     box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
 }
