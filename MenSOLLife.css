@@ -21,13 +21,13 @@ a{
     width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: black;
+    background: #191825;
 }
 ::-webkit-scrollbar-thumb {
-    background: #f1f1f1;
+    background: #FFA3FD;
 }
 ::selection{
-  background: rgb(0,123,255,0.3);
+    background: rgb(0,123,255,0.3);
 }
 .content{
   max-width: 1550px;
@@ -40,7 +40,7 @@ a{
   z-index: 2;
   padding: 25px 0;
   transition: all 0.3s ease;
-  background-color: #1b1b1b;
+  background-color: #191825;
 }
 .navbar.sticky{
   background: #1b1b1b;
@@ -87,68 +87,7 @@ a{
   top: 20px;
   z-index: 2;
 }
-@media (max-width: 1230px) {
-  .content{
-    padding: 0 60px;
-  }
-}
-@media (max-width: 1100px) {
-  .content{
-    padding: 0 40px;
-  }
-}
-@media (max-width: 900px) {
-  .content{
-    padding: 0 30px;
-  }
-}
-@media (max-width: 868px) {
-  body.disabled{
-    overflow: hidden;
-  }
-  .icon{
-    display: block;
-  }
-  .icon.hide{
-    display: none;
-    z-index: 2;
-  }
-  .navbar .menu-list{
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-    max-width: 400px;
-    left: -100%;
-    top: 0px;
-    display: block;
-    padding: 40px 0;
-    text-align: center;
-    background: #222;
-    transition: all 0.3s ease;
-  }
-  .navbar.show .menu-list{
-    left: 0%;
-  }
-  .navbar .menu-list li{
-    margin-top: 45px;
-  }
-  .navbar .menu-list li a{
-    font-size: 23px;
-    margin-left: -100%;
-    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  .navbar.show .menu-list li a{
-    margin-left: 0px;
-  }
-  .navbar .logo img{
-    width: 40%;
-  }
 
-  .icon img{
-    width: 100%;
-    max-width: 40px;
-  }
-}
 
 .textPrayer{
     padding-top: 15%;
@@ -207,7 +146,7 @@ textarea{
 
 button{
     padding: 2%;
-    background-color: #e23c52;
+    background-color: #191825;
     color: white;
     border: none;
     margin-top: 2%;
@@ -279,21 +218,21 @@ button{
         margin-top: 2%;
         transition: 0.5s;
         font-family: 'Source Code Pro';
-        font-size: 3vw;
-        width: 20%;
+        font-size: 2.2vw;
+        width: 30%;
     }
 }
 
 button:hover{
-    background-color: black;
+    background-color: #FFA3FD;
 }
 
 .bottomLinks{
     display: flex;
     margin-top: 5%;
-    background-color: black;
+    background-color: #191825;
     color: white;
-    border-bottom: 5px grey solid;
+    border-bottom: 5px #FFA3FD solid;
 }
   
 .firstGrid{
@@ -323,7 +262,7 @@ button:hover{
     margin-top: 10%;
     font-size: 1vw;
     text-align: left;
-    color: grey;
+    color: #FFA3FD;
     font-family: 'Source Code Pro';
 }
   
@@ -385,11 +324,11 @@ button:hover{
 .botli a{
     font-family: 'Source Code Pro';
     font-size: 1.2vw;
-    color: gray;
+    color: white;
 }
   
 .botli a:hover{
-    color: white;
+    color: #FFA3FD;
     transition: 0.5s;
 }
   
@@ -401,69 +340,79 @@ button:hover{
 
     .bottomLinks{
         display: none;
-    }
-
-    .mobileLinks{
-        display: block;
-        background-color: black;
-      }
-    
-      .mobileLinks .firstGrid{
-        text-align: left;
-        border-right: white 0px solid;
-        padding: 2%;
-        padding-left: 10%;
-        padding-right: 10%;
-        width: 100%;
-        border-bottom: white 1px solid;
-        padding-top: 10%;
-        padding-bottom: 10%;
-      }
-      
-      .mobileLinks .firstGrid img{
-        width: 30%;
-        margin-top: 2%;
-      }
-      
-      .mobileLinks .firstGrid h1{
-        margin-top: 1%;
-        text-align: left;
-      }
-      
-      .mobileLinks .firstGrid a{
-        margin-top: 1%;
-        font-size: 7vw;
-        font-family: 'Source Code Pro';
-      }
-      
-      .mobileLinks .firstGrid p{
-        font-size: 3vw;
-        color: grey;
-        font-family: 'Source Code Pro';
-      }
-    
-      .secondLane{
-        padding-left: 10%;
-        padding-right: 10%;
-        padding-bottom: 5%;
-        width: 100%;
-        color: white;
-        margin-top: 5%;
-      }
-      
-      .noice{
-        margin-bottom: 5%;
-        font-size: 4vw;
-        font-family: 'Source Code Pro';
-      }
-    
-      .links{
-        margin-top: 5%;
-        font-size: 4vw;
-      }
-    
-      .links a{
-        color: grey;
-        font-family: 'Source Code Pro';
-      }
+     }
+       
+     /* ================================================ */
+     
+     .mobileLinks{
+         margin: 0;
+         display: block;
+         background-color: #191825;
+         color: white;
+         border-bottom: 5px #FFA3FD  solid;
+         overflow-y: hidden;
+     }
+     
+     .mobileLinks .firstGrid{
+         text-align: left;
+         border-right: white 0px solid;
+         width: 80%;
+         padding: 2%;
+         padding-left: 10%;
+         padding-right: 10%;
+         border-bottom: white 1px solid;
+         padding-top: 10%;
+         padding-bottom: 10%;
+     }
+       
+     .mobileLinks .firstGrid img{
+         width: 25%;
+         margin-top: 2%;
+     }
+       
+       .mobileLinks .firstGrid h1{
+         margin-top: 2%;
+         text-align: left;
+     }
+       
+     .mobileLinks .firstGrid a{
+         margin-top: 1%;
+         font-size: 7vw;
+         color: white;
+         font-family: 'Source Code Pro';
+     }
+       
+     .mobileLinks .firstGrid p{
+         font-size: 3vw;
+         color: #FFA3FD;
+         font-family: 'Source Code Pro';
+         margin-top: 10%;
+     }
+     
+     .mobileLinks .secondLane{
+         padding-left: 10%;
+         padding-right: 10%;
+         padding-bottom: 5%;
+         width: 100%;
+         color: white;
+         margin-top: 5%;
+     }
+       
+     .mobileLinks .noice{
+         margin-bottom: 5%;
+         font-family: 'Source Code Pro';
+         font-size: 4vw;
+         color: white;
+     }
+     
+     .mobileLinks .links{
+         margin-top: 5%;
+         font-size: 4vw;
+         
+     }
+     
+     .mobileLinks .links a{
+         color: #FFA3FD;
+         font-family: 'Source Code Pro';
+     }
 }

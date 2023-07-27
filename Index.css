@@ -18,10 +18,10 @@
     width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: black;
 }
 ::-webkit-scrollbar-thumb {
-    background: black;
+    background: #f1f1f1;
 }
 ::selection{
   background: rgb(0,123,255,0.3);
@@ -385,8 +385,9 @@ a{
 
 .sunday{
   width: 50%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(HeadnFooter/sundayschool.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(AnnounceIMGs/Sunday\ Service.png);
   background-size: cover;
+  background-position: center;
   color: white;
   flex: 1;
 }
@@ -433,8 +434,9 @@ a{
 
 .wildfire{
   width: 50%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(HeadnFooter/Wildfire.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(AnnounceIMGs/Wildfire.jpg);
   background-size: cover;
+  background-position: center;
   color: white;
   flex: 1;
 }
@@ -483,8 +485,9 @@ a{
 .j12{
   align-items: center;
   width: 33%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(HeadnFooter/kids.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(AnnounceIMGs/J12Kids.png);
   background-size: cover;
+  background-position: center;
   color: white;
   flex: 1;
 }
@@ -528,7 +531,7 @@ a{
 
 .spearhead{
   width: 33%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(HeadnFooter/Spearheadmobile.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(AnnounceIMGs/Spearhead.png);
   background-size: cover;
   background-position: center;
   color: white;
@@ -575,7 +578,7 @@ a{
 
 .married{
   width: 33%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(HeadnFooter/married.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(AnnounceIMGs/married.jpg);
   background-size: cover;
   background-position: center;
   color: white;
@@ -663,7 +666,7 @@ a{
 
 .solclass{
   width: 33%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(HeadnFooter/solclassPortrait.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(AnnounceIMGs/Solclass.jpg);
   background-size: cover;
   background-position: center;
   color: white;
@@ -702,7 +705,7 @@ a{
 
 .lifeclass{
   width: 33%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(HeadnFooter/lifeclasslandscae.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(AnnounceIMGs/Lifeclass.png);
   background-size: cover;
   background-position: center;
   color: white;
@@ -977,6 +980,7 @@ a{
 /* ================================================ */
 
 .announcement{
+  margin-top: 20%;
   text-align: center;
 }
 
