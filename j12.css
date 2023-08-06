@@ -531,14 +531,14 @@ a{
     .navbar .menu-list{
       position: fixed;
       height: 100vh;
-      width: 100%;
+      width: 70%;
       max-width: 400px;
       left: -100%;
       top: 0px;
       display: block;
       padding: 40px 0;
       text-align: center;
-      background: #222;
+      background: #FF69B4;
       transition: all 0.3s ease;
     }
     .navbar.show .menu-list{
@@ -555,6 +555,16 @@ a{
     .navbar.show .menu-list li a{
       margin-left: 0px;
     }
+
+    ::-webkit-scrollbar {
+      width: 0px;
+  }
+  ::-webkit-scrollbar-track {
+      background: #FF69B4;
+  }
+  ::-webkit-scrollbar-thumb {
+      background: #00FFFF;
+  }
   }
   
   /* ==================================================== */
@@ -759,35 +769,6 @@ a{
         justify-content: center;
     }
     
-    /* ======================================================= */
-    
-    .oneRow .gnews1{
-        margin: 1%;
-        padding: 3%;
-        margin-top: 5%;
-        transition: .5s ease-in-out;
-        cursor: pointer;
-        border: 2px solid #FF69B4;
-    }
-    
-    .oneRow .gnews1 img{
-        width: 100%;
-    }
-    
-    .oneRow .gnews1 p{
-        font-size: 3vw;
-        text-align: center;
-    }
-    
-    .oneRow .gnews1 h1{
-        font-size: 5vw;
-        font-family: 'Andika';
-        text-align: center;
-    }
-    
-    .oneRow .gnews1:hover{
-        text-decoration: underline;
-    }
     
     /* ======================================================= */
 
@@ -1387,11 +1368,11 @@ a{
   }
 
   .column .blog .blogInfo:hover{
-    border: 1px solid cyan;
+    border: 0px solid cyan;
   }
 
   .column .blog:hover{
-    transform: scale(1.1);
+    transform: none;
   }
 
   .column .blog  .blogInfo h1{
@@ -1439,11 +1420,11 @@ a{
   }
 
   .column2 .blog .blogInfo:hover{
-    border: 1px solid cyan;
+    border: 0px solid cyan;
   }
 
   .column2 .blog:hover{
-    transform: scale(1.1);
+    transform: none;
   }
 
   .column2 .blog  .blogInfo h1{
@@ -1483,11 +1464,11 @@ a{
   }
 
   .column2 .blog2 .blogInfo:hover{
-    border: 1px solid cyan;
+    border: 0px solid cyan;
   }
 
   .column2 .blog2:hover{
-    transform: scale(1.1);
+    transform: none;
   }
 
   .column2 .blog2 .blogInfo h1{
@@ -1525,11 +1506,11 @@ a{
   }
 
   .column2 .blog3 .blogInfo:hover{
-    border: 1px solid cyan;
+    border: 0px solid cyan;
   }
 
   .column2 .blog3:hover{
-    transform: scale(1.1);
+    transform: none;
   }
 
   .column2 .blog3 .blogInfo h1{
@@ -1568,11 +1549,11 @@ a{
   }
 
   .column2 .blog4 .blogInfo:hover{
-    border: 1px solid cyan;
+    border: 0px solid cyan;
   }
 
   .column2 .blog4:hover{
-    transform: scale(1.1);
+    transform: none;
   }
 
   .column2 .blog4 .blogInfo h1{

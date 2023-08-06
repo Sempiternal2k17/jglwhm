@@ -579,14 +579,14 @@ a{
     .navbar .menu-list{
       position: fixed;
       height: 100vh;
-      width: 100%;
+      width: 70%;
       max-width: 400px;
       left: -100%;
       top: 0px;
       display: block;
       padding: 40px 0;
       text-align: center;
-      background: #222;
+      background: black;
       transition: all 0.3s ease;
     }
     .navbar.show .menu-list{
@@ -603,6 +603,17 @@ a{
     .navbar.show .menu-list li a{
       margin-left: 0px;
     }
+
+    /* custom scroll bar */
+::-webkit-scrollbar {
+  width: 0px;
+}
+::-webkit-scrollbar-track {
+  background: black;
+}
+::-webkit-scrollbar-thumb {
+  background: yellow;
+}
   }
   
   /* ==================================================== */
@@ -823,11 +834,12 @@ a{
     }
     
     .column .blog .blogInfo:hover{
-        border: 1px solid yellow;
+        border: 0px solid yellow;
     }
     
     .column .blog:hover{
-        transform: scale(1.1);
+        transform: none;
+
     }
     
     .column .blog  .blogInfo h1{
@@ -871,11 +883,11 @@ a{
     }
     
     .column2 .blog .blogInfo:hover{
-        border: 1px solid yellow;
+        border: 0px solid yellow;
     }
     
     .column2 .blog:hover{
-        transform: scale(1.1);
+        transform: none;
     }
     
     .column2 .blog  .blogInfo h1{
@@ -915,11 +927,11 @@ a{
     }
     
     .column2 .blog2 .blogInfo:hover{
-        border: 1px solid yellow;
+        border: 0px solid yellow;
     }
     
     .column2 .blog2:hover{
-        transform: scale(1.1);
+        transform: none;
     }
     
     .column2 .blog2 .blogInfo h1{
@@ -959,11 +971,11 @@ a{
     }
     
     .column2 .blog3 .blogInfo:hover{
-        border: 1px solid yellow;
+        border: 0px solid yellow;
     }
     
     .column2 .blog3:hover{
-        transform: scale(1.1);
+        transform: none;
     }
     
     .column2 .blog3 .blogInfo h1{

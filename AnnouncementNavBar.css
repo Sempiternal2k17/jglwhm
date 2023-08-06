@@ -141,4 +141,17 @@
         width: 100%;
         max-width: 40px;
     }
+
+    ::-webkit-scrollbar {
+      width: 0px;
+  }
+  ::-webkit-scrollbar-track {
+      background: #030E4F;
+  }
+  ::-webkit-scrollbar-thumb {
+      background: #F49F1C;
+  }
+  ::selection{
+      background: rgb(0,123,255,0.3);
+  }
 }

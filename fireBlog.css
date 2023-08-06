@@ -13,6 +13,21 @@
     scroll-behavior: smooth;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: yellow;
+}
+
 .content{
     max-width: 1550px;
     margin: auto;
@@ -106,14 +121,14 @@
   .navbar .menu-list{
     position: fixed;
     height: 100vh;
-    width: 100%;
+    width: 70%;
     max-width: 400px;
     left: -100%;
     top: 0px;
     display: block;
     padding: 40px 0;
     text-align: center;
-    background: #222;
+    background: black;
     transition: all 0.3s ease;
   }
   .navbar.show .menu-list{
@@ -130,6 +145,30 @@
   .navbar.show .menu-list li a{
     margin-left: 0px;
   }
+
+  .navbar .logo img{
+    width: 40%;
+}
+
+.icon img{
+    width: 100%;
+    max-width: 40px;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: yellow;
+}
+
 }
 
 
@@ -196,6 +235,7 @@ span{
 
 @media (max-width: 500px) {
     .banner{
+        padding-top: 20%;
         padding-bottom: 20%;
     }
     
