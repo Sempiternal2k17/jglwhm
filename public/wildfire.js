@@ -23,7 +23,7 @@ const firebaseConfig = {
   
 
 
-    const querySnapshot = await getDocs(collection(db, "testData"));
+    const querySnapshot = await getDocs(collection(db, "connects/wildFire/data"));
 
     querySnapshot.forEach((doc)=>{
         docSnapshot.push([doc.id, doc.data()]);
@@ -32,9 +32,10 @@ const firebaseConfig = {
  
     function createFirstBlogs(){
         var firstBlogs = document.querySelector("#firstblog");
+        // var IDtoString = '#'+ JSON.stringify(docSnapshot[0][0])
         firstBlogs.innerHTML  += ` <div class="blog" id="${docSnapshot[0][0]}"></div>`;
 
-        var inFirstBlog = document.querySelector(`#${docSnapshot[0][0]}`);
+        var inFirstBlog = document.querySelector(`[ id ='${docSnapshot[0][0]}']`);
         inFirstBlog.innerHTML += `<h1>${docSnapshot[0][1].title}</h1>`;
         inFirstBlog.innerHTML += `<p>${docSnapshot[0][1].subtitle}</p>`;
         inFirstBlog.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(${docSnapshot[0][1].image})`;
