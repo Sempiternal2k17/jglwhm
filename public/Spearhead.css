@@ -887,7 +887,10 @@ a{
 
 .column2{
   width: 40%;
-  height: 500px;
+}
+
+.scroll{
+  height: 550px;
   overflow: scroll;
   overflow-x: hidden;
 }

@@ -3,10 +3,10 @@
     width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: #191825;
+    background: #1868AE;
 }
 ::-webkit-scrollbar-thumb {
-    background: #FFA3FD;
+    background: #C6D7EB;
 }
 ::selection{
     background: rgb(0,123,255,0.3);
@@ -24,8 +24,8 @@
     transition: all 0.3s ease;
 }
 .navbar.sticky{
-    color: #FFE77AFF;
-    background: #191825;
+    color: #C6D7EB;
+    background: black;
     padding: 10px 0;
     box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
 }
@@ -54,7 +54,7 @@
     transition: all 0.3s ease;
 }
 .menu-list li a:hover{
-    color: #FFA3FD;
+    color: #C6D7EB;
     z-index: 2;
 }
   
@@ -111,7 +111,7 @@
       display: block;
       padding: 40px 0;
       text-align: center;
-      background: #191825;
+      background: black;
       transition: all 0.3s ease;
     }
     .navbar.show .menu-list{
@@ -142,9 +142,12 @@
       width: 0px;
   }
   ::-webkit-scrollbar-track {
-      background: #191825;
+      background: #1868AE;
   }
   ::-webkit-scrollbar-thumb {
-      background: #FFA3FD;
+      background: #C6D7EB;
+  }
+  ::selection{
+      background: rgb(0,123,255,0.3);
   }
   }
