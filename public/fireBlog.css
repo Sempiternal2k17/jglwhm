@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed:ital,wght@0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: yellow;
+}
+
+.content{
+    max-width: 1550px;
+    margin: auto;
+    padding: 0 30px;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    padding: 25px 0;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    color: #FFE77AFF;
+    background: black;
+    padding: 10px 0;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+.navbar .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo img{
+    width: 70%;
+}
+
+.navbar .menu-list{
+    display: inline-flex;
+}
+
+.menu-list li{
+    list-style: none;
+}
+
+.menu-list li a{
+    color: #fff;
+    font-size: 1.3vw;
+    margin-left: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.menu-list li a:hover{
+    color: yellow;
+    z-index: 2;
+}
+  
+.icon{
+    cursor: pointer;
+    display: none;
+}
+
+.icon img{
+    width: 100%;
+    max-width: 50px;
+}
+
+.menu-list .cancel-btn{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    z-index: 2;
+}
+
+@media (max-width: 1230px) {
+  .content{
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1100px) {
+  .content{
+    padding: 0 40px;
+  }
+}
+@media (max-width: 900px) {
+  .content{
+    padding: 0 30px;
+  }
+}
+@media (max-width: 868px) {
+  body.disabled{
+    overflow: hidden;
+  }
+  .icon{
+    display: block;
+  }
+  .icon.hide{
+    display: none;
+    z-index: 2;
+  }
+  .navbar .menu-list{
+    position: fixed;
+    height: 100vh;
+    width: 70%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    background: black;
+    transition: all 0.3s ease;
+  }
+  .navbar.show .menu-list{
+    left: 0%;
+  }
+  .navbar .menu-list li{
+    margin-top: 45px;
+  }
+  .navbar .menu-list li a{
+    font-size: 23px;
+    margin-left: -100%;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .navbar.show .menu-list li a{
+    margin-left: 0px;
+  }
+
+  .navbar .logo img{
+    width: 40%;
+}
+
+.icon img{
+    width: 100%;
+    max-width: 40px;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: yellow;
+}
+
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.banner{
+    background-color: black;
+    padding-top: 6%;
+    padding-bottom: 10%;
+    color: yellow;
+}
+
+.banner h1{
+    text-align: center;
+    font-size: 5vw;
+    font-family: 'Russo One';
+    
+}
+
+.banner p{
+    text-align: center;
+    font-size: 2.5vw;
+    font-family: 'Russo One';
+}
+
+.home img{
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 3%;
+    cursor: pointer;    
+}
+
+.breeh{
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: -10%;
+}
+
+.breeh img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.content1{
+    margin-top: 45%;
+    margin-left: 15%;
+    margin-right: 15%;
+    
+}
+
+.content1 p{
+    margin-top: 2%;
+    font-size: 1.8vw;
+    text-align: justify;
+}
+
+span{
+    font-weight: bold;
+}
+
+@media (max-width: 500px) {
+    .banner{
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+    
+    .banner h1{
+        text-align: center;
+        font-size: 10vw;
+        font-family: 'Russo One';   
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    
+    .home img{
+        margin-top: 2%;
+        margin-left: 2%;
+        width: 5%;
+        cursor: pointer;
+    }
+
+    .breeh{
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 10px;
+        position: absolute;
+        margin-top: -15%;
+    }
+    
+    .breeh img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .content1{
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 15%;
+        margin-top: 50%;
+    }
+    
+    .content1 p{
+        margin-top: 5%;
+        font-size: 5vw;
+        text-align: justify;
+    }
+    
+    span{
+        font-weight: bold;
+    }
+
+}
+
+.bottomLinks{
+    display: flex;
+    margin-top: 5%;
+    background-color: black;
+    color: white;
+    border-bottom: 5px yellow solid;
+  }
+  
+  .firstGrid{
+    text-align: center;
+    border-right: white 1px solid;
+    padding: 2%;
+    width: 20%;
+  }
+  
+  .firstGrid img{
+    width: 50%;
+  }
+  
+  .firstGrid h1{
+    margin-top: 5%;
+    text-align: center;
+  }
+  
+  .firstGrid a{
+    margin-top: 7%;
+    color: white;
+    font-size: 3.5vw;
+    font-family: 'Source Code Pro';
+  }
+  
+  .firstGrid p{
+    margin-top: 10%;
+    font-size: 1vw;
+    text-align: left;
+    color: yellow;
+    font-family: 'Source Code Pro';
+  }
+  
+  /* =================================================== */
+  
+  
+  .secondGrid{
+    width: 20%;
+    display: inline-block;
+    margin-left: 3%;
+    margin-top: 4%;
+  }
+  
+  .secondGrid p{
+    font-family: 'Source Code Pro';
+    font-size: 1.2vw;
+  }
+  
+  .botli{
+    margin-top: 40%;
+  }
+  
+  .botli p{
+    margin-bottom: 2%;
+  }
+  
+  .botli a{
+    font-family: 'Source Code Pro';
+    font-size: 1.2vw;
+    color: white;
+  }
+  
+  .botli a:hover{
+    color: white;
+    transition: 0.5s;
+  }
+  
+  /* =================================================== */
+  
+  .thirdGrid{
+    width: 20%;
+    display: inline-block;
+    margin-top: 4%;
+  }
+  
+  .thirdGrid p{
+    font-family: 'Source Code Pro';
+    font-size: 1.2vw;
+  }
+  
+  .botli{
+    margin-top: 40%;
+  }
+  
+  .botli p{
+    margin-bottom: 2%;
+  }
+  
+  .botli a{
+    font-family: 'Source Code Pro';
+    font-size: 1.2vw;
+    color: grey;
+  }
+  
+  .botli a:hover{
+    color: yellow;
+    transition: 0.5s;
+  }
+  
+  .mobileLinks{
+    display: none;
+  }
+  
+  @media (max-width: 500px) {
+    .bottomLinks{
+      display: none;
+    }
+    
+    /* ================================================ */
+  
+    .mobileLinks{
+      display: block;
+      margin-top: 5%;
+      background-color: black;
+      color: white;
+      border-bottom: 5px yellow  solid;
+    }
+  
+    .mobileLinks .firstGrid{
+      text-align: left;
+      border-right: white 0px solid;
+      padding: 2%;
+      padding-left: 10%;
+      padding-right: 10%;
+      width: 100%;
+      border-bottom: white 1px solid;
+      padding-top: 10%;
+      padding-bottom: 10%;
+    }
+    
+    .mobileLinks .firstGrid img{
+      width: 30%;
+      margin-top: 2%;
+    }
+    
+    .mobileLinks .firstGrid h1{
+      margin-top: 2%;
+      text-align: left;
+    }
+    
+    .mobileLinks .firstGrid a{
+      margin-top: 1%;
+      font-size: 7vw;
+      color: white;
+      font-family: 'Source Code Pro';
+    }
+    
+    .mobileLinks .firstGrid p{
+      font-size: 3vw;
+      color: yellow;
+      font-family: 'Source Code Pro';
+    }
+  
+    .secondLane{
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-bottom: 5%;
+      width: 100%;
+      color: white;
+      margin-top: 5%;
+    }
+    
+    .noice{
+      margin-bottom: 5%;
+      font-size: 4vw;
+      font-family: 'Source Code Pro';
+    }
+  
+    .links{
+      margin-top: 5%;
+      font-size: 4vw;
+    }
+  
+    .links a{
+      font-family: 'Source Code Pro';
+      color: yellow;
+    }
+  
+}
