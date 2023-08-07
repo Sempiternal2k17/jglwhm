@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "jglwhm-9c253"
+  },
+  "targets": {
+    "jglwhm-9c253": {
+      "hosting": {
+        "public": [
+          "thegreatlight"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
