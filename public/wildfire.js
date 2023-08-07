@@ -43,6 +43,7 @@ const firebaseConfig = {
         inFirstBlog.style.paddingTop = "32%";
         inFirstBlog.style.paddingBottom = "7%";
         inFirstBlog.style.textIndent = "5%";
+        inFirstBlog.style.cursor = "pointer";
 
         inFirstBlog.addEventListener('click', 
         function passData(e){
@@ -54,7 +55,7 @@ const firebaseConfig = {
             const body = docSnapshot[0][1].body;
             const image = docSnapshot[0][1].image;
             localStorage.setItem('tempData', JSON.stringify({setTitle: title, setSubtitle: subtitle, setBody: body, setImage: image}));
-            window.location.href = "/../fireblogs1.html";
+            window.location.href = "./fireblogs1.html";
         }
         )
     }
@@ -128,7 +129,7 @@ const firebaseConfig = {
       const body = docSnapshot[indexNum][DATA].body;
       const image = docSnapshot[indexNum][DATA].image;
       localStorage.setItem('tempData', JSON.stringify({setTitle: title, setBody: body, setImage: image}));
-      window.location.href = "/../fireblogs1.html";
+      window.location.href = "./fireblogs1.html";
   })
     
 
@@ -152,23 +153,3 @@ const firebaseConfig = {
     btn2.addEventListener('click', GetData());
 
 
-
-//----------------------------------------------------------------
-// CSS Formatting
-const body = document.querySelector("body");
-    const navbar = document.querySelector(".navbar");
-    const menuBtn = document.querySelector(".menu-btn");
-    const cancelBtn = document.querySelector(".cancel-btn");
-    menuBtn.onclick = ()=>{
-      navbar.classList.add("show");
-      menuBtn.classList.add("hide");
-      body.classList.add("disabled");
-    }
-    cancelBtn.onclick = ()=>{
-      body.classList.remove("disabled");
-      navbar.classList.remove("show");
-      menuBtn.classList.remove("hide");
-    }
-    window.onscroll = ()=>{
-      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
-    }

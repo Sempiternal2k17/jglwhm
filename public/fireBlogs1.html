@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./fireblogs.css">
-    <script src="./fireblogs.js" defer></script>
+    <!-- <script src="./fireblogs.js" defer></script> -->
     <title id="thisTitle"></title>
 </head>
     <body>
@@ -171,5 +171,23 @@
         titleSetter1.innerHTML += htitle;
         imageSetter.src = himage;
         bodySetter.innerHTML += hbody;
+
+        const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
     </script>
 </html>
