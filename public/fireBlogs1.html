@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="fireBlog.css">
-    <script src="fireblogs.js" defer></script>
-    <title>Purpose of our life</title>
+    <link rel="stylesheet" href="./fireblogs.css">
+    <script src="./fireblogs.js" defer></script>
+    <title id="thisTitle"></title>
 </head>
     <body>
 
@@ -20,7 +20,7 @@
             </div>
             <ul class="menu-list">
                 <div class="icon cancel-btn">
-                    <img src="HeadnFooter/closewindow.png" alt="">
+                    <img src="HeadnFooter/menu.png" alt="">
                 </div>
                     <li><a href="Wildfire.html">Home</a></li>
                     <li><a href="Wildfire.html#aboutus">About Us</a></li>
@@ -36,22 +36,18 @@
       </section>
 
 <div class="banner">
-    <h1>Purpose of our life</h1>
+    <h1 id="thisTitle1"></h1>
     <p></p>
 </div>
 
 <div class="breeh">
-    <img src="WildfireIMGs/wildfire.jpg"">
+    <img id="thisImage" src="">
 </div>
 
 
 <div class="content1">
-    <p>My dear teenagers, As you navigate through your teenage years, it is important to understand that this time in your life is crucial in shaping your future. You are at an age where you are discovering who you are, what you stand for, and what your purpose in life is.</p>
-    <p>Many of you may be wondering, "What is the purpose of my life?" This is a question that has been asked by countless people throughout history, and one that continues to be relevant today. The truth is, each one of us has a unique purpose that is specific to us and our individual talents, passions, and experiences.</p>
-    <p>However, the purpose of our life as teenagers is not something that we can simply stumble upon. It requires intentional exploration, self-reflection, and a willingness to take risks and try new things.</p>
-    <p>One of the first steps in discovering your purpose is to identify your passions and interests. What do you enjoy doing? What activities bring you joy and fulfillment? By pursuing your passions, you will be able to develop your talents and skills, which can help you to achieve your goals and make a positive impact in the world.</p>
-    <p>However, not all companions are beneficial to our lives. Some companions can be toxic and bring negativity into our lives. It is essential to surround ourselves with people who bring out the best in us and uplift us. We must also be careful not to cling to companions who hold us back or limit our potential.</p>
-    <p>In conclusion, companionship is an essential aspect of our human experience. It provides us with a sense of belonging, support, and growth. As we navigate through life, we must seek out positive companions who uplift and challenge us to be our best selves. We must also be mindful of toxic companions who bring negativity into our lives. With God's help, we can find the right companions who will help us fulfill our purpose and live a fulfilling life.</p>
+    <p id="thisBody"></p>
+    
 </div>
 
 <div class="bottomLinks">
@@ -158,4 +154,22 @@
   </div>
     
     </body>
+
+    <script>
+        const tempValue = JSON.parse(localStorage.getItem('tempData'));
+        console.log(tempValue)
+        var htitle = tempValue.setTitle;;
+        var hbody = tempValue.setBody;
+        var himage = tempValue.setImage;
+       
+        var titleSetter = document.querySelector('#thisTitle');
+        var titleSetter1 = document.querySelector('#thisTitle1');
+        var imageSetter = document.querySelector('#thisImage');
+        var bodySetter = document.querySelector('#thisBody');
+        
+        titleSetter.innerHTML += htitle;
+        titleSetter1.innerHTML += htitle;
+        imageSetter.src = himage;
+        bodySetter.innerHTML += hbody;
+    </script>
 </html>

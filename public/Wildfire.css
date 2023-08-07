@@ -309,7 +309,7 @@ a{
     cursor: pointer;
 }
 
-.column .blog .blogInfo:hover{
+.column .blog .firstblog:hover{
     border: 1px solid yellow;
 }
 
@@ -317,12 +317,12 @@ a{
     transform: scale(1.1);
 }
 
-.column .blog  .blogInfo h1{
+.column .firstblog h1{
     font-family: 'Russo One';
     font-size: 3vw;
 }
 
-.column .blog  .blogInfo p{
+.column .firstblog p{
     font-size: 1.4vw;
 }
 
@@ -358,8 +358,8 @@ a{
   } 
 }
 
-.column2 .blog{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(WildfireIMGs/willfire.jpg);
+.column2 .insideMap{
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(https://firebasestorage.googleapis.com/v0/b/jglwhm-9c253.appspot.com/o/images%2FtestData%2Ffireball.jpgb168ec8e-af22-4e68-ab4f-1142ac974fb2?alt=media&token=1f6a3c00-f6e6-4a02-8e6a-3a980334f62a); */
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -370,8 +370,8 @@ a{
     margin-bottom: 5%;
 }
 
-.column2 .blog .blogInfo{
-    color: white;
+.column2 .insideMap .scroll{
+    color: white; 
     text-align: left;
     padding-top: 32%;
     padding-bottom: 7%;
@@ -384,95 +384,21 @@ a{
     
 }
 
-.column2 .blog .blogInfo:hover{
+.column2 .insideMap .blogInfo:hover{
     border: 1px solid yellow;
 }
 
 
-.column2 .blog  .blogInfo h1{
-    font-family: 'Russo One';
-    font-size: 2vw;
-}
-
-.column2 .blog  .blogInfo p{
-    font-size: 1vw;
-}
-
-.column2 .blog2{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(WildfireIMGs/firefire.jpg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-    margin-right: 5%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    transition: transform .2s;
-    margin-bottom: 5%;
-}
-
-.column2 .blog2 .blogInfo{
-    color: white;
-    text-align: left;
-    padding-top: 32%;
-    padding-bottom: 7%;
-    text-indent: 5%;
-    margin-left: 3%;
-    margin-right: 3%;
-    border-radius: 10px;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.column2 .blog2 .blogInfo:hover{
-    border: 1px solid yellow;
-}
-
-.column2 .blog2 .blogInfo h1{
-    font-family: 'Russo One';
-    font-size: 2vw;
-}
-
-.column2 .blog2  .blogInfo p{
-    font-size: 1vw;
-}
-
-.column2 .blog3{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(WildfireIMGs/fireball.jpg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-    margin-right: 5%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    transition: transform .2s;
-    margin-bottom: 5%;
-}
-
-.column2 .blog3 .blogInfo{
-    color: white;
-    text-align: left;
-    padding-top: 32%;
-    padding-bottom: 7%;
-    text-indent: 5%;
-    margin-left: 3%;
-    margin-right: 3%;
-    border-radius: 10px;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.column2 .blog3 .blogInfo:hover{
-    border: 1px solid yellow;
-}
-
-.column2 .blog3 .blogInfo h1{
+.column2 .scroll h1{
     font-family: 'Russo One';
     font-size: 1.7vw;
 }
 
-.column2 .blog3  .blogInfo p{
+.column2 .scroll p{
     font-size: 1vw;
 }
+
+
 
 /* ====================================================== */
 
@@ -579,14 +505,14 @@ a{
     .navbar .menu-list{
       position: fixed;
       height: 100vh;
-      width: 70%;
+      width: 100%;
       max-width: 400px;
       left: -100%;
       top: 0px;
       display: block;
       padding: 40px 0;
       text-align: center;
-      background: black;
+      background: #222;
       transition: all 0.3s ease;
     }
     .navbar.show .menu-list{
@@ -603,17 +529,6 @@ a{
     .navbar.show .menu-list li a{
       margin-left: 0px;
     }
-
-    /* custom scroll bar */
-::-webkit-scrollbar {
-  width: 0px;
-}
-::-webkit-scrollbar-track {
-  background: black;
-}
-::-webkit-scrollbar-thumb {
-  background: yellow;
-}
   }
   
   /* ==================================================== */
@@ -833,21 +748,17 @@ a{
         cursor: pointer;
     }
     
-    .column .blog .blogInfo:hover{
-        border: 0px solid yellow;
-    }
     
     .column .blog:hover{
-        transform: none;
-
+        transform: scale(1.1);
     }
     
-    .column .blog  .blogInfo h1{
+    .column .firstblog h1{
         font-family: 'Russo One';
         font-size: 5vw;
     }
     
-    .column .blog  .blogInfo p{
+    .column .firstblog  p{
         font-size: 2.7vw;
     }
     
@@ -855,24 +766,24 @@ a{
         width: 100%;
     }
     
-    .column2 .blog{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(WildfireIMGs/willfire.jpg);
+    .column2 .scroll{
         background-position: center;
         background-size: cover;
         border-radius: 10px;
         margin-right: 5%;
-        padding-top: 2%;
+        padding-top: 5%;
         padding-bottom: 2%;
         display: block;
         margin: auto;
         transition: transform .2s;
-        margin-bottom: 5%;
+        width: 100%;
+        overflow-x: none;
     }
     
-    .column2 .blog .blogInfo{
+    .column2 .scroll .blog{
         color: white;
         text-align: left;
-        padding-top: 10%;
+        padding-top: 16%;
         padding-bottom: 7%;
         text-indent: 5%;
         margin-left: 3%;
@@ -882,110 +793,17 @@ a{
         cursor: pointer;
     }
     
-    .column2 .blog .blogInfo:hover{
-        border: 0px solid yellow;
-    }
-    
-    .column2 .blog:hover{
-        transform: none;
-    }
-    
-    .column2 .blog  .blogInfo h1{
+    .column2 .blog h1{
         font-family: 'Russo One';
         font-size: 5vw;
     }
     
-    .column2 .blog  .blogInfo p{
+    .column2 .blog p{
         font-size: 2.7vw;
     }
     
-    .column2 .blog2{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(WildfireIMGs/firefire.jpg);
-        background-position: center;
-        background-size: cover;
-        border-radius: 10px;
-        margin-right: 5%;
-        padding-top: 2%;
-        padding-bottom: 2%;
-        display: block;
-        margin: auto;
-        transition: transform .2s;
-        margin-bottom: 5%;
-    }
     
-    .column2 .blog2 .blogInfo{
-        color: white;
-        text-align: left;
-        padding-top: 10%;
-        padding-bottom: 7%;
-        text-indent: 5%;
-        margin-left: 3%;
-        margin-right: 3%;
-        border-radius: 10px;
-        transition: 0.5s;
-        cursor: pointer;
-    }
     
-    .column2 .blog2 .blogInfo:hover{
-        border: 0px solid yellow;
-    }
-    
-    .column2 .blog2:hover{
-        transform: none;
-    }
-    
-    .column2 .blog2 .blogInfo h1{
-        font-family: 'Russo One';
-        font-size: 5vw;
-    }
-    
-    .column2 .blog2  .blogInfo p{
-        font-size: 2.7vw;
-    }
-    
-    .column2 .blog3{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(WildfireIMGs/fireball.jpg);
-        background-position: center;
-        background-size: cover;
-        border-radius: 10px;
-        margin-right: 5%;
-        padding-top: 2%;
-        padding-bottom: 2%;
-        transition: transform .2s;
-        margin-bottom: 5%;
-        display: block;
-        margin: auto;
-    }
-    
-    .column2 .blog3 .blogInfo{
-        color: white;
-        text-align: left;
-        padding-top: 10%;
-        padding-bottom: 7%;
-        text-indent: 5%;
-        margin-left: 3%;
-        margin-right: 3%;
-        border-radius: 10px;
-        transition: 0.5s;
-        cursor: pointer;
-    }
-    
-    .column2 .blog3 .blogInfo:hover{
-        border: 0px solid yellow;
-    }
-    
-    .column2 .blog3:hover{
-        transform: none;
-    }
-    
-    .column2 .blog3 .blogInfo h1{
-        font-family: 'Russo One';
-        font-size: 5vw;
-    }
-    
-    .column2 .blog3  .blogInfo p{
-        font-size: 2.7vw;
-    }
 
       /* ====================================================== */
 
