@@ -238,6 +238,9 @@ a{
 
 .column2{
     width: 40%;
+    height: 500px;
+    overflow: scroll;
+    overflow-x: none;
 }
 
 .column2 .blog{
@@ -265,12 +268,9 @@ a{
     cursor: pointer;
 }
 
+
 .column2 .blog .blogInfo:hover{
     border: 1px solid #f7c5cc;
-}
-
-.column2 .blog:hover{
-    transform: scale(1.1);
 }
 
 .column2 .blog  .blogInfo h1{
@@ -311,10 +311,6 @@ a{
     border: 1px solid #f7c5cc;
 }
 
-.column2 .blog2:hover{
-    transform: scale(1.1);
-}
-
 .column2 .blog2 .blogInfo h1{
     font-family: 'Sono';
     font-size: 1.5vw;
@@ -351,10 +347,6 @@ a{
 
 .column2 .blog3 .blogInfo:hover{
     border: 1px solid #f7c5cc;
-}
-
-.column2 .blog3:hover{
-    transform: scale(1.1);
 }
 
 .column2 .blog3 .blogInfo h1{
