@@ -3,8 +3,9 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <link rel="stylesheet" href="./Index.css">
-<script src="./Index.js" defer></script>
+<script src="./Index.js" type="module" ></script>
 <title> Index </title>
 
     <body>
@@ -244,68 +245,11 @@
           <p>Prayer is an important part of our faith journey, and we believe that God hears and answers our prayers. If you have a specific prayer request, we would be honored to pray with you and for you.</p>
         </div>
         
-        <div class="scroll">
+        <div class="scroll" id="prayerContainer">
 
-          <div class="request">
-            <div class="req">
-              <div class="heading">
-                <h1>Nicole</h1>
-              </div>
-              <div class="body">
-                <p>As I prepare to take my final exam, I come to you with a heart full of gratitude for all the blessings you have bestowed upon me. I ask for your guidance and wisdom as I study and prepare for this important test.</p>
-                <p>Please help me to remember all the important concepts and facts that I need to know, and to recall them with clarity and ease during the exam. Grant me the focus and mental clarity to remain calm and composed throughout the test, even if I feel anxious or overwhelmed.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="request">
-            <div class="req">
-              <div class="heading">
-                <h1>Anonymous</h1>
-              </div>
-              <div class="body">
-                <p>I come to you today with a heavy heart and a humble spirit, asking for your help and guidance in my time of need. I am facing a difficult situation in my life right now, and I feel lost and alone.</p>
-                <p>Please give me the strength to face my challenges with courage and wisdom. Help me to trust in your plan for my life, even when it is hard to see.</p>
-                <p>Please also be with my loved ones who are going through their own struggles. I pray that you would comfort them and give them the peace that only you can provide.</p>
-                <p>Thank you for always being there for me and for hearing my prayers. I trust in your unfailing love and mercy, and I know that you will always be with me, no matter what.</p>
-                <p>In Jesus' name, I pray. Amen.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="request">
-            <div class="req">
-              <div class="heading">
-                <h1>Anonymous</h1>
-              </div>
-              <div class="body">
-                <p>Please Lord our God, I hope I get this job that i've been longing for long</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="request">
-            <div class="req">
-              <div class="heading">
-                <h1>MJ</h1>
-              </div>
-              <div class="body">
-                <p>I pray that I meet my one and only and I hope that she will not break my heart.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="request">
-            <div class="req">
-              <div class="heading">
-                <h1>Shiminicambo</h1>
-              </div>
-              <div class="body">
-                <p>I come before you today with a grateful heart, thanking you for the gift of dreams and ambitions that you have placed within me. You have created me with unique talents, passions, and desires, and I am humbled by the opportunities you provide to pursue them.
-                  Lord, I lift up my dreams and ambitions to you. Help me align them with your will and purpose for my life. Grant me clarity and wisdom to discern the path that leads to fulfilling these dreams. Guide me in making the right choices and taking the necessary steps towards their realization.</p>
-              </div>
-            </div>
-          </div>
+         <!-- 
+          prayerRequest appears here
+         -->
 
         </div>
     
@@ -433,4 +377,88 @@
     
     
     </body>
+
+    <script>
+       // css styling
+    // ==================================NavBar JS===================================
+
+const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+
+    // ==================================SlideShow JS===================================
+
+    var timeOut = 0;
+    var slideIndex = 0;
+    var autoOn = true;
+    
+    autoSlides();
+    
+    function autoSlides() {
+        timeOut = timeOut - 20;
+    
+        if (autoOn == true && timeOut < 0) {
+            showSlides();
+        }
+        setTimeout(autoSlides, 20);
+    }
+    
+    function prevSlide() {
+    
+        timeOut = 4000;
+    
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+    
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slideIndex--;
+    
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        if (slideIndex == 0) {
+            slideIndex = 4
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+    
+    function showSlides() {
+    
+        timeOut = 2000;
+    
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+    
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slideIndex++;
+    
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+    
+    </script>
     </html>
