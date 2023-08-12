@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Blog1.css">
     <link rel="stylesheet" href="BlogNavBar.css"> 
-    <script src="spearhead.js" defer></script>
-    <title>Companionship</title>
+    <script src="./Blog1.js" type="module" defer></script>
+    <title id="bannertitle"></title>
 </head>
     <body>
 
@@ -38,22 +38,18 @@
       </section>
 
 <div class="banner">
-    <h1>Companionship</h1>
+    <h1 id="storyTitle"></h1>
     <p></p>
 </div>
 
 <div class="breeh">
-    <img src="SpearheadIMGs/bruh.jpg" alt="">
+    <img src="" alt="" id="spearImage">
 </div>
 
 
 <div class="content1">
-    <p>Today, I want to talk to you about the importance of companionship. In our lives, we all need companions who can help us grow and navigate the ups and downs of life. Companionship is an essential aspect of our human experience, and it is something that we should cherish and nurture.</p>
-    <p>As human beings, we are social creatures, and we thrive in the company of others. The Bible tells us that God created Adam and saw that he was alone, and so he created Eve to be his companion. From that moment on, companionship has been an integral part of our human experience.</p>
-    <p>Throughout our lives, we will encounter different types of companions. We will have family members, friends, and even romantic partners who will come and go. Some companions will stay with us for a short while, while others will be with us for a lifetime. But regardless of the length of their stay, each companion that we encounter will play a unique role in shaping our lives.</p>
-    <p>Companionship is important because it provides us with a sense of belonging and support. When we have companions, we know that we are not alone, and we have someone to turn to in times of need. Companions also help us to learn and grow. They challenge us to be better and encourage us to pursue our dreams.</p>
-    <p>However, not all companions are beneficial to our lives. Some companions can be toxic and bring negativity into our lives. It is essential to surround ourselves with people who bring out the best in us and uplift us. We must also be careful not to cling to companions who hold us back or limit our potential.</p>
-    <p>In conclusion, companionship is an essential aspect of our human experience. It provides us with a sense of belonging, support, and growth. As we navigate through life, we must seek out positive companions who uplift and challenge us to be our best selves. We must also be mindful of toxic companions who bring negativity into our lives. With God's help, we can find the right companions who will help us fulfill our purpose and live a fulfilling life.</p>
+    <p id="storyBody"></p>
+    
 </div>
 
 <div class="bottomLinks">
@@ -160,4 +156,22 @@
   </div>
     
     </body>
+    <script>
+      const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = ()=>{
+          navbar.classList.add("show");
+          menuBtn.classList.add("hide");
+          body.classList.add("disabled");
+        }
+        cancelBtn.onclick = ()=>{
+          body.classList.remove("disabled");
+          navbar.classList.remove("show");
+          menuBtn.classList.remove("hide");
+        }
+        window.onscroll = ()=>{
+          this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }</script>
 </html>

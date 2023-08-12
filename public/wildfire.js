@@ -1,15 +1,7 @@
-
-  // Initialize Firebase
-  // const app = initializeApp(firebaseConfig);
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js";
-  import { getFirestore } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js"
-  import { collection, getDocs, addDoc, Timestamp } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js"
-  // import { query, orderBy, limit, where, onSnapshot } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js"
-  import { firebaseConfig } from "./firebaseConfig.js";
-      const app = initializeApp(firebaseConfig)
-      const db = getFirestore(app);
+import { collection, getDocs } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js"
+import { db } from "./Database.js";
       var docSnapshot = [];
-  
+
   
 
 
@@ -18,7 +10,7 @@
     querySnapshot.forEach((doc)=>{
         docSnapshot.push([doc.id, doc.data()]);
     });
-    console.log(docSnapshot);
+
  
     function createFirstBlogs(){
         var firstBlogs = document.querySelector("#firstblog");
@@ -58,7 +50,7 @@
         let ID =0;
         let DATA = 1;
         for(let i=1; i<docSnapshot.length; i++){
-            console.log(docSnapshot[i][ID]); 
+            
             insertBlogs.innerHTML += `<div class="blog" id="${docSnapshot[i][ID]}"></div>`;
             var insideMap = document.querySelector(`#${docSnapshot[i][ID]}`);
                 insideMap.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(${docSnapshot[i][DATA].image})`;

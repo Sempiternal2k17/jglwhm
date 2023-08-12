@@ -271,7 +271,7 @@ a{
 
 .sText button{
   border-radius: 4px;
-  background-color: #2c5f2d;
+  
   border: none;
   color: #ffe77a;
   text-align: center;
@@ -845,7 +845,7 @@ a{
 }
 
 .column .blog{
-  background-image: linear-gradient(rgba(44,95,45, 0.7),rgba(44,95,45, 0.7)), url(SpearheadIMGs/bruh.jpg);
+ 
   background-position: center;
   background-size: cover;
   border-radius: 10px;
@@ -902,7 +902,7 @@ a{
 }
 
 .column2 .blog{
-  background-image: linear-gradient(rgba(44,95,45, 0.7),rgba(44,95,45, 0.7)), url(SpearheadIMGs/plan.jpg);
+  
   background-position: center;
   background-size: cover;
   border-radius: 10px;

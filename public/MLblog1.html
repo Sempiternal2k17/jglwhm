@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Mlblog.css">
     <link rel="stylesheet" href="MLNavbar.css">
-    <script src="married.js" defer></script>
-    <title>God's Plan for Marriage</title>
+    <script src="./MLblog1.js" type="module" defer></script>
+    <title id="bannertitle"></title>
 </head>
 <body>
 
@@ -37,22 +37,17 @@
   </section>
 
 <div class="banner"> 
-    <h1>God's Plan for Marriage</h1>
+    <h1 id="storyTitle"></h1>
 </div>
 
 <div class="breeh">
-    <img src="MarriedforlifeIMGs/banner.jpg">
+    <img src="" id="marraigeImage">
 </div>
 
 
 <div class="content1">
-    <p>Today, I want to speak to you about God's plan for marriage. As followers of Christ, we understand that marriage is not just a social institution, but a sacred covenant designed by God. The Bible tells us that in the beginning, God created man and woman and said, "Therefore a man shall leave his father and mother and hold fast to his wife, and they shall become one flesh." (Genesis 2:24).</p>
-    <p>From this passage, we can see that God's design for marriage is that it should be a lifelong commitment between one man and one woman. Marriage is not just about companionship or physical intimacy, but about the spiritual and emotional bond that is created between husband and wife.</p>
-    <p>However, in today's culture, marriage is often viewed as disposable or temporary. Many people enter into marriage with the idea that if things don't work out, they can simply end the relationship and move on. But this is not God's plan for marriage. He intended it to be a commitment that lasts a lifetime.</p>
-    <p>Furthermore, God's plan for marriage is not just about the couple themselves, but also about their role in society. In Ephesians 5:25, husbands are instructed to "love your wives, as Christ loved the church and gave himself up for her." This means that husbands should be willing to sacrifice their own needs and desires for the sake of their wives, just as Christ sacrificed himself for the church.</p>
-    <p>Likewise, wives are called to submit to their husbands as unto the Lord (Ephesians 5:22). This does not mean that wives should be subservient to their husbands, but rather that they should willingly respect and support their husbands in their role as leaders of the family.</p>
-    <p>When both husband and wife are committed to living out God's plan for marriage, the relationship can be a powerful testimony to the world. It can demonstrate the love and sacrifice that Christ has for his church and serve as a beacon of hope for those who are struggling in their own relationships.</p>
-    <p>In conclusion, let us remember that marriage is not just a human institution, but a divine covenant. When we seek to understand God's design and purpose for our relationship, we can experience a deeper level of intimacy and connection with our spouse. So let us commit ourselves to living out God's plan for marriage and to being a shining example of his love and grace to the world around us.</p>
+    <p id="storyBody"></p>
+    
 </div>
 
 <div class="bottomLinks">
@@ -157,4 +152,24 @@
 </div>
     
     </body>
+
+    <script>
+      const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = ()=>{
+          navbar.classList.add("show");
+          menuBtn.classList.add("hide");
+          body.classList.add("disabled");
+        }
+        cancelBtn.onclick = ()=>{
+          body.classList.remove("disabled");
+          navbar.classList.remove("show");
+          menuBtn.classList.remove("hide");
+        }
+        window.onscroll = ()=>{
+          this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+    </script>
 </html>

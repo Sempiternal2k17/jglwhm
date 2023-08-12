@@ -196,7 +196,7 @@ a{
 }
 
 .column .blog{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(MarriedforlifeIMGs/banner.jpg);
+   
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -244,7 +244,7 @@ a{
 }
 
 .column2 .blog{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(MarriedforlifeIMGs/cuple2.jpg);
+   
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -391,7 +391,7 @@ a{
 
 .sText button{
   border-radius: 4px;
-  background-color: #cc313d;
+  
   border: none;
   color: #f7c5cc;
   text-align: center;

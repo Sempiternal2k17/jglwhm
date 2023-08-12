@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="marriedforlife.css">
-    <script defer src="married.js"></script>
-    <title>Married For Life</title>
+    <script defer src="./Married.js" type="module"></script>
+    <title >Married For Life</title>
 </head>
 <body>
 
@@ -58,45 +58,16 @@
         </div>  
     
         <div class="blogs">
-            <div class="column">
-                <div class="blog">
-                    <a href="MLblog1.html">
-                    <div class="blogInfo">
-                        <h1>God's Plan for Marriage</h1>
-                        <p>Understanding His Design and Purpose for Your Relationship</p>
-                    </div>
-                    </a>
-                </div>
+            <div class="column" id="marriedFirst">
+              <!--
+                here
+              -->
             </div>
-            <div class="column2">
-                <div class="blog">
-                    <a href="MLblog2.html">
-                    <div class="blogInfo">
-                        <h1>Resolving Conflict</h1>
-                        <h1>in Marriage</h1>
-                        <p>Finding Unity and Reconciliation Through Humility</p>
-                        <p> and Grace</p>
-                    </div>
-                    </a>
-                </div>
-                <div class="blog2">
-                    <a href="MLblog3.html">
-                    <div class="blogInfo">
-                        <h1>Pursuing Intimacy</h1>
-                        <h1>in Marriage</h1>
-                        <p>Nurturing Emotional, Physical, and Spiritual Intimacy</p>
-                        <p>with Your Spouse.</p>
-                    </div>
-                    </a>
-                </div>
-                <div class="blog3">
-                    <a href="MLblog4.html">
-                    <div class="blogInfo">
-                        <h1>Walking in Love</h1>
-                        <p>Practicing Selfless Love and Sacrifice in Marriage</p>
-                    </div>
-                    </a>
-                </div>
+            
+            <div class="column2" id="programContainer">
+                <!--
+                will apper here
+               -->
             </div>
         </div>
 </section>
@@ -215,4 +186,23 @@
 
 
 </body>
+<script>
+  const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+</script>
 </html>

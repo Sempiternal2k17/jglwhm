@@ -1,17 +1,15 @@
-const body = document.querySelector("body");
-    const navbar = document.querySelector(".navbar");
-    const menuBtn = document.querySelector(".menu-btn");
-    const cancelBtn = document.querySelector(".cancel-btn");
-    menuBtn.onclick = ()=>{
-      navbar.classList.add("show");
-      menuBtn.classList.add("hide");
-      body.classList.add("disabled");
-    }
-    cancelBtn.onclick = ()=>{
-      body.classList.remove("disabled");
-      navbar.classList.remove("show");
-      menuBtn.classList.remove("hide");
-    }
-    window.onscroll = ()=>{
-      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
-    }
+import { URLtrim } from "./URLtrim.js";
+let textData = "BlogID";
+let queryData = URLtrim(textData);
+console.log('trim: ' + queryData);
+var dataValues = JSON.parse(sessionStorage.getItem(`${queryData}`));
+console.log('dataValues: ' + dataValues);
+var titleBanner = document.querySelector('#titleBanner');
+var windowTitle= document.querySelector('#windowTitle');
+var blogBody = document.querySelector('#blogBody');
+var videoID = document.querySelector('#videoID');
+
+titleBanner.innerHTML = dataValues.title;
+windowTitle.innerHTML = dataValues.title;
+blogBody.innerHTML = dataValues.body;
+videoID.setAttribute('src', `${dataValues.video}`);

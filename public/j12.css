@@ -428,7 +428,7 @@ a{
 
 .sText button{
   border-radius: 4px;
-  background-color: #FF69B4;
+  
   border: none;
   color: #00FFFF;
   text-align: center;
@@ -1083,7 +1083,7 @@ a{
 }
 
 .column .blog{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(J12KidsIMGs/kidsandjesus.jpg);
+  
   background-size: cover;
   border-radius: 10px;
   margin-right: 5%;
@@ -1133,7 +1133,7 @@ a{
 }
 
 .column2 .blog{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(J12KidsIMGs/davidandgoliath.jpg);
+  
   background-size: cover;
   border-radius: 10px;
   margin-right: 5%;

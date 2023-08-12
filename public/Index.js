@@ -2,7 +2,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.1/firebase
 import { getFirestore } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js"
 import { collection, getDocs, where ,orderBy, query} from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js"
 //   import { query, orderBy, limit, where, onSnapshot } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js"
-import { firebaseConfig } from "./firebaseConfig.js";
+import { firebaseConfig } from "../firebaseConfig.js";
     const app = initializeApp(firebaseConfig)
     const db = getFirestore(app);
     var prayerDocs = [];

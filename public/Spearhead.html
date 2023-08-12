@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Spearhead.css">
-    <script defer src="spearhead.js"></script>
+    <script defer src="./Spearhead.js" type="module"></script>
     <title>Spearhead</title>
 </head>
 <body>
@@ -98,59 +98,40 @@
 
   <div class="blogs">
       <div class="column">
-          <h1>Latest Blog</h1>
-          <div class="blog">
-              <a href="Blog1.html">
-              <div class="blogInfo">
-                  <h1>Companionship</h1>
-                  <p>Blog</p>
-              </div>
-              </a>
-          </div>
+          <h1 id="h1Access">Latest Blog</h1>
+          <!--
+            blog will apper here
+          -->
+                <!-- <div class="blog">
+                        <a href="Blog1.html">
+                              <div class="blogInfo">
+                                  <h1>Companionship</h1>
+                                  <p>Blog</p>
+                              </div>
+                        </a>
+                </div> -->
       </div>
       <div class="column2">
           <h1>Past blogs</h1>
-          <div class="scroll">
-          <div class="blog">
-              <a href="Blog2.html">
-              <div class="blogInfo">
-                  <h1>Creating a Plan</h1>
-                  <p>Blog</p>   
-              </div>
-              </a>
-          </div>
-          <div class="blog2">
-              <a href="Blog3.html">
-              <div class="blogInfo">
-                  <h1>Life of Significance</h1>
-                  <p>Blog</p>
-              </div>
-              </a>
-          </div>
-          <div class="blog3">
-              <a href="MLblog4.html">
-              <div class="blogInfo">
-                  <h1>Maximixing your Time</h1>
-                  <p>Blog</p>
-              </div>
-              </a>
-          </div>
+          <div class="scroll" id="programContainer">
+              <!-- <div class="blog">
+                      <a href="Blog2.html">
+                            <div class="blogInfo">
+                                <h1>Creating a Plan</h1>
+                                <p>Blog</p>   
+                            </div>
+                      </a>
+                </div> -->
         </div>
       </div>
   </div>
 </section>
 
-<section id="subs1">
-
-  <div class="subs">
-    <img src="SundaySchooltings/Subs.jpg" alt="">
-    <div class="sText">
-      <h1>Be Notified</h1>
-      <p>We are thrilled to invite you to subscribe to our church website in order to stay informed of all upcoming events, announcements, and notifications. Our website is the go-to source for all things related to our church, and we want to make sure that you never miss out on any important information.</p>
-      <a href="Form.html"><button><span><h1>Click me </h1></span></button></a>
-    </div>
-  </div>
-  
+<section id="subscribe">
+<!--
+  subscribe will appear here
+-->
+ 
 </section>
 
 
@@ -257,4 +238,23 @@
 </div>
 
 </body>
+
+<script>
+const body = document.querySelector("body");
+  const navbar = document.querySelector(".navbar");
+  const menuBtn = document.querySelector(".menu-btn");
+  const cancelBtn = document.querySelector(".cancel-btn");
+  menuBtn.onclick = ()=>{
+    navbar.classList.add("show");
+    menuBtn.classList.add("hide");
+    body.classList.add("disabled");
+  }
+  cancelBtn.onclick = ()=>{
+    body.classList.remove("disabled");
+    navbar.classList.remove("show");
+    menuBtn.classList.remove("hide");
+  }
+  window.onscroll = ()=>{
+    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+  }</script>
 </html>

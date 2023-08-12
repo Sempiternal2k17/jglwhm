@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Form.css">
     <link rel="stylesheet" href="FormNavbar.css">
-    <script defer src="equipping.js"></script>
+    <script defer src="./Form.js" type="module"></script>
     <title>Subscription Form</title>
 </head>
 <body>
@@ -44,14 +44,14 @@
           </div>
           
           <div class="containers">
-            <form>
+            <form id="notificationForm">
                 <label>Name</label> <br>
-                <input type="name"> <br>
+                <input type="text" id="fullname" required> <br>
                 <label>Email </label> <br>
-                <input type="email"> <br>
+                <input type="email" id="email" required placeholder="your_email@gmail.com"> <br>
                 <label>Contact Number </label> <br>
-                <input type="number"> <br>
-                <button>Submit</button>
+                <input type="tel" id="phoneNum" required placeholder="09272261788"  pattern="[0-9]{11}"> <br>
+                <button id="subBtn">Submit</button>
             </form>
           </div>
     </body>
@@ -156,7 +156,25 @@
     
         </div>
       </div>
-  
-    
 </body>
+<script>
+  // used to be equipping.js
+  const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+</script>
 </html>
