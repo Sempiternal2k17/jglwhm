@@ -11,8 +11,8 @@ function firstOrderFunction(){
   // parseParams();
 
 // put programBlogs here instead if sunday service
-var programComponents = JSON.parse(localStorage.getItem(`${programBlogs}`));
-var bannerComponents = JSON.parse(localStorage.getItem(`${bannerProgram}`));
+var programComponents = JSON.parse(sessionStorage.getItem(`${programBlogs}`));
+var bannerComponents = JSON.parse(sessionStorage.getItem(`${bannerProgram}`));
 console.log(programComponents);
 console.log(bannerComponents);
 function createNews1(){
@@ -138,14 +138,14 @@ function createPrograms(){
       var sundayServiceFormats = ["MarriedForLife","SundayService","Spearhead","J12Kids","LifeClass","SOLClass","Mentoring","Wildfire"];
       let ID = 0;
     let DATA = 1;
-    let banners = JSON.parse(localStorage.getItem('Banners'));
+    let banners = JSON.parse(sessionStorage.getItem('Banners'));
     let htmlNavbar = ``;
       for(let i=0;i<banners.length;i++){
          
           for(let j=0;j<sundayServiceFormats.length;j++){
               if(banners[i][ID].toLowerCase() == sundayServiceFormats[j].toLowerCase()){
                   console.log(`${banners[i][ID]}`);
-                  localStorage.setItem(`${banners[i][ID]}`, JSON.stringify(banners[i][DATA]));
+                  sessionStorage.setItem(`${banners[i][ID]}`, JSON.stringify(banners[i][DATA]));
                   htmlNavbar = htmlNavbar +`
                    <li style="list-style: none;"><a href="AnnouncementSundayService.html?bannerProgram=${banners[i][ID]}&programBlogs=${sundayServiceFormats[j]}"
                    style="color: #fff;

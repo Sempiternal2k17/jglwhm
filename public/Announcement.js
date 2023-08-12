@@ -12,9 +12,9 @@ import { firebaseConfig } from "./firebaseConfig.js";
 
 
 
-  if(localStorage.getItem("updated")){
+  if(sessionStorage.getItem("updated")){
     // get the data from the session storage
-    general = JSON.parse(localStorage.getItem('General'));
+    general = JSON.parse(sessionStorage.getItem('General'));
     console.log("This is on local Storage: ", general.length);
   } else {
     // get from firebase
@@ -31,7 +31,7 @@ import { firebaseConfig } from "./firebaseConfig.js";
   });
   console.log(bannerDocs);
 //set Banners
-  localStorage.setItem("Banners", JSON.stringify(bannerDocs));
+sessionStorage.setItem("Banners", JSON.stringify(bannerDocs));
 
     for(let i=0; i<sundayServiceFormats.length; i++){
       let tempData = [];
@@ -42,14 +42,14 @@ import { firebaseConfig } from "./firebaseConfig.js";
       }
       
       }
-      localStorage.setItem(`${sundayServiceFormats[i]}`, JSON.stringify(tempData))
+      sessionStorage.setItem(`${sundayServiceFormats[i]}`, JSON.stringify(tempData))
   }
 
   
 
-    localStorage.setItem("updated",true);
-    localStorage.setItem("General", JSON.stringify(announcementDocs));
-    general = JSON.parse(localStorage.getItem('General'));
+  sessionStorage.setItem("updated",true);
+  sessionStorage.setItem("General", JSON.stringify(announcementDocs));
+    general = JSON.parse(sessionStorage.getItem('General'));
     console.log("this is taken from database: ", general.length);
   }
     
@@ -124,14 +124,14 @@ import { firebaseConfig } from "./firebaseConfig.js";
    
     let ID = 0;
   let DATA = 1;
-  let banners = JSON.parse(localStorage.getItem('Banners'));
+  let banners = JSON.parse(sessionStorage.getItem('Banners'));
   let htmlNavbar = ``;
     for(let i=0;i<banners.length;i++){
        
         for(let j=0;j<sundayServiceFormats.length;j++){
             if(banners[i][ID].toLowerCase() == sundayServiceFormats[j].toLowerCase()){
                 console.log(`${banners[i][ID]}`);
-                localStorage.setItem(`${banners[i][ID]}`, JSON.stringify(banners[i][DATA]));
+                sessionStorage.setItem(`${banners[i][ID]}`, JSON.stringify(banners[i][DATA]));
                 htmlNavbar = htmlNavbar +`
                  <li style="list-style: none;"><a href="AnnouncementSundayService.html?bannerProgram=${banners[i][ID]}&programBlogs=${sundayServiceFormats[j]}"
                  style="color: #fff;
