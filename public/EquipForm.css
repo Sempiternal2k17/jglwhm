@@ -35,13 +35,13 @@ a{
   padding: 0 30px;
 }
 .navbar{
-    position: fixed;
-    width: 100%;
-    z-index: 2;
-    padding: 25px 0;
-    transition: all 0.3s ease;
-    background-color: #1868AE;
-  }
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 25px 0;
+  transition: all 0.3s ease;
+  /* background-color: #191825; */
+}
 .navbar.sticky{
   background: #1b1b1b;
   padding: 10px 0;
@@ -122,6 +122,10 @@ input{
     padding: 1%;
     outline: none;
 }
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(8, 8, 8);
+    opacity: 0.3; /* Firefox */
+  }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -144,9 +148,9 @@ textarea{
     outline: none;
 }
 
-button{
+#equipFormBtn{
     padding: 2%;
-    background-color: #1868AE;
+    /* background-color: #191825; */
     color: white;
     border: none;
     margin-top: 2%;
@@ -224,21 +228,18 @@ button{
 }
 
 button:hover{
-    background-color: #C6D7EB;
+    background-color: #FFA3FD;
 }
-
-
-
 
 .bottomLinks{
     display: flex;
     margin-top: 5%;
-    background-color: #1868AE;
+    /* background-color: #191825; */
     color: white;
-    border-bottom: 5px #C6D7EB  solid;
+    border-bottom: 5px #FFA3FD solid;
 }
   
- .firstGrid{
+.firstGrid{
     text-align: center;
     border-right: white 1px solid;
     padding: 2%;
@@ -249,27 +250,28 @@ button:hover{
     width: 50%;
 }
   
- .firstGrid h1{
+.firstGrid h1{
     margin-top: 5%;
     text-align: center;
 }
   
 .firstGrid a{
     margin-top: 7%;
-    color: white;
     font-size: 3.5vw;
     font-family: 'Source Code Pro';
+    color: white;
 }
   
- .firstGrid p{
+.firstGrid p{
     margin-top: 10%;
     font-size: 1vw;
     text-align: left;
-    color: #C6D7EB;
+    color: #FFA3FD;
     font-family: 'Source Code Pro';
 }
   
- /* =========================================================== */
+/* =================================================== */
+  
   
 .secondGrid{
     width: 20%;
@@ -294,42 +296,43 @@ button:hover{
 .botli a{
     font-family: 'Source Code Pro';
     font-size: 1.2vw;
-    color: #C6D7EB;
+    color: gray;
 }
   
 .botli a:hover{
-    color: #C6D7EB;
+    color: white;
     transition: 0.5s;
 }
   
-  /* =================================================== */
+/* =================================================== */
   
- .thirdGrid{
+.thirdGrid{
     width: 20%;
     display: inline-block;
     margin-top: 4%;
 }
   
- .thirdGrid p{
+.thirdGrid p{
     font-family: 'Source Code Pro';
     font-size: 1.2vw;
 }
   
- .botli{
+.botli{
     margin-top: 40%;
 }
   
- .botli p{
+.botli p{
     margin-bottom: 2%;
 }
   
- .botli a{
+.botli a{
     font-family: 'Source Code Pro';
     font-size: 1.2vw;
     color: white;
 }
- .botli a:hover{
-    color: #C6D7EB;
+  
+.botli a:hover{
+    color: #FFA3FD;
     transition: 0.5s;
 }
   
@@ -337,83 +340,83 @@ button:hover{
     display: none;
 }
 
-
 @media (max-width: 500px) {
+
     .bottomLinks{
-       display: none;
-    }
-      
-    /* ================================================ */
-    
-    .mobileLinks{
-        margin: 0;
-        display: block;
-        background-color: #1868AE;
-        color: white;
-        border-bottom: 5px #C6D7EB  solid;
-        overflow-y: hidden;
-    }
-    
-    .mobileLinks .firstGrid{
-        text-align: left;
-        border-right: white 0px solid;
-        width: 80%;
-        padding: 2%;
-        padding-left: 10%;
-        padding-right: 10%;
-        border-bottom: white 1px solid;
-        padding-top: 10%;
-        padding-bottom: 10%;
-    }
-      
-    .mobileLinks .firstGrid img{
-        width: 25%;
-        margin-top: 2%;
-    }
-      
-      .mobileLinks .firstGrid h1{
-        margin-top: 2%;
-        text-align: left;
-    }
-      
-    .mobileLinks .firstGrid a{
-        margin-top: 1%;
-        font-size: 7vw;
-        color: white;
-        font-family: 'Source Code Pro';
-    }
-      
-    .mobileLinks .firstGrid p{
-        font-size: 3vw;
-        color: #C6D7EB;
-        font-family: 'Source Code Pro';
-        margin-top: 10%;
-    }
-    
-    .mobileLinks .secondLane{
-        padding-left: 10%;
-        padding-right: 10%;
-        padding-bottom: 5%;
-        width: 100%;
-        color: white;
-        margin-top: 5%;
-    }
-      
-    .mobileLinks .noice{
-        margin-bottom: 5%;
-        font-family: 'Source Code Pro';
-        font-size: 4vw;
-        color: white;
-    }
-    
-    .mobileLinks .links{
-        margin-top: 5%;
-        font-size: 4vw;
-        
-    }
-    
-    .mobileLinks .links a{
-        color: #C6D7EB;
-        font-family: 'Source Code Pro';
-    }
+        display: none;
+     }
+       
+     /* ================================================ */
+     
+     .mobileLinks{
+         margin: 0;
+         display: block;
+         /* background-color: #191825; */
+         color: white;
+         border-bottom: 5px #FFA3FD  solid;
+         overflow-y: hidden;
+     }
+     
+     .mobileLinks .firstGrid{
+         text-align: left;
+         border-right: white 0px solid;
+         width: 80%;
+         padding: 2%;
+         padding-left: 10%;
+         padding-right: 10%;
+         border-bottom: white 1px solid;
+         padding-top: 10%;
+         padding-bottom: 10%;
+     }
+       
+     .mobileLinks .firstGrid img{
+         width: 25%;
+         margin-top: 2%;
+     }
+       
+       .mobileLinks .firstGrid h1{
+         margin-top: 2%;
+         text-align: left;
+     }
+       
+     .mobileLinks .firstGrid a{
+         margin-top: 1%;
+         font-size: 7vw;
+         color: white;
+         font-family: 'Source Code Pro';
+     }
+       
+     .mobileLinks .firstGrid p{
+         font-size: 3vw;
+         color: #FFA3FD;
+         font-family: 'Source Code Pro';
+         margin-top: 10%;
+     }
+     
+     .mobileLinks .secondLane{
+         padding-left: 10%;
+         padding-right: 10%;
+         padding-bottom: 5%;
+         width: 100%;
+         color: white;
+         margin-top: 5%;
+     }
+       
+     .mobileLinks .noice{
+         margin-bottom: 5%;
+         font-family: 'Source Code Pro';
+         font-size: 4vw;
+         color: white;
+     }
+     
+     .mobileLinks .links{
+         margin-top: 5%;
+         font-size: 4vw;
+         
+     }
+     
+     .mobileLinks .links a{
+         color: #FFA3FD;
+         font-family: 'Source Code Pro';
+     }
 }

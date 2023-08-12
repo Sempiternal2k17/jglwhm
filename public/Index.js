@@ -6,7 +6,7 @@ import { firebaseConfig } from "./firebaseConfig.js";
     const app = initializeApp(firebaseConfig)
     const db = getFirestore(app);
     var prayerDocs = [];
-//data for prayerRequest
+//data for prayerRequest  
   const prayersSnapshot = await getDocs(query(collection(db, "prayerRequests"), where("status", "==", "verified"), orderBy("timestamp", "desc")));
   prayersSnapshot.forEach((doc)=>{
       prayerDocs.push([doc.id, doc.data()]);

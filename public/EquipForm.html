@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="MenSOLLife.css">
+    <link rel="stylesheet" href="EquipForm.css">
     <link rel="stylesheet" href="MentoringNavbar.css">
-    <script defer src="equipping.js"></script>
+    <script src="./EquipformJS.js" type="module"></script>
     <title>Mentoring Form</title>
 </head>
 <body>
@@ -41,14 +41,14 @@
           </div>
           
           <div class="containers">
-            <form>
-                <label>Name (Optional) </label> <br>
-                <input type="name"> <br>
-                <label>Email </label> <br>
-                <input type="email"> <br>
-                <label>Contact Number </label> <br>
-                <input type="number"> <br>
-                <button>Submit</button>
+            <form id="equipForm">
+                <label>Name:</label> <br>
+                <input type="text" id="fullname" required> <br>
+                <label>Email: </label> <br>
+                <input type="email" id="email" required placeholder="your_email@gmail.com"> <br>
+                <label>Contact Number: </label> <br>
+                <input type="tel" id="phoneNum" required placeholder="09272261788"  pattern="[0-9]{11}"> <br>
+                <button id="equipFormBtn">Submit</button>
             </form>
           </div>
     </body>
@@ -156,4 +156,24 @@
   
     
 </body>
+<script>
+  // used to be equipping.js
+  const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+</script>
 </html>
