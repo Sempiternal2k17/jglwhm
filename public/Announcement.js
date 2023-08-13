@@ -1,29 +1,27 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js";
-import { getFirestore } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js"
 import { collection, getDocs ,orderBy, query} from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js"
-//   import { query, orderBy, limit, where, onSnapshot } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js"
-import { firebaseConfig } from "./firebaseConfig.js";
-    const app = initializeApp(firebaseConfig)
-    const db = getFirestore(app);
+import {db} from './Database.js';
+import { URLtrim } from "./URLtrim.js";
     var sundayServiceFormats = ["MarriedForLife","SundayService","Spearhead","J12Kids","LifeClass","SOLClass","Mentoring","Wildfire"];
     var announcementDocs = [];
     var general = [];
     var bannerDocs = [];
+  let textData = "Prompt";
+  let queryData = URLtrim(textData);
 
 
-
-  if(sessionStorage.getItem("updated")){
+  if(sessionStorage.getItem(`${queryData}`) !== null){
     // get the data from the session storage
-    general = JSON.parse(sessionStorage.getItem('General'));
-    console.log("This is on local Storage: ", general.length);
+    console.log("SESSION STORAGE");
+    general = JSON.parse(sessionStorage.getItem(`${queryData}`));
+   
   } else {
     // get from firebase
     //data for Announcements
-  const announceSnapshot = await getDocs(query(collection(db, "announcement"), orderBy("timestamp", "desc")));
+  const announceSnapshot = await getDocs(query(collection(db, `announcement`), orderBy("timestamp", "desc")));
   announceSnapshot.forEach((doc)=>{
     announcementDocs.push([doc.id, doc.data()]);
   });
-  console.log(announcementDocs);
+  
 //data for Banners
   const bannerSnapshot = await getDocs(query(collection(db, "announcement/banners/data"), orderBy("timestamp", "desc")));
   bannerSnapshot.forEach((doc)=>{
@@ -45,11 +43,9 @@ sessionStorage.setItem("Banners", JSON.stringify(bannerDocs));
       sessionStorage.setItem(`${sundayServiceFormats[i]}`, JSON.stringify(tempData))
   }
 
-  
-
-  sessionStorage.setItem("updated",true);
-  sessionStorage.setItem("General", JSON.stringify(announcementDocs));
-    general = JSON.parse(sessionStorage.getItem('General'));
+  // sessionStorage.setItem("updated",true);
+  sessionStorage.setItem(`${queryData}`, JSON.stringify(announcementDocs));
+    general = JSON.parse(sessionStorage.getItem(`${queryData}`));
     console.log("this is taken from database: ", general.length);
   }
     

@@ -33,14 +33,14 @@ function createNews1(){
       <h1>${bannerComponents["title"]}</h1>
       <p>${bannerComponents["introduction"]}</p>
     <br>`;
-    console.log(bannerComponents["date"])
+    
   if(bannerComponents["date"] !== "" ) {
     html+= `<p>📅 Date: ${bannerComponents["date"]}</p>`;
   }
   else(
     console.log("no date")
   )
-  console.log(bannerComponents["time"])
+ 
   if(bannerComponents["time"] !== "" ) {
     html+= `<p>⏰ Time: ${bannerComponents["time"]}</p>`;
   }else(
@@ -144,7 +144,6 @@ function createPrograms(){
          
           for(let j=0;j<sundayServiceFormats.length;j++){
               if(banners[i][ID].toLowerCase() == sundayServiceFormats[j].toLowerCase()){
-                  console.log(`${banners[i][ID]}`);
                   sessionStorage.setItem(`${banners[i][ID]}`, JSON.stringify(banners[i][DATA]));
                   htmlNavbar = htmlNavbar +`
                    <li style="list-style: none;"><a href="AnnouncementSundayService.html?bannerProgram=${banners[i][ID]}&programBlogs=${sundayServiceFormats[j]}"

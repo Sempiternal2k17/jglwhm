@@ -1,13 +1,8 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js";
-import { getFirestore } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js"
 import { collection, getDocs, where ,orderBy, query} from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js"
-//   import { query, orderBy, limit, where, onSnapshot } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js"
-import { firebaseConfig } from "../firebaseConfig.js";
-    const app = initializeApp(firebaseConfig)
-    const db = getFirestore(app);
+import {db} from './Database.js';
     var prayerDocs = [];
 //data for prayerRequest  
-  const prayersSnapshot = await getDocs(query(collection(db, "prayerRequests"), where("status", "==", "verified"), orderBy("timestamp", "desc")));
+  const prayersSnapshot = await getDocs(query(collection(db, "prayerRequests"), where("status", "==", "cd"), orderBy("timestamp", "desc")));
   prayersSnapshot.forEach((doc)=>{
       prayerDocs.push([doc.id, doc.data()]);
   });

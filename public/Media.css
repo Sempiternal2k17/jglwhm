@@ -83,23 +83,13 @@
     margin-top: 3%;
     margin-right: 2%;
     margin-bottom: 3%;
-    background-image: url(MediaIMGs/TwoofUs/1.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     cursor: pointer;
 }
 
-.news1{
-    width: 50%;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    background-image: url(Gallery/Life\ Class\ Retreat/lc1.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    cursor: pointer;
-}
+
 
 .newsInfo{
     padding-top: 30%;
