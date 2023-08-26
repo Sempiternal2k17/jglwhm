@@ -12,6 +12,7 @@ var dataValues = [];// useful data values
  if (queryData == "" || queryData == null){
     queryData = "media";
  }
+
 if(sessionStorage.getItem(`${queryData}`) !== null){
     //get from sessionStorage
     console.log("SESSION STORAGE");
@@ -41,6 +42,7 @@ function CreatePrograms(){
     let htmlContainer ='';
     var intervalProgs = 0;
     var intervalPosts = '';
+   
     for (let i=0; i<dataValues.length; i++){
         
     sessionStorage.setItem(`${dataValues[i][ID]}`, JSON.stringify(dataValues[i][DATA]));
@@ -69,7 +71,7 @@ function CreatePrograms(){
         intervalProgs = 0;
         }
     }
-    programContainer.insertAdjacentHTML('afterend', html);
+    firstLive.insertAdjacentHTML('afterend', html);
 }
 
 CreatePrograms();

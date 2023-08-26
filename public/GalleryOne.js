@@ -22,4 +22,3 @@ for (var i = 0; i < dataValues['image'].length; i++){
     htmlTemplate = ``;
 }
 // bannertitle.insertAdjacentHTML('afterend', htmlTemplate);
-console.log(dataValues);
