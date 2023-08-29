@@ -17,7 +17,7 @@ import { firebaseConfig } from "./firebaseConfig.js";
         const email = document.getElementById("email").value;
         var phoneNumber = document.getElementById("phoneNum").value;
         const body = document.getElementById("body").value;
-        let status = "unverified";
+        let status = "ab";
         if(fullName === undefined || fullName === ""){
             fullName = "Anonymous";
         }
