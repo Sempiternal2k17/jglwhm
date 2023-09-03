@@ -38,7 +38,7 @@ import { db } from "./Database.js";
             const body = docSnapshot[0][1].body;
             const image = docSnapshot[0][1].image;
             localStorage.setItem('tempData', JSON.stringify({setTitle: title, setSubtitle: subtitle, setBody: body, setImage: image}));
-            window.location.href = "./fireblogs1.html";
+            window.location.href = "./fireBlogs1.html";
         }
         )
     }
@@ -112,7 +112,7 @@ import { db } from "./Database.js";
       const body = docSnapshot[indexNum][DATA].body;
       const image = docSnapshot[indexNum][DATA].image;
       localStorage.setItem('tempData', JSON.stringify({setTitle: title, setBody: body, setImage: image}));
-      window.location.href = "./fireblogs1.html";
+      window.location.href = "./fireBlogs1.html";
   })
     
 
