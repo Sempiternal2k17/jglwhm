@@ -1,3 +1,6 @@
+import { FooterFunction } from "./Footer.js";
+
+
 var setPrograms = ['j12Kids','lifeClas','marriedForLife','mentoring','solClass','spearHead','sundayService','wildFire']
 
 function firstOrderFunction(){
@@ -165,3 +168,8 @@ function createPrograms(){
 
 }
 firstOrderFunction();
+
+// ADD FOOTER SECTION
+var footerTemplate = FooterFunction();
+var footerContainer = document.querySelector('.bottomLinks');
+footerContainer.innerHTML = footerTemplate;

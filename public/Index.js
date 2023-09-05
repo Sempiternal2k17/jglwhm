@@ -1,5 +1,6 @@
 import { collection, getDocs, where ,orderBy, query} from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js"
 import {db} from './Database.js';
+import { FooterFunction } from "./Footer.js";
     var prayerDocs = [];
 //data for prayerRequest  
   const prayersSnapshot = await getDocs(query(collection(db, "prayerRequests"), where("status", "==", "cd"), orderBy("timestamp", "desc")));
@@ -59,3 +60,8 @@ import {db} from './Database.js';
       prayerContainer.innerHTML = html;   
   }
   createPrayers();
+
+  // add footer
+  var footerTemplate = FooterFunction();
+  var footerContainer = document.querySelector('#bottom');
+  footerContainer.innerHTML = footerTemplate;

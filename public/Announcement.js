@@ -1,6 +1,7 @@
 import { collection, getDocs ,orderBy, query} from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js"
 import {db} from './Database.js';
 import { URLtrim } from "./URLtrim.js";
+import { FooterFunction } from "./Footer.js";
     var sundayServiceFormats = ["MarriedForLife","SundayService","Spearhead","J12Kids","LifeClass","SOLClass","Mentoring","Wildfire"];
     var announcementDocs = [];
     var general = [];
@@ -145,3 +146,7 @@ sessionStorage.setItem("Banners", JSON.stringify(bannerDocs));
 
   }
   createNavbar();
+
+var footerTemplate = FooterFunction();
+var footerContainer = document.querySelector('.bottomLinks');
+footerContainer.innerHTML = footerTemplate;

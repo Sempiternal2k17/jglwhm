@@ -1,6 +1,6 @@
 import { collection, addDoc, serverTimestamp} from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js"
 import { db } from "./Database.js";
-
+import { FooterFunction } from "./Footer.js";
 
 let equipForm = document.querySelector('#notificationForm');
 
@@ -33,3 +33,8 @@ equipForm.addEventListener('submit', async(event) =>{
     }
     catch(e){throw e};
 });
+
+// ADD FOOTER SECTION
+var footerTemplate = FooterFunction();
+var footerContainer = document.querySelector('.bottomLinks');
+footerContainer.innerHTML = footerTemplate;

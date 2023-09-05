@@ -2,7 +2,7 @@ import { collection, getDocs, orderBy, query} from "https://www.gstatic.com/fire
 import { db } from "./Database.js";
 import { SubscribeFunction } from "./Subscribe.js";
 import { URLtrim } from "./URLtrim.js";
-
+import { FooterFunction } from "./Footer.js";
 // TAKING THE URL PARAMETER FOR GETTING DATA FROM DB
 let textData = "Prompt";
 let colorScheme =   "#cc313d";
@@ -78,3 +78,7 @@ var scrubTemplate = SubscribeFunction(queryData, colorScheme);
 var Subscription = document.querySelector('#subscribe');
 Subscription.innerHTML = scrubTemplate;
     
+// ADD FOOTER SECTION
+var footerTemplate = FooterFunction();
+var footerContainer = document.querySelector('.bottomLinks');
+footerContainer.innerHTML = footerTemplate;

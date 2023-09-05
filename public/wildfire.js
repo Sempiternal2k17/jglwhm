@@ -1,10 +1,8 @@
 import { collection, getDocs } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js"
 import { db } from "./Database.js";
-      var docSnapshot = [];
+import { FooterFunction } from "./Footer.js";
 
-  
-
-
+var docSnapshot = [];
     const querySnapshot = await getDocs(collection(db, "connects/wildFire/data"));
 
     querySnapshot.forEach((doc)=>{
@@ -135,4 +133,8 @@ import { db } from "./Database.js";
     btn1.addEventListener('click', FindData());
     btn2.addEventListener('click', GetData());
 
+
+    var footerTemplate = FooterFunction();
+    var footerContainer = document.querySelector('.bottomLinks');
+    footerContainer.innerHTML = footerTemplate;
 

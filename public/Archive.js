@@ -1,4 +1,5 @@
 import { URLtrim } from "./URLtrim.js";
+import { FooterFunction } from "./Footer.js";
 let textData = "BlogID";
 let queryData = URLtrim(textData);
 console.log('trim: ' + queryData);
@@ -13,3 +14,8 @@ titleBanner.innerHTML = dataValues.title;
 windowTitle.innerHTML = dataValues.title;
 blogBody.innerHTML = dataValues.body;
 videoID.setAttribute('src', `${dataValues.video}`);
+
+// ADD FOOTER SECTION
+var footerTemplate = FooterFunction();
+var footerContainer = document.querySelector('.bottomLinks');
+footerContainer.innerHTML = footerTemplate;

@@ -2,6 +2,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.1/firebase
 import { getFirestore } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js"
 import { collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js"
 import { firebaseConfig } from "./firebaseConfig.js";
+import { FooterFunction } from "./Footer.js";
     const app = initializeApp(firebaseConfig)
     const db = getFirestore(app);
 
@@ -41,3 +42,7 @@ import { firebaseConfig } from "./firebaseConfig.js";
     
     );
 
+// ADD FOOTER SECTION
+var footerTemplate = FooterFunction();
+var footerContainer = document.querySelector('#bottom');
+footerContainer.innerHTML = footerTemplate;
