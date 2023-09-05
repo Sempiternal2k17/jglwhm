@@ -19,11 +19,11 @@ let colorScheme = programColors[equipProgram]
 console.log(equipProgram, " ", colorScheme);
 
 
-
 // ADD FOOTER SECTION
 var footerTemplate = FooterFunction();
 var footerContainer = document.querySelector('.bottomLinks');
 footerContainer.innerHTML = footerTemplate;
+
 
 
 // color selection
