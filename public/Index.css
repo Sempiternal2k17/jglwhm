@@ -1,1855 +1,2031 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed:ital,wght@0,400;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-  font-family: 'Roboto Condensed', sans-serif;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
 }
 
-/* custom scroll bar */
-::-webkit-scrollbar {
-    width: 10px;
-}
-::-webkit-scrollbar-track {
-    background: black;
-}
-::-webkit-scrollbar-thumb {
-    background: #f1f1f1;
-}
-::selection{
-  background: rgb(0,123,255,0.3);
-}
-.content{
-  max-width: 1550px;
-  margin: auto;
-  padding: 0 30px;
-}
-.navbar{
-  position: fixed;
-  width: 100%;
-  z-index: 2;
-  padding: 25px 0;
-  transition: all 0.3s ease;
-}
-.navbar.sticky{
-  background: #1b1b1b;
-  padding: 10px 0;
-  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
-}
-.navbar .content{
+
+.section-home{
+  position: relative;
+  min-height: 100vh;
+  background: url(bg.jpg)no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
 }
-.navbar .logo img{
-  width: 70%;
+
+.section-home:before{
+  content: '';
+  position: absolute;
+  background: linear-gradient(to top, #23252B, transparent);
+  width: 100%;
+  height: 80px;
+  bottom: 0;
 }
-.navbar .menu-list{
-  display: inline-flex;
-}
-.menu-list li{
-  list-style: none;
-}
-.menu-list li a{
+
+.section-home h1{
   color: #fff;
-  font-size: 1.3vw;
-  margin-left: 25px;
+  font-size: 10vw;
+  font-weight: 800;
+  text-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+  opacity: 0.3;
+}
+
+.section-two{
+  min-height: 100vh;
+  background: #23252B;
+}
+
+.section-two h2{
+  color: #fff;
+  font-size: 3em;
+  font-weight: 700;
+  margin: 30px 0;
+}
+
+.section-two p{
+  color: #fff;
+  font-size: 1em;
+  margin: 30px 0;
+}
+
+header{
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #23252B;
+  box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+  padding: 0 100px;
+  transition: 0.6s;
+}
+
+header .logo{
+  color: #fff;
+  font-size: 1.8em;
+  font-weight: 700;
+  text-transform: uppercase;
   text-decoration: none;
-  transition: all 0.3s ease;
-}
-.menu-list li a:hover{
-  color: #e23c52;
-  z-index: 2;
+  letter-spacing: 2px;
 }
 
-.icon{
-  cursor: pointer;
-  display: none;
-}
-.icon img{
-  width: 100%;
-  max-width: 50px;
-}
-.menu-list .cancel-btn{
-  position: absolute;
-  right: 30px;
-  top: 20px;
-  z-index: 2;
-}
-@media (max-width: 1230px) {
-  .content{
-    padding: 0 60px;
-  }
-}
-@media (max-width: 1100px) {
-  .content{
-    padding: 0 40px;
-  }
-}
-@media (max-width: 900px) {
-  .content{
-    padding: 0 30px;
-  }
-}
-@media (max-width: 868px) {
-  body.disabled{
-    overflow: hidden;
-  }
-  .icon{
-    display: block;
-  }
-  .icon.hide{
-    display: none;
-    z-index: 2;
-  }
-  .navbar .menu-list{
-    position: fixed;
-    height: 100vh;
-    width: 70%;
-    max-width: 400px;
-    left: -100%;
-    top: 0px;
-    display: block;
-    padding: 40px 0;
-    text-align: center;
-    background: #222;
-    transition: all 0.3s ease;
-  }
-  .navbar.show .menu-list{
-    left: 0%;
-  }
-  .navbar .menu-list li{
-    margin-top: 45px;
-  }
-  .navbar .menu-list li a{
-    font-size: 23px;
-    margin-left: -100%;
-    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  .navbar.show .menu-list li a{
-    margin-left: 0px;
-  }
+header .navigation{
+  position: relative;
+  line-height: 75px;
+  transition: 0.6s;
+  transition-property: line-height;
 }
 
-.mySlides {
-  display: none;
+header.sticky .navigation{
+  line-height: 60px;
 }
 
-.mySlides img{
-  width: 100%;
-  margin-bottom: 10%;
-}
-
-/* Slideshow container */
-.slideshow-container {
-  width: 100%;
-  height: 100%;
-  max-height: 100vh;
-  margin: auto;
-  overflow-y: hidden;
-}
-/* The dots/bullets/indicators */
-.dot {
-
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-
-}
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1s;
-  animation-name: fade;
-  animation-duration: 1s;
-}
-
-@-webkit-keyframes fade {
-  from {
-      opacity: .7
-  }
-
-  to {
-      opacity: 1
-  }
-}
-
-@keyframes fade {
-  from {
-      opacity: .7
-  }
-
-  to {
-      opacity: 1
-  }
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-
-  .prev,
-  .next,
-  .text {
-      font-size: 11px
-  }
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+header .navigation .menu{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  list-style: none;
   user-select: none;
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-
-/* ================================================ */
-
-
-/* ==================================================================== */
-
-.container{
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-bottom: 5%;
-}
-
-.container em{
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-.container h1{
-  font-family: 'AudioWide';
-  margin-top: 5%;
-  font-size: 3vw;
-  text-align: center;
-}
-
-.container p{
-  margin-top: 7%;
-  font-size: 1.9vw;
-}
-
-#word{
-  margin-top: 3%;
-  font-size: 1.9vw;
-}
-
-/* ================================================ */
-
-.desc{
-  display: block;
-  justify-content: center;
-}
-
-a{
+.menu-item > a{
+  color: #fff;
+  font-size: 1em;
   text-decoration: none;
-  color: white;
+  margin: 20px;
+  padding: 25px 0;
 }
 
-.desc h1{
-  font-family: 'AudioWide';
-  text-align: center;
-  padding-top: 8%;
-  padding-bottom: 3%;
-  font-size: 4vw;
+.menu-item > a:hover{
+  color: #469DFF;
+  transition: 0.3s;
 }
 
-.desc p{
-  margin-left: 15%;
-  margin-right: 15%;
-  font-size: 1.9vw; 
-  padding-bottom: 5%;
-}
-
-.aboutUs{
-  display: flex;
-  color: white;
-  margin-bottom: 5%;
-  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(HeadnFooter/background.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.vision{
-  width: 33.3%;
-  padding: 5%;
-  transition: 0.5s;
-}
-
-.vision h1{
-  font-family: 'AudioWide';
-  text-align: center;
-  margin-bottom: 10%;
-  font-size: 3vw;
-}
-
-.vision p{
-  font-size: 1.9vw;
-  text-align: center;
-}
-
-.vision:hover{
-  background-color: white;
-  color: black;
-}
-
-/* ================================================ */
-
-.pastorContainer{
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-bottom: 4%;
-}
-
-.pastorContainer h1{
-  font-family: 'AudioWide';
-  font-size: 3vw;
-  text-align: center;
-}
-
-.pastors{
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 5%;
-  display: flex;
-  align-items: center;
-}
-
-.pastors img{
-  width: 50%;
-  border-radius: 50%;
-}
-
-.pText{
-  margin-left: 3%;
-}
-
-.pText h1{
-  font-family: 'AudioWide';
-  font-size: 2.5vw;
-}
-
-.pText p{
-  font-size: 1.5vw;
-}
-
-/* ================================================ */
-
-.cSection{
-  display: block;
-  color: white;
-}
-
-.row1{
-  display: flex;
-}
-
-.sunday{
-  width: 50%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(AnnounceIMGs/Sunday\ Service.png);
-  background-size: cover;
-  background-position: center;
-  color: white;
-  flex: 1;
-}
-
-.sundayDesc{
-  padding-top: 15%;
-  padding-bottom: 15%;
-  padding-left: 5%;
-  padding-right: 5%;
-  transition: 0.5s;
-  cursor: pointer;
-  height: 100%;
-}
-
-.sundayDesc h1{
-  font-family: 'AudioWide';
-  font-size: 2.5vw;
-  text-align: center;
-}
-
-.sundayDesc h2{
-  font-family: 'AudioWide';
-  font-size: 1.5vw;
-  text-align: center;
-  margin-bottom: 5%;
-}
-
-.sundayDesc p{
-  font-size: 1.8vw;
-  text-align: center;
-  margin-bottom: 5%
-}
-
-.sundayDesc:hover{
-  background-color: #FBEAEB;
-  color: #2F3C7E;
-}
-
-@media screen {
-  
-}
-
-/* ================================================ */
-
-.wildfire{
-  width: 50%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(AnnounceIMGs/Wildfire.jpg);
-  background-size: cover;
-  background-position: center;
-  color: white;
-  flex: 1;
-}
-
-.wildfireDesc{
-  padding-top: 15%;
-  padding-bottom: 15%;
-  padding-left: 5%;
-  padding-right: 5%;
-  transition: 0.5s;
-  cursor: pointer;
-  flex: 1;
-  height: 100%;
-}
-
-.wildfireDesc h1{
-  font-family: 'AudioWide';
-  font-size: 2.5vw;
-  text-align: center;
-}
-
-.wildfireDesc h2{
-  font-family: 'AudioWide';
-  font-size: 1.5vw;
-  text-align: center;
-  margin-bottom: 5%;
-}
-
-.wildfireDesc p{
-  font-size: 1.8vw;
-  text-align: center;
-  margin-bottom: 5%
-}
-
-.wildfireDesc:hover{
-  background-color: black;
-  color: yellow;
-}
-
-/* ================================================ */
-
-.row2{
-  display: flex;
-}
-
-.j12{
-  align-items: center;
-  width: 33%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(AnnounceIMGs/J12Kids.png);
-  background-size: cover;
-  background-position: center;
-  color: white;
-  flex: 1;
-}
-
-.j12Desc{
-  padding-top: 15%;
-  padding-bottom: 15%;
-  padding-left: 5%;
-  padding-right: 5%;
-  transition: 0.5s;
-  cursor: pointer;
-  flex: 1;
-  height: 100%;
-}
-
-.j12Desc h1{
-  font-family: 'AudioWide';
-  font-size: 2.5vw;
-  text-align: center;
-}
-
-.j12Desc h2{
-  font-family: 'AudioWide';
-  font-size: 1.5vw;
-  text-align: center;
-  margin-bottom: 5%;
-}
-
-.j12Desc p{
-  font-size: 1.8vw;
-  text-align: center;
-  margin-bottom: 5%
-}
-
-.j12Desc:hover{
-  background-color: #00FFFF;
-  color: #FF69B4;
-}
-
-/* ================================================ */
-
-.spearhead{
-  width: 33%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(AnnounceIMGs/Spearhead.png);
-  background-size: cover;
-  background-position: center;
-  color: white;
-  flex: 1;
-}
-
-.spearheadDesc{
-  padding-top: 15%;
-  padding-bottom: 12%;
-  padding-left: 5%;
-  padding-right: 5%;
-  transition: 0.5s;
-  cursor: pointer;
-  flex: 1;
-  height: 100%;
-  width: 100%;
-}
-
-.spearheadDesc h1{
-  font-family: 'AudioWide';
-  font-size: 2.5vw;
-  text-align: center;
-}
-
-.spearheadDesc h2{
-  font-family: 'AudioWide';
-  font-size: 1.5vw;
-  text-align: center;
-  margin-bottom: 5%;
-}
-
-.spearheadDesc p{
-  font-size: 1.8vw;
-  text-align: center;
-  margin-bottom: 5%
-}
-
-.spearheadDesc:hover{
-  background-color: #FFE77AFF;
-  color: #2C5F2DFF;
-}
-
-/* ================================================ */
-
-.married{
-  width: 33%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(AnnounceIMGs/married.jpg);
-  background-size: cover;
-  background-position: center;
-  color: white;
-  flex: 1;
-}
-
-.marriedDesc{
-  padding-top: 15%;
-  padding-bottom: 15%;
-  padding-left: 5%;
-  padding-right: 5%;
-  transition: 0.5s;
-  cursor: pointer;
-  flex: 1;
-  height: 100%;
-}
-
-.marriedDesc h1{
-  font-family: 'AudioWide';
-  font-size: 2.5vw;
-  text-align: center;
-}
-
-.marriedDesc h2{
-  font-family: 'AudioWide';
-  font-size: 1.5vw;
-  text-align: center;
-  margin-bottom: 5%;
-}
-
-.marriedDesc p{
-  font-size: 1.8vw;
-  text-align: center;
-  margin-bottom: 5%
-}
-
-.marriedDesc:hover{
-  background-color: #f7c5cc;
-  color: #cc313d;
-}
-
-/* ================================================ */
-
-.equip{
-  display: flex;
-}
-
-.mentoring{
-  align-items: center;
-  width: 33%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(HeadnFooter/mentoring.png);
-  background-size: cover;
-  background-position: center;
-  color: white;
-  flex: 1;
-}
-
-.mentoringDesc{
-  padding-top: 20%;
-  padding-bottom: 15%;
-  padding-left: 5%;
-  padding-right: 5%;
-  transition: 0.5s;
-  cursor: pointer;
-  height: 100%;
-}
-
-.mentoringDesc h1{
-  font-family: 'AudioWide';
-  font-size: 2.5vw;
-  text-align: center;
-}
-
-.mentoringDesc p{
-  font-size: 1.9vw;
-  text-align: center;
-}
-
-.mentoringDesc:hover{
-  background-color: #FFA3FD;
-  color: #191825;
-}
-
-/* ================================================ */
-
-.solclass{
-  width: 33%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(AnnounceIMGs/Solclass.jpg);
-  background-size: cover;
-  background-position: center;
-  color: white;
-  flex: 1;
-}
-
-.solDesc{
-  padding-top: 15%;
-  padding-bottom: 12%;
-  padding-left: 5%;
-  padding-right: 5%;
-  transition: 0.5s;
-  cursor: pointer;
-  flex: 1;
-  height: 100%;
-}
-
-.solDesc h1{
-  font-family: 'AudioWide';
-  font-size: 2.5vw;
-  text-align: center;
-}
-
-.solDesc p{
-  font-size: 1.9vw;
-  text-align: center;
-  margin-bottom: 5%
-}
-
-.solDesc:hover{
-  background-color: #1868AE;
-  color: #C6D7EB;
-}
-
-/* ================================================ */
-
-.lifeclass{
-  width: 33%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(AnnounceIMGs/Lifeclass.png);
-  background-size: cover;
-  background-position: center;
-  color: white;
-  flex: 1;
-}
-
-.lifeclassDesc{
-  padding-top: 15%;
-  padding-bottom: 15%;
-  padding-left: 5%;
-  padding-right: 5%;
-  transition: 0.5s;
-  cursor: pointer;
-  flex: 1;
-  height: 100%;
-}
-
-.lifeclassDesc h1{
-  font-family: 'AudioWide';
-  font-size: 2.5vw;
-  text-align: center;
-}
-
-.lifeclassDesc p{
-  font-size: 1.9vw;
-  text-align: center;
-  margin-bottom: 5%
-}
-
-.lifeclassDesc:hover{
-  background-color: #3EB489;
-  color: white;
-}
-
-/* ================================================ */
-
-.photos{
-  margin-left: 10%;
-  margin-right: 10%;
-  padding-top: 10%;
-  display: flex;
-  align-items: center;
-}
-
-.mediaImg img{
-  width: 100%;
-  border-radius: 50%;
-}
-
-.mediaDesc{
-  margin-left: 3%;
-}
-
-.mediaDesc h1{
-  font-family: 'AudioWide';
-  font-size: 2.5vw;
-}
-
-.mediaDesc p{
-  font-size: 1.5vw;
-}
-
-.mediaDesc .button {
-  border-radius: 4px;
-  background-color: #e23c52;
-  border: none;
-  color: #bdfff6;
-  text-align: center;
-  font-size: 1.3vw;
-  padding: 2%;
-  width: 25%;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin-top: 3%;
-}
-
-.button h1{
-  font-size: 1.3vw;
-}
-
-.mediaDesc .button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.mediaDesc .button span:after {
-  content: '\00bb';
+.menu-item .sub-menu{
   position: absolute;
+  background: #23252B;
+  top: 74px;
+  line-height: 40px;
+  list-style: none;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+  pointer-events: none;
+  transform: translateY(20px);
   opacity: 0;
-  top: 0;
-  right: -5px;
-  transition: 0.5s;
-  width: 18%;
+  transition: 0.3s;
+  transition-property: transform, opacity;
 }
 
-.mediaDesc .button:hover span {
-  padding-right: 13%;
+header.sticky .menu-item .sub-menu{
+  top: 60px;
 }
 
-.mediaDesc .button:hover span:after {
+.menu-item:hover .sub-menu{
+  pointer-events: all;
+  transform: translateY(0);
   opacity: 1;
-  right: 0;
 }
 
-/* ================================================ */
-
-.pandA{
-  display: block;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 5%;
-  padding-top: 10%;
-  justify-content: center;
-  align-items: center;
-}
-
-.brrr{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2%;
-}
-
-.brrr a{
-  color: white;
-  padding: 1%;
-  padding-left: 2%;
-  padding-right: 2%;
-  border-radius: 10px;
-  font-family: 'AudioWide';
-  font-size: 1.4vw;
-  background-color: black;
-}
-
-.prayerReq{
-  text-align: left;
-  padding-bottom: 5%;
-}
-
-.prayerReq span{
-  text-align: right;
-}
-
-.prayerReq h1{
-  font-family: 'AudioWide';
-  font-size: 3vw;
-}
-
-.prayerReq p{
-  font-size: 2vw;
-  text-align: justify;
-}
-
-.scroll{
-  margin-left: 2%;
-  margin-right: 2%;
-  border: 1px black solid;
-  padding: 4%;
-  border-radius: 10px;
-  height: 500px;
-  margin-bottom: 5%;
-  overflow: scroll;
-  overflow-x: hidden;
-  background-color: #ECF9FF;
-}
-
-@media (max-width: 1920px){
-  .scroll{
-    height: 720px;
-  }
-}
-
-.scroll::-webkit-scrollbar{
-  display: block;
-  width: 100%;
-}
-
-.scroll::-webkit-scrollbar-track{
-  background-color: white;
-  border-radius: 50%;
-}
-
-.scroll::-webkit-scrollbar-thumb{
-  background-color: black;
-  border-radius: 10px;
-}
-
-
-
-.pandA .button {
-  border-radius: 4px;
-  background-color: #e23c52;
-  border: none;
-  color: #bdfff6;
-  text-align: center;
-  font-size: 1.3vw;
-  padding: 2%;
-  width: 20%;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin-top: 3%;
-}
-
-.pandA .button h1{
-  font-size: 1.3vw;
-}
-
-.pandA .button span {
-  cursor: pointer;
-  display: inline-block;
+.menu-item .sub-menu .sub-item{
   position: relative;
-  transition: 0.5s;
+  padding: 7px 0;
+  cursor: pointer;
+  box-shadow: inset 0px -30px 5px -30px rgba(255, 255, 255, 0.2);
 }
 
-.pandA .button span:after {
-  content: '\00bb';
+.menu-item .sub-menu .sub-item a{
+  color: #fff;
+  font-size: 1em;
+  text-decoration: none;
+  padding: 15px 30px;
+}
+
+.menu-item .sub-menu .sub-item:hover{
+  background: #4080EF;
+}
+
+.menu-item .sub-menu .sub-item:last-child:hover{
+  border-radius: 0 0 8px 8px;
+}
+
+.more .more-menu{
   position: absolute;
-  opacity: 0;
+  background: #23252B;
+  list-style: none;
   top: 0;
-  right: 10px;
-  transition: 0.5s;
-  width: 10%;
+  left: 100%;
+  white-space: nowrap;
+  border-radius: 0 8px 8px 8px;
+  overflow: hidden;
+  pointer-events: none;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 0.3s;
+  transition-property: transform, opacity;
 }
 
-.pandA .button:hover span {
-  padding-right: 13%;
-}
-
-.pandA .button:hover span:after {
+.more:hover .more-menu{
+  pointer-events: all;
+  transform: translateY(0);
   opacity: 1;
-  right: 0;
 }
 
-/* ================================================ */
-
-.announcement{
-  margin-top: 20%;
-  text-align: center;
+.more .more-menu .more-item{
+  padding: 7px 0;
+  box-shadow: inset 0px -30px 5px -30px rgba(255, 255, 255, 0.2);
+  transition: 0.3s;
 }
 
-.announcement h1{
-  font-family: 'AudioWide';
-  font-size: 2.5vw;
+.more .more-menu .more-item:hover{
+  background: #4080EF;
 }
 
-.announcement p{
-  font-size: 1.7vw;
-}
-
-/* ================================================ */
-
-.bottomLinks{
-  display: flex;
-  margin-top: 5%;
-  background-color: black;
-  color: white;
-  border-bottom: 5px grey solid;
-}
-
-.firstGrid{
-  text-align: center;
-  border-right: white 1px solid;
-  padding: 2%;
-  width: 20%;
-}
-
-.firstGrid img{
-  width: 50%;
-}
-
-.firstGrid h1{
-  margin-top: 5%;
-  text-align: center;
-}
-
-.firstGrid a{
-  margin-top: 7%;
-  font-size: 3.5vw;
-  font-family: 'Source Code Pro';
-}
-
-.firstGrid p{
-  margin-top: 10%;
-  font-size: 1vw;
-  text-align: left;
-  color: grey;
-  font-family: 'Source Code Pro';
-}
-
-/* =================================================== */
-
-
-.secondGrid{
-  width: 20%;
-  display: inline-block;
-  margin-left: 3%;
-  margin-top: 4%;
-}
-
-.secondGrid p{
-  font-family: 'Source Code Pro';
-  font-size: 1.2vw;
-}
-
-.botli{
-  margin-top: 40%;
-}
-
-.botli p{
-  margin-bottom: 2%;
-}
-
-.botli a{
-  font-family: 'Source Code Pro';
-  font-size: 1.2vw;
-  color: gray;
-}
-
-.botli a:hover{
-  color: white;
-  transition: 0.5s;
-}
-
-/* =================================================== */
-
-.thirdGrid{
-  width: 20%;
-  display: inline-block;
-  margin-top: 4%;
-}
-
-.thirdGrid p{
-  font-family: 'Source Code Pro';
-  font-size: 1.2vw;
-}
-
-.botli{
-  margin-top: 40%;
-}
-
-.botli p{
-  margin-bottom: 2%;
-}
-
-.botli a{
-  font-family: 'Source Code Pro';
-  font-size: 1.2vw;
-  color: gray;
-}
-
-.botli a:hover{
-  color: white;
-  transition: 0.5s;
-}
-
-.mobileLinks{
+.menu-btn{
   display: none;
 }
 
-/* ================================================ */
-
-@media (max-width: 500px) {
-  .navbar .logo img{
-    width: 40%;
-  }
-
-  .icon img{
-    width: 100%;
-    max-width: 40px;
-  }
-
-  .container{
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 10%;
-  }
-
-  .container h1{
-    font-family: 'AudioWide';
-    margin-top: 5%;
-    font-size: 5.5vw;
-    text-align: center;
-  }
-
-  .container p{
-    margin-top: 7%;
-    font-size: 3.5vw;
-    text-align: justify;
-  }
-
-  #word{
-    margin-top: 3%;
-    font-size: 3.5vw;
-  }
-
-/* ================================================ */
-
-  .aboutUs{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(HeadnFooter/mobileBackground.jpg);
-    background-size: cover;
+@media (max-width: 1060px){
+  header .navigation .menu{
+    position: fixed;
     display: block;
-    color: white;
-    margin-bottom: 5%;
-    background-attachment: scroll;
-  }
-  
-  .vision{
-    width: 100%;
-    padding: 5%;
-    transition: 0.5s;
-    cursor: pointer;
-  }
-  
-  .vision h1{
-    font-family: 'AudioWide';
-    text-align: center;
-    margin-bottom: 2%;
-    font-size: 5.5vw;
-  }
-  
-  .vision p{
-    font-size: 3.5vw;
-    text-align: center;
-  }
-  
-  .vision:hover{
-    background-color: white;
-    color: black;
-  }
-
-  /* ================================================ */
-
-  .pastorContainer{
-    margin-top: 20%;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-bottom: 4%;
-  }
-  
-  .pastorContainer h1{
-    font-family: 'AudioWide';
-    font-size: 5.5vw;
-    text-align: center;
-  }
-  
-  .pastors{
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;
-    display: block;
-    align-items: center;
-  }
-  
-  .pastors img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    border-radius: 50%;
-  }
-  
-  .pText{
-    margin-top: 4%;
-    margin-left: 0;
-    margin-bottom: 20%;
-  }
-  
-  .pText h1{
-    font-family: 'AudioWide';
-    font-size: 5vw;
-    text-align: center;
-  }
-  
-  .pText p{
-    margin-top: 2%;
-    font-size: 3.5vw;
-    text-align: center;
-  }
-
-/* ================================================ */
-
-.desc{
-  display: block;
-  justify-content: center;
-  background-color: #eceaea;
-  padding-top: 10%;
-  padding-bottom: 10%;
-}
-
-a{
-  text-decoration: none;
-  color: white;
-}
-
-.desc h1{
-  font-family: 'AudioWide';
-  text-align: center;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  font-size: 7vw;
-}
-
-.desc p{
-  margin-left: 8%;
-  margin-right: 8%;
-  font-size: 4vw; 
-  padding-bottom: 3%;
-  text-align: justify;
-}
-
-  .row1{
-    display: block;
-  }
-
-  .sunday{
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    margin-bottom: 0;
-    flex: 1;
-  }
-  
-  .sundayDesc{
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
-    transition: 0.5s;
-    cursor: pointer;
-  }
-  
-  .sundayDesc h1{
-    font-family: 'AudioWide';
-    font-size: 6vw;
-    text-align: center;
-  }
-  
-  .sundayDesc h2{
-    font-family: 'AudioWide';
-    font-size: 4vw;
-    text-align: center;
-    margin-bottom: 5%;
-  }
-  
-  .sundayDesc p{
-    font-size: 4vw;
-    text-align: center;
-    margin-bottom: 5%
-  }
-  
-  /* ================================================ */
-
-  .wildfire{
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    margin-bottom: 5%;
-    flex: 1;
-  }
-  
-  .wildfireDesc{
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
-    transition: 0.5s;
-    cursor: pointer;
-  }
-  
-  .wildfireDesc h1{
-    font-family: 'AudioWide';
-    font-size: 6vw;
-    text-align: center;
-  }
-  
-  .wildfireDesc h2{
-    font-family: 'AudioWide';
-    font-size: 4vw;
-    text-align: center;
-    margin-bottom: 5%;
-  }
-  
-  .wildfireDesc p{
-    font-size: 4vw;
-    text-align: center;
-    margin-bottom: 5%
-  }
-
-  /* ================================================ */
-
-  .row2{
-    display: block;
-    margin-top: -5%;
-  }
-  
-  .j12{
-    align-items: center;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    flex: 1;
-  }
-  
-  .j12Desc{
-    padding-top: 15%;
-    padding-bottom: 15%;
-    padding-left: 5%;
-    padding-right: 5%;
-    transition: 0.5s;
-    cursor: pointer;
-    flex: 1;
-    height: 100%;
-  }
-  
-  .j12Desc h1{
-    font-family: 'AudioWide';
-    font-size: 6vw;
-    text-align: center;
-  }
-  
-  .j12Desc h2{
-    font-family: 'AudioWide';
-    font-size: 4vw;
-    text-align: center;
-    margin-bottom: 5%;
-  }
-  
-  .j12Desc p{
-    font-size: 4vw;
-    text-align: center;
-    margin-bottom: 5%
-  }
-  
-  
-  /* ================================================ */
-
-  .spearhead{
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    flex: 1;
-  }
-  
-  .spearheadDesc{
-    padding-top: 15%;
-    padding-bottom: 15%;
-    padding-left: 5%;
-    padding-right: 5%;
-    transition: 0.5s;
-    cursor: pointer;
-    flex: 1;
-    height: 100%;
-  }
-  
-  .spearhead h1{
-    font-family: 'AudioWide';
-    font-size: 6vw;
-    text-align: center;
-  }
-  
-  .spearhead h2{
-    font-family: 'AudioWide';
-    font-size: 4vw;
-    text-align: center;
-    margin-bottom: 5%;
-  }
-  
-  .spearhead p{
-    font-size: 4vw;
-    text-align: center;
-    margin-bottom: 5%
-  }
-  
-  /* ================================================ */
-
-  .married{
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    flex: 1;
-  }
-  
-  .marriedDesc{
-    padding-top: 15%;
-    padding-bottom: 15%;
-    padding-left: 5%;
-    padding-right: 5%;
-    transition: 0.5s;
-    cursor: pointer;
-    flex: 1;
-    height: 100%;
-  }
-  
-  .marriedDesc h1{
-    font-family: 'AudioWide';
-    font-size: 6vw;
-    text-align: center;
-  }
-  
-  .marriedDesc h2{
-    font-family: 'AudioWide';
-    font-size: 4vw;
-    text-align: center;
-    margin-bottom: 5%;
-  }
-  
-  .marriedDesc p{
-    font-size: 4vw;
-    text-align: center;
-    margin-bottom: 5%
-  }
-  
-  /* ================================================ */
-
-  .equip{
-    display: block;
-  }
-  
-  .mentoring{
-    align-items: center;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    flex: 1;
-  }
-  
-  .mentoringDesc{
-    padding-top: 20%;
-    padding-bottom: 15%;
-    padding-left: 5%;
-    padding-right: 5%;
-    transition: 0.5s;
-    cursor: pointer;
-    height: 100%;
-  }
-  
-  .mentoringDesc h1{
-    font-family: 'AudioWide';
-    font-size: 6vw;
-    text-align: center;
-  }
-  
-  .mentoringDesc p{
-    font-size: 4vw;
-    text-align: center;
-  }
-  
-  
-  /* ================================================ */
-
-  .solclass{
-    width: 100%;
-    background-position: center;
-    color: white;
-    flex: 1;
-  }
-  
-  .solDesc{
-    padding-top: 15%;
-    padding-bottom: 12%;
-    padding-left: 5%;
-    padding-right: 5%;
-    transition: 0.5s;
-    cursor: pointer;
-    flex: 1;
-    height: 100%;
-  }
-  
-  .solDesc h1{
-    font-family: 'AudioWide';
-    font-size: 6vw;
-    text-align: center;
-  }
-  
-  .solDesc p{
-    font-size: 4vw;
-    text-align: center;
-  }
-  
-
-  /* ================================================ */
-  
-  .lifeclass{
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    flex: 1;
-    
-  }
-  
-  .lifeclassDesc{
-    padding-top: 15%;
-    padding-bottom: 15%;
-    padding-left: 5%;
-    padding-right: 5%;
-    transition: 0.5s;
-    cursor: pointer;
-    flex: 1;
-    height: 100%;
-  }
-  
-  .lifeclassDesc h1{
-    font-family: 'AudioWide';
-    font-size: 6vw;
-    text-align: center;
-  }
-  
-  .lifeclassDesc p{
-    font-size: 4vw;
-    text-align: center;
-    margin-bottom: 5%
-  }
-
-    /* ================================================ */
-
-  .photos{
-    margin-top: 10%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;
-    display: block;
-    align-items: center;
-  }
-  
-  .mediaImg img{
-    display: block;
-    margin: auto;
-    width: 100%;
-    border-radius: 50%;
-  }
-  
-  .mediaDesc{
-    margin-top: 5%;
-    margin-left: 0%;
-  }
-  
-  .mediaDesc h1{
-    font-family: 'AudioWide';
-    font-size: 6vw;
-    text-align: center;
-  }
-  
-  .mediaDesc p{
-    font-size: 4vw;
-    text-align: center;
-  }
-  
-  .mediaDesc .button {
-    display: block;
-    border-radius: 4px;
-    background-color: #e23c52;
-    border: none;
-    color: #bdfff6;
-    text-align: center;
-    padding: 2%;
-    width: 50%;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: auto;
-    margin-top: 3%;
-    font-size: 4vw
-  }
-  
-  .button h1{
-    font-size: 4vw;
-  }
-  
-  .mediaDesc .button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-  
-  .mediaDesc .button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0px;
-    right: -20px;
-    transition: 0.5s;
-    width: 20px;
-  }
-  
-  .mediaDesc .button:hover span {
-    padding-right: 15%;
-  }
-  
-  .mediaDesc .button:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
-
-   /* ================================================ */
-
-  .pandA{
-    display: block;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;
-    justify-content: center;
-  }
-  
-  .prayerReq{
-    text-align: center;
-  }
-  
-  .prayerReq h1{
-    font-family: 'AudioWide';
-    font-size: 6vw;
-  }
-  
-  .prayerReq p{
-    font-size: 5vw;
-  }
-  
-  .pandA .button {
-    border-radius: 4px;
-    background-color: #e23c52;
-    border: none;
-    color: #bdfff6;
-    text-align: center;
-    font-size: 1.3vw;
-    padding: 2%;
-    width: 60%;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin-top: 3%;
-    font-size: 4vw
-  }
-  
-  .pandA .button h1{
-    font-size: 4vw;
-  }
-  
-  .pandA .button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-  
-  .pandA .button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
+    background: #23252b;
+    min-width: 350px;
+    height: 100vh;
     top: 0;
-    right: -20px;
+    right: -100%;
+    padding: 90px 50px;
+    visibility: hidden;
+    overflow-y: auto;
     transition: 0.5s;
-    width: 18%;
+    transition-property: right, visibility;
   }
-  
-  .pandA .button:hover span {
-    padding-right: 13%;
+
+  header.sticky .navigation{
+    line-height: 75px;
   }
-  
-  .pandA .button:hover span:after {
-    opacity: 1;
+
+  header .navigation .menu.active{
     right: 0;
+    visibility: visible;
   }
 
-  .brrr{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2%;
+  .menu-item{
+    position: relative;
   }
-  
-  .brrr a{
-    color: white;
-    padding: 1%;
-    padding-left: 2%;
-    padding-right: 2%;
+
+  .menu-item .sub-menu{
+    opacity: 1;
+    position: relative;
+    top: 0;
+    transform: translateX(10px);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
-    font-family: 'AudioWide';
-    font-size: 2.5vw;
-    background-color: black;
-  }
-  
-  .prayerReq{
-    text-align: left;
-    padding-bottom: 5%;
-  }
-  
-  .prayerReq span{
-    text-align: right;
-  }
-  
-  .prayerReq h1{
-    font-family: 'AudioWide';
-    font-size: 6vw;
-  }
-  
-  .prayerReq p{
-    font-size: 4vw;
-    text-align: justify;
-  }
-  
-  .scroll{
-    margin-left: 0;
-    margin-right: 0%;
-    border: 1px black solid;
-    padding: 4%;
-    border-radius: 10px;
-    height: 600px;
-    margin-bottom: 5%;
-    overflow: scroll;
-    overflow-x: hidden;
-    background-color: #ECF9FF;
-  }
-
-  .request{
-    border: 1px solid black;
-    border-radius: 10px;
-    margin-bottom: 4%;
-    background-color: #F7F7F7;
-  }
-  
-  .heading{
-    background-color: #F5F5F5;
-    padding-left: 3%;
-    padding-top: 3%;
-    padding-bottom: 2%;
-    color: black;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-  }
-  
-  .heading h1{
-    font-size: 4.5vw;
-    font-family: 'Encode Sans SC';
-  }
-  
-  .body{
-    color: black;
-    padding-left: 3%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-right: 3%;
-    background-color: FFE7CC;
-  }
-  
-  .body p{
-    font-size: 3.5vw;
-    text-align: justify;
-    padding-bottom: 1%;
-  }
-  
-  
-  /* ================================================ */
-  
-  .announcement{
-    margin-top: 5%;
-    text-align: center;
-  }
-  
-  .announcement h1{
-    font-family: 'AudioWide';
-    font-size: 6vw;;
-  }
-  
-  .announcement p{
-    font-size: 4vw;
-  }
-
-  /* ================================================ */
-
-  .bottomLinks{
+    overflow: hidden;
     display: none;
   }
-  
-  /* ================================================ */
 
-  .mobileLinks{
+  header.sticky .menu-item .sub-menu{
+    top: 0;
+  }
+
+  .menu-item:hover .sub-menu{
+    transform: translateX(10px);
+  }
+
+  .menu-item .sub-menu .sub-item{
+    box-shadow: none;
+  }
+
+  .menu-item .sub-menu .sub-item:hover{
+    background: none;
+  }
+
+  .menu-item .sub-menu .sub-item a:hover{
+    color: #4080EF;
+    transition: 0.3s;
+  }
+
+  .more .more-menu{
+    opacity: 1;
+    position: relative;
+    left: 0;
+    transform: translateY(0);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    display: none;
+  }
+
+  .more .more-menu .more-item{
+    box-shadow: none;
+  }
+
+  .more .more-menu .more-item:hover{
+    background: none;
+  }
+
+  .more .more-menu .more-item a{
+    margin-left: 20px;
+  }
+
+  .close-btn{
+    position: absolute;
+    background: url(HeadnFooter/closewindow.png)no-repeat;
+    width: 40px;
+    height: 40px;
+    background-size: 25px;
+    background-position: center;
+    top: 0;
+    left: 0;
+    margin: 25px;
+    cursor: pointer;
+  }
+
+  .menu-btn{
+    background: url(HeadnFooter/menu.png)no-repeat;
+    width: 40px;
+    height: 40px;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
     display: block;
-    background-color: black;
   }
 
-  .mobileLinks .firstGrid{
-    text-align: left;
-    border-right: white 0px solid;
-    padding: 2%;
-    padding-left: 10%;
-    padding-right: 10%;
-    width: 100%;
-    border-bottom: white 1px solid;
-    padding-top: 10%;
-    padding-bottom: 10%;
-  }
-  
-  .mobileLinks .firstGrid img{
-    width: 30%;
-    margin-top: 2%;
-  }
-  
-  .mobileLinks .firstGrid h1{
-    margin-top: 1%;
-    text-align: left;
-  }
-  
-  .mobileLinks .firstGrid a{
-    margin-top: 1%;
-    font-size: 7vw;
-    font-family: 'Source Code Pro';
-  }
-  
-  .mobileLinks .firstGrid p{
-    font-size: 3vw;
-    color: grey;
-    font-family: 'Source Code Pro';
+  header{
+    padding: 15px 20px;
   }
 
-  .secondLane{
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 5%;
-    width: 100%;
-    color: white;
-    margin-top: 5%;
+  header.sticky{
+    padding: 10px 20px;
   }
-  
-  .noice{
-    margin-bottom: 5%;
-    font-size: 4vw;
-    font-family: 'Source Code Pro';
-  }
-
-  .links{
-    margin-top: 5%;
-    font-size: 4vw;
-  }
-
-  .links a{
-    color: grey;
-    font-family: 'Source Code Pro';
-  }
-
 }
+
+.please {
+	position: relative;
+	z-index: 1;
+	min-height: 100%;
+}
+
+    .mySlides {
+        display: none;
+      }
+      
+      .mySlides img{
+        width: 100%;
+        margin-bottom: 10%;
+      }
+      
+      /* Slideshow container */
+      .slideshow-container {
+        width: 100%;
+        height: 100%;
+        max-height: 100vh;
+        margin: auto;
+        overflow-y: hidden;
+		overflow-x: hidden;
+      }
+      /* The dots/bullets/indicators */
+      .dot {
+      
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      
+      }
+      
+      .active {
+        background-color: #717171;
+      }
+      
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1s;
+        animation-name: fade;
+        animation-duration: 1s;
+      }
+      
+      @-webkit-keyframes fade {
+        from {
+            opacity: .7
+        }
+      
+        to {
+            opacity: 1
+        }
+      }
+      
+      @keyframes fade {
+        from {
+            opacity: .7
+        }
+      
+        to {
+            opacity: 1
+        }
+      }
+      
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+      
+        .prev,
+        .next,
+        .text {
+            font-size: 11px
+        }
+      }
+      
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      .container{
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 5%;
+      }
+      
+      .container em{
+        font-weight: bold;
+        text-decoration: underline;
+      }
+      
+      .container h1{
+        font-family: 'AudioWide';
+        margin-top: 5%;
+        font-size: 3vw;
+        text-align: center;
+      }
+      
+      .container p{
+        margin-top: 7%;
+        font-size: 1.9vw;
+      }
+      
+      #word{
+        margin-top: 3%;
+        font-size: 1.9vw;
+      }
+      
+      /* ================================================ */
+      
+      .desc{
+        display: block;
+        justify-content: center;
+      }
+      
+      a{
+        text-decoration: none;
+        color: white;
+      }
+      
+      .desc h1{
+        font-family: 'AudioWide';
+        text-align: center;
+        padding-top: 8%;
+        padding-bottom: 3%;
+        font-size: 4vw;
+      }
+      
+      .desc p{
+        margin-left: 15%;
+        margin-right: 15%;
+        font-size: 1.9vw; 
+        padding-bottom: 5%;
+      }
+      
+      .aboutUs{
+        display: flex;
+        color: white;
+        margin-bottom: 5%;
+        background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(HeadnFooter/background.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      
+      .vision{
+        width: 33.3%;
+        padding: 5%;
+        transition: 0.5s;
+      }
+      
+      .vision h1{
+        font-family: 'AudioWide';
+        text-align: center;
+        margin-bottom: 10%;
+        font-size: 3vw;
+      }
+      
+      .vision p{
+        font-size: 1.9vw;
+        text-align: center;
+      }
+      
+      .vision:hover{
+        background-color: white;
+        color: black;
+      }
+      
+      /* ================================================ */
+      
+      .pastorContainer{
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 4%;
+      }
+      
+      .pastorContainer h1{
+        font-family: 'AudioWide';
+        font-size: 3vw;
+        text-align: center;
+      }
+      
+      .pastors{
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 5%;
+        display: flex;
+        align-items: center;
+      }
+      
+      .pastors img{
+        width: 50%;
+        border-radius: 50%;
+      }
+      
+      .pText{
+        margin-left: 3%;
+      }
+      
+      .pText h1{
+        font-family: 'AudioWide';
+        font-size: 2.5vw;
+      }
+      
+      .pText p{
+        font-size: 1.5vw;
+      }
+      
+      /* ================================================ */
+      
+      .cSection{
+        display: block;
+        color: white;
+      }
+      
+      .row1{
+        display: flex;
+      }
+      
+      .sunday{
+        width: 50%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(AnnounceIMGs/Sunday\ Service.png);
+        background-size: cover;
+        background-position: center;
+        color: white;
+        flex: 1;
+      }
+      
+      .sundayDesc{
+        padding-top: 15%;
+        padding-bottom: 15%;
+        padding-left: 5%;
+        padding-right: 5%;
+        transition: 0.5s;
+        cursor: pointer;
+        height: 100%;
+      }
+      
+      .sundayDesc h1{
+        font-family: 'AudioWide';
+        font-size: 2.5vw;
+        text-align: center;
+      }
+      
+      .sundayDesc h2{
+        font-family: 'AudioWide';
+        font-size: 1.5vw;
+        text-align: center;
+        margin-bottom: 5%;
+      }
+      
+      .sundayDesc p{
+        font-size: 1.8vw;
+        text-align: center;
+        margin-bottom: 5%
+      }
+      
+      .sundayDesc:hover{
+        background-color: #FBEAEB;
+        color: #2F3C7E;
+      }
+      
+      
+      /* ================================================ */
+      
+      .wildfire{
+        width: 50%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(AnnounceIMGs/Wildfire.jpg);
+        background-size: cover;
+        background-position: center;
+        color: white;
+        flex: 1;
+      }
+      
+      .wildfireDesc{
+        padding-top: 15%;
+        padding-bottom: 15%;
+        padding-left: 5%;
+        padding-right: 5%;
+        transition: 0.5s;
+        cursor: pointer;
+        flex: 1;
+        height: 100%;
+      }
+      
+      .wildfireDesc h1{
+        font-family: 'AudioWide';
+        font-size: 2.5vw;
+        text-align: center;
+      }
+      
+      .wildfireDesc h2{
+        font-family: 'AudioWide';
+        font-size: 1.5vw;
+        text-align: center;
+        margin-bottom: 5%;
+      }
+      
+      .wildfireDesc p{
+        font-size: 1.8vw;
+        text-align: center;
+        margin-bottom: 5%
+      }
+      
+      .wildfireDesc:hover{
+        background-color: black;
+        color: yellow;
+      }
+      
+      /* ================================================ */
+      
+      .row2{
+        display: flex;
+      }
+      
+      .j12{
+        align-items: center;
+        width: 33%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(AnnounceIMGs/J12Kids.png);
+        background-size: cover;
+        background-position: center;
+        color: white;
+        flex: 1;
+      }
+      
+      .j12Desc{
+        padding-top: 15%;
+        padding-bottom: 15%;
+        padding-left: 5%;
+        padding-right: 5%;
+        transition: 0.5s;
+        cursor: pointer;
+        flex: 1;
+        height: 100%;
+      }
+      
+      .j12Desc h1{
+        font-family: 'AudioWide';
+        font-size: 2.5vw;
+        text-align: center;
+      }
+      
+      .j12Desc h2{
+        font-family: 'AudioWide';
+        font-size: 1.5vw;
+        text-align: center;
+        margin-bottom: 5%;
+      }
+      
+      .j12Desc p{
+        font-size: 1.8vw;
+        text-align: center;
+        margin-bottom: 5%
+      }
+      
+      .j12Desc:hover{
+        background-color: #00FFFF;
+        color: #FF69B4;
+      }
+      
+      /* ================================================ */
+      
+      .spearhead{
+        width: 33%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(AnnounceIMGs/Spearhead.png);
+        background-size: cover;
+        background-position: center;
+        color: white;
+        flex: 1;
+      }
+      
+      .spearheadDesc{
+        padding-top: 15%;
+        padding-bottom: 12%;
+        padding-left: 5%;
+        padding-right: 5%;
+        transition: 0.5s;
+        cursor: pointer;
+        flex: 1;
+        height: 100%;
+        width: 100%;
+      }
+      
+      .spearheadDesc h1{
+        font-family: 'AudioWide';
+        font-size: 2.5vw;
+        text-align: center;
+      }
+      
+      .spearheadDesc h2{
+        font-family: 'AudioWide';
+        font-size: 1.5vw;
+        text-align: center;
+        margin-bottom: 5%;
+      }
+      
+      .spearheadDesc p{
+        font-size: 1.8vw;
+        text-align: center;
+        margin-bottom: 5%
+      }
+      
+      .spearheadDesc:hover{
+        background-color: #FFE77AFF;
+        color: #2C5F2DFF;
+      }
+      
+      /* ================================================ */
+      
+      .married{
+        width: 33%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(AnnounceIMGs/married.jpg);
+        background-size: cover;
+        background-position: center;
+        color: white;
+        flex: 1;
+      }
+      
+      .marriedDesc{
+        padding-top: 15%;
+        padding-bottom: 15%;
+        padding-left: 5%;
+        padding-right: 5%;
+        transition: 0.5s;
+        cursor: pointer;
+        flex: 1;
+        height: 100%;
+      }
+      
+      .marriedDesc h1{
+        font-family: 'AudioWide';
+        font-size: 2.5vw;
+        text-align: center;
+      }
+      
+      .marriedDesc h2{
+        font-family: 'AudioWide';
+        font-size: 1.5vw;
+        text-align: center;
+        margin-bottom: 5%;
+      }
+      
+      .marriedDesc p{
+        font-size: 1.8vw;
+        text-align: center;
+        margin-bottom: 5%
+      }
+      
+      .marriedDesc:hover{
+        background-color: #f7c5cc;
+        color: #cc313d;
+      }
+      
+      /* ================================================ */
+      
+      .equip{
+        display: flex;
+      }
+      
+      .mentoring{
+        align-items: center;
+        width: 33%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(HeadnFooter/mentoring.png);
+        background-size: cover;
+        background-position: center;
+        color: white;
+        flex: 1;
+      }
+      
+      .mentoringDesc{
+        padding-top: 20%;
+        padding-bottom: 15%;
+        padding-left: 5%;
+        padding-right: 5%;
+        transition: 0.5s;
+        cursor: pointer;
+        height: 100%;
+      }
+      
+      .mentoringDesc h1{
+        font-family: 'AudioWide';
+        font-size: 2.5vw;
+        text-align: center;
+      }
+      
+      .mentoringDesc p{
+        font-size: 1.9vw;
+        text-align: center;
+      }
+      
+      .mentoringDesc:hover{
+        background-color: #FFA3FD;
+        color: #191825;
+      }
+      
+      /* ================================================ */
+      
+      .solclass{
+        width: 33%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(AnnounceIMGs/Solclass.jpg);
+        background-size: cover;
+        background-position: center;
+        color: white;
+        flex: 1;
+      }
+      
+      .solDesc{
+        padding-top: 15%;
+        padding-bottom: 12%;
+        padding-left: 5%;
+        padding-right: 5%;
+        transition: 0.5s;
+        cursor: pointer;
+        flex: 1;
+        height: 100%;
+      }
+      
+      .solDesc h1{
+        font-family: 'AudioWide';
+        font-size: 2.5vw;
+        text-align: center;
+      }
+      
+      .solDesc p{
+        font-size: 1.9vw;
+        text-align: center;
+        margin-bottom: 5%
+      }
+      
+      .solDesc:hover{
+        background-color: #1868AE;
+        color: #C6D7EB;
+      }
+      
+      /* ================================================ */
+      
+      .lifeclass{
+        width: 33%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(AnnounceIMGs/Lifeclass.png);
+        background-size: cover;
+        background-position: center;
+        color: white;
+        flex: 1;
+      }
+      
+      .lifeclassDesc{
+        padding-top: 15%;
+        padding-bottom: 15%;
+        padding-left: 5%;
+        padding-right: 5%;
+        transition: 0.5s;
+        cursor: pointer;
+        flex: 1;
+        height: 100%;
+      }
+      
+      .lifeclassDesc h1{
+        font-family: 'AudioWide';
+        font-size: 2.5vw;
+        text-align: center;
+      }
+      
+      .lifeclassDesc p{
+        font-size: 1.9vw;
+        text-align: center;
+        margin-bottom: 5%
+      }
+      
+      .lifeclassDesc:hover{
+        background-color: #3EB489;
+        color: white;
+      }
+      
+      /* ================================================ */
+      
+      .photos{
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-top: 10%;
+        display: flex;
+        align-items: center;
+      }
+      
+      .mediaImg img{
+        width: 100%;
+        border-radius: 50%;
+      }
+      
+      .mediaDesc{
+        margin-left: 3%;
+      }
+      
+      .mediaDesc h1{
+        font-family: 'AudioWide';
+        font-size: 2.5vw;
+      }
+      
+      .mediaDesc p{
+        font-size: 1.5vw;
+      }
+      
+      .mediaDesc .button {
+        border-radius: 4px;
+        background-color: #e23c52;
+        border: none;
+        color: #bdfff6;
+        text-align: center;
+        font-size: 1.3vw;
+        padding: 2%;
+        width: 25%;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin-top: 3%;
+      }
+      
+      .button h1{
+        font-size: 1.3vw;
+      }
+      
+      .mediaDesc .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+      
+      .mediaDesc .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -5px;
+        transition: 0.5s;
+        width: 18%;
+      }
+      
+      .mediaDesc .button:hover span {
+        padding-right: 13%;
+      }
+      
+      .mediaDesc .button:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+      
+      /* ================================================ */
+      
+      .pandA{
+        display: block;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 5%;
+        padding-top: 10%;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .brrr{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2%;
+      }
+      
+      .brrr a{
+        color: white;
+        padding: 1%;
+        padding-left: 2%;
+        padding-right: 2%;
+        border-radius: 10px;
+        font-family: 'AudioWide';
+        font-size: 1.4vw;
+        background-color: black;
+      }
+      
+      .prayerReq{
+        text-align: left;
+        padding-bottom: 5%;
+      }
+      
+      .prayerReq span{
+        text-align: right;
+      }
+      
+      .prayerReq h1{
+        font-family: 'AudioWide';
+        font-size: 3vw;
+      }
+      
+      .prayerReq p{
+        font-size: 2vw;
+        text-align: justify;
+      }
+      
+      .scroll{
+        margin-left: 2%;
+        margin-right: 2%;
+        border: 1px black solid;
+        padding: 4%;
+        border-radius: 10px;
+        height: 500px;
+        margin-bottom: 5%;
+        overflow: scroll;
+        overflow-x: hidden;
+        background-color: #ECF9FF;
+      }
+      
+      @media (max-width: 1920px){
+        .scroll{
+          height: 720px;
+        }
+      }
+      
+      .scroll::-webkit-scrollbar{
+        display: block;
+        width: 100%;
+      }
+      
+      .scroll::-webkit-scrollbar-track{
+        background-color: white;
+        border-radius: 50%;
+      }
+      
+      .scroll::-webkit-scrollbar-thumb{
+        background-color: black;
+        border-radius: 10px;
+      }
+      
+      
+      
+      .pandA .button {
+        border-radius: 4px;
+        background-color: #e23c52;
+        border: none;
+        color: #bdfff6;
+        text-align: center;
+        font-size: 1.3vw;
+        padding: 2%;
+        width: 20%;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin-top: 3%;
+      }
+      
+      .pandA .button h1{
+        font-size: 1.3vw;
+      }
+      
+      .pandA .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+      
+      .pandA .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: 10px;
+        transition: 0.5s;
+        width: 10%;
+      }
+      
+      .pandA .button:hover span {
+        padding-right: 13%;
+      }
+      
+      .pandA .button:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+      
+      /* ================================================ */
+      
+      .announcement{
+        margin-top: 20%;
+        text-align: center;
+      }
+      
+      .announcement h1{
+        font-family: 'AudioWide';
+        font-size: 2.5vw;
+      }
+      
+      .announcement p{
+        font-size: 1.7vw;
+      }
+      
+      /* ================================================ */
+      
+      .bottomLinks{
+        display: flex;
+        margin-top: 5%;
+        background-color: black;
+        color: white;
+        border-bottom: 5px grey solid;
+      }
+      
+      .firstGrid{
+        text-align: center;
+        border-right: white 1px solid;
+        padding: 2%;
+        width: 20%;
+      }
+      
+      .firstGrid img{
+        width: 50%;
+      }
+      
+      .firstGrid h1{
+        margin-top: 5%;
+        text-align: center;
+      }
+      
+      .firstGrid a{
+        margin-top: 7%;
+        font-size: 3.5vw;
+        font-family: 'Source Code Pro';
+      }
+      
+      .firstGrid p{
+        margin-top: 10%;
+        font-size: 1vw;
+        text-align: left;
+        color: grey;
+        font-family: 'Source Code Pro';
+      }
+      
+      /* =================================================== */
+      
+      
+      .secondGrid{
+        width: 20%;
+        display: inline-block;
+        margin-left: 3%;
+        margin-top: 4%;
+      }
+      
+      .secondGrid p{
+        font-family: 'Source Code Pro';
+        font-size: 1.2vw;
+      }
+      
+      .botli{
+        margin-top: 40%;
+      }
+      
+      .botli p{
+        margin-bottom: 2%;
+      }
+      
+      .botli a{
+        font-family: 'Source Code Pro';
+        font-size: 1.2vw;
+        color: gray;
+      }
+      
+      .botli a:hover{
+        color: white;
+        transition: 0.5s;
+      }
+      
+      /* =================================================== */
+      
+      .thirdGrid{
+        width: 20%;
+        display: inline-block;
+        margin-top: 4%;
+      }
+      
+      .thirdGrid p{
+        font-family: 'Source Code Pro';
+        font-size: 1.2vw;
+      }
+      
+      .botli{
+        margin-top: 40%;
+      }
+      
+      .botli p{
+        margin-bottom: 2%;
+      }
+      
+      .botli a{
+        font-family: 'Source Code Pro';
+        font-size: 1.2vw;
+        color: gray;
+      }
+      
+      .botli a:hover{
+        color: white;
+        transition: 0.5s;
+      }
+      
+      .mobileLinks{
+        display: none;
+      }
+      
+      /* ================================================ */
+      
+      @media (max-width: 500px) {
+        .navbar .logo img{
+          width: 40%;
+        }
+      
+        .icon img{
+          width: 100%;
+          max-width: 40px;
+        }
+      
+        .container{
+          margin-left: 5%;
+          margin-right: 5%;
+          margin-bottom: 10%;
+        }
+      
+        .container h1{
+          font-family: 'AudioWide';
+          margin-top: 5%;
+          font-size: 5.5vw;
+          text-align: center;
+        }
+      
+        .container p{
+          margin-top: 7%;
+          font-size: 3.5vw;
+          text-align: justify;
+        }
+      
+        #word{
+          margin-top: 3%;
+          font-size: 3.5vw;
+        }
+      
+      /* ================================================ */
+      
+        .aboutUs{
+          background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(HeadnFooter/mobileBackground.jpg);
+          background-size: cover;
+          display: block;
+          color: white;
+          margin-bottom: 5%;
+          background-attachment: scroll;
+        }
+        
+        .vision{
+          width: 100%;
+          padding: 5%;
+          transition: 0.5s;
+          cursor: pointer;
+        }
+        
+        .vision h1{
+          font-family: 'AudioWide';
+          text-align: center;
+          margin-bottom: 2%;
+          font-size: 5.5vw;
+        }
+        
+        .vision p{
+          font-size: 3.5vw;
+          text-align: center;
+        }
+        
+        .vision:hover{
+          background-color: white;
+          color: black;
+        }
+      
+        /* ================================================ */
+      
+        .pastorContainer{
+          margin-top: 20%;
+          margin-left: 15%;
+          margin-right: 15%;
+          margin-bottom: 4%;
+        }
+        
+        .pastorContainer h1{
+          font-family: 'AudioWide';
+          font-size: 5.5vw;
+          text-align: center;
+        }
+        
+        .pastors{
+          margin-left: 5%;
+          margin-right: 5%;
+          margin-bottom: 5%;
+          display: block;
+          align-items: center;
+        }
+        
+        .pastors img{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 100%;
+          border-radius: 50%;
+        }
+        
+        .pText{
+          margin-top: 4%;
+          margin-left: 0;
+          margin-bottom: 20%;
+        }
+        
+        .pText h1{
+          font-family: 'AudioWide';
+          font-size: 5vw;
+          text-align: center;
+        }
+        
+        .pText p{
+          margin-top: 2%;
+          font-size: 3.5vw;
+          text-align: center;
+        }
+      
+      /* ================================================ */
+      
+      .desc{
+        display: block;
+        justify-content: center;
+        background-color: #eceaea;
+        padding-top: 10%;
+        padding-bottom: 10%;
+      }
+      
+      a{
+        text-decoration: none;
+        color: white;
+      }
+      
+      .desc h1{
+        font-family: 'AudioWide';
+        text-align: center;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        font-size: 7vw;
+      }
+      
+      .desc p{
+        margin-left: 8%;
+        margin-right: 8%;
+        font-size: 4vw; 
+        padding-bottom: 3%;
+        text-align: justify;
+      }
+      
+        .row1{
+          display: block;
+        }
+      
+        .sunday{
+          width: 100%;
+          background-size: cover;
+          background-position: center;
+          color: white;
+          margin-bottom: 0;
+          flex: 1;
+        }
+        
+        .sundayDesc{
+          padding-top: 5%;
+          padding-bottom: 5%;
+          padding-left: 5%;
+          padding-right: 5%;
+          transition: 0.5s;
+          cursor: pointer;
+        }
+        
+        .sundayDesc h1{
+          font-family: 'AudioWide';
+          font-size: 6vw;
+          text-align: center;
+        }
+        
+        .sundayDesc h2{
+          font-family: 'AudioWide';
+          font-size: 4vw;
+          text-align: center;
+          margin-bottom: 5%;
+        }
+        
+        .sundayDesc p{
+          font-size: 4vw;
+          text-align: center;
+          margin-bottom: 5%
+        }
+        
+        /* ================================================ */
+      
+        .wildfire{
+          width: 100%;
+          background-size: cover;
+          background-position: center;
+          color: white;
+          margin-bottom: 5%;
+          flex: 1;
+        }
+        
+        .wildfireDesc{
+          padding-top: 5%;
+          padding-bottom: 5%;
+          padding-left: 5%;
+          padding-right: 5%;
+          transition: 0.5s;
+          cursor: pointer;
+        }
+        
+        .wildfireDesc h1{
+          font-family: 'AudioWide';
+          font-size: 6vw;
+          text-align: center;
+        }
+        
+        .wildfireDesc h2{
+          font-family: 'AudioWide';
+          font-size: 4vw;
+          text-align: center;
+          margin-bottom: 5%;
+        }
+        
+        .wildfireDesc p{
+          font-size: 4vw;
+          text-align: center;
+          margin-bottom: 5%
+        }
+      
+        /* ================================================ */
+      
+        .row2{
+          display: block;
+          margin-top: -5%;
+        }
+        
+        .j12{
+          align-items: center;
+          width: 100%;
+          background-size: cover;
+          background-position: center;
+          color: white;
+          flex: 1;
+        }
+        
+        .j12Desc{
+          padding-top: 15%;
+          padding-bottom: 15%;
+          padding-left: 5%;
+          padding-right: 5%;
+          transition: 0.5s;
+          cursor: pointer;
+          flex: 1;
+          height: 100%;
+        }
+        
+        .j12Desc h1{
+          font-family: 'AudioWide';
+          font-size: 6vw;
+          text-align: center;
+        }
+        
+        .j12Desc h2{
+          font-family: 'AudioWide';
+          font-size: 4vw;
+          text-align: center;
+          margin-bottom: 5%;
+        }
+        
+        .j12Desc p{
+          font-size: 4vw;
+          text-align: center;
+          margin-bottom: 5%
+        }
+        
+        
+        /* ================================================ */
+      
+        .spearhead{
+          width: 100%;
+          background-size: cover;
+          background-position: center;
+          color: white;
+          flex: 1;
+        }
+        
+        .spearheadDesc{
+          padding-top: 15%;
+          padding-bottom: 15%;
+          padding-left: 5%;
+          padding-right: 5%;
+          transition: 0.5s;
+          cursor: pointer;
+          flex: 1;
+          height: 100%;
+        }
+        
+        .spearhead h1{
+          font-family: 'AudioWide';
+          font-size: 6vw;
+          text-align: center;
+        }
+        
+        .spearhead h2{
+          font-family: 'AudioWide';
+          font-size: 4vw;
+          text-align: center;
+          margin-bottom: 5%;
+        }
+        
+        .spearhead p{
+          font-size: 4vw;
+          text-align: center;
+          margin-bottom: 5%
+        }
+        
+        /* ================================================ */
+      
+        .married{
+          width: 100%;
+          background-size: cover;
+          background-position: center;
+          color: white;
+          flex: 1;
+        }
+        
+        .marriedDesc{
+          padding-top: 15%;
+          padding-bottom: 15%;
+          padding-left: 5%;
+          padding-right: 5%;
+          transition: 0.5s;
+          cursor: pointer;
+          flex: 1;
+          height: 100%;
+        }
+        
+        .marriedDesc h1{
+          font-family: 'AudioWide';
+          font-size: 6vw;
+          text-align: center;
+        }
+        
+        .marriedDesc h2{
+          font-family: 'AudioWide';
+          font-size: 4vw;
+          text-align: center;
+          margin-bottom: 5%;
+        }
+        
+        .marriedDesc p{
+          font-size: 4vw;
+          text-align: center;
+          margin-bottom: 5%
+        }
+        
+        /* ================================================ */
+      
+        .equip{
+          display: block;
+        }
+        
+        .mentoring{
+          align-items: center;
+          width: 100%;
+          background-size: cover;
+          background-position: center;
+          color: white;
+          flex: 1;
+        }
+        
+        .mentoringDesc{
+          padding-top: 20%;
+          padding-bottom: 15%;
+          padding-left: 5%;
+          padding-right: 5%;
+          transition: 0.5s;
+          cursor: pointer;
+          height: 100%;
+        }
+        
+        .mentoringDesc h1{
+          font-family: 'AudioWide';
+          font-size: 6vw;
+          text-align: center;
+        }
+        
+        .mentoringDesc p{
+          font-size: 4vw;
+          text-align: center;
+        }
+        
+        
+        /* ================================================ */
+      
+        .solclass{
+          width: 100%;
+          background-position: center;
+          color: white;
+          flex: 1;
+        }
+        
+        .solDesc{
+          padding-top: 15%;
+          padding-bottom: 12%;
+          padding-left: 5%;
+          padding-right: 5%;
+          transition: 0.5s;
+          cursor: pointer;
+          flex: 1;
+          height: 100%;
+        }
+        
+        .solDesc h1{
+          font-family: 'AudioWide';
+          font-size: 6vw;
+          text-align: center;
+        }
+        
+        .solDesc p{
+          font-size: 4vw;
+          text-align: center;
+        }
+        
+      
+        /* ================================================ */
+        
+        .lifeclass{
+          width: 100%;
+          background-size: cover;
+          background-position: center;
+          color: white;
+          flex: 1;
+          
+        }
+        
+        .lifeclassDesc{
+          padding-top: 15%;
+          padding-bottom: 15%;
+          padding-left: 5%;
+          padding-right: 5%;
+          transition: 0.5s;
+          cursor: pointer;
+          flex: 1;
+          height: 100%;
+        }
+        
+        .lifeclassDesc h1{
+          font-family: 'AudioWide';
+          font-size: 6vw;
+          text-align: center;
+        }
+        
+        .lifeclassDesc p{
+          font-size: 4vw;
+          text-align: center;
+          margin-bottom: 5%
+        }
+      
+          /* ================================================ */
+      
+        .photos{
+          margin-top: 10%;
+          margin-left: 5%;
+          margin-right: 5%;
+          margin-bottom: 5%;
+          display: block;
+          align-items: center;
+        }
+        
+        .mediaImg img{
+          display: block;
+          margin: auto;
+          width: 100%;
+          border-radius: 50%;
+        }
+        
+        .mediaDesc{
+          margin-top: 5%;
+          margin-left: 0%;
+        }
+        
+        .mediaDesc h1{
+          font-family: 'AudioWide';
+          font-size: 6vw;
+          text-align: center;
+        }
+        
+        .mediaDesc p{
+          font-size: 4vw;
+          text-align: center;
+        }
+        
+        .mediaDesc .button {
+          display: block;
+          border-radius: 4px;
+          background-color: #e23c52;
+          border: none;
+          color: #bdfff6;
+          text-align: center;
+          padding: 2%;
+          width: 50%;
+          transition: all 0.5s;
+          cursor: pointer;
+          margin: auto;
+          margin-top: 3%;
+          font-size: 4vw
+        }
+        
+        .button h1{
+          font-size: 4vw;
+        }
+        
+        .mediaDesc .button span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+        }
+        
+        .mediaDesc .button span:after {
+          content: '\00bb';
+          position: absolute;
+          opacity: 0;
+          top: 0px;
+          right: -20px;
+          transition: 0.5s;
+          width: 20px;
+        }
+        
+        .mediaDesc .button:hover span {
+          padding-right: 15%;
+        }
+        
+        .mediaDesc .button:hover span:after {
+          opacity: 1;
+          right: 0;
+        }
+      
+         /* ================================================ */
+      
+        .pandA{
+          display: block;
+          margin-left: 5%;
+          margin-right: 5%;
+          margin-bottom: 5%;
+          justify-content: center;
+        }
+        
+        .prayerReq{
+          text-align: center;
+        }
+        
+        .prayerReq h1{
+          font-family: 'AudioWide';
+          font-size: 6vw;
+        }
+        
+        .prayerReq p{
+          font-size: 5vw;
+        }
+        
+        .pandA .button {
+          border-radius: 4px;
+          background-color: #e23c52;
+          border: none;
+          color: #bdfff6;
+          text-align: center;
+          font-size: 1.3vw;
+          padding: 2%;
+          width: 60%;
+          transition: all 0.5s;
+          cursor: pointer;
+          margin-top: 3%;
+          font-size: 4vw
+        }
+        
+        .pandA .button h1{
+          font-size: 4vw;
+        }
+        
+        .pandA .button span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+        }
+        
+        .pandA .button span:after {
+          content: '\00bb';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -20px;
+          transition: 0.5s;
+          width: 18%;
+        }
+        
+        .pandA .button:hover span {
+          padding-right: 13%;
+        }
+        
+        .pandA .button:hover span:after {
+          opacity: 1;
+          right: 0;
+        }
+      
+        .brrr{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 2%;
+        }
+        
+        .brrr a{
+          color: white;
+          padding: 1%;
+          padding-left: 2%;
+          padding-right: 2%;
+          border-radius: 5px;
+          font-family: 'AudioWide';
+          font-size: 2.5vw;
+          background-color: black;
+        }
+        
+        .prayerReq{
+          text-align: left;
+          padding-bottom: 5%;
+        }
+        
+        .prayerReq span{
+          text-align: right;
+        }
+        
+        .prayerReq h1{
+          font-family: 'AudioWide';
+          font-size: 6vw;
+        }
+        
+        .prayerReq p{
+          font-size: 4vw;
+          text-align: justify;
+        }
+        
+        .scroll{
+          margin-left: 0;
+          margin-right: 0%;
+          border: 1px black solid;
+          padding: 4%;
+          border-radius: 10px;
+          height: 600px;
+          margin-bottom: 5%;
+          overflow: scroll;
+          overflow-x: hidden;
+          background-color: #ECF9FF;
+        }
+      
+        .request{
+          border: 1px solid black;
+          border-radius: 10px;
+          margin-bottom: 4%;
+          background-color: #F7F7F7;
+        }
+        
+        .heading{
+          background-color: #F5F5F5;
+          padding-left: 3%;
+          padding-top: 3%;
+          padding-bottom: 2%;
+          color: black;
+          border-top-right-radius: 10px;
+          border-top-left-radius: 10px;
+        }
+        
+        .heading h1{
+          font-size: 4.5vw;
+          font-family: 'Encode Sans SC';
+        }
+        
+        .body{
+          color: black;
+          padding-left: 3%;
+          padding-top: 2%;
+          padding-bottom: 2%;
+          padding-right: 3%;
+          background-color: FFE7CC;
+        }
+        
+        .body p{
+          font-size: 3.5vw;
+          text-align: justify;
+          padding-bottom: 1%;
+        }
+        
+        
+        /* ================================================ */
+        
+        .announcement{
+          margin-top: 5%;
+          text-align: center;
+        }
+        
+        .announcement h1{
+          font-family: 'AudioWide';
+          font-size: 6vw;;
+        }
+        
+        .announcement p{
+          font-size: 4vw;
+        }
+      
+        /* ================================================ */
+      
+        .bottomLinks{
+          display: none;
+        }
+        
+        /* ================================================ */
+      
+        .mobileLinks{
+          display: block;
+          background-color: black;
+        }
+      
+        .mobileLinks .firstGrid{
+          text-align: left;
+          border-right: white 0px solid;
+          padding: 2%;
+          padding-left: 10%;
+          padding-right: 10%;
+          width: 100%;
+          border-bottom: white 1px solid;
+          padding-top: 10%;
+          padding-bottom: 10%;
+        }
+        
+        .mobileLinks .firstGrid img{
+          width: 30%;
+          margin-top: 2%;
+        }
+        
+        .mobileLinks .firstGrid h1{
+          margin-top: 1%;
+          text-align: left;
+        }
+        
+        .mobileLinks .firstGrid a{
+          margin-top: 1%;
+          font-size: 7vw;
+          font-family: 'Source Code Pro';
+        }
+        
+        .mobileLinks .firstGrid p{
+          font-size: 3vw;
+          color: grey;
+          font-family: 'Source Code Pro';
+        }
+      
+        .secondLane{
+          padding-left: 10%;
+          padding-right: 10%;
+          padding-bottom: 5%;
+          width: 100%;
+          color: white;
+          margin-top: 5%;
+        }
+        
+        .noice{
+          margin-bottom: 5%;
+          font-size: 4vw;
+          font-family: 'Source Code Pro';
+        }
+      
+        .links{
+          margin-top: 5%;
+          font-size: 4vw;
+        }
+      
+        .links a{
+          color: grey;
+          font-family: 'Source Code Pro';
+        }
+      
+      }
+      
+            
