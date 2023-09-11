@@ -4,35 +4,44 @@
     <meta charset="utf-8" />
     <title>Prayer Request Form</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="stylesheet" href="Navbar.css">
     <link rel="stylesheet" href="PrayerRequest.css" >
     <link rel="icon" href="https://thegreatlight.web.app/HeadnFooter/logo.png" />
     <script src="./PrayerRequest.js" type="module" defer></script>
   </head>
   <body>
 
-    <nav class="navbar">
-        <div class="content">
-          <div class="logo">
-            <a href="index.html">
-              <img src="HeadnFooter/logo.png" alt="">
-            </a>
-          </div>
-          <ul class="menu-list">
-            <div class="icon cancel-btn">
-              <img src="HeadnFooter/closewindow.png" alt="">
-            </div>
-            <li><a href="index.html #home">Home</a></li>
-            <li><a href="index.html#connects">Connects</a></li>
-            <li><a href="index.html#equipping">Equipping</a></li>
-            <li><a href="index.html#media">Media</a></li>
-            <li><a href="index.html#prayerRequest">Prayer Request</a></li>
-            <li><a href="index.html#announcement">Announcements</a></li>
-          </ul>
-          <div class="icon menu-btn">
-            <img src="HeadnFooter/menu.png" alt="">
-          </div>
-        </div>
-      </nav>
+    <header>
+      <a href="index.html" class="logo">JGLWHM</a>
+      <div class="navigation">
+        <ul class="menu">
+          <div class="close-btn"></div>
+          <li class="menu-item"><a href="index.html">Home</a></li>
+          <li class="menu-item">
+            <a class="sub-btn" href="index.html#connects">Connects <i class="fas fa-angle-down"></i></a>
+            <ul class="sub-menu">
+              <li class="sub-item"><a href="Sundayservice.html">Sunday Service</a></li>
+              <li class="sub-item"><a href="Wildfire.html">Wildfire</a></li>
+              <li class="sub-item"><a href="J12Kids.html">J12 Kids</a></li>
+              <li class="sub-item"><a href="Spearhead.html">Spearhead</a></li>
+              <li class="sub-item"><a href="Married4Life.html">Married For Life</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a class="sub-btn" href="index.html#equipping">Equipping <i class="fas fa-angle-down"></i></a>
+            <ul class="sub-menu">
+              <li class="sub-item"><a href="Mentoring.html">Mentoring</a></li>
+              <li class="sub-item"><a href="SOL.html">SOL CLass</a></li>
+              <li class="sub-item"><a href="LifeClass.html">Lifeclass</a></li>
+            </ul>
+          </li>
+          <li class="menu-item"><a href="Media.html">Media</a></li>
+          <li class="menu-item"><a href="index.html#prayerRequest">Prayer Request</a></li>
+          <li class="menu-item"><a href="Announcement.html">Announcements</a></li>
+        </ul>
+      </div>
+      <div class="menu-btn"></div>
+    </header>
       
       <div class="textPrayer">
         <h1>Prayer Request Form</h1>
