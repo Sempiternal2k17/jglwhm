@@ -144,10 +144,10 @@ span{
 
 .bottomLinks{
     display: flex;
-    margin-top: 5%;
     background-color: #2c5f2d;
     color: white;
-    border-bottom: 5px #ffe77a solid;
+    border-bottom: 3px #ffe77a solid;
+    width: 100%;
   }
   
   .firstGrid{

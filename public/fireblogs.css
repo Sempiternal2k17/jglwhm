@@ -181,7 +181,7 @@ a{
     margin-top: 45%;
     margin-left: 15%;
     margin-right: 15%;
-    
+    margin-bottom: 5%;
 }
 
 .content1 p{
@@ -196,6 +196,7 @@ span{
 
 @media (max-width: 500px) {
     .banner{
+        margin-top: 10%;
         padding-bottom: 20%;
     }
     
@@ -249,10 +250,10 @@ span{
 
 .bottomLinks{
     display: flex;
-    margin-top: 5%;
     background-color: black;
     color: white;
-    border-bottom: 5px yellow solid;
+    border-bottom: 3px yellow solid;
+    width: 100%;
   }
   
   .firstGrid{

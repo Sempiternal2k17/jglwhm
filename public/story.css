@@ -161,10 +161,10 @@ a{
 
 .bottomLinks{
     display: flex;
-    margin-top: 5%;
     background-color: #FF69B4;
     color: white;
-    border-bottom: 5px cyan  solid;
+    border-bottom: 3px cyan  solid;
+    width: 100%;
   }
   
   .firstGrid{

@@ -5,36 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Wildfire.css">
+    <link rel="stylesheet" href="NavbarWildfire.css">
     <link rel="icon" href="https://thegreatlight.web.app/HeadnFooter/logo.png" />
     <script defer src="./wildfire.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
     <title>Wildfire</title>
 </head>
 <body>
 
-  <section id="home">
-    <nav class="navbar">
-      <div class="content">
-        <div class="logo">
-            <a href="index.html#connects">
-            <img src="HeadnFooter/logo.png" alt="">
-            </a>
-        </div>
-        <ul class="menu-list">
-            <div class="icon cancel-btn">
-                <img src="HeadnFooter/closewindow.png" alt="">
-            </div>
-                <li><a href="index.html#connects">Home</a></li>
-                <li><a href="#aboutus">About Us</a></li>
-                <li><a href="#blogs">Blogs</a></li>
-                <li><a href="#subscribe">Subscribe</a></li>
-                <li><a href="AnnouncementWildfire.html">Announcements</a></li>
-        </ul>
-        <div class="icon menu-btn">
-          <img src="HeadnFooter/menu.png" alt="">
-        </div>
-      </div>
-    </nav>
-  </section>
+  <header>
+    <a href="index.html" class="logo">JGLWHM</a>
+    <div class="navigation">
+      <ul class="menu">
+        <div class="close-btn"></div>
+        <li class="menu-item"><a href="index.html">Home</a></li>
+        <li class="menu-item">
+          <a class="sub-btn" href="#">Connects +</a>
+          <ul class="sub-menu">
+            <li class="sub-item"><a href="Sundayservice.html">Sunday Service</a></li>
+            <li class="sub-item"><a href="Wildfire.html">Wildfire</a></li>
+            <li class="sub-item"><a href="J12Kids.html">J12 Kids</a></li>
+            <li class="sub-item"><a href="Spearhead.html">Spearhead</a></li>
+            <li class="sub-item"><a href="Married4Life.html">Married For Life</a></li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a class="sub-btn" href="#">Equipping +</a>
+          <ul class="sub-menu">
+            <li class="sub-item"><a href="Mentoring.html">Mentoring</a></li>
+            <li class="sub-item"><a href="SOL.html">SOL CLass</a></li>
+            <li class="sub-item"><a href="LifeClass.html">Lifeclass</a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="Media.html">Media</a></li>
+        <li class="menu-item"><a href="index.html#prayerRequest">Prayer Request</a></li>
+        <li class="menu-item"><a href="Announcement.html">Announcements</a></li>
+      </ul>
+    </div>
+    <div class="menu-btn"></div>
+  </header>
 
 <section id="aboutus">
   <div class="banner">
@@ -104,17 +113,6 @@
             </div>
         </div>
 
-<section id="subscribe">
-        <div class="subs">
-            <img src="SundaySchooltings/Subs.jpg" alt="">
-            <div class="sText">
-              <h1>Be Notified</h1>
-              <p>We are thrilled to invite you to subscribe to our church website in order to stay informed of all upcoming events, announcements, and notifications. Our website is the go-to source for all things related to our church, and we want to make sure that you never miss out on any important information.</p>
-              <a href="Form.html"><button><span><h1>Click me </h1></span></button></a>
-          </div>
-        </div>
-</section>
-
 <div class="bottomLinks">
     <!--
   footer will appear here
@@ -123,25 +121,41 @@
 
     </body>
 
-    <script>
-      //----------------------------------------------------------------
-// CSS Formatting
-const body = document.querySelector("body");
-    const navbar = document.querySelector(".navbar");
-    const menuBtn = document.querySelector(".menu-btn");
-    const cancelBtn = document.querySelector(".cancel-btn");
-    menuBtn.onclick = ()=>{
-      navbar.classList.add("show");
-      menuBtn.classList.add("hide");
-      body.classList.add("disabled");
-    }
-    cancelBtn.onclick = ()=>{
-      body.classList.remove("disabled");
-      navbar.classList.remove("show");
-      menuBtn.classList.remove("hide");
-    }
-    window.onscroll = ()=>{
-      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
-    }
-    </script>
+    
+      <!-- //----------------------------------------------------------------
+// CSS Formatting -->
+
+<script>
+  //jquery for toggle dropdown menus
+$(document).ready(function(){
+  //toggle sub-menus
+  $(".sub-btn").click(function(){
+    $(this).next(".sub-menu").slideToggle();
+  });
+
+  //toggle more-menus
+  $(".more-btn").click(function(){
+    $(this).next(".more-menu").slideToggle();
+  });
+});
+
+//javascript for the responsive navigation menu
+var menu = document.querySelector(".menu");
+var menuBtn = document.querySelector(".menu-btn");
+var closeBtn = document.querySelector(".close-btn");
+
+menuBtn.addEventListener("click", () => {
+  menu.classList.add("active");
+});
+
+closeBtn.addEventListener("click", () => {
+  menu.classList.remove("active");
+});
+
+//javascript for the navigation bar effects on scroll
+window.addEventListener("scroll", function(){
+  var header = document.querySelector("header");
+  header.classList.toggle("sticky", window.scrollY > 0);
+});
+</script>
 </html>

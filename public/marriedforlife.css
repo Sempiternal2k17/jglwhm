@@ -33,69 +33,6 @@ a{
 ::selection{
     background: rgb(0,123,255,0.3);
 }
-.content{
-    max-width: 1550px;
-    margin: auto;
-    padding: 0 30px;
-}
-.navbar{
-    position: fixed;
-    width: 100%;
-    z-index: 2;
-    padding: 25px 0;
-    transition: all 0.3s ease;
-}
-.navbar.sticky{
-    color: #FFE77AFF;
-    background: #cc313d;
-    padding: 10px 0;
-    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
-}
-.navbar .content{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.navbar .logo img{
-    width: 70%;
-}
-
-.navbar .menu-list{
-    display: inline-flex;
-}
-
-.menu-list li{
-    list-style: none;
-}
-
-.menu-list li a{
-    color: #fff;
-    font-size: 1.3vw;
-    margin-left: 25px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-.menu-list li a:hover{
-    color: #f7c5cc;
-    z-index: 2;
-}
-  
-.icon{
-    cursor: pointer;
-    display: none;
-}
-
-.icon img{
-    width: 100%;
-    max-width: 50px;
-}
-
-.menu-list .cancel-btn{
-    position: absolute;
-    right: 30px;
-    top: 20px;
-    z-index: 2;
-}
   
 .banner{
       width: 100%;
