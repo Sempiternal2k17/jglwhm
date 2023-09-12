@@ -1,13 +1,29 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Source Code Pro';
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #8aaae5;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: white;
+  }
+  ::selection{
+  background: rgb(0,123,255,0.3);
+  }
+
 
 .banner{
     width: 100%;
@@ -15,7 +31,9 @@
     background-size: cover;
     background-position: center;
     color: white;
+    padding-top: 5%;
     padding-bottom: 5%;
+    margin-top: 3%;
 }
 
 .banner p{
@@ -152,12 +170,14 @@
 
 
 @media (max-width: 500px) {
+    .banner{
+        margin-top: 10%;
+    }
+
     .banner p{
         font-size: 3vw;
     }
 
-
-    
     .banner h1{
         text-align: center;
         font-size: 12vw;

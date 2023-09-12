@@ -5,8 +5,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     scroll-behavior: smooth;
-    font-family: 'Times New Roman', Times, serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: white;
+}
+::-webkit-scrollbar-thumb {
+  background: black;
+}
+::selection{
+background: rgb(0,123,255,0.3);
 }
 
 a{
@@ -439,113 +453,112 @@ a{
 }
 
 .bottomLinks{
-    display: flex;
-    margin-top: 5%;
-    background-color: #030E4F;
-    color: white;
-    border-bottom: 5px #F49F1C  solid;
-  }
-  
-  .firstGrid{
-    text-align: center;
-    border-right: white 1px solid;
-    padding: 2%;
-    width: 20%;
-  }
-  
-  .firstGrid img{
-    width: 50%;
-  }
-  
-  .firstGrid h1{
-    margin-top: 5%;
-    text-align: center;
-  }
-  
-  .firstGrid a{
-    margin-top: 7%;
-    color: white;
-    font-size: 3.5vw;
-    font-family: 'Source Code Pro';
-  }
-  
-  .firstGrid p{
-    margin-top: 10%;
-    font-size: 1vw;
-    text-align: left;
-    color: #F49F1C;
-    font-family: 'Source Code Pro';
-  }
-  
-  /* =================================================== */
-  
-  
-  .secondGrid{
-    width: 20%;
-    display: inline-block;
-    margin-left: 3%;
-    margin-top: 4%;
-  }
-  
-  .secondGrid p{
-    font-family: 'Source Code Pro';
-    font-size: 1.2vw;
-  }
-  
-  .botli{
-    margin-top: 40%;
-  }
-  
-  .botli p{
-    margin-bottom: 2%;
-  }
-  
-  .botli a{
-    font-family: 'Source Code Pro';
-    font-size: 1.2vw;
-    color: white;
-  }
-  
-  .botli a:hover{
-    color: white;
-    transition: 0.5s;
-  }
-  
-  /* =================================================== */
-  
-  .thirdGrid{
-    width: 20%;
-    display: inline-block;
-    margin-top: 4%;
-  }
-  
-  .thirdGrid p{
-    font-family: 'Source Code Pro';
-    font-size: 1.2vw;
-  }
-  
-  .botli{
-    margin-top: 40%;
-  }
-  
-  .botli p{
-    margin-bottom: 2%;
-  }
-  
-  .botli a{
-    font-family: 'Source Code Pro';
-    font-size: 1.2vw;
-    color: white;
-  }
-  
-  .botli a:hover{
-    color: #F49F1C;
-    transition: 0.5s;
-  }
-  
-  .mobileLinks{
-    display: none;
-  }
+  display: flex;
+  margin-top: 5%;
+  background-color: black;
+  color: white;
+  border-bottom: 3px grey solid;
+}
+
+.firstGrid{
+  text-align: center;
+  border-right: white 1px solid;
+  padding: 2%;
+  width: 20%;
+}
+
+.firstGrid img{
+  width: 50%;
+}
+
+.firstGrid h1{
+  margin-top: 5%;
+  text-align: center;
+}
+
+.firstGrid a{
+  margin-top: 7%;
+  font-size: 3.5vw;
+  font-family: 'Source Code Pro';
+}
+
+.firstGrid p{
+  margin-top: 10%;
+  font-size: 1vw;
+  text-align: left;
+  color: grey;
+  font-family: 'Source Code Pro';
+}
+
+/* =================================================== */
+
+
+.secondGrid{
+  width: 20%;
+  display: inline-block;
+  margin-left: 3%;
+  margin-top: 4%;
+}
+
+.secondGrid p{
+  font-family: 'Source Code Pro';
+  font-size: 1.2vw;
+}
+
+.botli{
+  margin-top: 40%;
+}
+
+.botli p{
+  margin-bottom: 2%;
+}
+
+.botli a{
+  font-family: 'Source Code Pro';
+  font-size: 1.2vw;
+  color: gray;
+}
+
+.botli a:hover{
+  color: white;
+  transition: 0.5s;
+}
+
+/* =================================================== */
+
+.thirdGrid{
+  width: 20%;
+  display: inline-block;
+  margin-top: 4%;
+}
+
+.thirdGrid p{
+  font-family: 'Source Code Pro';
+  font-size: 1.2vw;
+}
+
+.botli{
+  margin-top: 40%;
+}
+
+.botli p{
+  margin-bottom: 2%;
+}
+
+.botli a{
+  font-family: 'Source Code Pro';
+  font-size: 1.2vw;
+  color: gray;
+}
+
+.botli a:hover{
+  color: white;
+  transition: 0.5s;
+}
+
+.mobileLinks{
+  display: none;
+}
   
   @media (max-width: 500px) {
     .bottomLinks{
@@ -556,10 +569,7 @@ a{
   
     .mobileLinks{
       display: block;
-      margin-top: 5%;
-      background-color: #030E4F;
-      color: white;
-      border-bottom: 5px #F49F1C  solid;
+      background-color: black;
     }
   
     .mobileLinks .firstGrid{
@@ -580,20 +590,19 @@ a{
     }
     
     .mobileLinks .firstGrid h1{
-      margin-top: 2%;
+      margin-top: 1%;
       text-align: left;
     }
     
     .mobileLinks .firstGrid a{
       margin-top: 1%;
       font-size: 7vw;
-      color: white;
       font-family: 'Source Code Pro';
     }
     
     .mobileLinks .firstGrid p{
       font-size: 3vw;
-      color: #F49F1C;
+      color: grey;
       font-family: 'Source Code Pro';
     }
   
@@ -618,8 +627,8 @@ a{
     }
   
     .links a{
+      color: grey;
       font-family: 'Source Code Pro';
-      color: #F49F1C;
     }
   
   }

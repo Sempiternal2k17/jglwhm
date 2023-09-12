@@ -15,6 +15,20 @@
     scroll-behavior: smooth;
 }
 
+/* custom scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #cc313d;
+}
+::-webkit-scrollbar-thumb {
+  background: #f7c5cc;
+}
+::selection{
+  background: rgb(0,123,255,0.3);
+}
+
 a{
     text-decoration: none;
 }
@@ -132,10 +146,10 @@ span{
 
 .bottomLinks{
     display: flex;
-    margin-top: 5%;
     background-color: #cc313d;
     color: white;
-    border-bottom: 5px #f7c5cc solid;
+    border-bottom: 3px #f7c5cc solid;
+    width: 100%;
   }
   
   .firstGrid{

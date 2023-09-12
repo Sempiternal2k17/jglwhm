@@ -12,6 +12,7 @@
     font-family: 'Roboto Condensed';
 }
 
+
 a{
     text-decoration: none;
     color: none;
@@ -138,6 +139,10 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
 }
 
+.containers{
+    margin-bottom: 5%;
+}
+
 textarea{
     width: 100%;
     resize: none;
@@ -233,10 +238,10 @@ button:hover{
 
 .bottomLinks{
     display: flex;
-    margin-top: 5%;
-    /* background-color: #191825; */
+    background-color: #191825;
     color: white;
-    border-bottom: 5px #FFA3FD solid;
+    border-bottom: 3px #FFA3FD solid;
+    width: 100%;
 }
   
 .firstGrid{

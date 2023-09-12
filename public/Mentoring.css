@@ -21,15 +21,25 @@
     padding-bottom: 5%;
 }
 
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #FFA3FD;
+}
+::-webkit-scrollbar-thumb {
+    background: #191825;
+}
+::selection{
+    background: rgb(0,123,255,0.3);
+}
+
 a{
     text-decoration: none;
 }
 
-.imageHolder img{
-    width: 7%;
-    margin-top: 2%;
-    margin-left: 2%;
-}
+
 
 .plateName h2{
     text-align: center;
@@ -344,10 +354,10 @@ a{
 
 .bottomLinks{
     display: flex;
-    margin-top: 5%;
     background-color: #191825;
     color: white;
-    border-bottom: 5px #FFA3FD  solid;
+    border-bottom: 3px #FFA3FD  solid;
+    width: 100%;
 }
   
 .bottomLinks .firstGrid{
