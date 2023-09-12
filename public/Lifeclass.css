@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
 
 *{
     margin: 0;
@@ -11,11 +9,10 @@
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 .bgweb{
-    width: 100%;
+   width: 100%;
     background-image: linear-gradient(rgba(62, 180, 137,0.8),rgba(62, 180, 137,0.8)), url(LifeClassIMGs/topBG.jpg);
     background-size: cover;
     color: white;
@@ -23,6 +20,21 @@
     padding-bottom: 5%;
     padding-top: 10%;
 }
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: white;
+}
+::-webkit-scrollbar-thumb {
+    background: #3EB489;
+}
+::selection{
+    background: rgb(0,123,255,0.3);
+}
+
 
 a{
     text-decoration: none;
@@ -35,20 +47,19 @@ a{
 }
 
 .plateName h2{
-    text-align: center;
-    color: #3EB489;
-    background-color: white;
-    margin-left: 43%;
-    margin-right: 43%;
-    font-size: 2vw;
-    font-family: 'Pathway Extreme';
+  text-align: center;
+  color: #3EB489;
+  background-color: white;
+  margin-left: 43%;
+  margin-right: 43%;
+  font-size: 2vw;
+  font-family: 'Pathway Extreme';
 }
 
 .intro h1{
     text-align: center;
-    font-family: 'P';
-    font-size: 13vw;
-    font-family: 'Lato';
+    font-family: 'Pathway Extreme';
+    font-size: 9vw;
 }
 
 .intro p{
@@ -59,22 +70,21 @@ a{
     padding-right: 10%;
 }
 
-/* ===================================================== */
 .containerText{
     display: block;
     justify-content: center;
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 10%;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
 }
 
 .containerText h1{
-    margin-top: 1%;
-    text-align: center;
-    font-size: 3vw;
-    color: #3EB489;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 1%;
+  text-align: center;
+  font-size: 3vw;
+  color: #3EB489;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .containerText p{
@@ -99,10 +109,10 @@ a{
 }
 
 .containerText2 h1{
-    text-align: center;
-    font-size: 3vw;
-    color: #3EB489;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  font-size: 3vw;
+  color: #3EB489;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .containerText2 p{
@@ -142,7 +152,7 @@ a{
     margin-top: 1%;
     font-size: 1.8vw;
     text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace  ;
 }
 
 .containerForm button{
@@ -156,31 +166,26 @@ a{
     padding-bottom: 1%;
     background: none;
     font-size: 1.2vw;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     border: 1px solid;
     transition: 0.5s;
 }
 
 .containerForm button:hover{
-    color: white;
-    background-color: #3EB489;
-    cursor: pointer;
+  color: white;
+  background-color: #3EB489;
+  cursor: pointer;
 }
 
-  /* ================================================ */
+/* =============================================================== */
 
-    
-
-  /* ================================================ */
-
-  @media (max-width: 500px) {
+@media(max-width:500px){
     .bgweb{
         width: 100%;
-        
         background-size: cover;
-        color: white;
         background-position: center;
-        padding-bottom: 5%;
+        padding-bottom: 10%;
+        padding-top: 20%;
     }
     
     .imageHolder img{
@@ -199,17 +204,24 @@ a{
     
     .intro h1{
         text-align: center;
-        font-family: 'Amatic SC';
-        font-size: 25vw;
+        font-size: 11vw;
     }
     
     .intro p{
         text-align: center;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-size: 4vw;
         padding-left: 4%;
         padding-right: 4%;
     }
+
+    #verse{
+        text-align: center;
+        font-size: 3.5vw;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    /* =============================================================== */
 
     .containerText{
         display: block;
@@ -224,8 +236,7 @@ a{
         margin-top: 1%;
         text-align: center;
         font-size: 7vw;
-  
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family: 'Courier New', Courier, monospace;
     }
     
     .containerText p{
@@ -237,6 +248,11 @@ a{
     
     /* =============================================================== */
     
+    .bgcolor{
+        background-attachment: fixed;
+        margin-bottom: 5%;
+    }
+    
     .containerText2{
         display: block;
         justify-content: center;
@@ -247,8 +263,7 @@ a{
     .containerText2 h1{
         text-align: center;
         font-size: 7vw;
-   
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family: 'Courier New', Courier, monospace;
     }
     
     .containerText2 p{
@@ -260,15 +275,18 @@ a{
     
     .containerText2 ol{
         margin-top: 3%;
+        margin-left: 2%;
+        margin-right: 2%;
     }
     
     .containerText2 ol li{
-        font-size: 5vw;
+        font-size: 3.6vw;
+        text-align: justify;
     }
     
     #bottomText{
         margin-top: 1%;
-        font-size: 4vw;
+        font-size: 3.5vw;
         text-indent: 0;
         text-align: justify;
         font-style: italic;
@@ -286,7 +304,7 @@ a{
     
     .containerForm p{
         margin-top: 1%;
-        font-size: 4vw;
+        font-size: 3.7vw;
         text-align: center;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
@@ -301,211 +319,207 @@ a{
         padding-top: 1%;
         padding-bottom: 1%;
         background: none;
-        font-size: 4vw;
+        font-size: 3.6vw;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         border: 1px solid;
         transition: 0.5s;
     }
     
     .containerForm button:hover{
+        color: white;
+        background-color: #3EB489;
         cursor: pointer;
     }
-  }
-
-  /* ================================================ */
-
-  .bottomLinks{
-    display: none;
-  }
-  
-  /* ================================================ */
-
-
-  .bottomLinks{
-    display: flex;
-    margin-top: 5%;
-    background-color: #3EB489;
-    color: white;
-    border-bottom: 5px white  solid;
-  }
-  
-  .firstGrid{
-    text-align: center;
-    border-right: white 1px solid;
-    padding: 2%;
-    width: 20%;
-  }
-  
-  .firstGrid img{
-    width: 70%;
-  }
-  
-  .firstGrid h1{
-    margin-top: 5%;
-    text-align: center;
-  }
-  
-  .firstGrid a{
-    margin-top: 7%;
-    color: white;
-    font-size: 3.5vw;
-    font-family: 'Source Code Pro';
-  }
-  
-  .firstGrid p{
-    margin-top: 10%;
-    font-size: 1vw;
-    text-align: left;
-    color: black;
-    font-family: 'Source Code Pro';
-  }
-  
-  /* =================================================== */
-  
-  
-  .secondGrid{
-    width: 20%;
-    display: inline-block;
-    margin-left: 3%;
-    margin-top: 4%;
-  }
-  
-  .secondGrid p{
-    font-family: 'Source Code Pro';
-    font-size: 1.2vw;
-  }
-  
-  .botli{
-    margin-top: 40%;
-  }
-  
-  .botli p{
-    margin-bottom: 2%;
-  }
-  
-  .botli a{
-    font-family: 'Source Code Pro';
-    font-size: 1.2vw;
-    color: white;
-  }
-  
-  .botli a:hover{
-    color: black;
-    transition: 0.5s;
-  }
-  
-  /* =================================================== */
-  
-  .thirdGrid{
-    width: 20%;
-    display: inline-block;
-    margin-top: 4%;
-  }
-  
-  .thirdGrid p{
-    font-family: 'Source Code Pro';
-    font-size: 1.2vw;
-  }
-  
-  .botli{
-    margin-top: 40%;
-  }
-  
-  .botli p{
-    margin-bottom: 2%;
-  }
-  
-  .botli a{
-    font-family: 'Source Code Pro';
-    font-size: 1.2vw;
-    color: white;
-  }
-  
-  .botli a:hover{
-    color: black;
-    transition: 0.5s;
-  }
-  
-  .mobileLinks{
-    display: none;
-  }
-
-  @media (max-width: 500px) {
-    .bottomLinks{
-        display: none;
-      }
-      
-      /* ================================================ */
-    
-      .mobileLinks{
-        margin: 0;
-        display: block;
-        background-color: #3EB489;
-        color: white;
-        border-bottom: 5px white solid;
-        overflow-y: hidden;
-      }
-    
-      .mobileLinks .firstGrid{
-        text-align: left;
-        border-right: white 0px solid;
-        width: 80%;
-        padding: 2%;
-        padding-left: 10%;
-        padding-right: 10%;
-        border-bottom: white 1px solid;
-        padding-top: 10%;
-        padding-bottom: 10%;
-      }
-      
-      .mobileLinks .firstGrid img{
-        width: 25%;
-        margin-top: 2%;
-      }
-      
-      .mobileLinks .firstGrid h1{
-        margin-top: 2%;
-        text-align: left;
-
-      }
-      
-      .mobileLinks .firstGrid a{
-        margin-top: 1%;
-        font-size: 7vw;
-        color: white;
-        font-family: 'Source Code Pro';
-      }
-      
-      .mobileLinks .firstGrid p{
-        font-size: 3vw;
-        color: black;
-        font-family: 'Source Code Pro';
-      }
-    
-      .secondLane{
-        padding-left: 10%;
-        padding-right: 10%;
-        padding-bottom: 5%;
-        width: 100%;
-        color: white;
-        margin-top: 5%;
-      }
-      
-      .noice{
-        margin-bottom: 5%;
-        font-size: 4vw;
-        font-family: 'Source Code Pro';
-      }
-    
-      .links{
-        margin-top: 5%;
-        font-size: 4vw;
-      }
-    
-      .links a{
-        color: black;
-        font-family: 'Source Code Pro';
-      }
-    
 }
+
+ /* =========================================================== */
+
+ .bottomLinks{
+  display: flex;
+  background-color: #3EB489;
+  color: white;
+  border-bottom: 3px white  solid;
+  width: 100%;
+}
+
+.firstGrid{
+  text-align: center;
+  border-right: white 1px solid;
+  padding: 2%;
+  width: 20%;
+}
+
+.firstGrid img{
+  width: 70%;
+}
+
+.firstGrid h1{
+  margin-top: 5%;
+  text-align: center;
+}
+
+.firstGrid a{
+  margin-top: 7%;
+  color: white;
+  font-size: 3.5vw;
+  font-family: 'Source Code Pro';
+}
+
+.firstGrid p{
+  margin-top: 10%;
+  font-size: 1vw;
+  text-align: left;
+  color: black;
+  font-family: 'Source Code Pro';
+}
+
+/* =================================================== */
+
+
+.secondGrid{
+  width: 20%;
+  display: inline-block;
+  margin-left: 3%;
+  margin-top: 4%;
+}
+
+.secondGrid p{
+  font-family: 'Source Code Pro';
+  font-size: 1.2vw;
+}
+
+.botli{
+  margin-top: 40%;
+}
+
+.botli p{
+  margin-bottom: 2%;
+}
+
+.botli a{
+  font-family: 'Source Code Pro';
+  font-size: 1.2vw;
+  color: white;
+}
+
+.botli a:hover{
+  color: black;
+  transition: 0.5s;
+}
+
+/* =================================================== */
+
+.thirdGrid{
+  width: 20%;
+  display: inline-block;
+  margin-top: 4%;
+}
+
+.thirdGrid p{
+  font-family: 'Source Code Pro';
+  font-size: 1.2vw;
+}
+
+.botli{
+  margin-top: 40%;
+}
+
+.botli p{
+  margin-bottom: 2%;
+}
+
+.botli a{
+  font-family: 'Source Code Pro';
+  font-size: 1.2vw;
+  color: white;
+}
+
+.botli a:hover{
+  color: black;
+  transition: 0.5s;
+}
+
+.mobileLinks{
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .bottomLinks{
+      display: none;
+    }
+    
+    /* ================================================ */
+  
+    .mobileLinks{
+      margin: 0;
+      display: block;
+      background-color: #3EB489;
+      color: white;
+      border-bottom: 5px white solid;
+      overflow-y: hidden;
+    }
+  
+    .mobileLinks .firstGrid{
+      text-align: left;
+      border-right: white 0px solid;
+      width: 80%;
+      padding: 2%;
+      padding-left: 10%;
+      padding-right: 10%;
+      border-bottom: white 1px solid;
+      padding-top: 10%;
+      padding-bottom: 10%;
+    }
+    
+    .mobileLinks .firstGrid img{
+      width: 25%;
+      margin-top: 2%;
+    }
+    
+    .mobileLinks .firstGrid h1{
+      margin-top: 2%;
+      text-align: left;
+
+    }
+    
+    .mobileLinks .firstGrid a{
+      margin-top: 1%;
+      font-size: 7vw;
+      color: white;
+      font-family: 'Source Code Pro';
+    }
+    
+    .mobileLinks .firstGrid p{
+      font-size: 3vw;
+      color: black;
+      font-family: 'Source Code Pro';
+    }
+  
+    .secondLane{
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-bottom: 5%;
+      width: 100%;
+      color: white;
+      margin-top: 5%;
+    }
+    
+    .noice{
+      margin-bottom: 5%;
+      font-size: 4vw;
+      font-family: 'Source Code Pro';
+    }
+  
+    .links{
+      margin-top: 5%;
+      font-size: 4vw;
+    }
+  
+    .links a{
+      color: black;
+      font-family: 'Source Code Pro';
+    }
+  
+}
+
 

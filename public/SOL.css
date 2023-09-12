@@ -21,6 +21,21 @@
     padding-top: 10%;
 }
 
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #C6D7EB;
+}
+::-webkit-scrollbar-thumb {
+    background: #1868AE;
+}
+::selection{
+    background: rgb(0,123,255,0.3);
+}
+
+
 a{
     text-decoration: none;
 }
@@ -321,10 +336,10 @@ a{
 
 .bottomLinks{
     display: flex;
-    margin-top: 5%;
     background-color: #1868AE;
     color: white;
-    border-bottom: 5px #C6D7EB  solid;
+    border-bottom: 3px #C6D7EB  solid;
+    width: 100%;
 }
   
  .firstGrid{
