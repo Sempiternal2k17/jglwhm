@@ -21,38 +21,28 @@ import { FooterFunction } from "./Footer.js";
           let bodyID = "body" + prayerNameTag;
           html += 
           `<div class="request" id="${prayerDocs[i][ID]}"
-          style="border: 1px solid black;
-          border-radius: 10px;
-          margin-bottom: 4%;
-          background-color: #F7F7F7;">
+              style="border: 1px solid black;
+              padding: 3% 3%;
+              background-color: white;
+              margin-bottom: 4%;">
           <div class="req" id="req${prayerDocs[i][ID]}>
+          <div class="body" id="prayerbody${prayerDocs[i][ID]}"
+                  style="color: black;
+                  padding: ;">
+                  <p id=${bodyID} 
+                        style=" font-size: 1.5vw;
+                        font-family: 'Poppins';
+                        text-align: justify;">${prayerDocs[i][DATA].body}</p>
+          </div>
             <div class="heading" id="${prayerNameTag}"
-            style="background-color: #F5F5F5;
-            padding-left: 3%;
-            padding-top: 3%;
-            padding-bottom: 2%;
-            color: black;
-            border-top-right-radius: 10px;
-            border-top-left-radius: 10px;"
-            >
-              <h1 style=" font-size: 2.5vw;
-              font-family: 'Encode Sans SC';"
+                  style="color: black;
+                  margin: 1% 0%;">
+              <p style=" font-size: 1vw;
+                         font-family: 'Poppins';"
               >${prayerDocs[i][DATA].fullname}</h1>
               <p id="prayerDate${prayerDocs[i][ID]}"
-              style="font-size: 18px; color:#82817f;"
-              >${date}</p>
-            </div>
-            <div class="body" id="prayerbody${prayerDocs[i][ID]}"
-            style="color: black;
-            padding-left: 3%;
-            padding-top: 2%;
-            padding-bottom: 2%;
-            padding-right: 3%;
-            background-color: #FFE7CC;">
-              <p id=${bodyID} 
-              style=" font-size: 1.5vw;
-              text-align: justify;
-              padding-bottom: 1%;">${prayerDocs[i][DATA].body}</p>
+                      style="font-size: 1vw;
+                      font-family: 'Poppins';">${date}</p>
             </div>
           </div>
         </div>`;
