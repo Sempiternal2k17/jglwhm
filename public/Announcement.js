@@ -61,6 +61,7 @@ sessionStorage.setItem("Banners", JSON.stringify(bannerDocs));
   var intervalPosts = '';
     for(let i=0; i<general.length; i++){
       
+      if (window.innerWidth > 768){ 
       let startDiv = `<div class="bottomNews" id="bottomNews" style=" display: flex;
       padding: 4%;">`;
       let endDiv = `</div>`;
@@ -110,7 +111,60 @@ sessionStorage.setItem("Banners", JSON.stringify(bannerDocs));
           intervalProgs = 0;
         }
        
+      }
+      else{
        
+      let startDiv = `<div class="bottomNews" id="bottomNews" style=" display: block;
+      padding: 4%;">`;
+      let endDiv = `</div>`;
+      
+      intervalPosts = intervalPosts + `
+      <div class="news2"
+      style="
+      width: 100%;
+      margin-right: 0%;">     
+        <img src="${general[i][DATA].image}" 
+        alt="Image Unable To Load"
+        style="
+        display: block;
+        width: 100%;
+        transition: 0.5s;">
+         <div class="textBox"
+         style="
+         margin: auto;
+         width: 98%;">
+          <div class="plateName">
+           <h2><span style = "font-size: 3vw;"class="${general[i][DATA].category}">${general[i][DATA].category}</span></h2>
+          </div>
+           <h1 style="
+           margin-top: 1%;
+           margin-bottom: 1%;
+           font-size: 5vw;
+           font-family: 'Source Code Pro';"
+           >${general[i][DATA].title}</h1>
+           <p style="color: #585757;
+           text-align: justify;
+           font-size: 4vw;
+           font-family: 'Roboto Condensed';"
+           >${general[i][DATA].body}</p>
+        </div>
+      </div>`
+        intervalProgs += 1; 
+        if(intervalProgs === 2){
+            htmlContainer = startDiv + intervalPosts + endDiv;
+            html+= htmlContainer;
+            intervalPosts = '';
+            intervalProgs = 0;
+        }
+        else if (i === general.length){
+          htmlContainer = startDiv + intervalPosts + endDiv;
+          html+= htmlContainer;
+          intervalPosts = '';
+          intervalProgs = 0;
+        }
+       
+      
+      }
     }
     programContainer.insertAdjacentHTML('afterend', html);
   }
