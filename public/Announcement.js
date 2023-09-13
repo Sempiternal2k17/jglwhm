@@ -83,7 +83,7 @@ sessionStorage.setItem("Banners", JSON.stringify(bannerDocs));
             margin: auto;
             width: 98%;">
               <div class="plateName">
-              <h2><span style = "font-size: 3vw;"class="${general[i][DATA].category}">${general[i][DATA].category}</span></h2>
+              <h2><span style = "font-size: 2.5vw;"class="${general[i][DATA].category}">${general[i][DATA].category}</span></h2>
               </div>
               <h1 style="
               margin-top: 1%;
