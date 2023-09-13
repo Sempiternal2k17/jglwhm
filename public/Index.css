@@ -1626,19 +1626,20 @@ background: rgb(0,123,255,0.3);
       
         .request{
           border: 1px solid black;
-          border-radius: 10px;
+         
           margin-bottom: 4%;
-          background-color: #F7F7F7;
+          background-color: white;
         }
         
         .heading{
-          background-color: #F5F5F5;
-          padding-left: 3%;
-          padding-top: 3%;
-          padding-bottom: 2%;
+          background-color: white;
+          font-size: 4vw;
           color: black;
-          border-top-right-radius: 10px;
-          border-top-left-radius: 10px;
+         
+        }
+
+        .headingP{
+          font-size: 4vw;
         }
         
         .heading h1{

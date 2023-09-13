@@ -30,18 +30,18 @@ import { FooterFunction } from "./Footer.js";
                   style="color: black;
                   padding: ;">
                   <p id=${bodyID} 
-                        style=" font-size: 1.5vw;
+                        style=" font-size: 14px;
                         font-family: 'Poppins';
                         text-align: justify;">${prayerDocs[i][DATA].body}</p>
           </div>
             <div class="heading" id="${prayerNameTag}"
                   style="color: black;
                   margin: 1% 0%;">
-              <p style=" font-size: 1vw;
+              <p style=" font-size: 14px;
                          font-family: 'Poppins';"
               >${prayerDocs[i][DATA].fullname}</h1>
-              <p id="prayerDate${prayerDocs[i][ID]}"
-                      style="font-size: 1vw;
+              <p class = "headingP" id="prayerDate${prayerDocs[i][ID]}"
+                      style="font-size: 12px;
                       font-family: 'Poppins';">${date}</p>
             </div>
           </div>
@@ -50,6 +50,8 @@ import { FooterFunction } from "./Footer.js";
       prayerContainer.innerHTML = html;   
   }
   createPrayers();
+
+  
 
   // add footer
   var footerTemplate = FooterFunction();
