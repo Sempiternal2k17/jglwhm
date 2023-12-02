@@ -129,9 +129,9 @@ var docSnapshot = [];
         newwin.two = two;
       };
     }
-    window.GetData= GetData;
-    btn1.addEventListener('click', FindData());
-    btn2.addEventListener('click', GetData());
+    // window.GetData= GetData;
+    // btn1.addEventListener('click', FindData());
+    // btn2.addEventListener('click', GetData());
 
 
     var footerTemplate = FooterFunction();
