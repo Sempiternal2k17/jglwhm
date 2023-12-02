@@ -116,36 +116,36 @@ sessionStorage.setItem("Banners", JSON.stringify(bannerDocs));
   }
   createPrograms();
 
-  function createNavbar(){
-    var navbarDiv = document.querySelector('#navbarDiv');
+  // function createNavbar(){
+  //   var navbarDiv = document.querySelector('#navbarDiv');
    
-    let ID = 0;
-  let DATA = 1;
-  let banners = JSON.parse(sessionStorage.getItem('Banners'));
-  let htmlNavbar = ``;
-    for(let i=0;i<banners.length;i++){
+  //   let ID = 0;
+  // let DATA = 1;
+  // let banners = JSON.parse(sessionStorage.getItem('Banners'));
+  // let htmlNavbar = ``;
+  //   for(let i=0;i<banners.length;i++){
        
-        for(let j=0;j<sundayServiceFormats.length;j++){
-            if(banners[i][ID].toLowerCase() == sundayServiceFormats[j].toLowerCase()){
-                console.log(`${banners[i][ID]}`);
-                sessionStorage.setItem(`${banners[i][ID]}`, JSON.stringify(banners[i][DATA]));
-                htmlNavbar = htmlNavbar +`
-                 <li style="list-style: none;"><a href="AnnouncementSundayService.html?bannerProgram=${banners[i][ID]}&programBlogs=${sundayServiceFormats[j]}"
-                 style="color: #fff;
-                 font-size: 1.3vw;
-                 margin-left: 25px;
-                 text-decoration: none;
-                 transition: all 0.3s ease;
-                 font-family: 'Roboto Condensed';" 
-                 onMouseOver="this.style.color='#F49F1C'"
-                 onMouseOut="this.style.color='#fff'">${sundayServiceFormats[j]}</a></li>`;
-            }
-        }
-    }
-    navbarDiv.insertAdjacentHTML('afterend', htmlNavbar);
+  //       for(let j=0;j<sundayServiceFormats.length;j++){
+  //           if(banners[i][ID].toLowerCase() == sundayServiceFormats[j].toLowerCase()){
+  //               console.log(`${banners[i][ID]}`);
+  //               sessionStorage.setItem(`${banners[i][ID]}`, JSON.stringify(banners[i][DATA]));
+  //               htmlNavbar = htmlNavbar +`
+  //                <li style="list-style: none;"><a href="AnnouncementSundayService.html?bannerProgram=${banners[i][ID]}&programBlogs=${sundayServiceFormats[j]}"
+  //                style="color: #fff;
+  //                font-size: 1.3vw;
+  //                margin-left: 25px;
+  //                text-decoration: none;
+  //                transition: all 0.3s ease;
+  //                font-family: 'Roboto Condensed';" 
+  //                onMouseOver="this.style.color='#F49F1C'"
+  //                onMouseOut="this.style.color='#fff'">${sundayServiceFormats[j]}</a></li>`;
+  //           }
+  //       }
+  //   }
+  //   navbarDiv.insertAdjacentHTML('afterend', htmlNavbar);
 
-  }
-  createNavbar();
+  // }
+  // createNavbar();
 
 var footerTemplate = FooterFunction();
 var footerContainer = document.querySelector('.bottomLinks');

@@ -1,6 +1,6 @@
 import { collection, getDocs, orderBy, query} from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js"
 import { db } from "./Database.js";
-import { SubscribeFunction } from "./Subscribe.js";
+//import { SubscribeFunction } from "./Subscribe.js";
 import { URLtrim } from "./URLtrim.js";
 import { FooterFunction } from "./Footer.js";
 // TAKING THE URL PARAMETER FOR GETTING DATA FROM DB
@@ -74,9 +74,9 @@ function CreatePrograms(){
 CreatePrograms();
 
 // ADD SUBSCRIBE SECTION
-var scrubTemplate = SubscribeFunction(queryData, colorScheme);
-var Subscription = document.querySelector('#subscribe');
-Subscription.innerHTML = scrubTemplate;
+// var scrubTemplate = SubscribeFunction(queryData, colorScheme);
+// var Subscription = document.querySelector('#subscribe');
+// Subscription.innerHTML = scrubTemplate;
     
 var footerTemplate = FooterFunction();
 var footerContainer = document.querySelector('.bottomLinks');
