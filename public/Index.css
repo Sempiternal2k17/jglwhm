@@ -282,6 +282,7 @@ background: rgb(0,123,255,0.3);
       
       .row1{
         display: flex;
+        margin: 2% 5%;
       }
       
       .sunday{
@@ -291,6 +292,7 @@ background: rgb(0,123,255,0.3);
         background-position: center;
         color: white;
         flex: 1;
+        border-radius: 20px;
       }
       
       .sundayDesc{
@@ -301,6 +303,7 @@ background: rgb(0,123,255,0.3);
         transition: 0.5s;
         cursor: pointer;
         height: 100%;
+        border-radius: 20px;
       }
       
       .sundayDesc h1{
@@ -317,7 +320,7 @@ background: rgb(0,123,255,0.3);
       }
       
       .sundayDesc p{
-        font-size: 1.8vw;
+        font-size: 1.5vw;
         text-align: center;
         margin-bottom: 5%
       }
@@ -325,6 +328,10 @@ background: rgb(0,123,255,0.3);
       .sundayDesc:hover{
         background-color: #FBEAEB;
         color: #2F3C7E;
+        border-radius: 20px;
+        box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
       }
       
       
@@ -337,6 +344,8 @@ background: rgb(0,123,255,0.3);
         background-position: center;
         color: white;
         flex: 1;
+        margin-left: 2%;
+        border-radius: 20px;
       }
       
       .wildfireDesc{
@@ -348,6 +357,7 @@ background: rgb(0,123,255,0.3);
         cursor: pointer;
         flex: 1;
         height: 100%;
+        border-radius: 20px;
       }
       
       .wildfireDesc h1{
@@ -364,7 +374,7 @@ background: rgb(0,123,255,0.3);
       }
       
       .wildfireDesc p{
-        font-size: 1.8vw;
+        font-size: 1.5vw;
         text-align: center;
         margin-bottom: 5%
       }
@@ -372,17 +382,22 @@ background: rgb(0,123,255,0.3);
       .wildfireDesc:hover{
         background-color: black;
         color: yellow;
+        border-radius: 20px;
+        box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
       }
       
       /* ================================================ */
       
       .row2{
         display: flex;
+        margin: 0% 5%;
       }
       
       .j12{
         align-items: center;
-        width: 33%;
+        border-radius: 20px;
         background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(AnnounceIMGs/J12Kids.png);
         background-size: cover;
         background-position: center;
@@ -399,6 +414,7 @@ background: rgb(0,123,255,0.3);
         cursor: pointer;
         flex: 1;
         height: 100%;
+        border-radius: 20px;
       }
       
       .j12Desc h1{
@@ -415,7 +431,7 @@ background: rgb(0,123,255,0.3);
       }
       
       .j12Desc p{
-        font-size: 1.8vw;
+        font-size: 1.5vw;
         text-align: center;
         margin-bottom: 5%
       }
@@ -423,17 +439,22 @@ background: rgb(0,123,255,0.3);
       .j12Desc:hover{
         background-color: #00FFFF;
         color: #FF69B4;
+        border-radius: 20px;
+        box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
       }
       
       /* ================================================ */
       
       .spearhead{
-        width: 33%;
+        margin: 0% 2%;
         background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(AnnounceIMGs/Spearhead.png);
         background-size: cover;
         background-position: center;
         color: white;
         flex: 1;
+        border-radius: 20px;
       }
       
       .spearheadDesc{
@@ -446,6 +467,7 @@ background: rgb(0,123,255,0.3);
         flex: 1;
         height: 100%;
         width: 100%;
+        border-radius: 20px;
       }
       
       .spearheadDesc h1{
@@ -462,7 +484,7 @@ background: rgb(0,123,255,0.3);
       }
       
       .spearheadDesc p{
-        font-size: 1.8vw;
+        font-size: 1.5vw;
         text-align: center;
         margin-bottom: 5%
       }
@@ -470,12 +492,16 @@ background: rgb(0,123,255,0.3);
       .spearheadDesc:hover{
         background-color: #FFE77AFF;
         color: #2C5F2DFF;
+        border-radius: 20px;
+        box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
       }
       
       /* ================================================ */
       
       .married{
-        width: 33%;
+        border-radius: 20px;
         background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(AnnounceIMGs/married.jpg);
         background-size: cover;
         background-position: center;
@@ -492,6 +518,7 @@ background: rgb(0,123,255,0.3);
         cursor: pointer;
         flex: 1;
         height: 100%;
+        border-radius: 20px;
       }
       
       .marriedDesc h1{
@@ -508,7 +535,7 @@ background: rgb(0,123,255,0.3);
       }
       
       .marriedDesc p{
-        font-size: 1.8vw;
+        font-size: 1.5vw;
         text-align: center;
         margin-bottom: 5%
       }
@@ -516,22 +543,27 @@ background: rgb(0,123,255,0.3);
       .marriedDesc:hover{
         background-color: #f7c5cc;
         color: #cc313d;
+        border-radius: 20px;
+        box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
       }
       
       /* ================================================ */
       
       .equip{
         display: flex;
+        margin: 0% 5%;
       }
       
       .mentoring{
         align-items: center;
-        width: 33%;
         background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(HeadnFooter/mentoring.png);
         background-size: cover;
         background-position: center;
         color: white;
         flex: 1;
+        border-radius: 20px;
       }
       
       .mentoringDesc{
@@ -542,6 +574,7 @@ background: rgb(0,123,255,0.3);
         transition: 0.5s;
         cursor: pointer;
         height: 100%;
+        border-radius: 20px;
       }
       
       .mentoringDesc h1{
@@ -551,24 +584,29 @@ background: rgb(0,123,255,0.3);
       }
       
       .mentoringDesc p{
-        font-size: 1.9vw;
+        font-size: 1.5vw;
         text-align: center;
       }
       
       .mentoringDesc:hover{
         background-color: #FFA3FD;
         color: #191825;
+        border-radius: 20px;
+        box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
       }
       
       /* ================================================ */
       
       .solclass{
-        width: 33%;
         background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(AnnounceIMGs/Solclass.jpg);
         background-size: cover;
         background-position: center;
         color: white;
         flex: 1;
+        margin: 0% 2%;
+        border-radius: 20px;
       }
       
       .solDesc{
@@ -580,6 +618,7 @@ background: rgb(0,123,255,0.3);
         cursor: pointer;
         flex: 1;
         height: 100%;
+        border-radius: 20px;
       }
       
       .solDesc h1{
@@ -589,7 +628,7 @@ background: rgb(0,123,255,0.3);
       }
       
       .solDesc p{
-        font-size: 1.9vw;
+        font-size: 1.5vw;
         text-align: center;
         margin-bottom: 5%
       }
@@ -597,17 +636,21 @@ background: rgb(0,123,255,0.3);
       .solDesc:hover{
         background-color: #1868AE;
         color: #C6D7EB;
+        border-radius: 20px;
+        box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
       }
       
       /* ================================================ */
       
       .lifeclass{
-        width: 33%;
         background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(AnnounceIMGs/Lifeclass.png);
         background-size: cover;
         background-position: center;
         color: white;
         flex: 1;
+        border-radius: 20px;
       }
       
       .lifeclassDesc{
@@ -619,6 +662,7 @@ background: rgb(0,123,255,0.3);
         cursor: pointer;
         flex: 1;
         height: 100%;
+        border-radius: 20px;
       }
       
       .lifeclassDesc h1{
@@ -628,7 +672,7 @@ background: rgb(0,123,255,0.3);
       }
       
       .lifeclassDesc p{
-        font-size: 1.9vw;
+        font-size: 1.5vw;
         text-align: center;
         margin-bottom: 5%
       }
@@ -636,6 +680,10 @@ background: rgb(0,123,255,0.3);
       .lifeclassDesc:hover{
         background-color: #3EB489;
         color: white;
+        border-radius: 20px;
+        box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
       }
       
       /* ================================================ */
