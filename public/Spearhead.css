@@ -137,121 +137,8 @@ a{
     font-size: 2vw;
 }
 
-/* ================================================ */
 
-.cellLeaders{
-    display: flex;
-    justify-content: center;
-    margin-left: 10%;
-    margin-right: 10%;
-}
 
-.leaders h1{
-    text-align: center;
-    font-size: 4vw;
-    font-family: 'Source Code Pro';
-}
-
-.row{
-    display: block;
-    margin: 5%;
-}
-
-.row img{
-    width: 100%;
-    border-radius: 50%;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-    transition: box-shadow 0.3s ease-in-out;
-    transition: .5s ease-in-out;
-    cursor: pointer;
-}
-
-.row h1{
-    text-align: center;
-    font-size: 1.5vw;
-    font-family: 'Source Code Pro';
-}
-
-.row img:hover{
-    box-shadow: 0 5px 15px rgba(0,0,0,1);
-}
-
-/* ================================================ */
-
-.subs{
-    display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
-    align-items: center;
-    margin-top: 5%;
-    margin-bottom: 3%;
-    justify-content: center;
-    
-}
-
-.subs img{
-  width: 50%;
-  border-radius: 50%;
-}
-
-.sText{
-  margin-left: 4%;
-}
-
-.sText h1{
-  font-family: 'Source Code Pro';
-  font-size: 3vw;
-}
-
-.sText p{
-  font-size: 1.9vw;
-}
-
-.sText button{
-  border-radius: 4px;
-  
-  border: none;
-  color: #ffe77a;
-  text-align: center;
-  font-size: 1.3vw;
-  padding: 2%;
-  width: 40%;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin-top: 3%;
-}
-
-.sText button h1{
-  font-size: 1.5vw;
-  font-family: 'Source Code Pro';
-}
-
-.sText button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.sText button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 3px;
-  right: -40px;
-  transition: 0.5s;
-  width: 30%;
-}
-
-.sText button:hover span {
-  padding-right: 20%;
-}
-
-.sText button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-  
   /* ==================================================== */
   
   @media (max-width: 500px) {
@@ -673,6 +560,7 @@ a{
   padding-top: 5%;
   padding-bottom: 5%;
   margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .desc h1{
@@ -1102,6 +990,167 @@ a{
 .column2 .blog3  .blogInfo p{
     font-size: 4vw;
 }
+}
+
+.pandA{
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  justify-content: center;
+}
+
+.prayerReq{
+  text-align: center;
+}
+
+.prayerReq h1{
+  font-family: 'Source Code Pro';
+  font-size: 3.5vw;
+}
+
+.prayerReq p{
+  font-size: 1.7vw;
+}
+
+.pandA .button {
+  border-radius: 4px;
+  background-color: #2c5f2d;
+  border: none;
+  color: #ffe77a;
+  text-align: center;
+  font-size: 1.3vw;
+  padding: 2%;
+  width: 40%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 3%;
+}
+
+.pandA .button h1{
+  font-size: 2vw;
+}
+
+.pandA .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.pandA .button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 6px;
+  right: -20px;
+  transition: 0.5s;
+  width: 35%;
+}
+
+.pandA .button:hover span {
+  padding-right: 13%;
+}
+
+.pandA .button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.announcement{
+  text-align: center;
+}
+
+.announcement h1{
+  font-family: 'Source Code Pro';
+  font-size: 3.5vw;
+}
+
+.announcement p{
+  font-size: 1.7vw;
+}
+
+@media (max-width: 500px) {
+  .pandA{
+    display: block;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    justify-content: center;
+  }
+  
+  .prayerReq{
+    text-align: center;
+  }
+  
+  .prayerReq h1{
+    font-family: 'Amatic SC';
+    font-size: 10vw;
+  }
+  
+  .prayerReq p{
+    font-size: 4vw;
+  }
+  
+  .pandA .button {
+    border-radius: 4px;
+    border: none;
+    text-align: center;
+    font-size: 4vw;
+    padding: 2%;
+    width: 40%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 3%;
+  }
+  
+  .pandA .button h1{
+    font-size: 4vw;
+  }
+  
+  .pandA .button span {
+    cursor: pointer;
+    display: hidden;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .pandA .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 2px;
+    right: -10px;
+    transition: 0.5s;
+    width: 20%;
+    display: hidden;
+  }
+  
+  .pandA .button:hover span {
+    padding-right: 13%;
+    display: hidden;
+  }
+  
+  .pandA .button:hover span:after {
+    opacity: 1;
+    right: 0;
+    display: hidden;
+  }
+  
+  .announcement{
+    margin-top: 5%;
+    text-align: center;
+  }
+  
+  .announcement h1{
+    font-size: 10vw;
+  }
+  
+  .announcement p{
+    font-size: 4vw;
+  }
 }
 
 

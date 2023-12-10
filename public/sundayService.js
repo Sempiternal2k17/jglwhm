@@ -62,9 +62,9 @@ function CreatePrograms(){
 CreatePrograms();
 
 // ADD SUBSCRIBE SECTION
-var scrubTemplate = SubscribeFunction(queryData, colorScheme);
-var Subscription = document.querySelector('#subscribe');
-Subscription.innerHTML = scrubTemplate;
+// var scrubTemplate = SubscribeFunction(queryData, colorScheme);
+// var Subscription = document.querySelector('#subscribe');
+// Subscription.innerHTML = scrubTemplate;
     
 // ADD FOOTER SECTION
 var footerTemplate = FooterFunction();

@@ -297,80 +297,6 @@ a{
 
 /* ==================================================== */
 
-.subs{
-    display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
-    align-items: center;
-    margin-top: 5%;
-    margin-bottom: 3%;
-    justify-content: center;
-    
-}
-
-.subs img{
-  width: 50%;
-  border-radius: 50%;
-}
-
-.sText{
-  margin-left: 4%;
-}
-
-.sText h1{
-  font-family: 'Sono';
-  font-size: 3vw;
-}
-
-.sText p{
-  font-size: 1.9vw;
-}
-
-.sText button{
-  border-radius: 4px;
-  
-  border: none;
-  color: #f7c5cc;
-  text-align: center;
-  font-size: 1.3vw;
-  padding: 2%;
-  width: 40%;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin-top: 3%;
-}
-
-.sText button h1{
-  font-size: 1.5vw;
-  font-family: 'Sono';
-}
-
-.sText button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.sText button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 1px;
-  right: -20px;
-  transition: 0.5s;
-  width: 20%;
-}
-
-.sText button:hover span {
-  padding-right: 15%;
-}
-
-.sText button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
 /* ==================================================== */
 
 @media (max-width: 1230px) {
@@ -803,7 +729,6 @@ a{
 
 .bottomLinks{
     display: flex;
-    margin-top: 5%;
     background-color: #cc313d;
     color: white;
     border-bottom: 5px #f7c5cc solid;
@@ -984,4 +909,165 @@ a{
       font-family: 'Source Code Pro';
       color: #f7c5cc;
     }
+}
+
+.pandA{
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  justify-content: center;
+}
+
+.prayerReq{
+  text-align: center;
+}
+
+.prayerReq h1{
+  font-family: 'Andika';
+  font-size: 3.5vw;
+}
+
+.prayerReq p{
+  font-size: 1.7vw;
+}
+
+.pandA .button {
+  border-radius: 4px;
+  background-color: #cc313d;
+  border: none;
+  color: #FBEAEB;
+  text-align: center;
+  font-size: 1.3vw;
+  padding: 2%;
+  width: 40%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 3%;
+}
+
+.pandA .button h1{
+  font-size: 2vw;
+}
+
+.pandA .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.pandA .button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 15px;
+  right: -20px;
+  transition: 0.5s;
+  width: 30%;
+}
+
+.pandA .button:hover span {
+  padding-right: 13%;
+}
+
+.pandA .button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.announcement{
+  text-align: center;
+}
+
+.announcement h1{
+  font-family: 'Andika';
+  font-size: 3.5vw;
+}
+
+.announcement p{
+  font-size: 1.7vw;
+}
+
+@media (max-width: 500px) {
+  .pandA{
+    display: block;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    justify-content: center;
+  }
+  
+  .prayerReq{
+    text-align: center;
+  }
+  
+  .prayerReq h1{
+    font-family: 'Amatic SC';
+    font-size: 10vw;
+  }
+  
+  .prayerReq p{
+    font-size: 4vw;
+  }
+  
+  .pandA .button {
+    border-radius: 4px;
+    border: none;
+    text-align: center;
+    font-size: 4vw;
+    padding: 2%;
+    width: 40%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 3%;
+  }
+  
+  .pandA .button h1{
+    font-size: 4vw;
+  }
+  
+  .pandA .button span {
+    cursor: pointer;
+    display: hidden;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .pandA .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 2px;
+    right: -10px;
+    transition: 0.5s;
+    width: 20%;
+    display: hidden;
+  }
+  
+  .pandA .button:hover span {
+    padding-right: 13%;
+    display: hidden;
+  }
+  
+  .pandA .button:hover span:after {
+    opacity: 1;
+    right: 0;
+    display: hidden;
+  }
+  
+  .announcement{
+    margin-top: 5%;
+    text-align: center;
+  }
+  
+  .announcement h1{
+    font-size: 10vw;
+  }
+  
+  .announcement p{
+    font-size: 4vw;
+  }
 }

@@ -42,8 +42,8 @@ const FooterFunction = () =>{
         <div class="thirdGrid">
           <p>Socials</p>
           <div class="botli">
-            <p><a href="https://www.facebook.com/greatlightworldharvest">Facebook</a></p>
-            <p><a href="https://www.youtube.com/@jesusthegreatlightworldhar1413/featured">Youtube</a></p>
+            <p><a href="https://www.facebook.com/greatlightworldharvest" target="_blank">Facebook</a></p>
+            <p><a href="https://www.youtube.com/@jesusthegreatlightworldhar1413/featured" target="_blank">Youtube</a></p>
           </div>
         </div>
 
@@ -93,8 +93,8 @@ const FooterFunction = () =>{
           <div class="secondLane">
             <p class="noice">Socials</p>
             <div class="links">
-              <p><a href="https://www.facebook.com/greatlightworldharvest">Facebook</a></p>
-              <p><a href="https://www.youtube.com/@jesusthegreatlightworldhar1413/featured">Youtube</a></p>
+              <p><a href="https://www.facebook.com/greatlightworldharvest" target="_blank">Facebook</a></p>
+              <p><a href="https://www.youtube.com/@jesusthegreatlightworldhar1413/featured" target="_blank">Youtube</a></p>
             </div>
           </div>
 
