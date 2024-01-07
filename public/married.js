@@ -50,6 +50,7 @@ function CreatePrograms(){
 
     var programContainer = document.querySelector('#programContainer');
     let blogTemplate = ``;
+    
 
     for(let i=1;i<dataValues.length;i++){
        
@@ -57,8 +58,8 @@ function CreatePrograms(){
                   `<div class="blog" style=" background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(${dataValues[i][DATA].image});">
                       <a href="MLblog1.html?BlogID=${dataValues[i][ID]}">
                         <div class="blogInfo">
-                            <h1>${dataValues[i][ID].title}</h1>
-                            <p>${dataValues[i][ID].subtitle}</p>
+                            <h1>${dataValues[i][DATA].title}</h1>
+                            <p>${dataValues[i][DATA].subtitle}</p>
                         </div>
                       </a>
                   </div>`;
@@ -67,6 +68,7 @@ function CreatePrograms(){
       sessionStorage.setItem(`${dataValues[i][ID]}`, JSON.stringify(tempData));
 
     }
+
     programContainer.innerHTML = blogTemplate;
 }
 
@@ -75,5 +77,5 @@ CreatePrograms();
     
 // ADD FOOTER SECTION
 var footerTemplate = FooterFunction();
-var footerContainer = document.querySelector('.bottomLinks');
+var footerContainer = document.querySelector('.bottomLinks1');
 footerContainer.innerHTML = footerTemplate;

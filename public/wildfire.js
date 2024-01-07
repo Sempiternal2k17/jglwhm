@@ -135,6 +135,6 @@ var docSnapshot = [];
 
 
     var footerTemplate = FooterFunction();
-    var footerContainer = document.querySelector('.bottomLinks');
+    var footerContainer = document.querySelector('.bottomLinks1');
     footerContainer.innerHTML = footerTemplate;
 

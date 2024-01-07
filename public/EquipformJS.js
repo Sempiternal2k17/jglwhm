@@ -15,20 +15,28 @@ const programColors = {
     lifeclass: '#3EB489',
     solclass: '#1868AE',
 };
+
+const programTitle = {
+    mentoring: "Mentoring Registration Form",
+    lifeclass: "LifeClass Registration Form",
+    solclass: "Sol Class Registration Form",
+}
+
+let setTitle = programTitle[equipProgram]
 let colorScheme = programColors[equipProgram]
 console.log(equipProgram, " ", colorScheme);
 
 
 // ADD FOOTER SECTION
 var footerTemplate = FooterFunction();
-var footerContainer = document.querySelector('.bottomLinks');
+var footerContainer = document.querySelector('.bottomLinks1');
 footerContainer.innerHTML = footerTemplate;
 
 
 
 // color selection
 function setColorScheme(){
-var navbarDiv = document.querySelector('.navbar');
+var navbarDiv = document.querySelector('.nav');
 navbarDiv.style.backgroundColor = `${colorScheme}`;
 var mobileLinksDiv = document.querySelector('.mobileLinks');
 mobileLinksDiv.style.backgroundColor = `${colorScheme}`;
@@ -39,7 +47,12 @@ equipBtn.style.backgroundColor = `${colorScheme}`;
 var equipFormTitle = document.querySelector('#equipFormTitle');
 let parseToCAPS = `${equipProgram} Form`;
 equipFormTitle.innerText = parseToCAPS.toUpperCase();
+var titleProgram = document.querySelector('#titleofProgram');
+titleProgram.innerHTML = `${setTitle}`;
+var submenu = document.querySelector(`.sub-menu`)
+submenu.style.backgroundColor = `${colorScheme}`;
 }
+
 setColorScheme();
 //======================================================
 

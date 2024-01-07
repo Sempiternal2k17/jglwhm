@@ -1,7 +1,7 @@
 const FooterFunction = () =>{
    
     return (
-        ` <div class="bottomLinks">
+      `<div class="bottomLinks">
 
         <div class="firstGrid">
           <img src="HeadnFooter/logo.png" alt="">
@@ -101,7 +101,9 @@ const FooterFunction = () =>{
         </div>
 
 
-      </div>`
+      </div>
+
+      `
     );
 }
 export {FooterFunction};

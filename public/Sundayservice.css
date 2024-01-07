@@ -904,7 +904,8 @@ a img{
 }
 
 @media (max-width: 500px) {
-  .bottomLinks{
+
+   .bottomLinks{
     display: none;
   }
   
@@ -918,6 +919,7 @@ a img{
     border-bottom: 5px #FBEAEB  solid;
   }
 
+  
   .mobileLinks .firstGrid{
     text-align: left;
     border-right: white 0px solid;
