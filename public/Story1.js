@@ -16,5 +16,5 @@ blogBody.innerHTML = dataValues.body;
 
 // ADD FOOTER SECTION
 var footerTemplate = FooterFunction();
-var footerContainer = document.querySelector('.bottomLinks');
+var footerContainer = document.querySelector('.bottomLinks1');
 footerContainer.innerHTML = footerTemplate;

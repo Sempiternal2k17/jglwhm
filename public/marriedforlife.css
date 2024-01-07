@@ -177,7 +177,7 @@ a{
     width: 40%;
     height: 500px;
     overflow: scroll;
-    overflow-x: none;
+    overflow-x: hidden;
 }
 
 .column2 .blog{
@@ -212,11 +212,11 @@ a{
 
 .column2 .blog  .blogInfo h1{
     font-family: 'Sono';
-    font-size: 1.5vw;
+    font-size: 1.1vw;
 }
 
 .column2 .blog  .blogInfo p{
-    font-size: 1vw;
+    font-size: 0.8vw;
 }
 
 .column2 .blog2{
@@ -256,46 +256,6 @@ a{
 .column2 .blog2  .blogInfo p{
     font-size: 1vw;
 }
-
-.column2 .blog3{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(MarriedforlifeIMGs/cuple1.jpg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-    margin-right: 5%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    transition: transform .2s;
-    margin-bottom: 5%;
-}
-
-.column2 .blog3 .blogInfo{
-    color: white;
-    text-align: left;
-    padding-top: 32%;
-    padding-bottom: 7%;
-    text-indent: 5%;
-    margin-left: 3%;
-    margin-right: 3%;
-    border-radius: 10px;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.column2 .blog3 .blogInfo:hover{
-    border: 1px solid #f7c5cc;
-}
-
-.column2 .blog3 .blogInfo h1{
-    font-family: 'Sono';
-    font-size: 1.7vw;
-}
-
-.column2 .blog3  .blogInfo p{
-    font-size: 1vw;
-}
-
-/* ==================================================== */
 
 /* ==================================================== */
 
