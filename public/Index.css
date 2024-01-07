@@ -1375,6 +1375,7 @@ background: rgb(0,123,255,0.3);
       
         .equip{
           display: block;
+          margin-top: 5%;
         }
         
         .mentoring{
