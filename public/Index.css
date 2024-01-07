@@ -1166,6 +1166,7 @@ background: rgb(0,123,255,0.3);
       
         .row1{
           display: block;
+          margin: 0%, 0%;
         }
       
         .sunday{
@@ -1175,6 +1176,7 @@ background: rgb(0,123,255,0.3);
           color: white;
           margin-bottom: 0;
           flex: 1;
+          margin: 0%;
         }
         
         .sundayDesc{
@@ -1213,6 +1215,8 @@ background: rgb(0,123,255,0.3);
           background-position: center;
           color: white;
           margin-bottom: 5%;
+          margin-left: 0;
+          margin-top: 2%;
           flex: 1;
         }
         
@@ -1248,7 +1252,7 @@ background: rgb(0,123,255,0.3);
       
         .row2{
           display: block;
-          margin-top: -5%;
+          margin-top: -2%;
         }
         
         .j12{
@@ -1258,6 +1262,9 @@ background: rgb(0,123,255,0.3);
           background-position: center;
           color: white;
           flex: 1;
+          margin-bottom: 5%;
+          margin-left: 0;
+          margin-top: 2%;
         }
         
         .j12Desc{
@@ -1299,6 +1306,8 @@ background: rgb(0,123,255,0.3);
           background-position: center;
           color: white;
           flex: 1;
+          margin-bottom: 5%;
+          margin-left: 0;
         }
         
         .spearheadDesc{
@@ -1338,6 +1347,8 @@ background: rgb(0,123,255,0.3);
           background-size: cover;
           background-position: center;
           color: white;
+          margin-bottom: 5%;
+          margin-left: 0;
           flex: 1;
         }
         
@@ -1383,6 +1394,8 @@ background: rgb(0,123,255,0.3);
           background-size: cover;
           background-position: center;
           color: white;
+          margin-bottom: 5%;
+          margin-left: 0;
           flex: 1;
         }
         
@@ -1415,6 +1428,8 @@ background: rgb(0,123,255,0.3);
           background-position: center;
           color: white;
           flex: 1;
+          margin-bottom: 5%;
+          margin-left: 0;
         }
         
         .solDesc{
@@ -1448,6 +1463,8 @@ background: rgb(0,123,255,0.3);
           background-position: center;
           color: white;
           flex: 1;
+          margin-bottom: 5%;
+          margin-left: 0;
           
         }
         
