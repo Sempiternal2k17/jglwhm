@@ -1,135 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="SOL.css">
-    <link rel="icon" href="https://thegreatlight.web.app/HeadnFooter/logo.png" />
-    <link rel="stylesheet" href="SOLNavBar.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="SOL.css" />
+    <link
+      rel="icon"
+      href="https://thegreatlight.web.app/HeadnFooter/logo.png"
+    />
+    <link rel="stylesheet" href="SOLNavBar.css" />
     <script defer src="equipping.js"></script>
     <script type="module" src="./solclass.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      charset="utf-8"
+    ></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed:ital,wght@0,400;1,300&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed:ital,wght@0,400;1,300&display=swap");
     </style>
     <title>SOL Class</title>
-</head>
-<body>
-
-  <header>
-    <a href="index.html" class="logo">JGLWHM</a>
-    <div class="navigation">
-      <ul class="menu">
-        <div class="close-btn"></div>
-        <li class="menu-item"><a href="index.html">Home</a></li>
-        <li class="menu-item">
-          <a class="sub-btn" href="#">Connects +</a>
-          <ul class="sub-menu">
-            <li class="sub-item"><a href="Sundayservice.html?Prompt=sundaySchool">Sunday Service</a></li>
-            <li class="sub-item"><a href="Wildfire.html?Prompt=wildFire">Wildfire</a></li>
-            <li class="sub-item"><a href="J12Kids.html?Prompt=j12kids">J12 Kids</a></li>
-            <li class="sub-item"><a href="Spearhead.html?Prompt=spearHead">Spearhead</a></li>
-            <li class="sub-item"><a href="Married4Life.html?Prompt=married4life">Married For Life</a></li>
-          </ul>
-        </li>
-        <li class="menu-item">
-          <a class="sub-btn" href="#">Equipping +</a>
-          <ul class="sub-menu">
-            <li class="sub-item"><a href="Mentoring.html">Mentoring</a></li>
-            <li class="sub-item"><a href="SOL.html">SOL CLass</a></li>
-            <li class="sub-item"><a href="LifeClass.html">Lifeclass</a></li>
-          </ul>
-        </li>
-        <li class="menu-item"><a href="Media.html">Media</a></li>
-        <li class="menu-item"><a href="index.html#prayerRequest">Prayer Request</a></li>
-        <li class="menu-item"><a href="Announcement.html?Prompt=announcement">Announcements</a></li>
-      </ul>
-    </div>
-    <div class="menu-btn"></div>
-  </header>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">JGLWHM</a>
+      <div class="navigation">
+        <ul class="menu">
+          <div class="close-btn"></div>
+          <li class="menu-item"><a href="index.html">Home</a></li>
+          <li class="menu-item">
+            <a class="sub-btn" href="#">Connects +</a>
+            <ul class="sub-menu">
+              <li class="sub-item">
+                <a href="Sundayservice.html?Prompt=sundaySchool"
+                  >Sunday Service</a
+                >
+              </li>
+              <li class="sub-item">
+                <a href="Wildfire.html?Prompt=wildFire">Wildfire</a>
+              </li>
+              <li class="sub-item">
+                <a href="J12Kids.html?Prompt=j12kids">J12 Kids</a>
+              </li>
+              <li class="sub-item">
+                <a href="Spearhead.html?Prompt=spearHead">Spearhead</a>
+              </li>
+              <li class="sub-item">
+                <a href="Married4Life.html?Prompt=married4life"
+                  >Married For Life</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a class="sub-btn" id="highlightEquip" href="#">Equipping +</a>
+            <ul class="sub-menu">
+              <li class="sub-item"><a href="Mentoring.html">Mentoring</a></li>
+              <li class="sub-item"><a href="SOL.html">SOL CLass</a></li>
+              <li class="sub-item"><a href="LifeClass.html">Lifeclass</a></li>
+            </ul>
+          </li>
+          <li class="menu-item"><a href="Media.html">Media</a></li>
+          <li class="menu-item">
+            <a href="index.html#prayerRequest">Prayer Request</a>
+          </li>
+          <li class="menu-item">
+            <a href="Announcement.html?Prompt=announcement">Announcements</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu-btn"></div>
+    </header>
 
     <div class="bgweb">
-        <div class="plateName">
-          <h2>Equipping</h2>
-        </div>
-  
-        <div class="intro">
-          <h1>SOL Class</h1>
-          <p>Blessed is the one who perseveres under trial because, having stood the test, that person will receive the crown of life that the Lord has promised to those who love him.</p>
-          <p id="verse">James 1:12</p>
-        </div>
+      <div class="plateName">
+        <h2>Equipping</h2>
+      </div>
+
+      <div class="intro">
+        <h1>SOL Class</h1>
+        <p>
+          Blessed is the one who perseveres under trial because, having stood
+          the test, that person will receive the crown of life that the Lord has
+          promised to those who love him.
+        </p>
+        <p id="verse">James 1:12</p>
+      </div>
     </div>
 
     <div class="containerText">
-        <h1>What is School of Leaders?</h1>
-        <p>The School of Leaders at a church is typically a program or training that is designed to equip individuals with leadership skills and knowledge, particularly for service within the church community. The curriculum may cover a range of topics such as biblical principles of leadership, team building, conflict resolution, communication skills, and organizational management.</p>
-        <p>The School of Leaders may be structured as a series of classes or workshops, with assignments and assessments to evaluate progress. Participants may be required to complete a certain number of hours of service within the church or community to demonstrate their leadership skills.</p>
-        <h1>Our Goals</h1>
-        <p>The goal of the School of Leaders is to identify and develop leaders who can serve as role models and mentors to others within the church community. It is an opportunity for individuals to grow in their faith, develop their leadership potential, and learn how to effectively serve others.</p>
+      <h1>What is School of Leaders?</h1>
+      <p>
+        The School of Leaders at a church is typically a program or training
+        that is designed to equip individuals with leadership skills and
+        knowledge, particularly for service within the church community. The
+        curriculum may cover a range of topics such as biblical principles of
+        leadership, team building, conflict resolution, communication skills,
+        and organizational management.
+      </p>
+      <p>
+        The School of Leaders may be structured as a series of classes or
+        workshops, with assignments and assessments to evaluate progress.
+        Participants may be required to complete a certain number of hours of
+        service within the church or community to demonstrate their leadership
+        skills.
+      </p>
+      <h1>Our Goals</h1>
+      <p>
+        The goal of the School of Leaders is to identify and develop leaders who
+        can serve as role models and mentors to others within the church
+        community. It is an opportunity for individuals to grow in their faith,
+        develop their leadership potential, and learn how to effectively serve
+        others.
+      </p>
     </div>
 
-<div class="bgcolor">
-    <div class="containerText2">
+    <div class="bgcolor">
+      <div class="containerText2">
         <h1>How to Join?</h1>
-        <p>The specific qualifications to join the School of Leaders at a church may vary depending on the church community and the requirements of the program. However, here are some general qualifications that a participant may need to meet</p>
+        <p>
+          The specific qualifications to join the School of Leaders at a church
+          may vary depending on the church community and the requirements of the
+          program. However, here are some general qualifications that a
+          participant may need to meet
+        </p>
         <ol type="1">
-            <li>Active involvement in the church community: Participants should have a track record of regular attendance at church services and involvement in church activities.</li>
-            <li>Christian faith: Participants should have a personal relationship with Jesus Christ and a desire to grow in their faith.</li>
-            <li>Character: Participants should demonstrate a high level of integrity, honesty, humility, and a teachable spirit.</li>
-            <li>Commitment: Participants should be willing to commit the time and effort required to complete the program and serve in leadership roles within the church community.</li>
-            <li>Leadership potential: Participants should show evidence of leadership skills or the potential to develop such skills, such as good communication skills, a positive attitude, and the ability to work well with others.</li>
-            <li>Recommendation: Participants may need a recommendation from a church leader or mentor who can attest to their character, commitment, and leadership potential.</li>
-            <li>Age requirement: at least 18 years old.</li>
+          <li>
+            Active involvement in the church community: Participants should have
+            a track record of regular attendance at church services and
+            involvement in church activities.
+          </li>
+          <li>
+            Christian faith: Participants should have a personal relationship
+            with Jesus Christ and a desire to grow in their faith.
+          </li>
+          <li>
+            Character: Participants should demonstrate a high level of
+            integrity, honesty, humility, and a teachable spirit.
+          </li>
+          <li>
+            Commitment: Participants should be willing to commit the time and
+            effort required to complete the program and serve in leadership
+            roles within the church community.
+          </li>
+          <li>
+            Leadership potential: Participants should show evidence of
+            leadership skills or the potential to develop such skills, such as
+            good communication skills, a positive attitude, and the ability to
+            work well with others.
+          </li>
+          <li>
+            Recommendation: Participants may need a recommendation from a church
+            leader or mentor who can attest to their character, commitment, and
+            leadership potential.
+          </li>
+          <li>Age requirement: at least 18 years old.</li>
         </ol>
-        <p id="bottomText">It's important to note that these qualifications are not exhaustive.</p>
+        <p id="bottomText">
+          It's important to note that these qualifications are not exhaustive.
+        </p>
+      </div>
     </div>
-</div>
 
-<div class="containerForm">
-    <p>If you are interested you can fill up this form so we can assisst you further in order to join SOL</p>
-    <a href="EquipForm.html?equipProgram=solclass"><button>Click here</button></a>
-</div>
+    <div class="containerForm">
+      <p>
+        If you are interested you can fill up this form so we can assisst you
+        further in order to join SOL
+      </p>
+      <a href="EquipForm.html?equipProgram=solclass"
+        ><button>Click here</button></a
+      >
+    </div>
 
-<div class="bottomLinks1">
-
-   <!--
+    <div class="bottomLinks1">
+      <!--
   footer will appear here
 -->
-  </div>
+    </div>
+  </body>
+  <script>
+    //jquery for toggle dropdown menus
+    $(document).ready(function () {
+      //toggle sub-menus
+      $(".sub-btn").click(function () {
+        $(this).next(".sub-menu").slideToggle();
+      });
 
-</body>
-<script>
- //jquery for toggle dropdown menus
- $(document).ready(function(){
-            //toggle sub-menus
-            $(".sub-btn").click(function(){
-            $(this).next(".sub-menu").slideToggle();
-            });
-        
-            //toggle more-menus
-            $(".more-btn").click(function(){
-            $(this).next(".more-menu").slideToggle();
-            });
-        });
-        
-        //javascript for the responsive navigation menu
-        var menu = document.querySelector(".menu");
-        var menuBtn = document.querySelector(".menu-btn");
-        var closeBtn = document.querySelector(".close-btn");
-        
-        menuBtn.addEventListener("click", () => {
-            menu.classList.add("active");
-        });
-        
-        closeBtn.addEventListener("click", () => {
-            menu.classList.remove("active");
-        });
-        
-        //javascript for the navigation bar effects on scroll
-        window.addEventListener("scroll", function(){
-            var header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 0);
-        });
-</script>
+      //toggle more-menus
+      $(".more-btn").click(function () {
+        $(this).next(".more-menu").slideToggle();
+      });
+    });
+
+    //javascript for the responsive navigation menu
+    var menu = document.querySelector(".menu");
+    var menuBtn = document.querySelector(".menu-btn");
+    var closeBtn = document.querySelector(".close-btn");
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove("active");
+    });
+
+    //javascript for the navigation bar effects on scroll
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    });
+  </script>
 </html>

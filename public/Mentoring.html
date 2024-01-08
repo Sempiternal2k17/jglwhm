@@ -1,143 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Mentoring.css">
-    <link rel="icon" href="https://thegreatlight.web.app/HeadnFooter/logo.png" />
-    <link rel="stylesheet" href="NavbarMentoring.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Mentoring.css" />
+    <link
+      rel="icon"
+      href="https://thegreatlight.web.app/HeadnFooter/logo.png"
+    />
+    <link rel="stylesheet" href="NavbarMentoring.css" />
     <script defer src="equipping.js"></script>
     <script type="module" src="./solclass.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      charset="utf-8"
+    ></script>
     <title>Mentoring</title>
-</head>
-<body>
-
-  <header>
-    <a href="index.html" class="logo">JGLWHM</a>
-    <div class="navigation">
-      <ul class="menu">
-        <div class="close-btn"></div>
-        <li class="menu-item"><a href="index.html">Home</a></li>
-        <li class="menu-item">
-          <a class="sub-btn" href="#">Connects +</a>
-          <ul class="sub-menu">
-            <li class="sub-item"><a href="Sundayservice.html?Prompt=sundaySchool">Sunday Service</a></li>
-            <li class="sub-item"><a href="Wildfire.html?Prompt=wildFire">Wildfire</a></li>
-            <li class="sub-item"><a href="J12Kids.html?Prompt=j12kids">J12 Kids</a></li>
-            <li class="sub-item"><a href="Spearhead.html?Prompt=spearHead">Spearhead</a></li>
-            <li class="sub-item"><a href="Married4Life.html?Prompt=married4life">Married For Life</a></li>
-          </ul>
-        </li>
-        <li class="menu-item">
-          <a class="sub-btn" href="#">Equipping +</a>
-          <ul class="sub-menu">
-            <li class="sub-item"><a href="Mentoring.html">Mentoring</a></li>
-            <li class="sub-item"><a href="SOL.html">SOL CLass</a></li>
-            <li class="sub-item"><a href="LifeClass.html">Lifeclass</a></li>
-          </ul>
-        </li>
-        <li class="menu-item"><a href="Media.html">Media</a></li>
-        <li class="menu-item"><a href="index.html#prayerRequest">Prayer Request</a></li>
-        <li class="menu-item"><a href="Announcement.html?Prompt=announcement">Announcements</a></li>
-      </ul>
-    </div>
-    <div class="menu-btn"></div>
-  </header>
-  
-    <div class="bgweb">
-  
-        <div class="plateName">
-          <h2>Equipping</h2>
-        </div>
-  
-        <div class="intro">
-          <h1>Mentoring</h1>
-          <p>Be shepherds of God's flock that is under your care, watching over them—not because you must, but because you are willing, as God wants you to be; not pursuing dishonest gain, but eager to serve; not lording it over those entrusted to you, but being examples to the flock.</p>
-          <p id="verse">1 Peter 5:2-3</p>
-        </div>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">JGLWHM</a>
+      <div class="navigation">
+        <ul class="menu">
+          <div class="close-btn"></div>
+          <li class="menu-item"><a href="index.html">Home</a></li>
+          <li class="menu-item">
+            <a class="sub-btn" href="#">Connects +</a>
+            <ul class="sub-menu">
+              <li class="sub-item">
+                <a href="Sundayservice.html?Prompt=sundaySchool"
+                  >Sunday Service</a
+                >
+              </li>
+              <li class="sub-item">
+                <a href="Wildfire.html?Prompt=wildFire">Wildfire</a>
+              </li>
+              <li class="sub-item">
+                <a href="J12Kids.html?Prompt=j12kids">J12 Kids</a>
+              </li>
+              <li class="sub-item">
+                <a href="Spearhead.html?Prompt=spearHead">Spearhead</a>
+              </li>
+              <li class="sub-item">
+                <a href="Married4Life.html?Prompt=married4life"
+                  >Married For Life</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a class="sub-btn" id="highlightEquip" href="#">Equipping +</a>
+            <ul class="sub-menu">
+              <li class="sub-item"><a href="Mentoring.html">Mentoring</a></li>
+              <li class="sub-item"><a href="SOL.html">SOL CLass</a></li>
+              <li class="sub-item"><a href="LifeClass.html">Lifeclass</a></li>
+            </ul>
+          </li>
+          <li class="menu-item"><a href="Media.html">Media</a></li>
+          <li class="menu-item">
+            <a href="index.html#prayerRequest">Prayer Request</a>
+          </li>
+          <li class="menu-item">
+            <a href="Announcement.html?Prompt=announcement">Announcements</a>
+          </li>
+        </ul>
       </div>
-    
+      <div class="menu-btn"></div>
+    </header>
+
+    <div class="bgweb">
+      <div class="plateName">
+        <h2>Equipping</h2>
+      </div>
+
+      <div class="intro">
+        <h1>Mentoring</h1>
+        <p>
+          Be shepherds of God's flock that is under your care, watching over
+          them—not because you must, but because you are willing, as God wants
+          you to be; not pursuing dishonest gain, but eager to serve; not
+          lording it over those entrusted to you, but being examples to the
+          flock.
+        </p>
+        <p id="verse">1 Peter 5:2-3</p>
+      </div>
+    </div>
 
     <div class="container1">
-        <div class="subContainer1">
-            <img src="MentoringIMGs/mentor2.png" alt="">
-        </div>
-        <div class="subContainer2">
-            <h1>Learn to live a life as a Christian</h1>
-            <p>Being a Christian is often not easy and full of persecution. Frequently I hear the question, “Why is it so hard to be a Christian?”. Other people find it very easy to be a Christian. I tell people that honestly, though it isn’t easy for people to accept if your life as a Christian is easy for you, you likely aren’t living as a Christian should. In here we will teach the important things a Christian must do in their life. </p>
-        </div>
+      <div class="subContainer1">
+        <img src="MentoringIMGs/mentor2.png" alt="" />
+      </div>
+      <div class="subContainer2">
+        <h1>Learn to live a life as a Christian</h1>
+        <p>
+          Being a Christian is often not easy and full of persecution.
+          Frequently I hear the question, “Why is it so hard to be a
+          Christian?”. Other people find it very easy to be a Christian. I tell
+          people that honestly, though it isn’t easy for people to accept if
+          your life as a Christian is easy for you, you likely aren’t living as
+          a Christian should. In here we will teach the important things a
+          Christian must do in their life.
+        </p>
+      </div>
     </div>
 
-<div id="bgcolor">
-    <div class="container2">
+    <div id="bgcolor">
+      <div class="container2">
         <div class="subContainer3">
-            <h1>What is Soulwinning?</h1>
-            <p>Soul winning is preaching the word of God, giving someone an opportunity to give their lives to Christ and save them from going to hell. Through this, the person can become a child of God, enjoy His goodness and inheritance, even while on earth. This is one of many things that we will teach you as a Christian</p>
+          <h1>What is Soulwinning?</h1>
+          <p>
+            Soul winning is preaching the word of God, giving someone an
+            opportunity to give their lives to Christ and save them from going
+            to hell. Through this, the person can become a child of God, enjoy
+            His goodness and inheritance, even while on earth. This is one of
+            many things that we will teach you as a Christian
+          </p>
         </div>
         <div class="subContainer4">
-            <img src="MentoringIMGs/soulwinn.png" alt="">
+          <img src="MentoringIMGs/soulwinn.png" alt="" />
         </div>
-    </div>  
-</div>
+      </div>
+    </div>
 
     <div class="container1">
-        <div class="subContainer1">
-            <img src="MentoringIMGs/friends.png" alt="">
-        </div>
-        <div class="subContainer2">
-            <h1>Learn to live a life as a Christian</h1>
-            <p>Being a Christian is often not easy and full of persecution. Frequently I hear the question, “Why is it so hard to be a Christian?”. Other people find it very easy to be a Christian. I tell people that honestly, though it isn’t easy for people to accept if your life as a Christian is easy for you, you likely aren’t living as a Christian should. In here we will teach the important things a Christian must do in their life. </p>
-        </div>
+      <div class="subContainer1">
+        <img src="MentoringIMGs/friends.png" alt="" />
+      </div>
+      <div class="subContainer2">
+        <h1>Learn to live a life as a Christian</h1>
+        <p>
+          Being a Christian is often not easy and full of persecution.
+          Frequently I hear the question, “Why is it so hard to be a
+          Christian?”. Other people find it very easy to be a Christian. I tell
+          people that honestly, though it isn’t easy for people to accept if
+          your life as a Christian is easy for you, you likely aren’t living as
+          a Christian should. In here we will teach the important things a
+          Christian must do in their life.
+        </p>
+      </div>
     </div>
 
     <div class="containerForm">
-      <p>If you are interested you can fill up this form so we can assisst you further in order to join Mentoring classes</p>
-      <a href="EquipForm.html?equipProgram=mentoring"><button>Click here</button></a>
+      <p>
+        If you are interested you can fill up this form so we can assisst you
+        further in order to join Mentoring classes
+      </p>
+      <a href="EquipForm.html?equipProgram=mentoring"
+        ><button>Click here</button></a
+      >
     </div>
 
-
     <div class="bottomLinks1">
-    <!--
+      <!--
       footer will appear here
-    -->
-      </div>
-  
-    
-</body>
-<script>
-  // used to be equipping.js
-   //jquery for toggle dropdown menus
-   $(document).ready(function(){
-            //toggle sub-menus
-            $(".sub-btn").click(function(){
-            $(this).next(".sub-menu").slideToggle();
-            });
-        
-            //toggle more-menus
-            $(".more-btn").click(function(){
-            $(this).next(".more-menu").slideToggle();
-            });
-        });
-        
-        //javascript for the responsive navigation menu
-        var menu = document.querySelector(".menu");
-        var menuBtn = document.querySelector(".menu-btn");
-        var closeBtn = document.querySelector(".close-btn");
-        
-        menuBtn.addEventListener("click", () => {
-            menu.classList.add("active");
-        });
-        
-        closeBtn.addEventListener("click", () => {
-            menu.classList.remove("active");
-        });
-        
-        //javascript for the navigation bar effects on scroll
-        window.addEventListener("scroll", function(){
-            var header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 0);
-        });
-</script>
+    --></div>
+  </body>
+  <script>
+    // used to be equipping.js
+    //jquery for toggle dropdown menus
+    $(document).ready(function () {
+      //toggle sub-menus
+      $(".sub-btn").click(function () {
+        $(this).next(".sub-menu").slideToggle();
+      });
+
+      //toggle more-menus
+      $(".more-btn").click(function () {
+        $(this).next(".more-menu").slideToggle();
+      });
+    });
+
+    //javascript for the responsive navigation menu
+    var menu = document.querySelector(".menu");
+    var menuBtn = document.querySelector(".menu-btn");
+    var closeBtn = document.querySelector(".close-btn");
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove("active");
+    });
+
+    //javascript for the navigation bar effects on scroll
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    });
+  </script>
 </html>
