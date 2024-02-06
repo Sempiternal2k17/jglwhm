@@ -51,11 +51,11 @@
       <div class="containers">
         <form  id="formSubmit">
             <label>Name (Optional) </label> <br>
-            <input type="text" id="fullName" > <br>
-            <label>Email </label> <br>
-            <input type="email" id="email"  required> <br>
+            <input type="text" id="fullName" oninput="this.value=(this.value.match('[a-zA-Z ]+'))""/> <br>
+            <label>Primary Leader </label> <br>
+            <input type="email" id="email"  oninput="this.value=(this.value.match('[a-zA-Z ]+'))"" required /> <br>
             <label>Contact Number (Optional)  </label> <br>
-            <input type="tel" id="phoneNum"  placeholder="09123456789" pattern="[0-9]{11}"> <br>
+            <input type="tel" id="phoneNum"  placeholder="09123456789" oninput="this.value=(this.value.match('[0-9]+'))"" maxlength="11" /> <br>
             <label>Prayer Request</label>
             <textarea  id="body"  cols="30" rows="10" maxlength="450" required></textarea>
          

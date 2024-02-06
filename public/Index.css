@@ -1,18 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed:ital,wght@0,400;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed:ital,wght@0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-  font-family: 'Roboto Condensed', sans-serif;
-  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -24,1799 +21,1792 @@
 ::-webkit-scrollbar-thumb {
   background: black;
 }
-::selection{
-background: rgb(0,123,255,0.3);
+::selection {
+  background: rgb(0, 123, 255, 0.3);
 }
 
 .please {
-	position: relative;
-	z-index: 1;
-	min-height: 100%;
+  position: relative;
+  z-index: 1;
+  min-height: 100%;
 }
 
-    .mySlides {
-        display: none;
-      }
-      
-      .mySlides img{
-        width: 100%;
-        margin-bottom: 10%;
-      }
-      
-      /* Slideshow container */
-      .slideshow-container {
-        width: 100%;
-        height: 100%;
-        max-height: 100vh;
-        margin: auto;
-        overflow-y: hidden;
-		overflow-x: hidden;
-      }
-      /* The dots/bullets/indicators */
-      .dot {
-      
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-      
-      }
-      
-      .active {
-        background-color: #717171;
-      }
-      
-      /* Fading animation */
-      .fade {
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 1s;
-        animation-name: fade;
-        animation-duration: 1s;
-      }
-      
-      @-webkit-keyframes fade {
-        from {
-            opacity: .7
-        }
-      
-        to {
-            opacity: 1
-        }
-      }
-      
-      @keyframes fade {
-        from {
-            opacity: .7
-        }
-      
-        to {
-            opacity: 1
-        }
-      }
-      
-      /* On smaller screens, decrease text size */
-      @media only screen and (max-width: 300px) {
-      
-        .prev,
-        .next,
-        .text {
-            font-size: 11px
-        }
-      }
-      
-      /* Next & previous buttons */
-      .prev,
-      .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        padding: 16px;
-        margin-top: -22px;
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-      }
-      
-      /* Position the "next button" to the right */
-      .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
-      }
-      
-      /* On hover, add a black background color with a little bit see-through */
-      .prev:hover,
-      .next:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-      }
+.mySlides {
+  display: none;
+}
 
-      @media (max-width: 1060px){
-        .mySlides {
-          margin-top: 15%;
-          height: 100%;
-        }
-      }
+.mySlides img {
+  width: 100%;
+  margin-bottom: 10%;
+}
 
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  height: 100%;
+  max-height: 100vh;
+  margin: auto;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
 
-      /* ================================================================================ */
+.active {
+  background-color: #717171;
+}
 
-      .container{
-        margin-left: 15%;
-        margin-right: 15%;
-        margin-bottom: 5%;
-      }
-      
-      .container em{
-        font-weight: bold;
-        text-decoration: underline;
-      }
-      
-      .container h1{
-        font-family: 'AudioWide';
-        margin-top: 5%;
-        font-size: 3vw;
-        text-align: center;
-      }
-      
-      .container p{
-        margin-top: 7%;
-        font-size: 1.9vw;
-      }
-      
-      #word{
-        margin-top: 3%;
-        font-size: 1.9vw;
-      }
-      
-      /* ================================================ */
-      
-      .desc{
-        display: block;
-        justify-content: center;
-      }
-      
-      a{
-        text-decoration: none;
-        color: white;
-      }
-      
-      .desc h1{
-        font-family: 'AudioWide';
-        text-align: center;
-        padding-top: 8%;
-        padding-bottom: 3%;
-        font-size: 4vw;
-      }
-      
-      .desc p{
-        margin-left: 15%;
-        margin-right: 15%;
-        font-size: 1.9vw; 
-        padding-bottom: 5%;
-      }
-      
-      .aboutUs{
-        display: flex;
-        color: white;
-        margin-bottom: 5%;
-        background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(HeadnFooter/background.jpg);
-        background-size: cover;
-        background-attachment: fixed;
-      }
-      
-      .vision{
-        width: 33.3%;
-        padding: 5%;
-        transition: 0.5s;
-      }
-      
-      .vision h1{
-        font-family: 'AudioWide';
-        text-align: center;
-        margin-bottom: 10%;
-        font-size: 3vw;
-      }
-      
-      .vision p{
-        font-size: 1.9vw;
-        text-align: center;
-      }
-      
-      .vision:hover{
-        background-color: white;
-        color: black;
-      }
-      
-      /* ================================================ */
-      
-      .pastorContainer{
-        margin-left: 15%;
-        margin-right: 15%;
-        margin-bottom: 4%;
-      }
-      
-      .pastorContainer h1{
-        font-family: 'AudioWide';
-        font-size: 3vw;
-        text-align: center;
-      }
-      
-      .pastors{
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-bottom: 5%;
-        display: flex;
-        align-items: center;
-      }
-      
-      .pastors img{
-        width: 50%;
-        border-radius: 50%;
-      }
-      
-      .pText{
-        margin-left: 3%;
-      }
-      
-      .pText h1{
-        font-family: 'AudioWide';
-        font-size: 2.5vw;
-      }
-      
-      .pText p{
-        font-size: 1.5vw;
-      }
-      
-      /* ================================================ */
-      
-      .cSection{
-        display: block;
-        color: white;
-      }
-      
-      .row1{
-        display: flex;
-        margin: 2% 5%;
-      }
-      
-      .sunday{
-        width: 50%;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(AnnounceIMGs/Sunday\ Service.png);
-        background-size: cover;
-        background-position: center;
-        color: white;
-        flex: 1;
-        border-radius: 20px;
-      }
-      
-      .sundayDesc{
-        padding-top: 15%;
-        padding-bottom: 15%;
-        padding-left: 5%;
-        padding-right: 5%;
-        transition: 0.5s;
-        cursor: pointer;
-        height: 100%;
-        border-radius: 20px;
-      }
-      
-      .sundayDesc h1{
-        font-family: 'AudioWide';
-        font-size: 2.5vw;
-        text-align: center;
-      }
-      
-      .sundayDesc h2{
-        font-family: 'AudioWide';
-        font-size: 1.5vw;
-        text-align: center;
-        margin-bottom: 5%;
-      }
-      
-      .sundayDesc p{
-        font-size: 1.5vw;
-        text-align: center;
-        margin-bottom: 5%
-      }
-      
-      .sundayDesc:hover{
-        background-color: #FBEAEB;
-        color: #2F3C7E;
-        border-radius: 20px;
-        box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
-        -webkit-box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
-      }
-      
-      
-      /* ================================================ */
-      
-      .wildfire{
-        width: 50%;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(AnnounceIMGs/Wildfire.jpg);
-        background-size: cover;
-        background-position: center;
-        color: white;
-        flex: 1;
-        margin-left: 2%;
-        border-radius: 20px;
-      }
-      
-      .wildfireDesc{
-        padding-top: 15%;
-        padding-bottom: 15%;
-        padding-left: 5%;
-        padding-right: 5%;
-        transition: 0.5s;
-        cursor: pointer;
-        flex: 1;
-        height: 100%;
-        border-radius: 20px;
-      }
-      
-      .wildfireDesc h1{
-        font-family: 'AudioWide';
-        font-size: 2.5vw;
-        text-align: center;
-      }
-      
-      .wildfireDesc h2{
-        font-family: 'AudioWide';
-        font-size: 1.5vw;
-        text-align: center;
-        margin-bottom: 5%;
-      }
-      
-      .wildfireDesc p{
-        font-size: 1.5vw;
-        text-align: center;
-        margin-bottom: 5%
-      }
-      
-      .wildfireDesc:hover{
-        background-color: black;
-        color: yellow;
-        border-radius: 20px;
-        box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
-        -webkit-box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
-      }
-      
-      /* ================================================ */
-      
-      .row2{
-        display: flex;
-        margin: 0% 5%;
-      }
-      
-      .j12{
-        align-items: center;
-        border-radius: 20px;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(AnnounceIMGs/J12Kids.png);
-        background-size: cover;
-        background-position: center;
-        color: white;
-        flex: 1;
-      }
-      
-      .j12Desc{
-        padding-top: 15%;
-        padding-bottom: 15%;
-        padding-left: 5%;
-        padding-right: 5%;
-        transition: 0.5s;
-        cursor: pointer;
-        flex: 1;
-        height: 100%;
-        border-radius: 20px;
-      }
-      
-      .j12Desc h1{
-        font-family: 'AudioWide';
-        font-size: 2.5vw;
-        text-align: center;
-      }
-      
-      .j12Desc h2{
-        font-family: 'AudioWide';
-        font-size: 1.5vw;
-        text-align: center;
-        margin-bottom: 5%;
-      }
-      
-      .j12Desc p{
-        font-size: 1.5vw;
-        text-align: center;
-        margin-bottom: 5%
-      }
-      
-      .j12Desc:hover{
-        background-color: #00FFFF;
-        color: #FF69B4;
-        border-radius: 20px;
-        box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
-        -webkit-box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
-      }
-      
-      /* ================================================ */
-      
-      .spearhead{
-        margin: 0% 2%;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(AnnounceIMGs/Spearhead.png);
-        background-size: cover;
-        background-position: center;
-        color: white;
-        flex: 1;
-        border-radius: 20px;
-      }
-      
-      .spearheadDesc{
-        padding-top: 15%;
-        padding-bottom: 12%;
-        padding-left: 5%;
-        padding-right: 5%;
-        transition: 0.5s;
-        cursor: pointer;
-        flex: 1;
-        height: 100%;
-        width: 100%;
-        border-radius: 20px;
-      }
-      
-      .spearheadDesc h1{
-        font-family: 'AudioWide';
-        font-size: 2.5vw;
-        text-align: center;
-      }
-      
-      .spearheadDesc h2{
-        font-family: 'AudioWide';
-        font-size: 1.5vw;
-        text-align: center;
-        margin-bottom: 5%;
-      }
-      
-      .spearheadDesc p{
-        font-size: 1.5vw;
-        text-align: center;
-        margin-bottom: 5%
-      }
-      
-      .spearheadDesc:hover{
-        background-color: #FFE77AFF;
-        color: #2C5F2DFF;
-        border-radius: 20px;
-        box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
-        -webkit-box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
-      }
-      
-      /* ================================================ */
-      
-      .married{
-        border-radius: 20px;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(AnnounceIMGs/married.jpg);
-        background-size: cover;
-        background-position: center;
-        color: white;
-        flex: 1;
-      }
-      
-      .marriedDesc{
-        padding-top: 15%;
-        padding-bottom: 15%;
-        padding-left: 5%;
-        padding-right: 5%;
-        transition: 0.5s;
-        cursor: pointer;
-        flex: 1;
-        height: 100%;
-        border-radius: 20px;
-      }
-      
-      .marriedDesc h1{
-        font-family: 'AudioWide';
-        font-size: 2.5vw;
-        text-align: center;
-      }
-      
-      .marriedDesc h2{
-        font-family: 'AudioWide';
-        font-size: 1.5vw;
-        text-align: center;
-        margin-bottom: 5%;
-      }
-      
-      .marriedDesc p{
-        font-size: 1.5vw;
-        text-align: center;
-        margin-bottom: 5%
-      }
-      
-      .marriedDesc:hover{
-        background-color: #f7c5cc;
-        color: #cc313d;
-        border-radius: 20px;
-        box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
-        -webkit-box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
-      }
-      
-      /* ================================================ */
-      
-      .equip{
-        display: flex;
-        margin: 0% 5%;
-      }
-      
-      .mentoring{
-        align-items: center;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(HeadnFooter/mentoring.png);
-        background-size: cover;
-        background-position: center;
-        color: white;
-        flex: 1;
-        border-radius: 20px;
-      }
-      
-      .mentoringDesc{
-        padding-top: 20%;
-        padding-bottom: 15%;
-        padding-left: 5%;
-        padding-right: 5%;
-        transition: 0.5s;
-        cursor: pointer;
-        height: 100%;
-        border-radius: 20px;
-      }
-      
-      .mentoringDesc h1{
-        font-family: 'AudioWide';
-        font-size: 2.5vw;
-        text-align: center;
-      }
-      
-      .mentoringDesc p{
-        font-size: 1.5vw;
-        text-align: center;
-      }
-      
-      .mentoringDesc:hover{
-        background-color: #FFA3FD;
-        color: #191825;
-        border-radius: 20px;
-        box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
-        -webkit-box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
-      }
-      
-      /* ================================================ */
-      
-      .solclass{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(AnnounceIMGs/Solclass.jpg);
-        background-size: cover;
-        background-position: center;
-        color: white;
-        flex: 1;
-        margin: 0% 2%;
-        border-radius: 20px;
-      }
-      
-      .solDesc{
-        padding-top: 15%;
-        padding-bottom: 12%;
-        padding-left: 5%;
-        padding-right: 5%;
-        transition: 0.5s;
-        cursor: pointer;
-        flex: 1;
-        height: 100%;
-        border-radius: 20px;
-      }
-      
-      .solDesc h1{
-        font-family: 'AudioWide';
-        font-size: 2.5vw;
-        text-align: center;
-      }
-      
-      .solDesc p{
-        font-size: 1.5vw;
-        text-align: center;
-        margin-bottom: 5%
-      }
-      
-      .solDesc:hover{
-        background-color: #1868AE;
-        color: #C6D7EB;
-        border-radius: 20px;
-        box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
-        -webkit-box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
-      }
-      
-      /* ================================================ */
-      
-      .lifeclass{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(AnnounceIMGs/Lifeclass.png);
-        background-size: cover;
-        background-position: center;
-        color: white;
-        flex: 1;
-        border-radius: 20px;
-      }
-      
-      .lifeclassDesc{
-        padding-top: 15%;
-        padding-bottom: 15%;
-        padding-left: 5%;
-        padding-right: 5%;
-        transition: 0.5s;
-        cursor: pointer;
-        flex: 1;
-        height: 100%;
-        border-radius: 20px;
-      }
-      
-      .lifeclassDesc h1{
-        font-family: 'AudioWide';
-        font-size: 2.5vw;
-        text-align: center;
-      }
-      
-      .lifeclassDesc p{
-        font-size: 1.5vw;
-        text-align: center;
-        margin-bottom: 5%
-      }
-      
-      .lifeclassDesc:hover{
-        background-color: #3EB489;
-        color: white;
-        border-radius: 20px;
-        box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
-        -webkit-box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.75);
-      }
-      
-      /* ================================================ */
-      
-      .photos{
-        margin-left: 10%;
-        margin-right: 10%;
-        padding-top: 10%;
-        display: flex;
-        align-items: center;
-      }
-      
-      .mediaImg img{
-        width: 100%;
-        border-radius: 50%;
-      }
-      
-      .mediaDesc{
-        margin-left: 3%;
-      }
-      
-      .mediaDesc h1{
-        font-family: 'AudioWide';
-        font-size: 2.5vw;
-      }
-      
-      .mediaDesc p{
-        font-size: 1.5vw;
-      }
-      
-      .mediaDesc .button {
-        border-radius: 4px;
-        background-color: #e23c52;
-        border: none;
-        color: #bdfff6;
-        text-align: center;
-        font-size: 1.3vw;
-        padding: 2%;
-        width: 25%;
-        transition: all 0.5s;
-        cursor: pointer;
-        margin-top: 3%;
-      }
-      
-      .button h1{
-        font-size: 1.3vw;
-      }
-      
-      .mediaDesc .button span {
-        cursor: pointer;
-        display: inline-block;
-        position: relative;
-        transition: 0.5s;
-      }
-      
-      .mediaDesc .button span:after {
-        content: '\00bb';
-        position: absolute;
-        opacity: 0;
-        top: 0;
-        right: -5px;
-        transition: 0.5s;
-        width: 18%;
-      }
-      
-      .mediaDesc .button:hover span {
-        padding-right: 13%;
-      }
-      
-      .mediaDesc .button:hover span:after {
-        opacity: 1;
-        right: 0;
-      }
-      
-      /* ================================================ */
-      
-      .pandA{
-        display: block;
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-bottom: 5%;
-        padding-top: 10%;
-        justify-content: center;
-        align-items: center;
-      }
-      
-      .brrr{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 2%;
-      }
-      
-      .brrr a{
-        color: white;
-        padding: 1%;
-        padding-left: 2%;
-        padding-right: 2%;
-        border-radius: 10px;
-        font-family: 'AudioWide';
-        font-size: 1.4vw;
-        background-color: black;
-      }
-      
-      .prayerReq{
-        text-align: left;
-        padding-bottom: 5%;
-      }
-      
-      .prayerReq span{
-        text-align: right;
-      }
-      
-      .prayerReq h1{
-        font-family: 'AudioWide';
-        font-size: 3vw;
-      }
-      
-      .prayerReq p{
-        font-size: 2vw;
-        text-align: justify;
-      }
-      
-      .scroll{
-        margin-left: 2%;
-        margin-right: 2%;
-        border: 1px black solid;
-        padding: 4%;
-        border-radius: 10px;
-        height: 500px;
-        margin-bottom: 5%;
-        overflow: scroll;
-        overflow-x: hidden;
-        background-color: #ECF9FF;
-      }
-      
-      @media (max-width: 1920px){
-        .scroll{
-          height: 720px;
-        }
-      }
-      
-      .scroll::-webkit-scrollbar{
-        display: block;
-        width: 100%;
-      }
-      
-      .scroll::-webkit-scrollbar-track{
-        background-color: white;
-        border-radius: 50%;
-      }
-      
-      .scroll::-webkit-scrollbar-thumb{
-        background-color: black;
-        border-radius: 10px;
-      }
-      
-      
-      
-      .pandA .button {
-        border-radius: 4px;
-        background-color: #e23c52;
-        border: none;
-        color: #bdfff6;
-        text-align: center;
-        font-size: 1.3vw;
-        padding: 2%;
-        width: 20%;
-        transition: all 0.5s;
-        cursor: pointer;
-        margin-top: 3%;
-      }
-      
-      .pandA .button h1{
-        font-size: 1.3vw;
-      }
-      
-      .pandA .button span {
-        cursor: pointer;
-        display: inline-block;
-        position: relative;
-        transition: 0.5s;
-      }
-      
-      .pandA .button span:after {
-        content: '\00bb';
-        position: absolute;
-        opacity: 0;
-        top: 0;
-        right: 10px;
-        transition: 0.5s;
-        width: 10%;
-      }
-      
-      .pandA .button:hover span {
-        padding-right: 13%;
-      }
-      
-      .pandA .button:hover span:after {
-        opacity: 1;
-        right: 0;
-      }
-      
-      /* ================================================ */
-      
-      .announcement{
-        margin-top: 20%;
-        text-align: center;
-      }
-      
-      .announcement h1{
-        font-family: 'AudioWide';
-        font-size: 2.5vw;
-      }
-      
-      .announcement p{
-        font-size: 1.7vw;
-      }
-      
-      /* ================================================ */
-      
-      .bottomLinks{
-        display: flex;
-        margin-top: 5%;
-        background-color: black;
-        color: white;
-        border-bottom: 3px grey solid;
-      }
-      
-      .firstGrid{
-        text-align: center;
-        border-right: white 1px solid;
-        padding: 2%;
-        width: 20%;
-      }
-      
-      .firstGrid img{
-        width: 50%;
-      }
-      
-      .firstGrid h1{
-        margin-top: 5%;
-        text-align: center;
-      }
-      
-      .firstGrid a{
-        margin-top: 7%;
-        font-size: 3.5vw;
-        font-family: 'Source Code Pro';
-      }
-      
-      .firstGrid p{
-        margin-top: 10%;
-        font-size: 1vw;
-        text-align: left;
-        color: grey;
-        font-family: 'Source Code Pro';
-      }
-      
-      /* =================================================== */
-      
-      
-      .secondGrid{
-        width: 20%;
-        display: inline-block;
-        margin-left: 3%;
-        margin-top: 4%;
-      }
-      
-      .secondGrid p{
-        font-family: 'Source Code Pro';
-        font-size: 1.2vw;
-      }
-      
-      .botli{
-        margin-top: 40%;
-      }
-      
-      .botli p{
-        margin-bottom: 2%;
-      }
-      
-      .botli a{
-        font-family: 'Source Code Pro';
-        font-size: 1.2vw;
-        color: gray;
-      }
-      
-      .botli a:hover{
-        color: white;
-        transition: 0.5s;
-      }
-      
-      /* =================================================== */
-      
-      .thirdGrid{
-        width: 20%;
-        display: inline-block;
-        margin-top: 4%;
-      }
-      
-      .thirdGrid p{
-        font-family: 'Source Code Pro';
-        font-size: 1.2vw;
-      }
-      
-      .botli{
-        margin-top: 40%;
-      }
-      
-      .botli p{
-        margin-bottom: 2%;
-      }
-      
-      .botli a{
-        font-family: 'Source Code Pro';
-        font-size: 1.2vw;
-        color: gray;
-      }
-      
-      .botli a:hover{
-        color: white;
-        transition: 0.5s;
-      }
-      
-      .mobileLinks{
-        display: none;
-      }
-      
-      /* ================================================ */
-      
-      @media (max-width: 500px) {
-        .navbar .logo img{
-          width: 40%;
-        }
-      
-        .icon img{
-          width: 100%;
-          max-width: 40px;
-        }
-      
-        .container{
-          margin-left: 5%;
-          margin-right: 5%;
-          margin-bottom: 10%;
-        }
-      
-        .container h1{
-          font-family: 'AudioWide';
-          margin-top: 5%;
-          font-size: 5.5vw;
-          text-align: center;
-        }
-      
-        .container p{
-          margin-top: 7%;
-          font-size: 3.5vw;
-          text-align: justify;
-        }
-      
-        #word{
-          margin-top: 3%;
-          font-size: 3.5vw;
-        }
-      
-      /* ================================================ */
-      
-        .aboutUs{
-          background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(HeadnFooter/mobileBackground.jpg);
-          background-size: cover;
-          display: block;
-          color: white;
-          margin-bottom: 5%;
-          background-attachment: scroll;
-        }
-        
-        .vision{
-          width: 100%;
-          padding: 5%;
-          transition: 0.5s;
-          cursor: pointer;
-        }
-        
-        .vision h1{
-          font-family: 'AudioWide';
-          text-align: center;
-          margin-bottom: 2%;
-          font-size: 5.5vw;
-        }
-        
-        .vision p{
-          font-size: 3.5vw;
-          text-align: center;
-        }
-        
-        .vision:hover{
-          background-color: white;
-          color: black;
-        }
-      
-        /* ================================================ */
-      
-        .pastorContainer{
-          margin-top: 20%;
-          margin-left: 15%;
-          margin-right: 15%;
-          margin-bottom: 4%;
-        }
-        
-        .pastorContainer h1{
-          font-family: 'AudioWide';
-          font-size: 5.5vw;
-          text-align: center;
-        }
-        
-        .pastors{
-          margin-left: 5%;
-          margin-right: 5%;
-          margin-bottom: 5%;
-          display: block;
-          align-items: center;
-        }
-        
-        .pastors img{
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          width: 100%;
-          border-radius: 50%;
-        }
-        
-        .pText{
-          margin-top: 4%;
-          margin-left: 0;
-          margin-bottom: 20%;
-        }
-        
-        .pText h1{
-          font-family: 'AudioWide';
-          font-size: 5vw;
-          text-align: center;
-        }
-        
-        .pText p{
-          margin-top: 2%;
-          font-size: 3.5vw;
-          text-align: center;
-        }
-      
-      /* ================================================ */
-      
-      .desc{
-        display: block;
-        justify-content: center;
-        background-color: #eceaea;
-        padding-top: 10%;
-        padding-bottom: 10%;
-      }
-      
-      a{
-        text-decoration: none;
-        color: white;
-      }
-      
-      .desc h1{
-        font-family: 'AudioWide';
-        text-align: center;
-        padding-top: 3%;
-        padding-bottom: 3%;
-        font-size: 7vw;
-      }
-      
-      .desc p{
-        margin-left: 8%;
-        margin-right: 8%;
-        font-size: 4vw; 
-        padding-bottom: 3%;
-        text-align: justify;
-      }
-      
-        .row1{
-          display: block;
-          margin: 0%, 0%;
-        }
-      
-        .sunday{
-          width: 100%;
-          background-size: cover;
-          background-position: center;
-          color: white;
-          margin-bottom: 0;
-          flex: 1;
-          margin: 0%;
-        }
-        
-        .sundayDesc{
-          padding-top: 5%;
-          padding-bottom: 5%;
-          padding-left: 5%;
-          padding-right: 5%;
-          transition: 0.5s;
-          cursor: pointer;
-        }
-        
-        .sundayDesc h1{
-          font-family: 'AudioWide';
-          font-size: 6vw;
-          text-align: center;
-        }
-        
-        .sundayDesc h2{
-          font-family: 'AudioWide';
-          font-size: 4vw;
-          text-align: center;
-          margin-bottom: 5%;
-        }
-        
-        .sundayDesc p{
-          font-size: 4vw;
-          text-align: center;
-          margin-bottom: 5%
-        }
-        
-        /* ================================================ */
-      
-        .wildfire{
-          width: 100%;
-          background-size: cover;
-          background-position: center;
-          color: white;
-          margin-bottom: 5%;
-          margin-left: 0;
-          margin-top: 2%;
-          flex: 1;
-        }
-        
-        .wildfireDesc{
-          padding-top: 5%;
-          padding-bottom: 5%;
-          padding-left: 5%;
-          padding-right: 5%;
-          transition: 0.5s;
-          cursor: pointer;
-        }
-        
-        .wildfireDesc h1{
-          font-family: 'AudioWide';
-          font-size: 6vw;
-          text-align: center;
-        }
-        
-        .wildfireDesc h2{
-          font-family: 'AudioWide';
-          font-size: 4vw;
-          text-align: center;
-          margin-bottom: 5%;
-        }
-        
-        .wildfireDesc p{
-          font-size: 4vw;
-          text-align: center;
-          margin-bottom: 5%
-        }
-      
-        /* ================================================ */
-      
-        .row2{
-          display: block;
-          margin-top: -2%;
-        }
-        
-        .j12{
-          align-items: center;
-          width: 100%;
-          background-size: cover;
-          background-position: center;
-          color: white;
-          flex: 1;
-          margin-bottom: 5%;
-          margin-left: 0;
-          margin-top: 2%;
-        }
-        
-        .j12Desc{
-          padding-top: 15%;
-          padding-bottom: 15%;
-          padding-left: 5%;
-          padding-right: 5%;
-          transition: 0.5s;
-          cursor: pointer;
-          flex: 1;
-          height: 100%;
-        }
-        
-        .j12Desc h1{
-          font-family: 'AudioWide';
-          font-size: 6vw;
-          text-align: center;
-        }
-        
-        .j12Desc h2{
-          font-family: 'AudioWide';
-          font-size: 4vw;
-          text-align: center;
-          margin-bottom: 5%;
-        }
-        
-        .j12Desc p{
-          font-size: 4vw;
-          text-align: center;
-          margin-bottom: 5%
-        }
-        
-        
-        /* ================================================ */
-      
-        .spearhead{
-          width: 100%;
-          background-size: cover;
-          background-position: center;
-          color: white;
-          flex: 1;
-          margin-bottom: 5%;
-          margin-left: 0;
-        }
-        
-        .spearheadDesc{
-          padding-top: 15%;
-          padding-bottom: 15%;
-          padding-left: 5%;
-          padding-right: 5%;
-          transition: 0.5s;
-          cursor: pointer;
-          flex: 1;
-          height: 100%;
-        }
-        
-        .spearhead h1{
-          font-family: 'AudioWide';
-          font-size: 6vw;
-          text-align: center;
-        }
-        
-        .spearhead h2{
-          font-family: 'AudioWide';
-          font-size: 4vw;
-          text-align: center;
-          margin-bottom: 5%;
-        }
-        
-        .spearhead p{
-          font-size: 4vw;
-          text-align: center;
-          margin-bottom: 5%
-        }
-        
-        /* ================================================ */
-      
-        .married{
-          width: 100%;
-          background-size: cover;
-          background-position: center;
-          color: white;
-          margin-bottom: 5%;
-          margin-left: 0;
-          flex: 1;
-        }
-        
-        .marriedDesc{
-          padding-top: 15%;
-          padding-bottom: 15%;
-          padding-left: 5%;
-          padding-right: 5%;
-          transition: 0.5s;
-          cursor: pointer;
-          flex: 1;
-          height: 100%;
-        }
-        
-        .marriedDesc h1{
-          font-family: 'AudioWide';
-          font-size: 6vw;
-          text-align: center;
-        }
-        
-        .marriedDesc h2{
-          font-family: 'AudioWide';
-          font-size: 4vw;
-          text-align: center;
-          margin-bottom: 5%;
-        }
-        
-        .marriedDesc p{
-          font-size: 4vw;
-          text-align: center;
-          margin-bottom: 5%
-        }
-        
-        /* ================================================ */
-      
-        .equip{
-          display: block;
-          margin-top: 5%;
-        }
-        
-        .mentoring{
-          align-items: center;
-          width: 100%;
-          background-size: cover;
-          background-position: center;
-          color: white;
-          margin-bottom: 5%;
-          margin-left: 0;
-          flex: 1;
-        }
-        
-        .mentoringDesc{
-          padding-top: 20%;
-          padding-bottom: 15%;
-          padding-left: 5%;
-          padding-right: 5%;
-          transition: 0.5s;
-          cursor: pointer;
-          height: 100%;
-        }
-        
-        .mentoringDesc h1{
-          font-family: 'AudioWide';
-          font-size: 6vw;
-          text-align: center;
-        }
-        
-        .mentoringDesc p{
-          font-size: 4vw;
-          text-align: center;
-        }
-        
-        
-        /* ================================================ */
-      
-        .solclass{
-          width: 100%;
-          background-position: center;
-          color: white;
-          flex: 1;
-          margin-bottom: 5%;
-          margin-left: 0;
-        }
-        
-        .solDesc{
-          padding-top: 15%;
-          padding-bottom: 12%;
-          padding-left: 5%;
-          padding-right: 5%;
-          transition: 0.5s;
-          cursor: pointer;
-          flex: 1;
-          height: 100%;
-        }
-        
-        .solDesc h1{
-          font-family: 'AudioWide';
-          font-size: 6vw;
-          text-align: center;
-        }
-        
-        .solDesc p{
-          font-size: 4vw;
-          text-align: center;
-        }
-        
-      
-        /* ================================================ */
-        
-        .lifeclass{
-          width: 100%;
-          background-size: cover;
-          background-position: center;
-          color: white;
-          flex: 1;
-          margin-bottom: 5%;
-          margin-left: 0;
-          
-        }
-        
-        .lifeclassDesc{
-          padding-top: 15%;
-          padding-bottom: 15%;
-          padding-left: 5%;
-          padding-right: 5%;
-          transition: 0.5s;
-          cursor: pointer;
-          flex: 1;
-          height: 100%;
-        }
-        
-        .lifeclassDesc h1{
-          font-family: 'AudioWide';
-          font-size: 6vw;
-          text-align: center;
-        }
-        
-        .lifeclassDesc p{
-          font-size: 4vw;
-          text-align: center;
-          margin-bottom: 5%
-        }
-      
-          /* ================================================ */
-      
-        .photos{
-          margin-top: 10%;
-          margin-left: 5%;
-          margin-right: 5%;
-          margin-bottom: 5%;
-          display: block;
-          align-items: center;
-        }
-        
-        .mediaImg img{
-          display: block;
-          margin: auto;
-          width: 100%;
-          border-radius: 50%;
-        }
-        
-        .mediaDesc{
-          margin-top: 5%;
-          margin-left: 0%;
-        }
-        
-        .mediaDesc h1{
-          font-family: 'AudioWide';
-          font-size: 6vw;
-          text-align: center;
-        }
-        
-        .mediaDesc p{
-          font-size: 4vw;
-          text-align: center;
-        }
-        
-        .mediaDesc .button {
-          display: block;
-          border-radius: 4px;
-          background-color: #e23c52;
-          border: none;
-          color: #bdfff6;
-          text-align: center;
-          padding: 2%;
-          width: 50%;
-          transition: all 0.5s;
-          cursor: pointer;
-          margin: auto;
-          margin-top: 3%;
-          font-size: 4vw
-        }
-        
-        .button h1{
-          font-size: 4vw;
-        }
-        
-        .mediaDesc .button span {
-          cursor: pointer;
-          display: inline-block;
-          position: relative;
-          transition: 0.5s;
-        }
-        
-        .mediaDesc .button span:after {
-          content: '\00bb';
-          position: absolute;
-          opacity: 0;
-          top: 0px;
-          right: -20px;
-          transition: 0.5s;
-          width: 20px;
-        }
-        
-        .mediaDesc .button:hover span {
-          padding-right: 15%;
-        }
-        
-        .mediaDesc .button:hover span:after {
-          opacity: 1;
-          right: 0;
-        }
-      
-         /* ================================================ */
-      
-        .pandA{
-          display: block;
-          margin-left: 5%;
-          margin-right: 5%;
-          margin-bottom: 5%;
-          justify-content: center;
-        }
-        
-        .prayerReq{
-          text-align: center;
-        }
-        
-        .prayerReq h1{
-          font-family: 'AudioWide';
-          font-size: 6vw;
-        }
-        
-        .prayerReq p{
-          font-size: 5vw;
-        }
-        
-        .pandA .button {
-          border-radius: 4px;
-          background-color: #e23c52;
-          border: none;
-          color: #bdfff6;
-          text-align: center;
-          font-size: 1.3vw;
-          padding: 2%;
-          width: 60%;
-          transition: all 0.5s;
-          cursor: pointer;
-          margin-top: 3%;
-          font-size: 4vw
-        }
-        
-        .pandA .button h1{
-          font-size: 4vw;
-        }
-        
-        .pandA .button span {
-          cursor: pointer;
-          display: inline-block;
-          position: relative;
-          transition: 0.5s;
-        }
-        
-        .pandA .button span:after {
-          content: '\00bb';
-          position: absolute;
-          opacity: 0;
-          top: 0;
-          right: -20px;
-          transition: 0.5s;
-          width: 18%;
-        }
-        
-        .pandA .button:hover span {
-          padding-right: 13%;
-        }
-        
-        .pandA .button:hover span:after {
-          opacity: 1;
-          right: 0;
-        }
-      
-        .brrr{
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          margin-bottom: 2%;
-        }
-        
-        .brrr a{
-          color: white;
-          padding: 1%;
-          padding-left: 2%;
-          padding-right: 2%;
-          border-radius: 5px;
-          font-family: 'AudioWide';
-          font-size: 2.5vw;
-          background-color: black;
-        }
-        
-        .prayerReq{
-          text-align: left;
-          padding-bottom: 5%;
-        }
-        
-        .prayerReq span{
-          text-align: right;
-        }
-        
-        .prayerReq h1{
-          font-family: 'AudioWide';
-          font-size: 6vw;
-        }
-        
-        .prayerReq p{
-          font-size: 4vw;
-          text-align: justify;
-        }
-        
-        .scroll{
-          margin-left: 0;
-          margin-right: 0%;
-          border: 1px black solid;
-          padding: 4%;
-          border-radius: 10px;
-          height: 600px;
-          margin-bottom: 5%;
-          overflow: scroll;
-          overflow-x: hidden;
-          background-color: #ECF9FF;
-        }
-      
-        .request{
-          border: 1px solid black;
-         
-          margin-bottom: 4%;
-          background-color: white;
-        }
-        
-        .heading{
-          background-color: white;
-          font-size: 4vw;
-          color: black;
-         
-        }
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
 
-        .headingP{
-          font-size: 4vw;
-        }
-        
-        .heading h1{
-          font-size: 4.5vw;
-          font-family: 'Encode Sans SC';
-        }
-        
-        .body{
-          color: black;
-          padding-left: 3%;
-          padding-top: 2%;
-          padding-bottom: 2%;
-          padding-right: 3%;
-          background-color: FFE7CC;
-        }
-        
-        .body p{
-          font-size: 3.5vw;
-          text-align: justify;
-          padding-bottom: 1%;
-        }
-        
-        
-        /* ================================================ */
-        
-        .announcement{
-          margin-top: 5%;
-          text-align: center;
-        }
-        
-        .announcement h1{
-          font-family: 'AudioWide';
-          font-size: 6vw;;
-        }
-        
-        .announcement p{
-          font-size: 4vw;
-        }
-      
-        /* ================================================ */
-      
-        .bottomLinks{
-          display: none;
-        }
-        
-        /* ================================================ */
-      
-        .mobileLinks{
-          display: block;
-          background-color: black;
-        }
-      
-        .mobileLinks .firstGrid{
-          text-align: left;
-          border-right: white 0px solid;
-          padding: 2%;
-          padding-left: 10%;
-          padding-right: 10%;
-          width: 100%;
-          border-bottom: white 1px solid;
-          padding-top: 10%;
-          padding-bottom: 10%;
-        }
-        
-        .mobileLinks .firstGrid img{
-          width: 30%;
-          margin-top: 2%;
-        }
-        
-        .mobileLinks .firstGrid h1{
-          margin-top: 1%;
-          text-align: left;
-        }
-        
-        .mobileLinks .firstGrid a{
-          margin-top: 1%;
-          font-size: 7vw;
-          font-family: 'Source Code Pro';
-        }
-        
-        .mobileLinks .firstGrid p{
-          font-size: 3vw;
-          color: grey;
-          font-family: 'Source Code Pro';
-        }
-      
-        .secondLane{
-          padding-left: 10%;
-          padding-right: 10%;
-          padding-bottom: 5%;
-          width: 100%;
-          color: white;
-          margin-top: 5%;
-        }
-        
-        .noice{
-          margin-bottom: 5%;
-          font-size: 4vw;
-          font-family: 'Source Code Pro';
-        }
-      
-        .links{
-          margin-top: 5%;
-          font-size: 4vw;
-        }
-      
-        .links a{
-          color: grey;
-          font-family: 'Source Code Pro';
-        }
-      
-      }
-      
-            
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.7;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.7;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 1060px) {
+  .mySlides {
+    margin-top: 15%;
+    height: 100%;
+  }
+}
+
+/* ================================================================================ */
+
+.container {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 5%;
+}
+
+.container em {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.container h1 {
+  font-family: "AudioWide";
+  margin-top: 5%;
+  font-size: 3vw;
+  text-align: center;
+}
+
+.container p {
+  margin-top: 7%;
+  font-size: 1.9vw;
+}
+
+#word {
+  margin-top: 3%;
+  font-size: 1.9vw;
+}
+
+/* ================================================ */
+
+.desc {
+  display: block;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.desc h1 {
+  font-family: "AudioWide";
+  text-align: center;
+  padding-top: 8%;
+  padding-bottom: 3%;
+  font-size: 4vw;
+}
+
+.desc p {
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: 1.9vw;
+  padding-bottom: 5%;
+}
+
+.aboutUs {
+  display: flex;
+  color: white;
+  margin-bottom: 5%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(HeadnFooter/background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.vision {
+  width: 33.3%;
+  padding: 5%;
+  transition: 0.5s;
+}
+
+.vision h1 {
+  font-family: "AudioWide";
+  text-align: center;
+  margin-bottom: 10%;
+  font-size: 3vw;
+}
+
+.vision p {
+  font-size: 1.9vw;
+  text-align: center;
+}
+
+.vision:hover {
+  background-color: white;
+  color: black;
+}
+
+/* ================================================ */
+
+.pastorContainer {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 4%;
+}
+
+.pastorContainer h1 {
+  font-family: "AudioWide";
+  font-size: 3vw;
+  text-align: center;
+}
+
+.pastors {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.pastors img {
+  width: 50%;
+  border-radius: 50%;
+}
+
+.pText {
+  margin-left: 3%;
+}
+
+.pText h1 {
+  font-family: "AudioWide";
+  font-size: 2.5vw;
+}
+
+.pText p {
+  font-size: 1.5vw;
+}
+
+/* ================================================ */
+
+.cSection {
+  display: block;
+  color: white;
+}
+
+.row1 {
+  display: flex;
+  margin: 2% 5%;
+}
+
+.sunday {
+  width: 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(AnnounceIMGs/Sunday\ Service.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  flex: 1;
+  border-radius: 20px;
+}
+
+.sundayDesc {
+  padding-top: 15%;
+  padding-bottom: 15%;
+  padding-left: 5%;
+  padding-right: 5%;
+  transition: 0.5s;
+  cursor: pointer;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.sundayDesc h1 {
+  font-family: "AudioWide";
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+.sundayDesc h2 {
+  font-family: "AudioWide";
+  font-size: 1.5vw;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.sundayDesc p {
+  font-size: 1.5vw;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.sundayDesc:hover {
+  background-color: #fbeaeb;
+  color: #2f3c7e;
+  border-radius: 20px;
+  box-shadow: 0px 14px 11px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 14px 11px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 14px 11px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* ================================================ */
+
+.wildfire {
+  width: 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(AnnounceIMGs/Wildfire.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  flex: 1;
+  margin-left: 2%;
+  border-radius: 20px;
+}
+
+.wildfireDesc {
+  padding-top: 15%;
+  padding-bottom: 15%;
+  padding-left: 5%;
+  padding-right: 5%;
+  transition: 0.5s;
+  cursor: pointer;
+  flex: 1;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.wildfireDesc h1 {
+  font-family: "AudioWide";
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+.wildfireDesc h2 {
+  font-family: "AudioWide";
+  font-size: 1.5vw;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.wildfireDesc p {
+  font-size: 1.5vw;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.wildfireDesc:hover {
+  background-color: black;
+  color: yellow;
+  border-radius: 20px;
+  box-shadow: 0px 14px 11px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 14px 11px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 14px 11px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* ================================================ */
+
+.row2 {
+  display: flex;
+  margin: 0% 5%;
+}
+
+.j12 {
+  align-items: center;
+  border-radius: 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(AnnounceIMGs/J12Kids.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  flex: 1;
+}
+
+.j12Desc {
+  padding-top: 15%;
+  padding-bottom: 15%;
+  padding-left: 5%;
+  padding-right: 5%;
+  transition: 0.5s;
+  cursor: pointer;
+  flex: 1;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.j12Desc h1 {
+  font-family: "AudioWide";
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+.j12Desc h2 {
+  font-family: "AudioWide";
+  font-size: 1.5vw;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.j12Desc p {
+  font-size: 1.5vw;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.j12Desc:hover {
+  background-color: #00ffff;
+  color: #ff69b4;
+  border-radius: 20px;
+  box-shadow: 0px 14px 11px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 14px 11px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 14px 11px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* ================================================ */
+
+.spearhead {
+  margin: 0% 2%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(AnnounceIMGs/Spearhead.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  flex: 1;
+  border-radius: 20px;
+}
+
+.spearheadDesc {
+  padding-top: 15%;
+  padding-bottom: 12%;
+  padding-left: 5%;
+  padding-right: 5%;
+  transition: 0.5s;
+  cursor: pointer;
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.spearheadDesc h1 {
+  font-family: "AudioWide";
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+.spearheadDesc h2 {
+  font-family: "AudioWide";
+  font-size: 1.5vw;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.spearheadDesc p {
+  font-size: 1.5vw;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.spearheadDesc:hover {
+  background-color: #ffe77aff;
+  color: #2c5f2dff;
+  border-radius: 20px;
+  box-shadow: 0px 14px 11px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 14px 11px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 14px 11px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* ================================================ */
+
+.married {
+  border-radius: 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(AnnounceIMGs/married.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  flex: 1;
+}
+
+.marriedDesc {
+  padding-top: 15%;
+  padding-bottom: 15%;
+  padding-left: 5%;
+  padding-right: 5%;
+  transition: 0.5s;
+  cursor: pointer;
+  flex: 1;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.marriedDesc h1 {
+  font-family: "AudioWide";
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+.marriedDesc h2 {
+  font-family: "AudioWide";
+  font-size: 1.5vw;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.marriedDesc p {
+  font-size: 1.5vw;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.marriedDesc:hover {
+  background-color: #f7c5cc;
+  color: #cc313d;
+  border-radius: 20px;
+  box-shadow: 0px 14px 11px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 14px 11px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 14px 11px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* ================================================ */
+
+.equip {
+  display: flex;
+  margin: 0% 5%;
+}
+
+.mentoring {
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(HeadnFooter/mentoring.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  flex: 1;
+  border-radius: 20px;
+}
+
+.mentoringDesc {
+  padding-top: 20%;
+  padding-bottom: 15%;
+  padding-left: 5%;
+  padding-right: 5%;
+  transition: 0.5s;
+  cursor: pointer;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.mentoringDesc h1 {
+  font-family: "AudioWide";
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+.mentoringDesc p {
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+.mentoringDesc:hover {
+  background-color: #ffa3fd;
+  color: #191825;
+  border-radius: 20px;
+  box-shadow: 0px 14px 11px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 14px 11px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 14px 11px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* ================================================ */
+
+.solclass {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(AnnounceIMGs/Solclass.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  flex: 1;
+  margin: 0% 2%;
+  border-radius: 20px;
+}
+
+.solDesc {
+  padding-top: 15%;
+  padding-bottom: 12%;
+  padding-left: 5%;
+  padding-right: 5%;
+  transition: 0.5s;
+  cursor: pointer;
+  flex: 1;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.solDesc h1 {
+  font-family: "AudioWide";
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+.solDesc p {
+  font-size: 1.5vw;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.solDesc:hover {
+  background-color: #1868ae;
+  color: #c6d7eb;
+  border-radius: 20px;
+  box-shadow: 0px 14px 11px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 14px 11px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 14px 11px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* ================================================ */
+
+.lifeclass {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(AnnounceIMGs/Lifeclass.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  flex: 1;
+  border-radius: 20px;
+}
+
+.lifeclassDesc {
+  padding-top: 15%;
+  padding-bottom: 15%;
+  padding-left: 5%;
+  padding-right: 5%;
+  transition: 0.5s;
+  cursor: pointer;
+  flex: 1;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.lifeclassDesc h1 {
+  font-family: "AudioWide";
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+.lifeclassDesc p {
+  font-size: 1.5vw;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.lifeclassDesc:hover {
+  background-color: #3eb489;
+  color: white;
+  border-radius: 20px;
+  box-shadow: 0px 14px 11px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 14px 11px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 14px 11px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* ================================================ */
+
+.photos {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.mediaImg img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.mediaDesc {
+  margin-left: 3%;
+}
+
+.mediaDesc h1 {
+  font-family: "AudioWide";
+  font-size: 2.5vw;
+}
+
+.mediaDesc p {
+  font-size: 1.5vw;
+}
+
+.mediaDesc .button {
+  border-radius: 4px;
+  background-color: #e23c52;
+  border: none;
+  color: #bdfff6;
+  text-align: center;
+  font-size: 1.3vw;
+  padding: 2%;
+  width: 25%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 3%;
+}
+
+.button h1 {
+  font-size: 1.3vw;
+}
+
+.mediaDesc .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.mediaDesc .button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -5px;
+  transition: 0.5s;
+  width: 18%;
+}
+
+.mediaDesc .button:hover span {
+  padding-right: 13%;
+}
+
+.mediaDesc .button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* ================================================ */
+
+.pandA {
+  display: block;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+  padding-top: 10%;
+  justify-content: center;
+  align-items: center;
+}
+
+.brrr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+.brrr a {
+  color: white;
+  padding: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-radius: 10px;
+  font-family: "AudioWide";
+  font-size: 1.4vw;
+  background-color: black;
+}
+
+.prayerReq {
+  text-align: left;
+  padding-bottom: 5%;
+}
+
+.prayerReq span {
+  text-align: right;
+}
+
+.prayerReq h1 {
+  font-family: "AudioWide";
+  font-size: 3vw;
+}
+
+.prayerReq p {
+  font-size: 2vw;
+  text-align: justify;
+}
+
+.scroll {
+  margin-left: 2%;
+  margin-right: 2%;
+  border: 1px black solid;
+  padding: 4%;
+  border-radius: 10px;
+  height: 500px;
+  margin-bottom: 5%;
+  overflow: scroll;
+  overflow-x: hidden;
+  background-color: #ecf9ff;
+}
+
+@media (max-width: 1920px) {
+  .scroll {
+    height: 720px;
+  }
+}
+
+.scroll::-webkit-scrollbar {
+  display: block;
+  width: 100%;
+}
+
+.scroll::-webkit-scrollbar-track {
+  background-color: white;
+  border-radius: 50%;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 10px;
+}
+
+.pandA .button {
+  border-radius: 4px;
+  background-color: #e23c52;
+  border: none;
+  color: #bdfff6;
+  text-align: center;
+  font-size: 1.3vw;
+  padding: 2%;
+  width: 20%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 3%;
+}
+
+.pandA .button h1 {
+  font-size: 1.3vw;
+}
+
+.pandA .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.pandA .button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 10px;
+  transition: 0.5s;
+  width: 10%;
+}
+
+.pandA .button:hover span {
+  padding-right: 13%;
+}
+
+.pandA .button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* ================================================ */
+
+.announcement {
+  margin-top: 20%;
+  text-align: center;
+}
+
+.announcement h1 {
+  font-family: "AudioWide";
+  font-size: 2.5vw;
+}
+
+.announcement p {
+  font-size: 1.7vw;
+}
+
+/* ================================================ */
+
+.bottomLinks {
+  display: flex;
+  margin-top: 5%;
+  background-color: black;
+  color: white;
+  border-bottom: 3px grey solid;
+}
+
+.firstGrid {
+  text-align: center;
+  border-right: white 1px solid;
+  padding: 2%;
+  width: 20%;
+}
+
+.firstGrid img {
+  width: 50%;
+}
+
+.firstGrid h1 {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.firstGrid a {
+  margin-top: 7%;
+  font-size: 3.5vw;
+  font-family: "Source Code Pro";
+}
+
+.firstGrid p {
+  margin-top: 10%;
+  font-size: 1vw;
+  text-align: left;
+  color: grey;
+  font-family: "Source Code Pro";
+}
+
+/* =================================================== */
+
+.secondGrid {
+  width: 20%;
+  display: inline-block;
+  margin-left: 3%;
+  margin-top: 4%;
+}
+
+.secondGrid p {
+  font-family: "Source Code Pro";
+  font-size: 1.2vw;
+}
+
+.botli {
+  margin-top: 40%;
+}
+
+.botli p {
+  margin-bottom: 2%;
+}
+
+.botli a {
+  font-family: "Source Code Pro";
+  font-size: 1.2vw;
+  color: gray;
+}
+
+.botli a:hover {
+  color: white;
+  transition: 0.5s;
+}
+
+/* =================================================== */
+
+.thirdGrid {
+  width: 20%;
+  display: inline-block;
+  margin-top: 4%;
+}
+
+.thirdGrid p {
+  font-family: "Source Code Pro";
+  font-size: 1.2vw;
+}
+
+.botli {
+  margin-top: 40%;
+}
+
+.botli p {
+  margin-bottom: 2%;
+}
+
+.botli a {
+  font-family: "Source Code Pro";
+  font-size: 1.2vw;
+  color: gray;
+}
+
+.botli a:hover {
+  color: white;
+  transition: 0.5s;
+}
+
+.mobileLinks {
+  display: none;
+}
+
+/* ================================================ */
+
+@media (max-width: 500px) {
+  .navbar .logo img {
+    width: 40%;
+  }
+
+  .icon img {
+    width: 100%;
+    max-width: 40px;
+  }
+
+  .container {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+  }
+
+  .container h1 {
+    font-family: "AudioWide";
+    margin-top: 5%;
+    font-size: 5.5vw;
+    text-align: center;
+  }
+
+  .container p {
+    margin-top: 7%;
+    font-size: 3.5vw;
+    text-align: justify;
+  }
+
+  #word {
+    margin-top: 3%;
+    font-size: 3.5vw;
+  }
+
+  /* ================================================ */
+
+  .aboutUs {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(HeadnFooter/mobileBackground.jpg);
+    background-size: cover;
+    display: block;
+    color: white;
+    margin-bottom: 5%;
+    background-attachment: scroll;
+  }
+
+  .vision {
+    width: 100%;
+    padding: 5%;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .vision h1 {
+    font-family: "AudioWide";
+    text-align: center;
+    margin-bottom: 2%;
+    font-size: 5.5vw;
+  }
+
+  .vision p {
+    font-size: 3.5vw;
+    text-align: center;
+  }
+
+  .vision:hover {
+    background-color: white;
+    color: black;
+  }
+
+  /* ================================================ */
+
+  .pastorContainer {
+    margin-top: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 4%;
+  }
+
+  .pastorContainer h1 {
+    font-family: "AudioWide";
+    font-size: 5.5vw;
+    text-align: center;
+  }
+
+  .pastors {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    display: block;
+    align-items: center;
+  }
+
+  .pastors img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .pText {
+    margin-top: 4%;
+    margin-left: 0;
+    margin-bottom: 20%;
+  }
+
+  .pText h1 {
+    font-family: "AudioWide";
+    font-size: 5vw;
+    text-align: center;
+  }
+
+  .pText p {
+    margin-top: 2%;
+    font-size: 3.5vw;
+    text-align: center;
+  }
+
+  /* ================================================ */
+
+  .desc {
+    display: block;
+    justify-content: center;
+    background-color: #eceaea;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .desc h1 {
+    font-family: "AudioWide";
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 7vw;
+  }
+
+  .desc p {
+    margin-left: 8%;
+    margin-right: 8%;
+    font-size: 4vw;
+    padding-bottom: 3%;
+    text-align: justify;
+  }
+
+  .row1 {
+    display: block;
+    margin: 0%, 0%;
+  }
+
+  .sunday {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    margin-bottom: 0;
+    flex: 1;
+    margin: 0%;
+  }
+
+  .sundayDesc {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .sundayDesc h1 {
+    font-family: "AudioWide";
+    font-size: 6vw;
+    text-align: center;
+  }
+
+  .sundayDesc h2 {
+    font-family: "AudioWide";
+    font-size: 4vw;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  .sundayDesc p {
+    font-size: 4vw;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  /* ================================================ */
+
+  .wildfire {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    margin-bottom: 5%;
+    margin-left: 0;
+    margin-top: 2%;
+    flex: 1;
+  }
+
+  .wildfireDesc {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .wildfireDesc h1 {
+    font-family: "AudioWide";
+    font-size: 6vw;
+    text-align: center;
+  }
+
+  .wildfireDesc h2 {
+    font-family: "AudioWide";
+    font-size: 4vw;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  .wildfireDesc p {
+    font-size: 4vw;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  /* ================================================ */
+
+  .row2 {
+    display: block;
+    margin-top: -2%;
+  }
+
+  .j12 {
+    align-items: center;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    flex: 1;
+    margin-bottom: 5%;
+    margin-left: 0;
+    margin-top: 2%;
+  }
+
+  .j12Desc {
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: 0.5s;
+    cursor: pointer;
+    flex: 1;
+    height: 100%;
+  }
+
+  .j12Desc h1 {
+    font-family: "AudioWide";
+    font-size: 6vw;
+    text-align: center;
+  }
+
+  .j12Desc h2 {
+    font-family: "AudioWide";
+    font-size: 4vw;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  .j12Desc p {
+    font-size: 4vw;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  /* ================================================ */
+
+  .spearhead {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    flex: 1;
+    margin-bottom: 5%;
+    margin-left: 0;
+  }
+
+  .spearheadDesc {
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: 0.5s;
+    cursor: pointer;
+    flex: 1;
+    height: 100%;
+  }
+
+  .spearhead h1 {
+    font-family: "AudioWide";
+    font-size: 6vw;
+    text-align: center;
+  }
+
+  .spearhead h2 {
+    font-family: "AudioWide";
+    font-size: 4vw;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  .spearhead p {
+    font-size: 4vw;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  /* ================================================ */
+
+  .married {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    margin-bottom: 5%;
+    margin-left: 0;
+    flex: 1;
+  }
+
+  .marriedDesc {
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: 0.5s;
+    cursor: pointer;
+    flex: 1;
+    height: 100%;
+  }
+
+  .marriedDesc h1 {
+    font-family: "AudioWide";
+    font-size: 6vw;
+    text-align: center;
+  }
+
+  .marriedDesc h2 {
+    font-family: "AudioWide";
+    font-size: 4vw;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  .marriedDesc p {
+    font-size: 4vw;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  /* ================================================ */
+
+  .equip {
+    display: block;
+    margin-top: 5%;
+  }
+
+  .mentoring {
+    align-items: center;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    margin-bottom: 5%;
+    margin-left: 0;
+    flex: 1;
+  }
+
+  .mentoringDesc {
+    padding-top: 20%;
+    padding-bottom: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: 0.5s;
+    cursor: pointer;
+    height: 100%;
+  }
+
+  .mentoringDesc h1 {
+    font-family: "AudioWide";
+    font-size: 6vw;
+    text-align: center;
+  }
+
+  .mentoringDesc p {
+    font-size: 4vw;
+    text-align: center;
+  }
+
+  /* ================================================ */
+
+  .solclass {
+    width: 100%;
+    background-position: center;
+    color: white;
+    flex: 1;
+    margin-bottom: 5%;
+    margin-left: 0;
+  }
+
+  .solDesc {
+    padding-top: 15%;
+    padding-bottom: 12%;
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: 0.5s;
+    cursor: pointer;
+    flex: 1;
+    height: 100%;
+  }
+
+  .solDesc h1 {
+    font-family: "AudioWide";
+    font-size: 6vw;
+    text-align: center;
+  }
+
+  .solDesc p {
+    font-size: 4vw;
+    text-align: center;
+  }
+
+  /* ================================================ */
+
+  .lifeclass {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    flex: 1;
+    margin-bottom: 5%;
+    margin-left: 0;
+  }
+
+  .lifeclassDesc {
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: 0.5s;
+    cursor: pointer;
+    flex: 1;
+    height: 100%;
+  }
+
+  .lifeclassDesc h1 {
+    font-family: "AudioWide";
+    font-size: 6vw;
+    text-align: center;
+  }
+
+  .lifeclassDesc p {
+    font-size: 4vw;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  /* ================================================ */
+
+  .photos {
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    display: block;
+    align-items: center;
+  }
+
+  .mediaImg img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .mediaDesc {
+    margin-top: 5%;
+    margin-left: 0%;
+  }
+
+  .mediaDesc h1 {
+    font-family: "AudioWide";
+    font-size: 6vw;
+    text-align: center;
+  }
+
+  .mediaDesc p {
+    font-size: 4vw;
+    text-align: center;
+  }
+
+  .mediaDesc .button {
+    display: block;
+    border-radius: 4px;
+    background-color: #e23c52;
+    border: none;
+    color: #bdfff6;
+    text-align: center;
+    padding: 2%;
+    width: 50%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 3%;
+    font-size: 4vw;
+  }
+
+  .button h1 {
+    font-size: 4vw;
+  }
+
+  .mediaDesc .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .mediaDesc .button span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    right: -20px;
+    transition: 0.5s;
+    width: 20px;
+  }
+
+  .mediaDesc .button:hover span {
+    padding-right: 15%;
+  }
+
+  .mediaDesc .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  /* ================================================ */
+
+  .pandA {
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    justify-content: center;
+  }
+
+  .prayerReq {
+    text-align: center;
+  }
+
+  .prayerReq h1 {
+    font-family: "AudioWide";
+    font-size: 6vw;
+  }
+
+  .prayerReq p {
+    font-size: 5vw;
+  }
+
+  .pandA .button {
+    border-radius: 4px;
+    background-color: #e23c52;
+    border: none;
+    color: #bdfff6;
+    text-align: center;
+    font-size: 1.3vw;
+    padding: 2%;
+    width: 60%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 3%;
+    font-size: 4vw;
+  }
+
+  .pandA .button h1 {
+    font-size: 4vw;
+  }
+
+  .pandA .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .pandA .button span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    width: 18%;
+  }
+
+  .pandA .button:hover span {
+    padding-right: 13%;
+  }
+
+  .pandA .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .brrr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2%;
+  }
+
+  .brrr a {
+    color: white;
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 5px;
+    font-family: "AudioWide";
+    font-size: 2.5vw;
+    background-color: black;
+  }
+
+  .prayerReq {
+    text-align: left;
+    padding-bottom: 5%;
+  }
+
+  .prayerReq span {
+    text-align: right;
+  }
+
+  .prayerReq h1 {
+    font-family: "AudioWide";
+    font-size: 6vw;
+  }
+
+  .prayerReq p {
+    font-size: 4vw;
+    text-align: justify;
+  }
+
+  .scroll {
+    margin-left: 0;
+    margin-right: 0%;
+    border: 1px black solid;
+    padding: 4%;
+    border-radius: 10px;
+    height: 600px;
+    margin-bottom: 5%;
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: #ecf9ff;
+  }
+
+  .request {
+    border: 1px solid black;
+
+    margin-bottom: 4%;
+    background-color: white;
+  }
+
+  .heading {
+    background-color: white;
+    font-size: 4vw;
+    color: black;
+  }
+
+  .headingP {
+    font-size: 4vw;
+  }
+
+  .heading h1 {
+    font-size: 4.5vw;
+    font-family: "Encode Sans SC";
+  }
+
+  .body {
+    color: black;
+    padding-left: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 3%;
+    background-color: FFE7CC;
+  }
+
+  .body p {
+    font-size: 3.5vw;
+    text-align: justify;
+    padding-bottom: 1%;
+  }
+
+  /* ================================================ */
+
+  .announcement {
+    margin-top: 5%;
+    text-align: center;
+  }
+
+  .announcement h1 {
+    font-family: "AudioWide";
+    font-size: 6vw;
+  }
+
+  .announcement p {
+    font-size: 4vw;
+  }
+
+  /* ================================================ */
+
+  .bottomLinks {
+    display: none;
+  }
+
+  /* ================================================ */
+
+  .mobileLinks {
+    display: block;
+    background-color: black;
+  }
+
+  .mobileLinks .firstGrid {
+    text-align: left;
+    border-right: white 0px solid;
+    padding: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+    border-bottom: white 1px solid;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  .mobileLinks .firstGrid img {
+    width: 30%;
+    margin-top: 2%;
+  }
+
+  .mobileLinks .firstGrid h1 {
+    margin-top: 1%;
+    text-align: left;
+  }
+
+  .mobileLinks .firstGrid a {
+    margin-top: 1%;
+    font-size: 7vw;
+    font-family: "Source Code Pro";
+  }
+
+  .mobileLinks .firstGrid p {
+    font-size: 3vw;
+    color: grey;
+    font-family: "Source Code Pro";
+  }
+
+  .secondLane {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    width: 100%;
+    color: white;
+    margin-top: 5%;
+  }
+
+  .noice {
+    margin-bottom: 5%;
+    font-size: 4vw;
+    font-family: "Source Code Pro";
+  }
+
+  .links {
+    margin-top: 5%;
+    font-size: 4vw;
+  }
+
+  .links a {
+    color: grey;
+    font-family: "Source Code Pro";
+  }
+}
