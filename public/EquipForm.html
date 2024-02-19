@@ -79,10 +79,8 @@
           <input type="text" id="fullname"
           oninput="this.value=(this.value.match('[a-zA-Z ]+'))"" required />
           <br />
-          <label>Age:</label> <br />
-          <input type="text" id="userAge"
-          oninput="this.value=(this.value.match('[0-9]+'))"" maxlength="2"
-          required />
+          <label>Birthday</label> <br />
+          <input type="date" id="userAge" required />
           <br />
           <label>Email: </label> <br />
           <input
@@ -96,6 +94,19 @@
           <input type="tel" id="phoneNum" required placeholder="09272261788"
           oninput="this.value=(this.value.match('[0-9]+'))"" maxlength="11" />
           <br />
+          <div class="blockThis">
+            <label id="labelChange">Placeholder</label>
+            <br />
+            <select
+              name="additionals"
+              id="additionals"
+              class="selectOption"
+              required
+            >
+              <option value="No">No</option>
+              <option value="Yes">Yes</option>
+            </select>
+          </div>
           <button id="equipFormBtn">Submit</button>
         </form>
       </div>

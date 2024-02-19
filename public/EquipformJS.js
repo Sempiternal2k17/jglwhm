@@ -20,12 +20,19 @@ const programColors = {
   solclass: "#1868AE",
 };
 
+const labelOptions = {
+  mentoring: "Are you a first timer?",
+  lifeclass: "Did you attend a EGR (Encounter God Retreat)?",
+  solclass: "Are you a Lifeclass Graduate?",
+};
+
 const programTitle = {
   mentoring: "Mentoring Registration Form",
   lifeclass: "LifeClass Registration Form",
   solclass: "Sol Class Registration Form",
 };
 
+let setOptions = labelOptions[equipProgram];
 let setTitle = programTitle[equipProgram];
 let colorScheme = programColors[equipProgram];
 console.log(equipProgram, " ", colorScheme);
@@ -50,6 +57,8 @@ function setColorScheme() {
   equipFormTitle.innerText = parseToCAPS.toUpperCase();
   var titleProgram = document.querySelector("#titleofProgram");
   titleProgram.innerHTML = `${setTitle}`;
+  var labelNice = document.querySelector("#labelChange");
+  labelNice.innerHTML = `${setOptions}`;
   var submenu = document.querySelector(`.sub-menu`);
   submenu.style.backgroundColor = `${colorScheme}`;
 }
@@ -69,12 +78,14 @@ equipForm.addEventListener("submit", async (event) => {
     const email = document.getElementById("email").value;
     const phoneNumber = document.getElementById("phoneNum").value;
     const userAge = document.getElementById("userAge").value;
+    const additionals = document.getElementById("additionals").value;
     const userDataRef = collection(db, `equipping/${equipProgram}/data`);
     const prayerFormat = {
       fullname: fullName,
       email: email,
       contact: phoneNumber,
       age: userAge,
+      additionals: additionals,
       timestamp: serverTimestamp(),
     };
     await addDoc(userDataRef, prayerFormat).then(() => {
